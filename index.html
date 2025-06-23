@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <title>EventUp - Event and Conference Template</title>
+    <title>III Coloquio Internacional de Espacio y Sostenibilidad 2025</title>
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css" >
@@ -20,8 +20,20 @@
     <!-- Responsive Style -->
     <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
 
+    <!-- Preload logo images to ensure they're available immediately -->
+    <link rel="preload" href="assets/img/logoblanco.png" as="image">
+    <link rel="preload" href="assets/img/logo.png" as="image">
   </head>
   <body>
+    <!-- Script para establecer el logo inmediatamente -->
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        var logoImg = document.querySelector('.navbar-brand img');
+        if (logoImg) {
+          logoImg.src = 'assets/img/logoblanco.png?' + new Date().getTime();
+        }
+      });
+    </script>
 
     <!-- Header Area wrapper Starts -->
     <header id="header-wrap">
@@ -29,25 +41,25 @@
       <nav class="navbar navbar-expand-lg bg-inverse fixed-top scrolling-navbar">
         <div class="container">
           <!-- Brand and toggle get grouped for better mobile display -->
-          <a href="index.html" class="navbar-brand"><img src="assets/img/logo.png" alt=""></a>       
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <a href="index.html" class="navbar-brand"><img src="assets/img/logoblanco.png" alt="Logo Coloquio Internacional de Espacio y Sostenibilidad"></a>       
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Alternar navegación">
             <i class="lni-menu"></i>
           </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav mr-auto w-100 justify-content-end">
               <li class="nav-item active">
                 <a class="nav-link" href="#header-wrap">
-                  Home
+                  Inicio
                 </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#about">
-                  About
+                  Acerca
                 </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#schedules">
-                  schedules
+                  Programa
                 </a>
               </li>
               <li class="nav-item">
@@ -57,22 +69,22 @@
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#gallery">
-                  Gallery
+                  Galería
                 </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#pricing">
-                  pricing
+                  Registro
                 </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#sponsors">
-                  Sponsors
+                  Aliados
                 </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#google-map-area">
-                  Contact
+                  Contacto
                 </a>
               </li>
             </ul>
@@ -91,12 +103,12 @@
                 <div class="icon">
                   <i class="lni-mic"></i>
                 </div>
-                <p class="banner-info">15, Oct 2020 - Maria Hall, NY, United states</p>
-                <h2 class="head-title">Developers Conference</h2>
+                <p class="banner-info">Noviembre 2025 - Hermosillo, Sonora y Tucson, Arizona</p>
+                <h2 class="head-title">III Coloquio Internacional de Espacio y Sostenibilidad</h2>
                 <p class="banner-desc">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, nobis nesciunt atque perferendis, ipsa doloremque deserunt cum qui.</p>
+                  Aplicaciones de la ciencia y tecnología espacial para el monitoreo y gestión de recursos hídricos en la región fronteriza México-Estados Unidos.</p>
                 <div class="banner-btn">
-                  <a href="#" class="btn btn-common">Get Ticket</a>
+                  <a href="#" class="btn btn-common">Registro</a>
                 </div>
               </div>
             </div>
@@ -137,17 +149,17 @@
             <div class="about-content">
               <div>
                 <div class="about-text">  
-                  <h2>About The Conference</h2>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod ncididunt ametfh consectetur dolore magna aliqua. Ut enim ad minim veniam dolor sitame magnaelit ate consectetur adipisicing. Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod.</p>
+                  <h2>Acerca del Coloquio</h2>
+                  <p>El III Coloquio Internacional de Espacio y Sostenibilidad es un evento binacional que reúne a expertos, académicos y profesionales del sector espacial y ambiental para abordar los desafíos de la gestión sustentable de recursos hídricos en la zona fronteriza entre México y Estados Unidos, utilizando tecnologías espaciales como herramientas clave para el monitoreo y la toma de decisiones.</p>
                 </div>
                 <ul class="stylish-list mb-3">
-                  <li><i class="lni-check-mark-circle"></i>Networking Sessions</li>
-                  <li><i class="lni-check-mark-circle"></i>Meet New Professional Faces</li>
-                  <li><i class="lni-check-mark-circle"></i>Get Inspired by Amazing Speakers</li>
-                  <li><i class="lni-check-mark-circle"></i>Lorem ipsum dolor sit ameterib</li>
-                  <li><i class="lni-check-mark-circle"></i>Lorem ipsum dolor sit ameterib quodsi</li>
+                  <li><i class="lni-check-mark-circle"></i>Sesiones de Networking</li>
+                  <li><i class="lni-check-mark-circle"></i>Nuevos Contactos Profesionales</li>
+                  <li><i class="lni-check-mark-circle"></i>Inspiración de Ponentes Destacados</li>
+                  <li><i class="lni-check-mark-circle"></i>Eventos Binacionales (México-EUA)</li>
+                  <li><i class="lni-check-mark-circle"></i>Enfoque en Sostenibilidad y Tecnología Espacial</li>
                 </ul>
-                <a class="btn btn-common" href="#">Learn More</a>
+                <a class="btn btn-common" href="#">Más Información</a>
               </div>
             </div>
           </div>
@@ -180,7 +192,7 @@
               <li>
                 <i class="lni-map-marker"></i>
               </li>
-              <li><span><b>Location</b> Maria Hall, NY, USA</span></li>
+              <li><span><b>Ubicación</b> Hermosillo, Sonora y Tucson, Arizona</span></li>
             </ul>
           </div>
           <div class="col-lg-3 col-md-6 col-xs-12">
@@ -188,7 +200,7 @@
               <li>
                 <i class="lni-calendar"></i>
               </li>
-              <li><span><b>Date & Time</b> 10am - 7pm, 15th Oct</span></li>
+              <li><span><b>Fecha y Hora</b> 9am - 6pm, Noviembre 2025</span></li>
             </ul>
           </div>
           <div class="col-lg-3 col-md-6 col-xs-12">
@@ -196,7 +208,7 @@
               <li>
                 <i class="lni-mic"></i>
               </li>
-              <li><span><b>Speakers</b> 25 Professionals</span></li>
+              <li><span><b>Ponentes</b> 25 Profesionales</span></li>
             </ul>
           </div>
           <div class="col-lg-3 col-md-6 col-xs-12">
@@ -204,7 +216,7 @@
               <li>
                 <i class="lni-user"></i>
               </li>
-              <li><span><b>Seats</b> 100 People</span></li>
+              <li><span><b>Cupo</b> 150 Personas</span></li>
             </ul>
           </div>
         </div>
@@ -218,8 +230,8 @@
         <div class="row">
           <div class="col-12">
             <div class="section-title-header text-center">
-              <h2 class="section-title wow fadeInUp" data-wow-delay="0.2s">Why You Should Join?</h2>
-              <p class="wow fadeInDown" data-wow-delay="0.2s">Lorem ipsum dolor sit amet, in quodsi vulputate pro. Ius illum vocent mediocritatem an <br> cule dicta iriure at phaedrum.</p>
+              <h2 class="section-title wow fadeInUp" data-wow-delay="0.2s">¿Por Qué Participar?</h2>
+              <p class="wow fadeInDown" data-wow-delay="0.2s">El III Coloquio Internacional de Espacio y Sostenibilidad ofrece una oportunidad única <br> para conectar con expertos y abordar desafíos ambientales transfronterizos.</p>
             </div>
           </div>
         </div>
@@ -227,9 +239,9 @@
           <div class="col-lg-4 col-md-6 col-xs-12">
             <div class="single-intro-text mb-70">
                <i class="lni-microphone"></i>
-               <h3>Great Speakers</h3>
+               <h3>Ponentes Destacados</h3>
                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus mollitia, excepturi.
+                  Expertos internacionales en tecnología espacial y gestión de recursos hídricos compartirán sus conocimientos.
                </p>
                <span class="count-number">01</span>
             </div>
@@ -237,9 +249,9 @@
           <div class="col-lg-4 col-md-6 col-xs-12">
             <div class="single-intro-text">
                <i class="lni-users"></i>
-               <h3 class="ts-title">New People</h3>
+               <h3 class="ts-title">Nuevas Conexiones</h3>
                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus mollitia, excepturi.
+                  Establece contacto con profesionales de América del Norte dedicados a la sostenibilidad ambiental.
                </p>
                <span class="count-number">02</span>
             </div>
@@ -248,9 +260,9 @@
           <div class="col-lg-4 col-md-6 col-xs-12">
             <div class="single-intro-text mb-70">
                <i class="lni-bullhorn"></i>
-               <h3>Global Event</h3>
+               <h3>Evento Binacional</h3>
                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus mollitia, excepturi.
+                  Una colaboración entre México y Estados Unidos para abordar desafíos compartidos en recursos hídricos.
                </p>
                <span class="count-number">03</span>
             </div>
@@ -258,9 +270,9 @@
           <div class="col-lg-4 col-md-6 col-xs-12">
             <div class="single-intro-text mb-70">
                <i class="lni-heart"></i>
-               <h3>Get Inspired</h3>
+               <h3>Inspírate</h3>
                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus mollitia, excepturi.
+                  Descubre aplicaciones innovadoras de datos satelitales para la gestión sostenible del agua.
                </p>
                <span class="count-number">04</span>
             </div>
@@ -268,9 +280,9 @@
           <div class="col-lg-4 col-md-6 col-xs-12">
             <div class="single-intro-text mb-70">
                <i class="lni-cup"></i>
-               <h3>Networking Session</h3>
+               <h3>Sesiones de Networking</h3>
                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus mollitia, excepturi.
+                  Oportunidades para conectar con académicos, empresas y organizaciones del sector espacial y ambiental.
                </p>
                <span class="count-number">05</span>
             </div>
@@ -278,9 +290,9 @@
           <div class="col-lg-4 col-md-6 col-xs-12">
             <div class="single-intro-text mb-70">
                <i class="lni-gallery"></i>
-               <h3>Meet New Faces</h3>
+               <h3>Visitas Técnicas</h3>
                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus mollitia, excepturi.
+                  Recorridos a instalaciones clave para la gestión del agua en la región fronteriza Sonora-Arizona.
                </p>
                <span class="count-number">06</span>
             </div>
@@ -326,7 +338,7 @@
               </div>
               <div class="counter-content">
                 <div class="counterUp">24</div>
-                <p>Sponsors</p>
+                <p>Aliados</p>
               </div>
             </div>
           </div>
@@ -338,7 +350,7 @@
               </div>
               <div class="counter-content">
                 <div class="counterUp">56</div>
-                <p>Sessions</p>
+                <p>Sesiones</p>
               </div>
             </div>
           </div>
@@ -353,8 +365,8 @@
         <div class="row">
           <div class="col-12">
             <div class="section-title-header text-center">
-              <h2 class="section-title wow fadeInUp" data-wow-delay="0.2s">Event Schedules</h2>
-              <p class="wow fadeInDown" data-wow-delay="0.2s">Lorem ipsum dolor sit amet, in quodsi vulputate pro. Ius illum vocent mediocritatem an <br> cule dicta iriure at phaedrum.</p>
+              <h2 class="section-title wow fadeInUp" data-wow-delay="0.2s">Programa del Coloquio</h2>
+              <p class="wow fadeInDown" data-wow-delay="0.2s">Distribución de actividades, talleres y conferencias <br> por fases y sedes binacionales.</p>
             </div>
           </div>
         </div>
@@ -362,34 +374,34 @@
           <div class="col-12 mb-5 text-center">
             <ul class="nav nav-tabs" id="myTab" role="tablist">
               <li class="nav-item">
-                <a class="nav-link active" id="monday-tab" data-toggle="tab" href="#monday" role="tab" aria-controls="monday" aria-expanded="true">
+                <a class="nav-link active" id="fase1-tab" data-toggle="tab" href="#fase1" role="tab" aria-controls="fase1" aria-expanded="true">
                   <div class="item-text">
-                    <h4>Day 01</h4>
-                    <h5>14 February 2020</h5>
+                    <h4>Fase I: Sonora</h4>
+                    <h5>12 noviembre 2025</h5>
                   </div>
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" id="tuesday-tab" data-toggle="tab" href="#tuesday" role="tab" aria-controls="tuesday">
+                <a class="nav-link" id="fase2-tab" data-toggle="tab" href="#fase2" role="tab" aria-controls="fase2">
                   <div class="item-text">
-                    <h4>Day 02</h4>
-                    <h5>15 February 2020</h5>
+                    <h4>Fase II: Arizona</h4>
+                    <h5>14 noviembre 2025</h5>
                   </div>
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" id="wednesday-tab" data-toggle="tab" href="#wednesday" role="tab" aria-controls="wednesday">
+                <a class="nav-link" id="fase3-tab" data-toggle="tab" href="#fase3" role="tab" aria-controls="fase3">
                   <div class="item-text">
-                    <h4>Day 03</h4>
-                    <h5>16 February 2020</h5>
+                    <h4>Reserva de Fechas</h4>
+                    <h5>2025-2026</h5>
                   </div>
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" id="thursday-tab" data-toggle="tab" href="#thursday" role="tab" aria-controls="thursday">
+                <a class="nav-link" id="recursos-tab" data-toggle="tab" href="#recursos" role="tab" aria-controls="recursos">
                   <div class="item-text">
-                    <h4>Day 04</h4>
-                    <h5>17 February 2020</h5>
+                    <h4>Recursos y Enlaces</h4>
+                    <h5>Recursos Hídricos NASA</h5>
                   </div>
                 </a>
               </li>
@@ -399,15 +411,15 @@
             <div class="schedule-area row wow fadeInDown" data-wow-delay="0.3s">
               <div class="schedule-tab-content col-12 clearfix">
                 <div class="tab-content" id="myTabContent">
-                  <div class="tab-pane fade show active" id="monday" role="tabpanel" aria-labelledby="monday-tab">
-                    <div id="accordion">
+                  <div class="tab-pane fade show active" id="fase1" role="tabpanel" aria-labelledby="fase1-tab">
+                    <div id="acordeon">
                       <div class="card">
-                        <div id="headingOne">
+                        <div id="encabezado1">
                           <div class="schedule-slot-time">
-                            <span> 9.30 - 10.30 AM</span>
-                            Workshop
+                            <span> 9.30 - 10.30</span>
+                            Conferencia
                           </div>
-                          <div class="collapsed card-header" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                          <div class="collapsed card-header" data-toggle="collapse" data-target="#colapso1" aria-expanded="false" aria-controls="colapso1">
                             <div class="images-box">
                               <img class="img-fluid" src="assets/img/speaker/speakers-1.jpg" alt="">
                             </div>                     
@@ -756,8 +768,8 @@
         <div class="row">
           <div class="col-12">
             <div class="section-title-header text-center">
-              <h2 class="section-title wow fadeInUp" data-wow-delay="0.2s">Our Speakers</h2>
-              <p class="wow fadeInDown" data-wow-delay="0.2s">Lorem ipsum dolor sit amet, in quodsi vulputate pro. Ius illum vocent mediocritatem an <br> cule dicta iriure at phaedrum.</p>
+              <h2 class="section-title wow fadeInUp" data-wow-delay="0.2s">Nuestros Ponentes</h2>
+              <p class="wow fadeInDown" data-wow-delay="0.2s">Expertos internacionales en ciencia espacial y sostenibilidad ambiental que compartirán <br> su conocimiento durante el III Coloquio Internacional.</p>
             </div>
           </div>
         </div>
@@ -803,7 +815,7 @@
               </div>
               <div class="info-text">
                 <h3><a href="#">Patric Green</a></h3>
-                <p>Front-end Developer</p>
+                <p>Especialista en Teledetección, NASA</p>
               </div>
             </div>
             <!-- Team Item Ends -->
@@ -963,18 +975,18 @@
       <div class="container-fluid">
 <div class="contact-block">
 <div class="text-center">
-                  <h2>You are using Free Version</h2>
-                  <h4>Please, purchase full version to get all features and pages</h4><br>
-                  <b>Including:</b>
-                  <p>- Different Homepage Variations</p>
-                  <p>- All Elements and Features</p>
-                  <p>- Documentation File</p>
-                  <p>- Quick Support</p>
-                  <p>- Permission to Use in Commercial Projects</p>
-                  <p>- Footer Credit Removal</p>
-                  <p>- Working Contact Form</p>
+                  <h2>Únete al Coloquio Internacional</h2>
+                  <h4>Inscríbete para recibir actualizaciones sobre el evento</h4><br>
+                  <b>Beneficios de participar:</b>
+                  <p>- Acceso a talleres prácticos con expertos NASA</p>
+                  <p>- Materiales exclusivos sobre teledetección</p>
+                  <p>- Certificado de asistencia</p>
+                  <p>- Networking con instituciones binacionales</p>
+                  <p>- Participación en proyectos de ciencia ciudadana</p>
+                  <p>- Recursos sobre gestión de recursos hídricos</p>
+                  <p>- Acceso a datos de observación terrestre</p>
                   <br>
-                  <a href="https://rebrand.ly/eventup-purchase-ud" target="_blank" class="btn btn-common btn-lg">Purchase Now</a>
+                  <a href="#contact" class="btn btn-common btn-lg">Registrarse Ahora</a>
 </div>
               </div>      </div>
     </section>
@@ -986,8 +998,8 @@
         <div class="row">
           <div class="col-12">
             <div class="section-title-header text-center">
-              <h2 class="section-title wow fadeInUp" data-wow-delay="0.2s">Upcoming Events</h2>
-              <p class="wow fadeInDown" data-wow-delay="0.2s">Lorem ipsum dolor sit amet, in quodsi vulputate pro. Ius illum vocent mediocritatem an <br> cule dicta iriure at phaedrum.</p>
+              <h2 class="section-title wow fadeInUp" data-wow-delay="0.2s">Próximas Actividades</h2>
+              <p class="wow fadeInDown" data-wow-delay="0.2s">Conoce las actividades programadas para las diferentes sedes del III Coloquio <br> Internacional de Espacio y Sostenibilidad 2025.</p>
             </div>
           </div>
         </div>
@@ -997,8 +1009,8 @@
               <img class="img-fluid" src="assets/img/event/img1.jpg" alt="">
               <div class="overlay-text">
                 <div class="content">
-                  <h3>Business Confrence</h3>
-                  <a href="#">View details</a>
+                  <h3>Conferencia Fase I</h3>
+                  <a href="#">Ver detalles</a>
                 </div>
               </div>
             </div>
@@ -1008,8 +1020,8 @@
               <img class="img-fluid" src="assets/img/event/img2.jpg" alt="">
               <div class="overlay-text">
                 <div class="content">
-                  <h3>Designer Confrence</h3>
-                  <a href="#">View details</a>
+                  <h3>Conferencia Fase II</h3>
+                  <a href="#">Ver detalles</a>
                 </div>
               </div>
             </div>
@@ -1019,8 +1031,8 @@
               <img class="img-fluid" src="assets/img/event/img3.jpg" alt="">
               <div class="overlay-text">
                 <div class="content">
-                  <h3>Marketer Confrence</h3>
-                  <a href="#">View details</a>
+                  <h3>Mesas de Trabajo</h3>
+                  <a href="#">Ver detalles</a>
                 </div>
               </div>
             </div>
@@ -1030,8 +1042,8 @@
               <img class="img-fluid" src="assets/img/event/img4.jpg" alt="">
               <div class="overlay-text">
                 <div class="content">
-                  <h3>JS Confrence</h3>
-                  <a href="#">View details</a>
+                  <h3>Presentación Final</h3>
+                  <a href="#">Ver detalles</a>
                 </div>
               </div>
             </div>
@@ -1039,7 +1051,7 @@
         </div>
         <div class="row mt-5">
           <div class="col-12 text-center">
-            <a href="#" class="btn btn-common">More Event</a>
+            <a href="#" class="btn btn-common">Más Eventos</a>
           </div>
         </div>
       </div>
@@ -1052,8 +1064,8 @@
         <div class="row">
           <div class="col-12">
             <div class="section-title-header text-center">
-              <h2 class="section-title wow fadeInUp" data-wow-delay="0.2s">Ticket Pricing</h2>
-              <p class="wow fadeInDown" data-wow-delay="0.2s">Lorem ipsum dolor sit amet, in quodsi vulputate pro. Ius illum vocent mediocritatem an <br> cule dicta iriure at phaedrum.</p>
+              <h2 class="section-title wow fadeInUp" data-wow-delay="0.2s">Registro</h2>
+              <p class="wow fadeInDown" data-wow-delay="0.2s">El III Coloquio Internacional de Espacio y Sostenibilidad ofrece diferentes modalidades de participación <br> adaptadas a las necesidades de los asistentes.</p>
             </div>
           </div>
         </div>
@@ -1061,64 +1073,64 @@
           <div class="col-lg-4 col-md-6 col-xa-12 mb-3">
             <div class="price-block-wrapper wow fadeInLeft" data-wow-delay="0.2s">
               <div class="colmun-title">
-                <h5>Basic Pass</h5>
+                <h5>Acceso Básico</h5>
               </div>
               <div class="price">
-                <h2>$29</h2>
-                <span>Per Day</span>
+                <h2>$600</h2>
+                <span>MXN por Día</span>
               </div>
               <div class="pricing-list">
                 <ul>
-                  <li><i class="lni-check-mark-circle"></i><span class="text">Entrance</span></li>
-                  <li><i class="lni-check-mark-circle"></i><span class="text">Coffee Break</span></li>
-                  <li><i class="lni-check-mark-circle"></i><span class="text">Lunch on all days</span></li>
-                  <li><i class="lni-close"></i><span class="text">Access to all areas</span></li>
-                  <li><i class="lni-close"></i><span class="text">Certificate</span></li>
+                  <li><i class="lni-check-mark-circle"></i><span class="text">Entrada General</span></li>
+                  <li><i class="lni-check-mark-circle"></i><span class="text">Pausa Café</span></li>
+                  <li><i class="lni-check-mark-circle"></i><span class="text">Comida diaria</span></li>
+                  <li><i class="lni-close"></i><span class="text">Acceso a todas las áreas</span></li>
+                  <li><i class="lni-close"></i><span class="text">Certificado</span></li>
                 </ul>
               </div>
-              <a href="#" class="btn btn-common">Buy Ticket</a>
+              <a href="#" class="btn btn-common">Registrarse</a>
             </div>
           </div>
           <div class="col-lg-4 col-md-6 col-xa-12 mb-3">
             <div class="price-block-wrapper active wow fadeInUp" data-wow-delay="0.3s">
               <div class="colmun-title">
-                <h5>Standard Pass</h5>
+                <h5>Acceso Estándar</h5>
               </div>
               <div class="price">
-                <h2>$40</h2>
-                <span>Per Day</span>
+                <h2>$900</h2>
+                <span>MXN por Día</span>
               </div>
               <div class="pricing-list">
                 <ul>
-                  <li><i class="lni-check-mark-circle"></i><span class="text">Entrance</span></li>
-                  <li><i class="lni-check-mark-circle"></i><span class="text">Coffee Break</span></li>
-                  <li><i class="lni-check-mark-circle"></i><span class="text">Lunch on all days</span></li>
-                  <li><i class="lni-close"></i><span class="text">Access to all areas</span></li>
-                  <li><i class="lni-check-mark-circle"></i><span class="text">Certificate</span></li>
+                  <li><i class="lni-check-mark-circle"></i><span class="text">Entrada General</span></li>
+                  <li><i class="lni-check-mark-circle"></i><span class="text">Pausa Café</span></li>
+                  <li><i class="lni-check-mark-circle"></i><span class="text">Comida diaria</span></li>
+                  <li><i class="lni-close"></i><span class="text">Acceso a todas las áreas</span></li>
+                  <li><i class="lni-check-mark-circle"></i><span class="text">Certificado</span></li>
                 </ul>
               </div>
-              <a href="#" class="btn btn-common">Buy Ticket</a>
+              <a href="#" class="btn btn-common">Registrarse</a>
             </div>
           </div>
           <div class="col-lg-4 col-md-6 col-xa-12 mb-3">
             <div class="price-block-wrapper wow fadeInRight" data-wow-delay="0.4s">
               <div class="colmun-title">
-                <h5>Premium Pass</h5>
+                <h5>Acceso Investigadores</h5>
               </div>
               <div class="price">
-                <h2>$68</h2>
-                <span>Per Day</span>
+                <h2>$1500</h2>
+                <span>MXN por Día</span>
               </div>
               <div class="pricing-list">
                 <ul>
-                  <li><i class="lni-check-mark-circle"></i><span class="text">Entrance</span></li>
-                  <li><i class="lni-check-mark-circle"></i><span class="text">Coffee Break</span></li>
-                  <li><i class="lni-close"></i><span class="text">Lunch on all days</span></li>
-                  <li><i class="lni-check-mark-circle"></i><span class="text">Access to all areas</span></li>
-                  <li><i class="lni-check-mark-circle"></i><span class="text">Certificate</span></li>
+                  <li><i class="lni-check-mark-circle"></i><span class="text">Entrada VIP</span></li>
+                  <li><i class="lni-check-mark-circle"></i><span class="text">Pausa Café</span></li>
+                  <li><i class="lni-check-mark-circle"></i><span class="text">Comidas gourmet</span></li>
+                  <li><i class="lni-check-mark-circle"></i><span class="text">Acceso a todas las áreas</span></li>
+                  <li><i class="lni-check-mark-circle"></i><span class="text">Certificado</span></li>
                 </ul>
               </div>
-              <a href="#" class="btn btn-common">Buy Ticket</a>
+              <a href="#" class="btn btn-common">Registrarse</a>
             </div>
           </div>
         </div>
@@ -1132,8 +1144,8 @@
         <div class="row">
           <div class="col-12">
             <div class="section-title-header text-center">
-              <h2 class="section-title wow fadeInUp" data-wow-delay="0.2s">Latest News</h2>
-              <p class="wow fadeInDown" data-wow-delay="0.2s">Lorem ipsum dolor sit amet, in quodsi vulputate pro. Ius illum vocent mediocritatem an <br> cule dicta iriure at phaedrum.</p>
+              <h2 class="section-title wow fadeInUp" data-wow-delay="0.2s">Últimas Noticias</h2>
+              <p class="wow fadeInDown" data-wow-delay="0.2s">Mantente al día con las novedades, anuncios y avances sobre <br> el III Coloquio Internacional de Espacio y Sostenibilidad.</p>
             </div>
           </div>
         </div>
@@ -1151,14 +1163,14 @@
                 </div>
                 <h3 class="title">
                   <a href="#">
-                    Learn Something New
+                    Convocatoria de Ponencias
                   </a>
                 </h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipsing elit, sed do eiusmodincididunt ut labore et dolore</p>
+                <p>Invitación a investigadores y profesionales para presentar ponencias sobre tecnología espacial aplicada a la gestión del agua</p>
               </div>
               <div class="meta-tags">
-                <span class="date"><i class="lni-calendar"></i> Jan 20, 2020</span> 
-                <span class="comments"><i class="lni-comment-alt"></i> <a href="#"> 0 Comment</a></span>
+                <span class="date"><i class="lni-calendar"></i> 15 Junio, 2025</span> 
+                <span class="comments"><i class="lni-comment-alt"></i> <a href="#"> 0 Comentarios</a></span>
               </div>
             </div>
           </div>
@@ -1175,14 +1187,14 @@
                 </div>
                 <h3 class="title">
                   <a href="#">
-                    Call for sponsors
+                    Convocatoria para Aliados
                   </a>
                 </h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipsing elit, sed do eiusmodincididunt ut labore et dolore</p>
+                <p>Buscamos organizaciones comprometidas con la innovación espacial y la sostenibilidad para colaborar en este evento internacional</p>
               </div>
               <div class="meta-tags">
-                <span class="date"><i class="lni-calendar"></i> Jan 20, 2020</span> 
-                <span class="comments"><i class="lni-comment-alt"></i> <a href="#"> 0 Comment</a></span>
+                <span class="date"><i class="lni-calendar"></i> 10 Junio, 2025</span> 
+                <span class="comments"><i class="lni-comment-alt"></i> <a href="#"> 0 Comentarios</a></span>
               </div>
             </div>
           </div>
@@ -1199,19 +1211,19 @@
                 </div>
                 <h3 class="title">
                   <a href="#">
-                    Elon Musk joining the event
+                    Programa Preliminar Disponible
                   </a>
                 </h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipsing elit, sed do eiusmodincididunt ut labore et dolore</p>
+                <p>Ya puede consultarse la agenda preliminar del coloquio con las actividades en Hermosillo y Tucson, incluyendo ponentes confirmados</p>
               </div>
               <div class="meta-tags">
-                <span class="date"><i class="lni-calendar"></i> Jan 20, 2020</span> 
-                <span class="comments"><i class="lni-comment-alt"></i> <a href="#"> 0 Comment</a></span>
+                <span class="date"><i class="lni-calendar"></i> 20 Junio, 2025</span> 
+                <span class="comments"><i class="lni-comment-alt"></i> <a href="#"> 0 Comentarios</a></span>
               </div>
             </div>
           </div>
           <div class="col-12 text-center">
-            <a href="#" class="btn btn-common">View all Blog</a>
+            <a href="#" class="btn btn-common">Ver Todas las Noticias</a>
           </div>
         </div>
       </div>
@@ -1225,8 +1237,8 @@
         <div class="row">
           <div class="col-12">
             <div class="section-title-header text-center">
-              <h2 class="section-title wow fadeInUp" data-wow-delay="0.2s">Sponsors</h2>
-              <p class="wow fadeInDown" data-wow-delay="0.2s">Lorem ipsum dolor sit amet, in quodsi vulputate pro. Ius illum vocent mediocritatem an <br> cule dicta iriure at phaedrum.</p>
+              <h2 class="section-title wow fadeInUp" data-wow-delay="0.2s">Aliados</h2>
+              <p class="wow fadeInDown" data-wow-delay="0.2s">Organizaciones e instituciones que hacen posible el III Coloquio Internacional <br> de Espacio y Sostenibilidad 2025.</p>
             </div>
           </div>
         </div>
@@ -1242,7 +1254,7 @@
                <a href=""><img src="assets/img/sponsors/logo-7.png" alt=""></a>
                <a href=""><img src="assets/img/sponsors/logo-8.png" alt=""></a>
                <a href=""><img src="assets/img/sponsors/logo-9.png" alt=""></a>
-            </div><!-- sponsors logo end-->
+            </div><!-- logos aliados fin-->
          </div>
         </div>
       </div>
@@ -1255,8 +1267,8 @@
         <div class="row">
           <div class="col-12">
             <div class="section-title-header text-center">
-              <h2 class="section-title wow fadeInUp" data-wow-delay="0.2s">Contact Us</h2>
-              <p class="wow fadeInDown" data-wow-delay="0.2s">Lorem ipsum dolor sit amet, in quodsi vulputate pro. Ius illum vocent mediocritatem an <br> cule dicta iriure at phaedrum.</p>
+              <h2 class="section-title wow fadeInUp" data-wow-delay="0.2s">Contacto</h2>
+              <p class="wow fadeInDown" data-wow-delay="0.2s">Para más información sobre el III Coloquio Internacional de Espacio y Sostenibilidad <br> puede contactarnos a través de los siguientes medios.</p>
             </div>
           </div>
         </div>
@@ -1268,28 +1280,28 @@
                   <div class="row">
                     <div class="col-md-6 form-line">
                       <div class="form-group">
-                        <input type="text" class="form-control" id="name" name="email" placeholder="First Name" required data-error="Please enter your name">
+                        <input type="text" class="form-control" id="name" name="email" placeholder="Nombre" required data-error="Por favor ingresa tu nombre">
                         <div class="help-block with-errors"></div>
                       </div>
                     </div>
                     <div class="col-md-6 form-line">
                       <div class="form-group">
-                        <input type="email" class="form-control" id="email" name="email" placeholder="Email" required data-error="Please enter your Email">
+                        <input type="email" class="form-control" id="email" name="email" placeholder="Correo Electrónico" required data-error="Por favor ingresa tu correo electrónico">
                         <div class="help-block with-errors"></div>
                       </div> 
                     </div>
                     <div class="col-md-12 form-line">
                       <div class="form-group">
-                        <input type="tel" class="form-control" id="msg_subject" name="subject" placeholder="Subject" required data-error="Please enter your message subject">
+                        <input type="tel" class="form-control" id="msg_subject" name="subject" placeholder="Asunto" required data-error="Por favor ingresa el asunto de tu mensaje">
                         <div class="help-block with-errors"></div>
                       </div>
                     </div>
                     <div class="col-md-12">
                       <div class="form-group">
-                        <textarea class="form-control" rows="4" id="message" name="message" required data-error="Write your message"></textarea>
+                        <textarea class="form-control" rows="4" id="message" name="message" placeholder="Mensaje" required data-error="Por favor escribe tu mensaje"></textarea>
                       </div>
                       <div class="form-submit">
-                        <button type="submit" class="btn btn-common" id="form-submit"><i class="fa fa-paper-plane" aria-hidden="true"></i>  Send Message</button>
+                        <button type="submit" class="btn btn-common" id="form-submit"><i class="fa fa-paper-plane" aria-hidden="true"></i>  Enviar Mensaje</button>
                         <div id="msgSubmit" class="h3 text-center hidden"></div>
                       </div>
                     </div>
@@ -1324,7 +1336,7 @@
               <li>
                 <i class="lni-home"></i>
               </li>
-              <li><span>Cesare Rosaroll, 118 80139 Eventine</li>
+              <li><span>Universidad de Sonora, Hermosillo, Sonora, México</span></li>
             </ul>
           </div>
           <div class="col-lg-4 col-md-3 col-xs-12">
@@ -1332,7 +1344,7 @@
               <li>
                 <i class="lni-phone"></i>
               </li>
-              <li><span>+789 123 456 79</span></li>
+              <li><span>+52 662 123 4567</span></li>
             </ul>
           </div>
           <div class="col-lg-4 col-md-3 col-xs-12">
@@ -1340,7 +1352,7 @@
               <li>
                 <i class="lni-envelope"></i>
               </li>
-              <li><span>Support@example.com</span></li>
+              <li><span>coloquio@espaciosustentable.org</span></li>
             </ul>
           </div>
         </div>
@@ -1353,16 +1365,16 @@
         <div class="row justify-content-center">
           <div class="col-lg-8 col-md-12 col-xs-12">
             <div class="subscribe-inner wow fadeInDown" data-wow-delay="0.3s">
-              <h2 class="subscribe-title">To Get Nearly Updates</h2>
+              <h2 class="subscribe-title">Recibe Actualizaciones</h2>
               <form class="text-center form-inline">
-                <input class="mb-20 form-control" name="email" placeholder="Enter Your Email Here">
+                <input class="mb-20 form-control" name="email" placeholder="Ingresa Tu Correo Electrónico">
                 <button type="submit" class="btn btn-common sub-btn" data-style="zoom-in" data-spinner-size="30" name="submit" id="submit">
-                  <span class="ladda-label"><i class="lni-check-box"></i> Subscribe</span>
+                  <span class="ladda-label"><i class="lni-check-box"></i> Suscribirse</span>
                 </button>
               </form>
             </div>
             <div class="footer-logo">
-              <img src="assets/img/logo.png" alt="">
+              <img src="assets/img/logoblanco.png" alt="Logo Coloquio Espacio y Sostenibilidad" style="width: 75%;">
             </div>
             <div class="social-icons-footer">
               <ul>
@@ -1372,7 +1384,7 @@
               </ul>
             </div>
             <div class="site-info">
-              <p>Designed and Developed by <a href="http://uideck.com" rel="nofollow">UIdeck</a></p>
+              <p>III Coloquio Internacional de Espacio y Sostenibilidad 2025</p>
             </div>
           </div>
         </div>

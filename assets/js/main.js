@@ -1,31 +1,46 @@
 (function($) {
   
-  "use strict";  
+  "use strict";
+    // Función para manejar el cambio de logo según la posición del scroll
+  function updateNavbarLogo() {
+    var timestamp = new Date().getTime(); // Timestamp para evitar cacheo
+    if ($(window).scrollTop() > 200) {
+      $('.scrolling-navbar').addClass('top-nav-collapse');
+      $('.navbar-brand img').attr('src', 'assets/img/logo.png?' + timestamp); // Logo negro
+    } else {
+      $('.scrolling-navbar').removeClass('top-nav-collapse');
+      $('.navbar-brand img').attr('src', 'assets/img/logoblanco.png?' + timestamp); // Logo blanco
+    }
+  }
+  
+  // Ejecutar cuando el DOM esté listo (antes de cargar imágenes y otros recursos)
+  $(document).ready(function() {
+    // Forzar logo blanco al inicio
+    $('.navbar-brand img').attr('src', 'assets/img/logoblanco.png');
+    // Comprobar inmediatamente la posición del scroll
+    updateNavbarLogo();
+  });
 
   $(window).on('load', function() {
-
-  /*Page Loader active
-    ========================================================*/
+    // Ocultar precargador cuando la página esté completamente cargada
     $('#preloader').fadeOut();
-
-  // Sticky Nav
+    
+    // Verificar nuevamente el logo cuando todo esté cargado
+    updateNavbarLogo();
+    
+    // Configurar el evento de scroll
     $(window).on('scroll', function() {
-        if ($(window).scrollTop() > 200) {
-            $('.scrolling-navbar').addClass('top-nav-collapse');
-        } else {
-            $('.scrolling-navbar').removeClass('top-nav-collapse');
-        }
+      updateNavbarLogo();
     });
 
     /* ==========================================================================
        countdown timer
-       ========================================================================== */
-     jQuery('#clock').countdown('2020/2/21',function(event){
+       ========================================================================== */     jQuery('#clock').countdown('2025/11/15',function(event){
       var $this=jQuery(this).html(event.strftime(''
-      +'<div class="time-entry days"><span>%-D</span> <b>:</b> Days</div> '
-      +'<div class="time-entry hours"><span>%H</span> <b>:</b> Hours</div> '
-      +'<div class="time-entry minutes"><span>%M</span> <b>:</b> Minutes</div> '
-      +'<div class="time-entry seconds"><span>%S</span> Seconds</div> '));
+      +'<div class="time-entry days"><span>%-D</span> <b>:</b> Días</div> '
+      +'<div class="time-entry hours"><span>%H</span> <b>:</b> Horas</div> '
+      +'<div class="time-entry minutes"><span>%M</span> <b>:</b> Minutos</div> '
+      +'<div class="time-entry seconds"><span>%S</span> Segundos</div> '));
     });
 
     /* Auto Close Responsive Navbar on Click
