@@ -26,7 +26,7 @@ class LanguageManager {
       this.applyLanguage(this.currentLanguage);
       
       this.isInitialized = true;
-      console.log('Language Manager initialized successfully');
+      // Language Manager initialized successfully
     } catch (error) {
       console.error('Error initializing Language Manager:', error);
     }
