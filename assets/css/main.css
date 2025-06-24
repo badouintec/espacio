@@ -10,6 +10,51 @@
   --focus-ring: rgba(79,174,232,.6);
 }
 
+/* Skip Links for Accessibility */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 6px;
+  z-index: 10000;
+  background: var(--space-navy);
+  color: white;
+  padding: 8px 16px;
+  text-decoration: none;
+  border-radius: 0 0 4px 4px;
+  font-weight: 600;
+  transition: top 0.3s;
+}
+
+.skip-link:focus {
+  top: 0;
+  color: white;
+  text-decoration: none;
+}
+
+.sr-only {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+
+.sr-only-focusable:active,
+.sr-only-focusable:focus {
+  position: static !important;
+  width: auto !important;
+  height: auto !important;
+  padding: inherit !important;
+  margin: inherit !important;
+  overflow: visible !important;
+  clip: auto !important;
+  white-space: inherit !important;
+}
+
 html {
   overflow-x: hidden;
 }
@@ -107,7 +152,7 @@ ul li, ol li {
 }
 
 .section-title-header p {
-  text: center;
+  text-align: center;
   font-weight: 400;
   line-height: 26px;
   padding-bottom: 36px;
@@ -138,7 +183,7 @@ ul li, ol li {
 
 .section-subcontent {
   font-size: 16px;
-  text: center;
+  text-align: center;
   font-weight: 400;
   line-height: 26px;
   padding-bottom: 36px;
@@ -175,7 +220,7 @@ ul li, ol li {
 .inner-title {
   font-size: 24px;
   font-weight: 700;
-  text-tranform: capitalize;
+  text-transform: capitalize;
 }
 
 .page-tagline {
@@ -781,8 +826,7 @@ a.back-to-top:hover, a.back-to-top:focus {
   color: #212121;
   border-bottom: 1px solid #f1f1f1;
   text-decoration: none;
-  display: inline-block;
-  float: left;
+  display: block;
   clear: both;
   position: relative;
   outline: 0;
@@ -1513,7 +1557,6 @@ h1 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  text-fill-color: transparent;
 }
 
 /* Gallery Section */
@@ -1579,6 +1622,7 @@ h1 {
   -moz-transform: scale(1, 1);
   -ms-transform: scale(1, 1);
   -o-transform: scale(1, 1);
+  transform: scale(1, 1);
 }
 
 /* Team Item */
@@ -2129,7 +2173,7 @@ footer {
 .subscribe-inner .subscribe-title {
   color: #fff;
   font-size: 26px;
-  text-center: center;
+  text-align: center;
   margin-bottom: 50px;
   position: relative;
 }
@@ -2212,7 +2256,7 @@ footer {
 }
 
 .time-entry {
-  display: inline-block;
+  display: block;
   margin: 15px 0;
   width: 24%;
   float: left;

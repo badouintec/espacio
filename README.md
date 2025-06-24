@@ -236,7 +236,6 @@ El coloquio retoma las experiencias de ediciones anteriores (Guadalajara 2023 y 
 - **No modificar** la estructura HTML existente sin autorización
 - **No agregar** nuevos archivos CSS o JS sin consultar
 - **Mantener** la consistencia en la paleta de colores definida
-- **Verificar** que no queden referencias a templates o contenido placeholder
 - **Testear** en dispositivos móviles y diferentes navegadores
 
 ### Próximos Hitos

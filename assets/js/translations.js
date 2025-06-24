@@ -75,6 +75,18 @@ const translations = {
         innovation: {
           title: "Innovación Tecnológica",
           description: "Conoce las últimas aplicaciones de tecnología satelital para sostenibilidad."
+        },
+        inspiration: {
+          title: "Inspírate",
+          description: "Descubre aplicaciones innovadoras de datos satelitales para la gestión sostenible del agua."
+        },
+        networking2: {
+          title: "Sesiones de Networking",
+          description: "Oportunidades para conectar con académicos, empresas y organizaciones del sector espacial y ambiental."
+        },
+        visits: {
+          title: "Visitas Técnicas", 
+          description: "Recorridos a instalaciones clave para la gestión del agua en la región fronteriza Sonora-Arizona."
         }
       }
     },
@@ -192,6 +204,42 @@ const translations = {
       }
     },
     
+    // Call to Action Section
+    callToAction: {
+      title: "Únete al Coloquio Internacional",
+      subtitle: "Inscríbete para recibir actualizaciones sobre el evento",
+      benefitsTitle: "Beneficios de participar:",
+      benefit1: "- Acceso a talleres prácticos con expertos NASA",
+      benefit2: "- Materiales exclusivos sobre teledetección",
+      benefit3: "- Certificado de asistencia",
+      benefit4: "- Networking con instituciones binacionales",
+      benefit5: "- Participación en proyectos de ciencia ciudadana",
+      benefit6: "- Recursos sobre gestión de recursos hídricos",
+      benefit7: "- Acceso a datos de observación terrestre",
+      registerBtn: "Registrarse Ahora"
+    },
+    
+    // Events Section
+    events: {
+      phase1: {
+        title: "Conferencia Fase I",
+        details: "Ver detalles"
+      },
+      phase2: {
+        title: "Conferencia Fase II", 
+        details: "Ver detalles"
+      },
+      workshops: {
+        title: "Mesas de Trabajo",
+        details: "Ver detalles"
+      },
+      presentation: {
+        title: "Presentación Final",
+        details: "Ver detalles"
+      },
+      moreBtn: "Más Eventos"
+    },
+    
     // Speakers/Team section
     speakers: {
       meetAll: "Conocer Todos los Ponentes",
@@ -231,6 +279,10 @@ const translations = {
         engineer2: {
           name: "M.C. Patricia González",
           role: "Especialista en Teledetección, COLPOS"
+        },
+        specialist2: {
+          name: "Dr. Patrick González",
+          role: "Especialista en Teledetección, NASA"
         },
         researcher3: {
           name: "Dr. Fernando López",
@@ -321,6 +373,18 @@ const translations = {
         innovation: {
           title: "Technological Innovation",
           description: "Learn about the latest satellite technology applications for sustainability."
+        },
+        inspiration: {
+          title: "Get Inspired",
+          description: "Discover innovative applications of satellite data for sustainable water management."
+        },
+        networking2: {
+          title: "Networking Sessions",
+          description: "Opportunities to connect with academics, companies and organizations in the space and environmental sector."
+        },
+        visits: {
+          title: "Technical Visits",
+          description: "Tours of key facilities for water management in the Sonora-Arizona border region."
         }
       }
     },
@@ -438,6 +502,42 @@ const translations = {
       }
     },
     
+    // Call to Action Section
+    callToAction: {
+      title: "Join the International Symposium",
+      subtitle: "Sign up to receive updates about the event",
+      benefitsTitle: "Benefits of participating:",
+      benefit1: "- Access to hands-on workshops with NASA experts",
+      benefit2: "- Exclusive materials on remote sensing",
+      benefit3: "- Certificate of attendance",
+      benefit4: "- Networking with binational institutions",
+      benefit5: "- Participation in citizen science projects",
+      benefit6: "- Water resource management resources",
+      benefit7: "- Access to Earth observation data",
+      registerBtn: "Register Now"
+    },
+    
+    // Events Section
+    events: {
+      phase1: {
+        title: "Phase I Conference",
+        details: "View details"
+      },
+      phase2: {
+        title: "Phase II Conference", 
+        details: "View details"
+      },
+      workshops: {
+        title: "Working Sessions",
+        details: "View details"
+      },
+      presentation: {
+        title: "Final Presentation",
+        details: "View details"
+      },
+      moreBtn: "More Events"
+    },
+    
     // Speakers/Team section
     speakers: {
       meetAll: "Meet All Speakers",
@@ -477,6 +577,10 @@ const translations = {
         engineer2: {
           name: "M.Sc. Patricia González",
           role: "Remote Sensing Specialist, COLPOS"
+        },
+        specialist2: {
+          name: "Dr. Patrick González",
+          role: "Remote Sensing Specialist, NASA"
         },
         researcher3: {
           name: "Dr. Fernando López",

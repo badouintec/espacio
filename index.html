@@ -34,6 +34,9 @@
     <link rel="icon" type="image/png" href="assets/img/favi.png">
     <link rel="shortcut icon" type="image/png" href="assets/img/favi.png">
     
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="manifest.json">
+    
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css" >
     <!-- Icon -->
@@ -50,12 +53,17 @@
     <!-- Preload logo images to ensure they're available immediately -->
     <link rel="preload" href="assets/img/logoblanco.png" as="image">
     <link rel="preload" href="assets/img/logo.png" as="image">
+    <link rel="preload" href="assets/img/fondo1-optimized.jpg" as="image">
     
     <!-- Preconnect to Google Fonts for better performance -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   </head>
   <body>
+    <!-- Skip Links for Accessibility -->
+    <a href="#main-content" class="skip-link sr-only sr-only-focusable">Ir al contenido principal</a>
+    <a href="#navigation" class="skip-link sr-only sr-only-focusable">Ir a la navegación</a>
+    
     <!-- Script para establecer el logo inmediatamente -->
     <script>
       document.addEventListener('DOMContentLoaded', function() {
@@ -69,7 +77,7 @@
     <!-- Header Area wrapper Starts -->
     <header id="header-wrap">
       <!-- Navbar Start -->
-      <nav class="navbar navbar-expand-lg bg-inverse fixed-top scrolling-navbar">
+      <nav class="navbar navbar-expand-lg bg-inverse fixed-top scrolling-navbar" id="navigation" role="navigation" aria-label="Navegación principal">
         <div class="container">
           <!-- Brand and toggle get grouped for better mobile display -->
           <a href="index.html" class="navbar-brand"><img src="assets/img/logoblanco.png" alt="Logo Coloquio Internacional de Espacio y Sostenibilidad"></a>       
@@ -158,6 +166,9 @@
     </header>
     <!-- Header Area wrapper End -->
 
+    <!-- Main Content Start -->
+    <main id="main-content">
+
     <!-- Count Bar Start -->
     <section id="count">
       <div class="container">
@@ -180,7 +191,7 @@
         <div class="row">
           <div class="col-lg-6 col-md-12 col-xs-12">
             <div class="img-thumb">
-              <img class="img-fluid" src="assets/img/about/img1-optimized.jpg" alt="Satélite tecnológico espacial para monitoreo de recursos hídricos y sostenibilidad ambiental">
+              <img class="img-fluid" src="assets/img/about/img1-optimized.jpg" alt="Satélite tecnológico espacial para monitoreo de recursos hídricos y sostenibilidad ambiental" loading="lazy">
             </div>
           </div>
           <div class="col-lg-6 col-md-12 col-xs-12">
@@ -209,7 +220,9 @@
     <!-- Video Section Start -->
     <div class="ready-to-play">
       <video id="bgvid" class="stop" loop>
-        <source src="assets/video/event.webm" type="video/mp4">
+        <source src="assets/video/event.webm" type="video/webm">
+        <source src="assets/video/event.mp4" type="video/mp4">
+        Tu navegador no soporta el elemento de video.
       </video>
       <div id="polina" class="video-text">
         <div class="tb-t">
@@ -308,8 +321,8 @@
           <div class="col-lg-4 col-md-6 col-xs-12">
             <div class="single-intro-text mb-70">
                <i class="lni-heart"></i>
-               <h3>Inspírate</h3>
-               <p>
+               <h3 data-lang="intro.features.inspiration.title">Inspírate</h3>
+               <p data-lang="intro.features.inspiration.description">
                   Descubre aplicaciones innovadoras de datos satelitales para la gestión sostenible del agua.
                </p>
                <span class="count-number">04</span>
@@ -318,8 +331,8 @@
           <div class="col-lg-4 col-md-6 col-xs-12">
             <div class="single-intro-text mb-70">
                <i class="lni-cup"></i>
-               <h3>Sesiones de Networking</h3>
-               <p>
+               <h3 data-lang="intro.features.networking2.title">Sesiones de Networking</h3>
+               <p data-lang="intro.features.networking2.description">
                   Oportunidades para conectar con académicos, empresas y organizaciones del sector espacial y ambiental.
                </p>
                <span class="count-number">05</span>
@@ -328,8 +341,8 @@
           <div class="col-lg-4 col-md-6 col-xs-12">
             <div class="single-intro-text mb-70">
                <i class="lni-gallery"></i>
-               <h3>Visitas Técnicas</h3>
-               <p>
+               <h3 data-lang="intro.features.visits.title">Visitas Técnicas</h3>
+               <p data-lang="intro.features.visits.description">
                   Recorridos a instalaciones clave para la gestión del agua en la región fronteriza Sonora-Arizona.
                </p>
                <span class="count-number">06</span>
@@ -459,7 +472,7 @@
                           </div>
                           <div class="collapsed card-header" data-toggle="collapse" data-target="#colapso1" aria-expanded="false" aria-controls="colapso1">
                             <div class="images-box">
-                              <img class="img-fluid" src="assets/img/speaker/speakers-1.jpg" alt="Dra. María González - Ceremonia de Apertura del III Coloquio Internacional">
+                              <img class="img-fluid" src="assets/img/speaker/speakers-1.jpg" alt="Dra. María González - Ceremonia de Apertura del III Coloquio Internacional" loading="lazy">
                             </div>                     
                             <h4 data-lang="program.events.opening.title">Ceremonia de Apertura</h4>
                             <h5 class="name" data-lang="program.events.opening.speaker">Dra. María González</h5>
@@ -505,7 +518,7 @@
                           </div>
                           <div class="collapsed card-header" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                             <div class="images-box">
-                              <img class="img-fluid" src="assets/img/speaker/speakers-3.jpg" alt="">
+                              <img class="img-fluid" src="assets/img/speaker/speakers-3.jpg" alt="Dr. Elena Martínez - Especialista en Teledetección Forestal CONABIO" loading="lazy">
                             </div>
                             <h4 data-lang="program.events.workshop1.title">Taller: Procesamiento de Datos Satelitales</h4>
                             <h5 class="name" data-lang="program.events.workshop1.speaker">Ing. Patricia López</h5>
@@ -532,7 +545,7 @@
                           </div>
                           <div class="collapsed card-header" data-toggle="collapse" data-target="#collapseOne2" aria-expanded="false" aria-controls="collapseOne2">
                             <div class="images-box">
-                              <img class="img-fluid" src="assets/img/speaker/speakers-2.jpg" alt="">
+                              <img class="img-fluid" src="assets/img/speaker/speakers-2.jpg" alt="Dr. Carmen López - Investigadora Cambio Climático UNAM" loading="lazy">
                             </div>
                             <h4 data-lang="program.events.session2.title">Gestión Sustentable de Acuíferos Transfronterizos</h4>
                             <h5 class="name" data-lang="program.events.session2.speaker">Dr. Michael Johnson</h5>
@@ -555,7 +568,7 @@
                           </div>
                           <div class="collapsed card-header" data-toggle="collapse" data-target="#collapseTwo2" aria-expanded="false" aria-controls="collapseTwo2">
                             <div class="images-box">
-                              <img class="img-fluid" src="assets/img/speaker/speakers-1.jpg" alt="">
+                              <img class="img-fluid" src="assets/img/speaker/speakers-1.jpg" alt="Panel de Expertos en Cooperación Internacional" loading="lazy">
                             </div>
                             <h4 data-lang="program.events.panel1.title">Panel: Cooperación Internacional en Recursos Hídricos</h4>
                             <h5 class="name" data-lang="program.events.panel1.speaker">Panel de Expertos</h5>
@@ -582,7 +595,7 @@
                           </div>
                           <div class="collapsed card-header" data-toggle="collapse" data-target="#collapseOne3" aria-expanded="false" aria-controls="collapseOne3">
                             <div class="images-box">
-                              <img class="img-fluid" src="assets/img/speaker/speakers-1.jpg" alt="">
+                              <img class="img-fluid" src="assets/img/speaker/speakers-1.jpg" alt="Dra. Elena Ramírez - Especialista en Cambio Climático" loading="lazy">
                             </div>
                             <h4 data-lang="program.events.session3.title">Cambio Climático y Recursos Hídricos</h4>
                             <h5 class="name" data-lang="program.events.session3.speaker">Dra. Elena Ramírez</h5>
@@ -684,7 +697,7 @@
             <!-- Team Item Starts -->
             <div class="team-item wow fadeInUp" data-wow-delay="0.4s">
               <div class="team-img">
-                <img class="img-fluid" src="assets/img/team/team-02.jpg" alt="">
+                <img class="img-fluid" src="assets/img/team/team-02.jpg" alt="Dra. Ana Rodríguez - Coordinadora de Programas CONAGUA" loading="lazy">
                 <div class="team-overlay">
                   <div class="overlay-social-icon text-center">
                     <ul class="social-icons">
@@ -697,8 +710,8 @@
                 </div>
               </div>
               <div class="info-text">
-                <h3><a href="#">Patric Green</a></h3>
-                <p>Especialista en Teledetección, NASA</p>
+                <h3><a href="#" data-lang="speakers.people.specialist2.name">Dr. Patrick González</a></h3>
+                <p data-lang="speakers.people.specialist2.role">Especialista en Teledetección, NASA</p>
               </div>
             </div>
             <!-- Team Item Ends -->
@@ -708,7 +721,7 @@
             <!-- Team Item Starts -->
             <div class="team-item wow fadeInUp" data-wow-delay="0.6s">
               <div class="team-img">
-                <img class="img-fluid" src="assets/img/team/team-03.jpg" alt="">
+                <img class="img-fluid" src="assets/img/team/team-03.jpg" alt="Ing. Ricardo Vásquez - Analista de Datos Satelitales INEGI" loading="lazy">
                 <div class="team-overlay">
                   <div class="overlay-social-icon text-center">
                     <ul class="social-icons">
@@ -732,7 +745,7 @@
             <!-- Team Item Starts -->
             <div class="team-item wow fadeInUp" data-wow-delay="0.8s">
               <div class="team-img">
-                <img class="img-fluid" src="assets/img/team/team-04.jpg" alt="">
+                <img class="img-fluid" src="assets/img/team/team-04.jpg" alt="Dr. Miguel Herrera - Director de Proyectos TecNM" loading="lazy">
                 <div class="team-overlay">
                   <div class="overlay-social-icon text-center">
                     <ul class="social-icons">
@@ -756,7 +769,7 @@
             <!-- Team Item Starts -->
             <div class="team-item wow fadeInUp" data-wow-delay="1s">
               <div class="team-img">
-                <img class="img-fluid" src="assets/img/team/team-05.jpg" alt="">
+                <img class="img-fluid" src="assets/img/team/team-05.jpg" alt="Dra. Laura Sánchez - Especialista en Recursos Hídricos USGS" loading="lazy">
                 <div class="team-overlay">
                   <div class="overlay-social-icon text-center">
                     <ul class="social-icons">
@@ -780,7 +793,7 @@
             <!-- Team Item Starts -->
             <div class="team-item wow fadeInUp" data-wow-delay="1.2s">
               <div class="team-img">
-                <img class="img-fluid" src="assets/img/team/team-06.jpg" alt="">
+                <img class="img-fluid" src="assets/img/team/team-06.jpg" alt="Dra. Laura Sánchez - Especialista en Recursos Hídricos USGS" loading="lazy">
                 <div class="team-overlay">
                   <div class="overlay-social-icon text-center">
                     <ul class="social-icons">
@@ -804,7 +817,7 @@
             <!-- Team Item Starts -->
             <div class="team-item wow fadeInUp" data-wow-delay="1.4s">
               <div class="team-img">
-                <img class="img-fluid" src="assets/img/team/team-07.jpg" alt="">
+                <img class="img-fluid" src="assets/img/team/team-07.jpg" alt="Ing. José Ramírez - Ingeniero en Geomática UNAM" loading="lazy">
                 <div class="team-overlay">
                   <div class="overlay-social-icon text-center">
                     <ul class="social-icons">
@@ -828,7 +841,7 @@
             <!-- Team Item Starts -->
             <div class="team-item wow fadeInUp" data-wow-delay="1.6s">
               <div class="team-img">
-                <img class="img-fluid" src="assets/img/team/team-08.jpg" alt="">
+                <img class="img-fluid" src="assets/img/team/team-08.jpg" alt="M.C. Patricia González - Especialista en Sistemas de Información Geográfica" loading="lazy">
                 <div class="team-overlay">
                   <div class="overlay-social-icon text-center">
                     <ul class="social-icons">
@@ -858,18 +871,18 @@
       <div class="container-fluid">
 <div class="contact-block">
 <div class="text-center">
-                  <h2>Únete al Coloquio Internacional</h2>
-                  <h4>Inscríbete para recibir actualizaciones sobre el evento</h4><br>
-                  <b>Beneficios de participar:</b>
-                  <p>- Acceso a talleres prácticos con expertos NASA</p>
-                  <p>- Materiales exclusivos sobre teledetección</p>
-                  <p>- Certificado de asistencia</p>
-                  <p>- Networking con instituciones binacionales</p>
-                  <p>- Participación en proyectos de ciencia ciudadana</p>
-                  <p>- Recursos sobre gestión de recursos hídricos</p>
-                  <p>- Acceso a datos de observación terrestre</p>
+                  <h2 data-lang="callToAction.title">Únete al Coloquio Internacional</h2>
+                  <h4 data-lang="callToAction.subtitle">Inscríbete para recibir actualizaciones sobre el evento</h4><br>
+                  <b data-lang="callToAction.benefitsTitle">Beneficios de participar:</b>
+                  <p data-lang="callToAction.benefit1">- Acceso a talleres prácticos con expertos NASA</p>
+                  <p data-lang="callToAction.benefit2">- Materiales exclusivos sobre teledetección</p>
+                  <p data-lang="callToAction.benefit3">- Certificado de asistencia</p>
+                  <p data-lang="callToAction.benefit4">- Networking con instituciones binacionales</p>
+                  <p data-lang="callToAction.benefit5">- Participación en proyectos de ciencia ciudadana</p>
+                  <p data-lang="callToAction.benefit6">- Recursos sobre gestión de recursos hídricos</p>
+                  <p data-lang="callToAction.benefit7">- Acceso a datos de observación terrestre</p>
                   <br>
-                  <a href="#contact" class="btn btn-common btn-lg">Registrarse Ahora</a>
+                  <a href="#contact" class="btn btn-common btn-lg" data-lang="callToAction.registerBtn">Registrarse Ahora</a>
 </div>
               </div>      </div>
     </section>
@@ -889,44 +902,44 @@
         <div class="row">
           <div class="col-lg-3 col-md-6 col-xs-12">
             <div class="event-item">
-              <img class="img-fluid" src="assets/img/event/img1-optimized.jpg" alt="Conferencia Fase I - III Coloquio Internacional de Espacio y Sostenibilidad">
+              <img class="img-fluid" src="assets/img/event/img1-optimized.jpg" alt="Conferencia Fase I - III Coloquio Internacional de Espacio y Sostenibilidad" loading="lazy">
               <div class="overlay-text">
                 <div class="content">
-                  <h3>Conferencia Fase I</h3>
-                  <a href="#">Ver detalles</a>
+                  <h3 data-lang="events.phase1.title">Conferencia Fase I</h3>
+                  <a href="#" data-lang="events.phase1.details">Ver detalles</a>
                 </div>
               </div>
             </div>
           </div>
           <div class="col-lg-3 col-md-6 col-xs-12">
             <div class="event-item">
-              <img class="img-fluid" src="assets/img/event/img2.jpg" alt="">
+              <img class="img-fluid" src="assets/img/event/img2.jpg" alt="Conferencia Fase II - Cooperación México-Estados Unidos en tecnología espacial" loading="lazy">
               <div class="overlay-text">
                 <div class="content">
-                  <h3>Conferencia Fase II</h3>
-                  <a href="#">Ver detalles</a>
+                  <h3 data-lang="events.phase2.title">Conferencia Fase II</h3>
+                  <a href="#" data-lang="events.phase2.details">Ver detalles</a>
                 </div>
               </div>
             </div>
           </div>
           <div class="col-lg-3 col-md-6 col-xs-12">
             <div class="event-item">
-              <img class="img-fluid" src="assets/img/event/img3.jpg" alt="">
+              <img class="img-fluid" src="assets/img/event/img3.jpg" alt="Mesas de Trabajo - Gestión de recursos hídricos transfronterizos" loading="lazy">
               <div class="overlay-text">
                 <div class="content">
-                  <h3>Mesas de Trabajo</h3>
-                  <a href="#">Ver detalles</a>
+                  <h3 data-lang="events.workshops.title">Mesas de Trabajo</h3>
+                  <a href="#" data-lang="events.workshops.details">Ver detalles</a>
                 </div>
               </div>
             </div>
           </div>
           <div class="col-lg-3 col-md-6 col-xs-12">
             <div class="event-item">
-              <img class="img-fluid" src="assets/img/event/img4.jpg" alt="">
+              <img class="img-fluid" src="assets/img/event/img4.jpg" alt="Presentación Final del III Coloquio Internacional" loading="lazy">
               <div class="overlay-text">
                 <div class="content">
-                  <h3>Presentación Final</h3>
-                  <a href="#">Ver detalles</a>
+                  <h3 data-lang="events.presentation.title">Presentación Final</h3>
+                  <a href="#" data-lang="events.presentation.details">Ver detalles</a>
                 </div>
               </div>
             </div>
@@ -934,7 +947,7 @@
         </div>
         <div class="row mt-5">
           <div class="col-12 text-center">
-            <a href="#" class="btn btn-common">Más Eventos</a>
+            <a href="#" class="btn btn-common" data-lang="events.moreBtn">Más Eventos</a>
           </div>
         </div>
       </div>
@@ -1061,7 +1074,7 @@
             <div class="blog-item">
               <div class="blog-image">
                 <a href="#">
-                  <img class="img-fluid" src="assets/img/blog/img-2.jpg" alt="">
+                  <img class="img-fluid" src="assets/img/blog/img-2.jpg" alt="Convocatoria para Aliados Estratégicos del Coloquio">
                 </a>
               </div>
               <div class="descr">
@@ -1085,7 +1098,7 @@
             <div class="blog-item">
               <div class="blog-image">
                 <a href="#">
-                  <img class="img-fluid" src="assets/img/blog/img-3.jpg" alt="">
+                  <img class="img-fluid" src="assets/img/blog/img-3.jpg" alt="Programa Preliminar del III Coloquio Internacional">
                 </a>
               </div>
               <div class="descr">
@@ -1128,15 +1141,15 @@
         <div class="row mb-30 text-center wow fadeInDown" data-wow-delay="0.3s">
           <div class="col-lg-12">
             <div class="sponsors-logo text-center">
-               <a href=""><img src="assets/img/sponsors/logo-1.png" alt=""></a>
-               <a href=""><img src="assets/img/sponsors/logo-2.png" alt=""></a>
-               <a href=""><img src="assets/img/sponsors/logo-3.png" alt=""></a>
-               <a href=""><img src="assets/img/sponsors/logo-4.png" alt=""></a>
-               <a href=""><img src="assets/img/sponsors/logo-5.png" alt=""></a>
-               <a href=""><img src="assets/img/sponsors/logo-6.png" alt=""></a>
-               <a href=""><img src="assets/img/sponsors/logo-7.png" alt=""></a>
-               <a href=""><img src="assets/img/sponsors/logo-8.png" alt=""></a>
-               <a href=""><img src="assets/img/sponsors/logo-9.png" alt=""></a>
+               <a href=""><img src="assets/img/sponsors/logo-1.png" alt="NASA - Socio estratégico del III Coloquio Internacional" loading="lazy"></a>
+               <a href=""><img src="assets/img/sponsors/logo-2.png" alt="CONAGUA - Comisión Nacional del Agua México" loading="lazy"></a>
+               <a href=""><img src="assets/img/sponsors/logo-3.png" alt="USGS - United States Geological Survey" loading="lazy"></a>
+               <a href=""><img src="assets/img/sponsors/logo-4.png" alt="Tecnológico de Monterrey - Sede Hermosillo" loading="lazy"></a>
+               <a href=""><img src="assets/img/sponsors/logo-5.png" alt="Universidad de Sonora - Aliado académico" loading="lazy"></a>
+               <a href=""><img src="assets/img/sponsors/logo-6.png" alt="Agencia Espacial Mexicana - Patrocinador oficial" loading="lazy"></a>
+               <a href=""><img src="assets/img/sponsors/logo-7.png" alt="CONACYT - Consejo Nacional de Ciencia y Tecnología" loading="lazy"></a>
+               <a href=""><img src="assets/img/sponsors/logo-8.png" alt="Centro GEO - Patrocinador técnico" loading="lazy"></a>
+               <a href=""><img src="assets/img/sponsors/logo-9.png" alt="Instituto de Investigaciones en Ecosistemas - Colaborador" loading="lazy"></a>
             </div><!-- logos aliados fin-->
          </div>
         </div>
@@ -1242,6 +1255,9 @@
       </div>
     </section>
     <!-- Contact text End -->
+    
+    </main>
+    <!-- Main Content End -->
 
     <footer>
       <div class="container">
