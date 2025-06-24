@@ -328,10 +328,7 @@ const translations = {
         currency: "MXN por Día",
         features: {
           generalEntry: "Entrada General",
-          coffeeBreak: "Pausa Café",
-          dailyMeal: "Comida diaria",
-          allAreasAccess: "Acceso a todas las áreas",
-          certificate: "Certificado"
+          coffeeBreak: "Pausa Café"
         },
         registerBtn: "Registrarse"
       },
@@ -343,7 +340,6 @@ const translations = {
           generalEntry: "Entrada General",
           coffeeBreak: "Pausa Café",
           dailyMeal: "Comida diaria",
-          allAreasAccess: "Acceso a todas las áreas",
           certificate: "Certificado"
         },
         registerBtn: "Registrarse"
@@ -383,6 +379,31 @@ const translations = {
         button: "Suscribirse"
       },
       copyright: "III Coloquio Internacional de Espacio y Sostenibilidad 2025"
+    },
+    
+    // Sections descriptions
+    sections: {
+      sponsors: {
+        description: "Organizaciones e instituciones que hacen posible el III Coloquio Internacional de Espacio y Sostenibilidad 2025."
+      },
+      contact: {
+        description: "Para más información sobre el III Coloquio Internacional de Espacio y Sostenibilidad puede contactarnos a través de los siguientes medios."
+      }
+    },
+    
+    // Contact form
+    contact: {
+      form: {
+        name: "Nombre",
+        email: "Correo Electrónico", 
+        subject: "Asunto",
+        message: "Mensaje",
+        submit: "Enviar Mensaje",
+        nameError: "Por favor ingresa tu nombre",
+        emailError: "Por favor ingresa tu correo electrónico",
+        subjectError: "Por favor ingresa el asunto de tu mensaje",
+        messageError: "Por favor escribe tu mensaje"
+      }
     }
   },
   
@@ -708,24 +729,35 @@ const translations = {
         title: "Basic Access",
         price: "$600",
         currency: "MXN per Day",
-        features: [
-          "General Admission",
-          "Coffee Break",
-          "Daily Lunch",
-          "Access to all areas"
-        ],
+        features: {
+          generalEntry: "General Admission",
+          coffeeBreak: "Coffee Break"
+        },
         registerBtn: "Register"
       },
       standard: {
         title: "Standard Access",
         price: "$900",
         currency: "MXN per Day",
+        features: {
+          generalEntry: "General Admission",
+          coffeeBreak: "Coffee Break",
+          dailyMeal: "Daily Lunch",
+          certificate: "Certificate"
+        },
         registerBtn: "Register"
       },
       premium: {
         title: "Researchers Access",
         price: "$1500",
         currency: "MXN per Day",
+        features: {
+          vipEntry: "VIP Entry",
+          coffeeBreak: "Coffee Break",
+          gourmetMeals: "Gourmet Meals",
+          allAreasAccess: "Access to all areas",
+          certificate: "Certificate"
+        },
         registerBtn: "Register"
       }
     },
@@ -750,6 +782,31 @@ const translations = {
         button: "Subscribe"
       },
       copyright: "III International Space and Sustainability Symposium 2025"
+    },
+    
+    // Sections descriptions
+    sections: {
+      sponsors: {
+        description: "Organizations and institutions that make the III International Space and Sustainability Symposium 2025 possible."
+      },
+      contact: {
+        description: "For more information about the III International Space and Sustainability Symposium you can contact us through the following means."
+      }
+    },
+    
+    // Contact form
+    contact: {
+      form: {
+        name: "Name",
+        email: "Email Address",
+        subject: "Subject", 
+        message: "Message",
+        submit: "Send Message",
+        nameError: "Please enter your name",
+        emailError: "Please enter your email address",
+        subjectError: "Please enter the subject of your message",
+        messageError: "Please write your message"
+      }
     }
   }
 };

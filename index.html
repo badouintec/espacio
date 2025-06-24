@@ -37,42 +37,43 @@
     <!-- PWA Manifest -->
     <link rel="manifest" href="manifest.json">
     
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css" >
-    <!-- Icon -->
-    <link rel="stylesheet" type="text/css" href="assets/fonts/line-icons.css">
-    <!-- Nivo Lightbox -->
-    <link rel="stylesheet" type="text/css" href="assets/css/nivo-lightbox.css" >
-    <!-- Animate -->
-    <link rel="stylesheet" type="text/css" href="assets/css/animate.css">
-    <!-- Main Style -->
+    <!-- CSS Crítico (inline o prioritario) -->
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="assets/css/main.css">
-    <!-- Responsive Style -->
-    <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
-
-    <!-- Preload logo images to ensure they're available immediately -->
-    <link rel="preload" href="assets/img/logoblanco.png" as="image">
-    <link rel="preload" href="assets/img/logo.png" as="image">
-    <link rel="preload" href="assets/img/fondo1-optimized.jpg" as="image">
     
-    <!-- Preconnect to Google Fonts for better performance -->
+    <!-- CSS No crítico (defer) -->
+    <link rel="preload" href="assets/fonts/line-icons.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="assets/css/nivo-lightbox.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="assets/css/animate.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="assets/css/responsive.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    
+    <!-- Fallback para navegadores sin soporte de preload -->
+    <noscript>
+      <link rel="stylesheet" type="text/css" href="assets/fonts/line-icons.css">
+      <link rel="stylesheet" type="text/css" href="assets/css/nivo-lightbox.css">
+      <link rel="stylesheet" type="text/css" href="assets/css/animate.css">
+      <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
+    </noscript>
+
+    <!-- Resource hints para mejor performance -->
+    <link rel="preload" href="assets/img/logoblanco.png" as="image">
+    <link rel="preload" href="assets/img/fondo1-optimized.jpg" as="image">
+    <link rel="preload" href="assets/js/jquery-min.js" as="script">
+    <link rel="preload" href="assets/css/bootstrap.min.css" as="style">
+    <link rel="preload" href="assets/css/main.css" as="style">
+    
+    <!-- Preconnect para recursos externos -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- DNS prefetch para posibles recursos externos -->
+    <link rel="dns-prefetch" href="//fonts.googleapis.com">
+    <link rel="dns-prefetch" href="//fonts.gstatic.com">
   </head>
   <body>
     <!-- Skip Links for Accessibility -->
     <a href="#main-content" class="skip-link sr-only sr-only-focusable">Ir al contenido principal</a>
     <a href="#navigation" class="skip-link sr-only sr-only-focusable">Ir a la navegación</a>
-    
-    <!-- Script para establecer el logo inmediatamente -->
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        var logoImg = document.querySelector('.navbar-brand img');
-        if (logoImg) {
-          logoImg.src = 'assets/img/logoblanco.png?' + new Date().getTime();
-        }
-      });
-    </script>
 
     <!-- Header Area wrapper Starts -->
     <header id="header-wrap">
@@ -191,7 +192,10 @@
         <div class="row">
           <div class="col-lg-6 col-md-12 col-xs-12">
             <div class="img-thumb">
-              <img class="img-fluid" src="assets/img/about/img1-optimized.jpg" alt="Satélite tecnológico espacial para monitoreo de recursos hídricos y sostenibilidad ambiental" loading="lazy">
+              <picture>
+                <source srcset="assets/img/about/img1-optimized.webp" type="image/webp">
+                <img class="img-fluid" src="assets/img/about/img1-optimized.jpg" alt="Satélite tecnológico espacial para monitoreo de recursos hídricos y sostenibilidad ambiental" loading="lazy" decoding="async">
+              </picture>
             </div>
           </div>
           <div class="col-lg-6 col-md-12 col-xs-12">
@@ -219,7 +223,7 @@
 
     <!-- Video Section Start -->
     <div class="ready-to-play">
-      <video id="bgvid" class="stop" loop>
+      <video id="bgvid" class="stop" loop preload="none" poster="assets/img/background/countdown-optimized.jpg">
         <source src="assets/video/event.webm" type="video/webm">
         <source src="assets/video/event.mp4" type="video/mp4">
         <span data-lang="video.fallbackText">Tu navegador no soporta el elemento de video.</span>
@@ -472,7 +476,7 @@
                           </div>
                           <div class="collapsed card-header" data-toggle="collapse" data-target="#colapso1" aria-expanded="false" aria-controls="colapso1">
                             <div class="images-box">
-                              <img class="img-fluid" src="assets/img/speaker/speakers-1.jpg" alt="Dra. María González - Ceremonia de Apertura del III Coloquio Internacional" loading="lazy">
+                              <img class="img-fluid" src="assets/img/speaker/speakers-1.jpg" alt="Dra. María González - Ceremonia de Apertura del III Coloquio Internacional" loading="lazy" decoding="async">
                             </div>                     
                             <h4 data-lang="program.events.opening.title">Ceremonia de Apertura</h4>
                             <h5 class="name" data-lang="program.events.opening.speaker">Dra. María González</h5>
@@ -674,7 +678,7 @@
             <!-- Team Item Starts -->
             <div class="team-item wow fadeInUp" data-wow-delay="0.2s">
               <div class="team-img">
-                <img class="img-fluid" src="assets/img/team/team-01.jpg" alt="Dr. Carlos Mendoza - Director de Investigación en Tecnologías Satelitales" loading="lazy">
+                <img class="img-fluid" src="assets/img/team/team-01.jpg" alt="Dr. Carlos Mendoza - Director de Investigación en Tecnologías Satelitales" loading="lazy" decoding="async">
                 <div class="team-overlay">
                   <div class="overlay-social-icon text-center">
                     <ul class="social-icons">
@@ -979,9 +983,6 @@
                 <ul>
                   <li><i class="lni-check-mark-circle"></i><span class="text" data-lang="pricing.basic.features.generalEntry">Entrada General</span></li>
                   <li><i class="lni-check-mark-circle"></i><span class="text" data-lang="pricing.basic.features.coffeeBreak">Pausa Café</span></li>
-                  <li><i class="lni-check-mark-circle"></i><span class="text" data-lang="pricing.basic.features.dailyMeal">Comida diaria</span></li>
-                  <li><i class="lni-close"></i><span class="text" data-lang="pricing.basic.features.allAreasAccess">Acceso a todas las áreas</span></li>
-                  <li><i class="lni-close"></i><span class="text" data-lang="pricing.basic.features.certificate">Certificado</span></li>
                 </ul>
               </div>
               <a href="#" class="btn btn-common" data-lang="pricing.basic.registerBtn">Registrarse</a>
@@ -1001,7 +1002,6 @@
                   <li><i class="lni-check-mark-circle"></i><span class="text" data-lang="pricing.standard.features.generalEntry">Entrada General</span></li>
                   <li><i class="lni-check-mark-circle"></i><span class="text" data-lang="pricing.standard.features.coffeeBreak">Pausa Café</span></li>
                   <li><i class="lni-check-mark-circle"></i><span class="text" data-lang="pricing.standard.features.dailyMeal">Comida diaria</span></li>
-                  <li><i class="lni-close"></i><span class="text" data-lang="pricing.standard.features.allAreasAccess">Acceso a todas las áreas</span></li>
                   <li><i class="lni-check-mark-circle"></i><span class="text" data-lang="pricing.standard.features.certificate">Certificado</span></li>
                 </ul>
               </div>
@@ -1134,7 +1134,7 @@
           <div class="col-12">
             <div class="section-title-header text-center">
               <h2 class="section-title wow fadeInUp" data-wow-delay="0.2s" data-lang="sections.sponsors.title">Aliados</h2>
-              <p class="wow fadeInDown" data-wow-delay="0.2s">Organizaciones e instituciones que hacen posible el III Coloquio Internacional <br> de Espacio y Sostenibilidad 2025.</p>
+              <p class="wow fadeInDown" data-wow-delay="0.2s" data-lang="sections.sponsors.description">Organizaciones e instituciones que hacen posible el III Coloquio Internacional de Espacio y Sostenibilidad 2025.</p>
             </div>
           </div>
         </div>
@@ -1164,7 +1164,7 @@
           <div class="col-12">
             <div class="section-title-header text-center">
               <h2 class="section-title wow fadeInUp" data-wow-delay="0.2s" data-lang="sections.contact.title">Contacto</h2>
-              <p class="wow fadeInDown" data-wow-delay="0.2s">Para más información sobre el III Coloquio Internacional de Espacio y Sostenibilidad <br> puede contactarnos a través de los siguientes medios.</p>
+              <p class="wow fadeInDown" data-wow-delay="0.2s" data-lang="sections.contact.description">Para más información sobre el III Coloquio Internacional de Espacio y Sostenibilidad puede contactarnos a través de los siguientes medios.</p>
             </div>
           </div>
         </div>
@@ -1176,28 +1176,28 @@
                   <div class="row">
                     <div class="col-md-6 form-line">
                       <div class="form-group">
-                        <input type="text" class="form-control" id="name" name="email" placeholder="Nombre" required data-error="Por favor ingresa tu nombre">
+                        <input type="text" class="form-control" id="name" name="name" data-lang-placeholder="contact.form.name" placeholder="Nombre" required data-error="Por favor ingresa tu nombre">
                         <div class="help-block with-errors"></div>
                       </div>
                     </div>
                     <div class="col-md-6 form-line">
                       <div class="form-group">
-                        <input type="email" class="form-control" id="email" name="email" placeholder="Correo Electrónico" required data-error="Por favor ingresa tu correo electrónico">
+                        <input type="email" class="form-control" id="email" name="email" data-lang-placeholder="contact.form.email" placeholder="Correo Electrónico" required data-error="Por favor ingresa tu correo electrónico">
                         <div class="help-block with-errors"></div>
                       </div> 
                     </div>
                     <div class="col-md-12 form-line">
                       <div class="form-group">
-                        <input type="tel" class="form-control" id="msg_subject" name="subject" placeholder="Asunto" required data-error="Por favor ingresa el asunto de tu mensaje">
+                        <input type="tel" class="form-control" id="msg_subject" name="subject" data-lang-placeholder="contact.form.subject" placeholder="Asunto" required data-error="Por favor ingresa el asunto de tu mensaje">
                         <div class="help-block with-errors"></div>
                       </div>
                     </div>
                     <div class="col-md-12">
                       <div class="form-group">
-                        <textarea class="form-control" rows="4" id="message" name="message" placeholder="Mensaje" required data-error="Por favor escribe tu mensaje"></textarea>
+                        <textarea class="form-control" rows="4" id="message" name="message" data-lang-placeholder="contact.form.message" placeholder="Mensaje" required data-error="Por favor escribe tu mensaje"></textarea>
                       </div>
                       <div class="form-submit">
-                        <button type="submit" class="btn btn-common" id="form-submit"><i class="fa fa-paper-plane" aria-hidden="true"></i>  Enviar Mensaje</button>
+                        <button type="submit" class="btn btn-common" id="form-submit"><i class="fa fa-paper-plane" aria-hidden="true"></i> <span data-lang="contact.form.submit">Enviar Mensaje</span></button>
                         <div id="msgSubmit" class="h3 text-center hidden"></div>
                       </div>
                     </div>
@@ -1326,6 +1326,45 @@
     <script src="assets/js/video.js"></script>
     <script src="assets/js/translations.js"></script>
     <script src="assets/js/language-manager.js"></script>
-    <script src="assets/js/main.js"></script>      
+    <script src="assets/js/main.js"></script>
+    
+    <!-- Scripts de optimización -->
+    <script>
+      // Optimización del logo
+      document.addEventListener('DOMContentLoaded', function() {
+        var logoImg = document.querySelector('.navbar-brand img');
+        if (logoImg) {
+          logoImg.src = 'assets/img/logoblanco.png?' + new Date().getTime();
+        }
+        
+        // Lazy loading manual para el video
+        const video = document.getElementById('bgvid');
+        if (video) {
+          const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+              if (entry.isIntersecting) {
+                video.load();
+                observer.unobserve(video);
+              }
+            });
+          });
+          observer.observe(video);
+        }
+        
+        // Optimización de imágenes lazy loading
+        const images = document.querySelectorAll('img[loading="lazy"]');
+        const imageObserver = new IntersectionObserver((entries, observer) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              const img = entry.target;
+              img.classList.remove('lazy');
+              imageObserver.unobserve(img);
+            }
+          });
+        });
+        
+        images.forEach(img => imageObserver.observe(img));
+      });
+    </script>      
   </body>
 </html>

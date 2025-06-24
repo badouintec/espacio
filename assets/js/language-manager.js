@@ -92,22 +92,28 @@ class LanguageManager {
   applyLanguage(lang) {
     if (!translations[lang]) return;
 
+    // Manejar elementos con data-lang
     const elements = document.querySelectorAll('[data-lang]');
-    
     elements.forEach(element => {
       const key = element.getAttribute('data-lang');
       const translation = this.getTranslationByKey(key, lang);
       
       if (translation) {
-        // Manejar placeholders para inputs
-        if (element.hasAttribute('placeholder')) {
-          element.setAttribute('placeholder', translation);
-        } else {
-          // Usar innerHTML para permitir tags HTML en traducciones
-          if (element.innerHTML !== translation) {
-            element.innerHTML = translation;
-          }
+        // Usar innerHTML para permitir tags HTML en traducciones
+        if (element.innerHTML !== translation) {
+          element.innerHTML = translation;
         }
+      }
+    });
+
+    // Manejar placeholders con data-lang-placeholder
+    const placeholderElements = document.querySelectorAll('[data-lang-placeholder]');
+    placeholderElements.forEach(element => {
+      const key = element.getAttribute('data-lang-placeholder');
+      const translation = this.getTranslationByKey(key, lang);
+      
+      if (translation) {
+        element.setAttribute('placeholder', translation);
       }
     });
   }
