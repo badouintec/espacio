@@ -91,6 +91,33 @@ const translations = {
       }
     },
     
+    // Program Session Types
+    sessionTypes: {
+      conference: "Conferencia",
+      workshop: "Taller",
+      panel: "Panel"
+    },
+    
+    // Program Tabs
+    programTabs: {
+      phase1: {
+        title: "Fase I: Sonora",
+        date: "12 noviembre 2025"
+      },
+      phase2: {
+        title: "Fase II: Arizona", 
+        date: "14 noviembre 2025"
+      },
+      phase3: {
+        title: "Reserva de Fechas",
+        date: "2025-2026"
+      },
+      resources: {
+        title: "Recursos y Enlaces",
+        subtitle: "Recursos Hídricos NASA"
+      }
+    },
+
     // Program Section
     program: {
       title: "Programa del Coloquio",
@@ -184,7 +211,7 @@ const translations = {
       },
       events: {
         title: "Próximas Actividades",
-        description: "Calendario de eventos y actividades relacionadas con el coloquio."
+        description: "Conoce las actividades programadas para las diferentes sedes del III Coloquio Internacional de Espacio y Sostenibilidad 2025."
       },
       registration: {
         title: "Registro",
@@ -291,6 +318,63 @@ const translations = {
       }
     },
     
+    // Pricing/Registration Section
+    pricing: {
+      title: "Registro",
+      description: "El III Coloquio Internacional de Espacio y Sostenibilidad ofrece diferentes modalidades de participación adaptadas a las necesidades de los asistentes.",
+      basic: {
+        title: "Acceso Básico",
+        price: "$600",
+        currency: "MXN por Día",
+        features: {
+          generalEntry: "Entrada General",
+          coffeeBreak: "Pausa Café",
+          dailyMeal: "Comida diaria",
+          allAreasAccess: "Acceso a todas las áreas",
+          certificate: "Certificado"
+        },
+        registerBtn: "Registrarse"
+      },
+      standard: {
+        title: "Acceso Estándar",
+        price: "$900",
+        currency: "MXN por Día",
+        features: {
+          generalEntry: "Entrada General",
+          coffeeBreak: "Pausa Café",
+          dailyMeal: "Comida diaria",
+          allAreasAccess: "Acceso a todas las áreas",
+          certificate: "Certificado"
+        },
+        registerBtn: "Registrarse"
+      },
+      premium: {
+        title: "Acceso Investigadores",
+        price: "$1500",
+        currency: "MXN por Día",
+        features: {
+          vipEntry: "Entrada VIP",
+          coffeeBreak: "Pausa Café",
+          gourmetMeals: "Comidas gourmet",
+          allAreasAccess: "Acceso a todas las áreas",
+          certificate: "Certificado"
+        },
+        registerBtn: "Registrarse"
+      }
+    },
+    
+    // Blog/News Section
+    blog: {
+      title: "Últimas Noticias",
+      description: "Mantente al día con las novedades, anuncios y avances sobre el III Coloquio Internacional de Espacio y Sostenibilidad.",
+      viewAllBtn: "Ver Todas las Noticias"
+    },
+    
+    // Video Section
+    video: {
+      fallbackText: "Tu navegador no soporta el elemento de video."
+    },
+    
     // Footer
     footer: {
       subscribe: {
@@ -389,6 +473,33 @@ const translations = {
       }
     },
     
+    // Program Session Types
+    sessionTypes: {
+      conference: "Conference",
+      workshop: "Workshop",
+      panel: "Panel"
+    },
+    
+    // Program Tabs
+    programTabs: {
+      phase1: {
+        title: "Phase I: Sonora",
+        date: "November 12, 2025"
+      },
+      phase2: {
+        title: "Phase II: Arizona", 
+        date: "November 14, 2025"
+      },
+      phase3: {
+        title: "Save the Date",
+        date: "2025-2026"
+      },
+      resources: {
+        title: "Resources and Links",
+        subtitle: "NASA Water Resources"
+      }
+    },
+
     // Program Section
     program: {
       title: "Symposium Program",
@@ -482,7 +593,7 @@ const translations = {
       },
       events: {
         title: "Upcoming Activities",
-        description: "Calendar of events and activities related to the symposium."
+        description: "Learn about the scheduled activities for the different venues of the III International Space and Sustainability Symposium 2025."
       },
       registration: {
         title: "Registration",
@@ -587,6 +698,48 @@ const translations = {
           role: "Senior Researcher, CICY"
         }
       }
+    },
+    
+    // Pricing/Registration Section
+    pricing: {
+      title: "Registration",
+      description: "The III International Space and Sustainability Symposium offers different participation modalities adapted to attendee needs.",
+      basic: {
+        title: "Basic Access",
+        price: "$600",
+        currency: "MXN per Day",
+        features: [
+          "General Admission",
+          "Coffee Break",
+          "Daily Lunch",
+          "Access to all areas"
+        ],
+        registerBtn: "Register"
+      },
+      standard: {
+        title: "Standard Access",
+        price: "$900",
+        currency: "MXN per Day",
+        registerBtn: "Register"
+      },
+      premium: {
+        title: "Researchers Access",
+        price: "$1500",
+        currency: "MXN per Day",
+        registerBtn: "Register"
+      }
+    },
+    
+    // Blog/News Section
+    blog: {
+      title: "Latest News",
+      description: "Stay up to date with news, announcements and advances about the III International Space and Sustainability Symposium.",
+      viewAllBtn: "View All News"
+    },
+    
+    // Video Section
+    video: {
+      fallbackText: "Your browser does not support the video element."
     },
     
     // Footer
