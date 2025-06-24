@@ -2474,3 +2474,98 @@ footer {
   padding: 12px 40px;
   text-transform: uppercase;
 }
+
+/* Language Switcher Styles */
+.lang-switcher {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.language-toggle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0 15px;
+}
+
+.lang-btn {
+  background: none;
+  border: none;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  padding: 4px 8px;
+  border-radius: 2px;
+  position: relative;
+}
+
+.lang-btn:hover {
+  background-image: linear-gradient(65deg, var(--ocean-blue) 0, var(--water-light) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.lang-btn.active {
+  background-image: linear-gradient(65deg, var(--ocean-blue) 0, var(--water-light) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.lang-btn.active::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 15px;
+  height: 2px;
+  background: var(--ocean-blue);
+}
+
+.lang-separator {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 12px;
+  margin: 0 4px;
+}
+
+/* Language Switcher - Navbar scrolled state */
+.top-nav-collapse .lang-btn {
+  color: #212121;
+}
+
+.top-nav-collapse .lang-btn:hover {
+  color: var(--ocean-blue);
+  background-image: none;
+  -webkit-text-fill-color: var(--ocean-blue);
+}
+
+.top-nav-collapse .lang-btn.active {
+  color: var(--ocean-blue);
+  background-image: none;
+  -webkit-text-fill-color: var(--ocean-blue);
+}
+
+.top-nav-collapse .lang-separator {
+  color: rgba(33, 33, 33, 0.5);
+}
+
+/* Responsive adjustments for language switcher */
+@media (max-width: 991px) {
+  .lang-switcher {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    justify-content: center;
+  }
+  
+  .language-toggle {
+    padding: 0;
+  }
+}

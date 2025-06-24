@@ -20,13 +20,17 @@
     // Comprobar inmediatamente la posición del scroll
     updateNavbarLogo();
   });
-
   $(window).on('load', function() {
     // Ocultar precargador cuando la página esté completamente cargada
     $('#preloader').fadeOut();
     
     // Verificar nuevamente el logo cuando todo esté cargado
     updateNavbarLogo();
+    
+    // Inicializar el sistema de idiomas
+    if (window.languageManager) {
+      window.languageManager.init();
+    }
     
     // Configurar el evento de scroll
     $(window).on('scroll', function() {

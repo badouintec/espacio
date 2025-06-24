@@ -48,44 +48,51 @@
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav mr-auto w-100 justify-content-end">
               <li class="nav-item active">
-                <a class="nav-link" href="#header-wrap">
+                <a class="nav-link" href="#header-wrap" data-lang="nav.home">
                   Inicio
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#about">
+                <a class="nav-link" href="#about" data-lang="nav.about">
                   Acerca
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#schedules">
+                <a class="nav-link" href="#schedules" data-lang="nav.program">
                   Programa
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#team">
-                  Speakers
+                <a class="nav-link" href="#team" data-lang="nav.speakers">
+                  Ponentes
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#gallery">
+                <a class="nav-link" href="#gallery" data-lang="nav.gallery">
                   Galería
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#pricing">
+                <a class="nav-link" href="#pricing" data-lang="nav.registration">
                   Registro
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#sponsors">
+                <a class="nav-link" href="#sponsors" data-lang="nav.sponsors">
                   Aliados
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#google-map-area">
+                <a class="nav-link" href="#google-map-area" data-lang="nav.contact">
                   Contacto
                 </a>
+              </li>
+              <li class="nav-item lang-switcher">
+                <div class="language-toggle">
+                  <button class="lang-btn active" data-lang="es">ES</button>
+                  <span class="lang-separator">|</span>
+                  <button class="lang-btn" data-lang="en">EN</button>
+                </div>
               </li>
             </ul>
           </div>
@@ -103,12 +110,12 @@
                 <div class="icon">
                   <i class="lni-mic"></i>
                 </div>
-                <p class="banner-info">Noviembre 2025 - Hermosillo, Sonora y Tucson, Arizona</p>
-                <h2 class="head-title">III Coloquio Internacional de Espacio y Sostenibilidad</h2>
-                <p class="banner-desc">
+                <p class="banner-info" data-lang="hero.date">Noviembre 2025 - Hermosillo, Sonora y Tucson, Arizona</p>
+                <h2 class="head-title" data-lang="hero.title">III Coloquio Internacional de Espacio y Sostenibilidad</h2>
+                <p class="banner-desc" data-lang="hero.description">
                   Aplicaciones de la ciencia y tecnología espacial para el monitoreo y gestión de recursos hídricos en la región fronteriza México-Estados Unidos.</p>
                 <div class="banner-btn">
-                  <a href="#" class="btn btn-common">Registro</a>
+                  <a href="#" class="btn btn-common" data-lang="hero.registerBtn">Registro</a>
                 </div>
               </div>
             </div>
@@ -149,17 +156,17 @@
             <div class="about-content">
               <div>
                 <div class="about-text">  
-                  <h2>Acerca del Coloquio</h2>
-                  <p>El III Coloquio Internacional de Espacio y Sostenibilidad es un evento binacional que reúne a expertos, académicos y profesionales del sector espacial y ambiental para abordar los desafíos de la gestión sustentable de recursos hídricos en la zona fronteriza entre México y Estados Unidos, utilizando tecnologías espaciales como herramientas clave para el monitoreo y la toma de decisiones.</p>
+                  <h2 data-lang="about.title">Acerca del Coloquio</h2>
+                  <p data-lang="about.description">El III Coloquio Internacional de Espacio y Sostenibilidad es un evento binacional que reúne a expertos, académicos y profesionales del sector espacial y ambiental para abordar los desafíos de la gestión sustentable de recursos hídricos en la zona fronteriza entre México y Estados Unidos, utilizando tecnologías espaciales como herramientas clave para el monitoreo y la toma de decisiones.</p>
                 </div>
                 <ul class="stylish-list mb-3">
-                  <li><i class="lni-check-mark-circle"></i>Sesiones de Networking</li>
-                  <li><i class="lni-check-mark-circle"></i>Nuevos Contactos Profesionales</li>
-                  <li><i class="lni-check-mark-circle"></i>Inspiración de Ponentes Destacados</li>
-                  <li><i class="lni-check-mark-circle"></i>Eventos Binacionales (México-EUA)</li>
-                  <li><i class="lni-check-mark-circle"></i>Enfoque en Sostenibilidad y Tecnología Espacial</li>
+                  <li><i class="lni-check-mark-circle"></i><span data-lang="about.benefits.networking">Sesiones de Networking</span></li>
+                  <li><i class="lni-check-mark-circle"></i><span data-lang="about.benefits.contacts">Nuevos Contactos Profesionales</span></li>
+                  <li><i class="lni-check-mark-circle"></i><span data-lang="about.benefits.speakers">Inspiración de Ponentes Destacados</span></li>
+                  <li><i class="lni-check-mark-circle"></i><span data-lang="about.benefits.binational">Eventos Binacionales (México-EUA)</span></li>
+                  <li><i class="lni-check-mark-circle"></i><span data-lang="about.benefits.sustainability">Enfoque en Sostenibilidad y Tecnología Espacial</span></li>
                 </ul>
-                <a class="btn btn-common" href="#">Más Información</a>
+                <a class="btn btn-common" href="#" data-lang="about.moreInfoBtn">Más Información</a>
               </div>
             </div>
           </div>
@@ -192,7 +199,7 @@
               <li>
                 <i class="lni-map-marker"></i>
               </li>
-              <li><span><b>Ubicación</b> Hermosillo, Sonora y Tucson, Arizona</span></li>
+              <li><span><b data-lang="info.location.title">Ubicación</b> <span data-lang="info.location.text">Hermosillo, Sonora y Tucson, Arizona</span></span></li>
             </ul>
           </div>
           <div class="col-lg-3 col-md-6 col-xs-12">
@@ -200,7 +207,7 @@
               <li>
                 <i class="lni-calendar"></i>
               </li>
-              <li><span><b>Fecha y Hora</b> 9am - 6pm, Noviembre 2025</span></li>
+              <li><span><b data-lang="info.date.title">Fecha y Hora</b> <span data-lang="info.date.text">9am - 6pm, Noviembre 2025</span></span></li>
             </ul>
           </div>
           <div class="col-lg-3 col-md-6 col-xs-12">
@@ -208,7 +215,7 @@
               <li>
                 <i class="lni-mic"></i>
               </li>
-              <li><span><b>Ponentes</b> 25 Profesionales</span></li>
+              <li><span><b data-lang="info.speakers.title">Ponentes</b> <span data-lang="info.speakers.text">25 Profesionales</span></span></li>
             </ul>
           </div>
           <div class="col-lg-3 col-md-6 col-xs-12">
@@ -216,7 +223,7 @@
               <li>
                 <i class="lni-user"></i>
               </li>
-              <li><span><b>Cupo</b> 150 Personas</span></li>
+              <li><span><b data-lang="info.capacity.title">Cupo</b> <span data-lang="info.capacity.text">150 Personas</span></span></li>
             </ul>
           </div>
         </div>
@@ -230,8 +237,8 @@
         <div class="row">
           <div class="col-12">
             <div class="section-title-header text-center">
-              <h2 class="section-title wow fadeInUp" data-wow-delay="0.2s">¿Por Qué Participar?</h2>
-              <p class="wow fadeInDown" data-wow-delay="0.2s">El III Coloquio Internacional de Espacio y Sostenibilidad ofrece una oportunidad única <br> para conectar con expertos y abordar desafíos ambientales transfronterizos.</p>
+              <h2 class="section-title wow fadeInUp" data-wow-delay="0.2s" data-lang="intro.title">¿Por Qué Participar?</h2>
+              <p class="wow fadeInDown" data-wow-delay="0.2s" data-lang="intro.description">El III Coloquio Internacional de Espacio y Sostenibilidad ofrece una oportunidad única <br> para conectar con expertos y abordar desafíos ambientales transfronterizos.</p>
             </div>
           </div>
         </div>
@@ -239,8 +246,8 @@
           <div class="col-lg-4 col-md-6 col-xs-12">
             <div class="single-intro-text mb-70">
                <i class="lni-microphone"></i>
-               <h3>Ponentes Destacados</h3>
-               <p>
+               <h3 data-lang="intro.features.speakers.title">Ponentes Destacados</h3>
+               <p data-lang="intro.features.speakers.description">
                   Expertos internacionales en tecnología espacial y gestión de recursos hídricos compartirán sus conocimientos.
                </p>
                <span class="count-number">01</span>
@@ -249,9 +256,9 @@
           <div class="col-lg-4 col-md-6 col-xs-12">
             <div class="single-intro-text">
                <i class="lni-users"></i>
-               <h3 class="ts-title">Nuevas Conexiones</h3>
-               <p>
-                  Establece contacto con profesionales de América del Norte dedicados a la sostenibilidad ambiental.
+               <h3 class="ts-title" data-lang="intro.features.networking.title">Networking Profesional</h3>
+               <p data-lang="intro.features.networking.description">
+                  Conecta con profesionales del sector espacial y ambiental de México y Estados Unidos.
                </p>
                <span class="count-number">02</span>
             </div>
@@ -260,9 +267,9 @@
           <div class="col-lg-4 col-md-6 col-xs-12">
             <div class="single-intro-text mb-70">
                <i class="lni-bullhorn"></i>
-               <h3>Evento Binacional</h3>
-               <p>
-                  Una colaboración entre México y Estados Unidos para abordar desafíos compartidos en recursos hídricos.
+               <h3 data-lang="intro.features.innovation.title">Innovación Tecnológica</h3>
+               <p data-lang="intro.features.innovation.description">
+                  Conoce las últimas aplicaciones de tecnología satelital para sostenibilidad.
                </p>
                <span class="count-number">03</span>
             </div>
@@ -314,7 +321,7 @@
               </div>
               <div class="counter-content">
                 <div class="counterUp">42</div>
-                <p>Spekers</p>
+                <p data-lang="counters.attendees">Asistentes</p>
               </div>
             </div>
           </div>
@@ -326,7 +333,7 @@
               </div>
               <div class="counter-content">
                 <div class="counterUp">800</div>
-                <p>Seats</p>
+                <p data-lang="counters.seats">Lugares</p>
               </div>
             </div>
           </div>
@@ -338,7 +345,7 @@
               </div>
               <div class="counter-content">
                 <div class="counterUp">24</div>
-                <p>Aliados</p>
+                <p data-lang="counters.partners">Aliados</p>
               </div>
             </div>
           </div>
@@ -350,7 +357,7 @@
               </div>
               <div class="counter-content">
                 <div class="counterUp">56</div>
-                <p>Sesiones</p>
+                <p data-lang="counters.sessions">Sesiones</p>
               </div>
             </div>
           </div>
@@ -365,8 +372,8 @@
         <div class="row">
           <div class="col-12">
             <div class="section-title-header text-center">
-              <h2 class="section-title wow fadeInUp" data-wow-delay="0.2s">Programa del Coloquio</h2>
-              <p class="wow fadeInDown" data-wow-delay="0.2s">Distribución de actividades, talleres y conferencias <br> por fases y sedes binacionales.</p>
+              <h2 class="section-title wow fadeInUp" data-wow-delay="0.2s" data-lang="sections.program.title">Programa del Coloquio</h2>
+              <p class="wow fadeInDown" data-wow-delay="0.2s" data-lang="sections.program.description">Distribución de actividades, talleres y conferencias <br> por fases y sedes binacionales.</p>
             </div>
           </div>
         </div>
@@ -423,15 +430,15 @@
                             <div class="images-box">
                               <img class="img-fluid" src="assets/img/speaker/speakers-1.jpg" alt="">
                             </div>                     
-                            <h4>Web Design Principles and Best Practices</h4>
-                            <h5 class="name">David Warner</h5>
+                            <h4 data-lang="program.events.opening.title">Ceremonia de Apertura</h4>
+                            <h5 class="name" data-lang="program.events.opening.speaker">Dra. María González</h5>
                           </div>
                         </div>
                         <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
                           <div class="card-body">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet minima dolores rerum maiores qui at commodi quas, reprehenderit eius consectetur quae magni molestias veniam, provident illum facere iure libero asperiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam earum nihil ex ipsa magni eligendi fugiat assumenda suscipit, accusantium, necessitatibus reiciendis odit sed, vero amet blanditiis?</p>
+                            <p data-lang="program.events.opening.description">Bienvenida oficial al III Coloquio Internacional de Espacio y Sostenibilidad con la participación de autoridades de México y Estados Unidos.</p>
                             <div class="location">
-                              <span>Location:</span> Hall 1 , Building A, Golden Street, Southafrica
+                              <span data-lang="program.events.opening.location">Ubicación:</span> <span data-lang="program.events.opening.venue">Auditorio Principal, Tec de Monterrey Campus Hermosillo</span>
                             </div>
                           </div>
                         </div>
@@ -439,22 +446,22 @@
                       <div class="card">
                         <div id="headingTwo">
                           <div class="schedule-slot-time">
-                            <span> 10.30 - 11.30 AM</span>
-                            Workshop
+                            <span> 10.30 - 11.30</span>
+                            Conferencia
                           </div>
                           <div class="collapsed card-header" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                             <div class="images-box">
                               <img class="img-fluid" src="assets/img/speaker/speakers-2.jpg" alt="">
                             </div>
-                            <h4>15 Free Productive Design Tools</h4>
-                            <h5 class="name">David Warner</h5>
+                            <h4 data-lang="program.events.session1.title">Tecnologías Satelitales para Monitoreo Hídrico</h4>
+                            <h5 class="name" data-lang="program.events.session1.speaker">Dr. Roberto Sánchez</h5>
                           </div>
                         </div>
                         <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
                           <div class="card-body">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet minima dolores rerum maiores qui at commodi quas, reprehenderit eius consectetur quae magni molestias veniam, provident illum facere iure libero asperiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam earum nihil ex ipsa magni eligendi fugiat assumenda suscipit, accusantium, necessitatibus reiciendis odit sed, vero amet blanditiis?</p>
+                            <p data-lang="program.events.session1.description">Análisis de tecnologías satelitales aplicadas al monitoreo de recursos hídricos en la región fronteriza México-Estados Unidos.</p>
                             <div class="location">
-                              <span>Location:</span> Hall 1 , Building A, Golden Street, Southafrica
+                              <span data-lang="program.events.session1.location">Ubicación:</span> <span data-lang="program.events.session1.venue">Sala de Conferencias A, Tec de Monterrey Campus Hermosillo</span>
                             </div>
                           </div>
                         </div>
@@ -462,49 +469,49 @@
                       <div class="card">
                         <div id="headingThree">
                           <div class="schedule-slot-time">
-                            <span> 11.30 - 12.30 AM</span>
-                            Workshop
+                            <span> 11.30 - 12.30</span>
+                            Taller
                           </div>
                           <div class="collapsed card-header" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                             <div class="images-box">
                               <img class="img-fluid" src="assets/img/speaker/speakers-3.jpg" alt="">
                             </div>
-                            <h4>Getting Started With SketchApp</h4>
-                            <h5 class="name">David Warner</h5>
+                            <h4 data-lang="program.events.workshop1.title">Taller: Procesamiento de Datos Satelitales</h4>
+                            <h5 class="name" data-lang="program.events.workshop1.speaker">Ing. Patricia López</h5>
                           </div>
                         </div>
                         <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
                           <div class="card-body">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet minima dolores rerum maiores qui at commodi quas, reprehenderit eius consectetur quae magni molestias veniam, provident illum facere iure libero asperiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam earum nihil ex ipsa magni eligendi fugiat assumenda suscipit, accusantium, necessitatibus reiciendis odit sed, vero amet blanditiis?</p>
+                            <p data-lang="program.events.workshop1.description">Taller práctico sobre procesamiento y análisis de datos satelitales para aplicaciones ambientales y de recursos hídricos.</p>
                             <div class="location">
-                              <span>Location:</span> Hall 1 , Building A, Golden Street, Southafrica
+                              <span data-lang="program.events.workshop1.location">Ubicación:</span> <span data-lang="program.events.workshop1.venue">Laboratorio de Geomática, Tec de Monterrey Campus Hermosillo</span>
                             </div>
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <div class="tab-pane fade" id="tuesday" role="tabpanel" aria-labelledby="tuesday-tab">
+                  <div class="tab-pane fade" id="fase2" role="tabpanel" aria-labelledby="fase2-tab">
                     <div id="accordion2">
                       <div class="card">
-                        <div id="headingOne1">
+                        <div id="headingOne2">
                           <div class="schedule-slot-time">
-                            <span> 1.30 - 2.30 AM</span>
-                            Workshop
+                            <span> 1.30 - 2.30</span>
+                            Conferencia
                           </div>
-                          <div class="collapsed card-header" data-toggle="collapse" data-target="#collapseTwo2" aria-expanded="false" aria-controls="collapseTwo2">
+                          <div class="collapsed card-header" data-toggle="collapse" data-target="#collapseOne2" aria-expanded="false" aria-controls="collapseOne2">
                             <div class="images-box">
                               <img class="img-fluid" src="assets/img/speaker/speakers-2.jpg" alt="">
                             </div>
-                            <h4>Web Design Principles and Best Practices</h4>
-                            <h5 class="name">David Warner</h5>
+                            <h4 data-lang="program.events.session2.title">Gestión Sustentable de Acuíferos Transfronterizos</h4>
+                            <h5 class="name" data-lang="program.events.session2.speaker">Dr. Michael Johnson</h5>
                           </div>
                         </div>
-                        <div id="collapseOne1" class="collapse show" aria-labelledby="headingOne1" data-parent="#accordion2">
+                        <div id="collapseOne2" class="collapse show" aria-labelledby="headingOne2" data-parent="#accordion2">
                           <div class="card-body">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet minima dolores rerum maiores qui at commodi quas, reprehenderit eius consectetur quae magni molestias veniam, provident illum facere iure libero asperiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam earum nihil ex ipsa magni eligendi fugiat assumenda suscipit, accusantium, necessitatibus reiciendis odit sed, vero amet blanditiis?</p>
+                            <p data-lang="program.events.session2.description">Estrategias colaborativas para la gestión sustentable de acuíferos compartidos entre México y Estados Unidos.</p>
                             <div class="location">
-                              <span>Location:</span> Hall 1 , Building A, Golden Street, Southafrica
+                              <span data-lang="program.events.session2.location">Ubicación:</span> <span data-lang="program.events.session2.venue">Auditorio Principal, Tec de Monterrey Campus Hermosillo</span>
                             </div>
                           </div>
                         </div>
@@ -512,241 +519,86 @@
                       <div class="card">
                         <div id="headingTwo2">
                           <div class="schedule-slot-time">
-                            <span> 9.30 - 10.30 AM</span>
-                            Workshop
+                            <span> 2.30 - 3.30</span>
+                            Panel
                           </div>
-                          <div class="collapsed card-header" data-toggle="collapse" data-target="#collapseOne1" aria-expanded="false" aria-controls="collapseOne1">
+                          <div class="collapsed card-header" data-toggle="collapse" data-target="#collapseTwo2" aria-expanded="false" aria-controls="collapseTwo2">
                             <div class="images-box">
                               <img class="img-fluid" src="assets/img/speaker/speakers-1.jpg" alt="">
                             </div>
-                            <h4>Web Design Principles and Best Practices</h4>
-                            <h5 class="name">David Warner</h5>
+                            <h4 data-lang="program.events.panel1.title">Panel: Cooperación Internacional en Recursos Hídricos</h4>
+                            <h5 class="name" data-lang="program.events.panel1.speaker">Panel de Expertos</h5>
                           </div>
                         </div>
                         <div id="collapseTwo2" class="collapse" aria-labelledby="headingTwo2" data-parent="#accordion2">
                           <div class="card-body">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet minima dolores rerum maiores qui at commodi quas, reprehenderit eius consectetur quae magni molestias veniam, provident illum facere iure libero asperiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam earum nihil ex ipsa magni eligendi fugiat assumenda suscipit, accusantium, necessitatibus reiciendis odit sed, vero amet blanditiis?</p>
+                            <p data-lang="program.events.panel1.description">Mesa redonda con especialistas de ambos países sobre marcos de cooperación para la gestión de recursos hídricos transfronterizos.</p>
                             <div class="location">
-                              <span>Location:</span> Hall 1 , Building A, Golden Street, Southafrica
+                              <span data-lang="program.events.panel1.location">Ubicación:</span> <span data-lang="program.events.panel1.venue">Sala de Conferencias B, Tec de Monterrey Campus Hermosillo</span>
                             </div>
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <div class="tab-pane fade" id="wednesday" role="tabpanel" aria-labelledby="wednesday-tab">
+                  <div class="tab-pane fade" id="fase3" role="tabpanel" aria-labelledby="fase3-tab">
                     <div id="accordion3">
                       <div class="card">
                         <div id="headingOne3">
                           <div class="schedule-slot-time">
-                            <span> 10.30 - 11.30 AM</span>
-                            Workshop
+                            <span> 3.30 - 4.30</span>
+                            Conferencia
                           </div>
                           <div class="collapsed card-header" data-toggle="collapse" data-target="#collapseOne3" aria-expanded="false" aria-controls="collapseOne3">
                             <div class="images-box">
                               <img class="img-fluid" src="assets/img/speaker/speakers-1.jpg" alt="">
                             </div>
-                            <h4>Web Design Principles and Best Practices</h4>
-                            <h5 class="name">David Warner</h5>
+                            <h4 data-lang="program.events.session3.title">Cambio Climático y Recursos Hídricos</h4>
+                            <h5 class="name" data-lang="program.events.session3.speaker">Dra. Elena Ramírez</h5>
                           </div>
                         </div>
                         <div id="collapseOne3" class="collapse show" aria-labelledby="headingOne3" data-parent="#accordion3">
                           <div class="card-body">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet minima dolores rerum maiores qui at commodi quas, reprehenderit eius consectetur quae magni molestias veniam, provident illum facere iure libero asperiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam earum nihil ex ipsa magni eligendi fugiat assumenda suscipit, accusantium, necessitatibus reiciendis odit sed, vero amet blanditiis?</p>
+                            <p data-lang="program.events.session3.description">Impacto del cambio climático en los recursos hídricos de la región fronteriza y estrategias de adaptación basadas en tecnología espacial.</p>
                             <div class="location">
-                              <span>Location:</span> Hall 1 , Building A, Golden Street, Southafrica
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="card">
-                        <div id="headingTwo3">
-                          <div class="schedule-slot-time">
-                            <span> 11.30 - 12.30 AM</span>
-                            Workshop
-                          </div>
-                          <div class="collapsed card-header" data-toggle="collapse" data-target="#collapseTwo3" aria-expanded="false" aria-controls="collapseTwo3">
-                            <div class="images-box">
-                              <img class="img-fluid" src="assets/img/speaker/speakers-2.jpg" alt="">
-                            </div>
-                            <h4>Web Design Principles and Best Practices</h4>
-                            <h5 class="name">David Warner</h5>
-                          </div>
-                        </div>
-                        <div id="collapseTwo3" class="collapse" aria-labelledby="headingTwo3" data-parent="#accordion3">
-                          <div class="card-body">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet minima dolores rerum maiores qui at commodi quas, reprehenderit eius consectetur quae magni molestias veniam, provident illum facere iure libero asperiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam earum nihil ex ipsa magni eligendi fugiat assumenda suscipit, accusantium, necessitatibus reiciendis odit sed, vero amet blanditiis?</p>
-                            <div class="location">
-                              <span>Location:</span> Hall 1 , Building A, Golden Street, Southafrica
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="card">
-                        <div id="headingThree3">
-                          <div class="schedule-slot-time">
-                            <span> 1.30 - 2.30 AM</span>
-                            Workshop
-                          </div>
-                          <div class="collapsed card-header" data-toggle="collapse" data-target="#collapseThree3" aria-expanded="false" aria-controls="collapseThree3">
-                            <div class="images-box">
-                              <img class="img-fluid" src="assets/img/speaker/speakers-3.jpg" alt="">
-                            </div>
-                            <h4>Web Design Principles and Best Practices</h4>
-                            <h5 class="name">David Warner</h5>
-                          </div>
-                        </div>
-                        <div id="collapseThree3" class="collapse" aria-labelledby="headingThree3" data-parent="#accordion3">
-                          <div class="card-body">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet minima dolores rerum maiores qui at commodi quas, reprehenderit eius consectetur quae magni molestias veniam, provident illum facere iure libero asperiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam earum nihil ex ipsa magni eligendi fugiat assumenda suscipit, accusantium, necessitatibus reiciendis odit sed, vero amet blanditiis?</p>
-                            <div class="location">
-                              <span>Location:</span> Hall 1 , Building A, Golden Street, Southafrica
+                              <span data-lang="program.events.session3.location">Ubicación:</span> <span data-lang="program.events.session3.venue">Auditorio Principal, Tec de Monterrey Campus Hermosillo</span>
                             </div>
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <div class="tab-pane fade" id="thursday" role="tabpanel" aria-labelledby="thursday-tab">
-                    <div id="accordion4">
-                      <div class="card">
-                        <div id="headingOne">
-                          <div class="schedule-slot-time">
-                            <span> 9.30 - 10.30 AM</span>
-                            Workshop
-                          </div>
-                          <div class="collapsed card-header" data-toggle="collapse" data-target="#collapseOne4" aria-expanded="false" aria-controls="collapseOne4">
-                            <div class="images-box">
-                              <img class="img-fluid" src="assets/img/speaker/speakers-2.jpg" alt="">
-                            </div>
-                            <h4>Web Design Principles and Best Practices</h4>
-                            <h5 class="name">David Warner</h5>
-                          </div>
-                        </div>
-                        <div id="collapseOne4" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion4">
-                          <div class="card-body">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet minima dolores rerum maiores qui at commodi quas, reprehenderit eius consectetur quae magni molestias veniam, provident illum facere iure libero asperiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam earum nihil ex ipsa magni eligendi fugiat assumenda suscipit, accusantium, necessitatibus reiciendis odit sed, vero amet blanditiis?</p>
-                            <div class="location">
-                              <span>Location:</span> Hall 1 , Building A, Golden Street, Southafrica
-                            </div>
-                          </div>
-                        </div>
+                  <div class="tab-pane fade" id="recursos" role="tabpanel" aria-labelledby="recursos-tab">
+                    <div class="resources-content">
+                      <div class="text-center mb-4">
+                        <h3 data-lang="resources.title">Recursos y Enlaces</h3>
+                        <p data-lang="resources.description">Enlaces útiles y recursos sobre tecnología espacial y gestión de recursos hídricos.</p>
                       </div>
-                      <div class="card">
-                        <div id="headingTwo">
-                          <div class="schedule-slot-time">
-                            <span> 10.30 - 11.30 AM</span>
-                            Workshop
-                          </div>
-                          <div class="collapsed card-header" data-toggle="collapse" data-target="#collapseTwo4" aria-expanded="false" aria-controls="collapseTwo4">
-                            <div class="images-box">
-                              <img class="img-fluid" src="assets/img/speaker/speakers-1.jpg" alt="">
-                            </div>
-                            <h4>Web Design Principles and Best Practices</h4>
-                            <h5 class="name">David Warner</h5>
-                          </div>
-                        </div>
-                        <div id="collapseTwo4" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion4">
-                          <div class="card-body">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet minima dolores rerum maiores qui at commodi quas, reprehenderit eius consectetur quae magni molestias veniam, provident illum facere iure libero asperiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam earum nihil ex ipsa magni eligendi fugiat assumenda suscipit, accusantium, necessitatibus reiciendis odit sed, vero amet blanditiis?</p>
-                            <div class="location">
-                              <span>Location:</span> Hall 1 , Building A, Golden Street, Southafrica
+                      <div class="row">
+                        <div class="col-md-4 mb-4">
+                          <div class="resource-card card h-100">
+                            <div class="card-body text-center">
+                              <h5 class="card-title" data-lang="resources.links.nasa.title">NASA Earth Science Division</h5>
+                              <p class="card-text" data-lang="resources.links.nasa.description">Recursos sobre ciencias de la Tierra y tecnología satelital aplicada al monitoreo ambiental.</p>
+                              <a href="https://science.nasa.gov/earth-science/" target="_blank" class="btn btn-primary">Visitar Sitio</a>
                             </div>
                           </div>
                         </div>
-                      </div>
-                      <div class="card">
-                        <div id="headingThree4">
-                          <div class="schedule-slot-time">
-                            <span> 11.30 - 12.30 AM</span>
-                            Workshop
-                          </div>
-                          <div class="collapsed card-header" data-toggle="collapse" data-target="#collapseThree4" aria-expanded="false" aria-controls="collapseThree4">
-                            <div class="images-box">
-                              <img class="img-fluid" src="assets/img/speaker/speakers-3.jpg" alt="">
-                            </div>
-                            <h4>Web Design Principles and Best Practices</h4>
-                            <h5 class="name">David Warner</h5>
-                          </div>
-                        </div>
-                        <div id="collapseThree4" class="collapse" aria-labelledby="headingThree" data-parent="#accordion4">
-                          <div class="card-body">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet minima dolores rerum maiores qui at commodi quas, reprehenderit eius consectetur quae magni molestias veniam, provident illum facere iure libero asperiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam earum nihil ex ipsa magni eligendi fugiat assumenda suscipit, accusantium, necessitatibus reiciendis odit sed, vero amet blanditiis?</p>
-                            <div class="location">
-                              <span>Location:</span> Hall 1 , Building A, Golden Street, Southafrica
+                        <div class="col-md-4 mb-4">
+                          <div class="resource-card card h-100">
+                            <div class="card-body text-center">
+                              <h5 class="card-title" data-lang="resources.links.usgs.title">USGS Water Resources</h5>
+                              <p class="card-text" data-lang="resources.links.usgs.description">Información sobre recursos hídricos y datos de monitoreo en tiempo real.</p>
+                              <a href="https://www.usgs.gov/mission-areas/water-resources" target="_blank" class="btn btn-primary">Visitar Sitio</a>
                             </div>
                           </div>
                         </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="tab-pane fade" id="friday" role="tabpanel" aria-labelledby="friday-tab">
-                    <div id="accordion">
-                      <div class="card">
-                        <div id="headingOne">
-                          <div class="schedule-slot-time">
-                            <span> 9.30 - 10.30 AM</span>
-                            Workshop
-                          </div>
-                          <div class="collapsed card-header" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                            <div class="images-box">
-                              <img class="img-fluid" src="assets/img/speaker/speakers-2.jpg" alt="">
-                            </div>
-                            <h4>Web Design Principles and Best Practices</h4>
-                            <h5 class="name">David Warner</h5>
-                          </div>
-                        </div>
-                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
-                          <div class="card-body">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet minima dolores rerum maiores qui at commodi quas, reprehenderit eius consectetur quae magni molestias veniam, provident illum facere iure libero asperiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam earum nihil ex ipsa magni eligendi fugiat assumenda suscipit, accusantium, necessitatibus reiciendis odit sed, vero amet blanditiis?</p>
-                            <div class="location">
-                              <span>Location:</span> Hall 1 , Building A, Golden Street, Southafrica
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="card">
-                        <div id="headingTwo">
-                          <div class="schedule-slot-time">
-                            <span> 10.30 - 11.30 AM</span>
-                            Workshop
-                          </div>
-                          <div class="collapsed card-header" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                            <div class="images-box">
-                              <img class="img-fluid" src="assets/img/speaker/speakers-1.jpg" alt="">
-                            </div>
-                            <h4>Web Design Principles and Best Practices</h4>
-                            <h5 class="name">David Warner</h5>
-                          </div>
-                        </div>
-                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-                          <div class="card-body">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet minima dolores rerum maiores qui at commodi quas, reprehenderit eius consectetur quae magni molestias veniam, provident illum facere iure libero asperiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam earum nihil ex ipsa magni eligendi fugiat assumenda suscipit, accusantium, necessitatibus reiciendis odit sed, vero amet blanditiis?</p>
-                            <div class="location">
-                              <span>Location:</span> Hall 1 , Building A, Golden Street, Southafrica
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="card">
-                        <div id="headingThree">
-                          <div class="schedule-slot-time">
-                            <span> 11.30 - 12.30 AM</span>
-                            Workshop
-                          </div>
-                          <div class="collapsed card-header" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                            <div class="images-box">
-                              <img class="img-fluid" src="assets/img/speaker/speakers-3.jpg" alt="">
-                            </div>
-                            <h4>Web Design Principles and Best Practices</h4>
-                            <h5 class="name">David Warner</h5>
-                          </div>
-                        </div>
-                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-                          <div class="card-body">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet minima dolores rerum maiores qui at commodi quas, reprehenderit eius consectetur quae magni molestias veniam, provident illum facere iure libero asperiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam earum nihil ex ipsa magni eligendi fugiat assumenda suscipit, accusantium, necessitatibus reiciendis odit sed, vero amet blanditiis?</p>
-                            <div class="location">
-                              <span>Location:</span> Hall 1 , Building A, Golden Street, Southafrica
+                        <div class="col-md-4 mb-4">
+                          <div class="resource-card card h-100">
+                            <div class="card-body text-center">
+                              <h5 class="card-title" data-lang="resources.links.conagua.title">CONAGUA México</h5>
+                              <p class="card-text" data-lang="resources.links.conagua.description">Comisión Nacional del Agua - Información oficial sobre recursos hídricos en México.</p>
+                              <a href="https://www.gob.mx/conagua" target="_blank" class="btn btn-primary">Visitar Sitio</a>
                             </div>
                           </div>
                         </div>
@@ -768,8 +620,8 @@
         <div class="row">
           <div class="col-12">
             <div class="section-title-header text-center">
-              <h2 class="section-title wow fadeInUp" data-wow-delay="0.2s">Nuestros Ponentes</h2>
-              <p class="wow fadeInDown" data-wow-delay="0.2s">Expertos internacionales en ciencia espacial y sostenibilidad ambiental que compartirán <br> su conocimiento durante el III Coloquio Internacional.</p>
+              <h2 class="section-title wow fadeInUp" data-wow-delay="0.2s" data-lang="sections.speakers.title">Nuestros Ponentes</h2>
+              <p class="wow fadeInDown" data-wow-delay="0.2s" data-lang="sections.speakers.description">Expertos internacionales en ciencia espacial y sostenibilidad ambiental que compartirán <br> su conocimiento durante el III Coloquio Internacional.</p>
             </div>
           </div>
         </div>
@@ -791,8 +643,8 @@
                 </div>
               </div>
               <div class="info-text">
-                <h3><a href="#">JONATHON DOE</a></h3>
-                <p>Product Designer, Tesla</p>
+                <h3><a href="#" data-lang="speakers.people.researcher1.name">Dr. Carlos Mendoza</a></h3>
+                <p data-lang="speakers.people.researcher1.role">Investigador Espacial, NASA</p>
               </div>
             </div>
             <!-- Team Item Ends -->
@@ -838,8 +690,8 @@
                 </div>
               </div>
               <div class="info-text">
-                <h3><a href="#">Paul Kowalsy</a></h3>
-                <p>Lead Designer, TNW</p>
+                <h3><a href="#" data-lang="speakers.people.researcher2.name">Dra. Ana Rodríguez</a></h3>
+                <p data-lang="speakers.people.researcher2.role">Coordinadora de Programas, CONAGUA</p>
               </div>
             </div>
             <!-- Team Item Ends -->
@@ -862,8 +714,8 @@
                 </div>
               </div>
               <div class="info-text">
-                <h3><a href="#">Jhon Doe</a></h3>
-                <p>Back-end Developer, ASUS</p>
+                <h3><a href="#" data-lang="speakers.people.analyst1.name">Ing. Ricardo Vásquez</a></h3>
+                <p data-lang="speakers.people.analyst1.role">Analista de Datos Satelitales, INEGI</p>
               </div>
             </div>
             <!-- Team Item Ends -->
@@ -886,8 +738,8 @@
                 </div>
               </div>
               <div class="info-text">
-                <h3><a href="#">Daryl Dixon</a></h3>
-                <p>Full-stack Developer, Google</p>
+                <h3><a href="#" data-lang="speakers.people.director1.name">Dr. Miguel Herrera</a></h3>
+                <p data-lang="speakers.people.director1.role">Director de Proyectos, TecNM</p>
               </div>
             </div>
             <!-- Team Item Ends -->
@@ -910,8 +762,8 @@
                 </div>
               </div>
               <div class="info-text">
-                <h3><a href="#">Chris Adams</a></h3>
-                <p>UI Designer, Apple</p>
+                <h3><a href="#" data-lang="speakers.people.specialist1.name">Dra. Laura Sánchez</a></h3>
+                <p data-lang="speakers.people.specialist1.role">Especialista en Recursos Hídricos, USGS</p>
               </div>
             </div>
             <!-- Team Item Ends -->
@@ -934,8 +786,8 @@
                 </div>
               </div>
               <div class="info-text">
-                <h3><a href="#">Paul Kowalsy</a></h3>
-                <p>Lead Designer, TNW</p>
+                <h3><a href="#" data-lang="speakers.people.engineer1.name">Ing. José Ramírez</a></h3>
+                <p data-lang="speakers.people.engineer1.role">Ingeniero en Geomática, UNAM</p>
               </div>
             </div>
             <!-- Team Item Ends -->
@@ -958,14 +810,14 @@
                 </div>
               </div>
               <div class="info-text">
-                <h3><a href="#">Jhon Doe</a></h3>
-                <p>Back-end Developer, ASUS</p>
+                <h3><a href="#" data-lang="speakers.people.engineer2.name">M.C. Patricia González</a></h3>
+                <p data-lang="speakers.people.engineer2.role">Especialista en Teledetección, COLPOS</p>
               </div>
             </div>
             <!-- Team Item Ends -->
           </div>
         </div>
-        <a href="#" class="btn btn-common mt-30 wow fadeInUp" data-wow-delay="1.9s">Meet all speakers</a>
+        <a href="#" class="btn btn-common mt-30 wow fadeInUp" data-wow-delay="1.9s" data-lang="speakers.meetAll">Conocer Todos los Ponentes</a>
       </div>
     </section>
     <!-- Team Section End -->
@@ -998,7 +850,7 @@
         <div class="row">
           <div class="col-12">
             <div class="section-title-header text-center">
-              <h2 class="section-title wow fadeInUp" data-wow-delay="0.2s">Próximas Actividades</h2>
+              <h2 class="section-title wow fadeInUp" data-wow-delay="0.2s" data-lang="sections.events.title">Próximas Actividades</h2>
               <p class="wow fadeInDown" data-wow-delay="0.2s">Conoce las actividades programadas para las diferentes sedes del III Coloquio <br> Internacional de Espacio y Sostenibilidad 2025.</p>
             </div>
           </div>
@@ -1064,7 +916,7 @@
         <div class="row">
           <div class="col-12">
             <div class="section-title-header text-center">
-              <h2 class="section-title wow fadeInUp" data-wow-delay="0.2s">Registro</h2>
+              <h2 class="section-title wow fadeInUp" data-wow-delay="0.2s" data-lang="sections.registration.title">Registro</h2>
               <p class="wow fadeInDown" data-wow-delay="0.2s">El III Coloquio Internacional de Espacio y Sostenibilidad ofrece diferentes modalidades de participación <br> adaptadas a las necesidades de los asistentes.</p>
             </div>
           </div>
@@ -1144,7 +996,7 @@
         <div class="row">
           <div class="col-12">
             <div class="section-title-header text-center">
-              <h2 class="section-title wow fadeInUp" data-wow-delay="0.2s">Últimas Noticias</h2>
+              <h2 class="section-title wow fadeInUp" data-wow-delay="0.2s" data-lang="sections.news.title">Últimas Noticias</h2>
               <p class="wow fadeInDown" data-wow-delay="0.2s">Mantente al día con las novedades, anuncios y avances sobre <br> el III Coloquio Internacional de Espacio y Sostenibilidad.</p>
             </div>
           </div>
@@ -1237,7 +1089,7 @@
         <div class="row">
           <div class="col-12">
             <div class="section-title-header text-center">
-              <h2 class="section-title wow fadeInUp" data-wow-delay="0.2s">Aliados</h2>
+              <h2 class="section-title wow fadeInUp" data-wow-delay="0.2s" data-lang="sections.sponsors.title">Aliados</h2>
               <p class="wow fadeInDown" data-wow-delay="0.2s">Organizaciones e instituciones que hacen posible el III Coloquio Internacional <br> de Espacio y Sostenibilidad 2025.</p>
             </div>
           </div>
@@ -1267,7 +1119,7 @@
         <div class="row">
           <div class="col-12">
             <div class="section-title-header text-center">
-              <h2 class="section-title wow fadeInUp" data-wow-delay="0.2s">Contacto</h2>
+              <h2 class="section-title wow fadeInUp" data-wow-delay="0.2s" data-lang="sections.contact.title">Contacto</h2>
               <p class="wow fadeInDown" data-wow-delay="0.2s">Para más información sobre el III Coloquio Internacional de Espacio y Sostenibilidad <br> puede contactarnos a través de los siguientes medios.</p>
             </div>
           </div>
@@ -1365,11 +1217,11 @@
         <div class="row justify-content-center">
           <div class="col-lg-8 col-md-12 col-xs-12">
             <div class="subscribe-inner wow fadeInDown" data-wow-delay="0.3s">
-              <h2 class="subscribe-title">Recibe Actualizaciones</h2>
+              <h2 class="subscribe-title" data-lang="footer.subscribe.title">Recibe Actualizaciones</h2>
               <form class="text-center form-inline">
-                <input class="mb-20 form-control" name="email" placeholder="Ingresa Tu Correo Electrónico">
+                <input class="mb-20 form-control" name="email" data-lang="footer.subscribe.placeholder" placeholder="Ingresa Tu Correo Electrónico">
                 <button type="submit" class="btn btn-common sub-btn" data-style="zoom-in" data-spinner-size="30" name="submit" id="submit">
-                  <span class="ladda-label"><i class="lni-check-box"></i> Suscribirse</span>
+                  <span class="ladda-label"><i class="lni-check-box"></i> <span data-lang="footer.subscribe.button">Suscribirse</span></span>
                 </button>
               </form>
             </div>
@@ -1384,7 +1236,7 @@
               </ul>
             </div>
             <div class="site-info">
-              <p>III Coloquio Internacional de Espacio y Sostenibilidad 2025</p>
+              <p data-lang="footer.copyright">III Coloquio Internacional de Espacio y Sostenibilidad 2025</p>
             </div>
           </div>
         </div>
@@ -1425,6 +1277,8 @@
     <script src="assets/js/wow.js"></script>
     <script src="assets/js/nivo-lightbox.js"></script>
     <script src="assets/js/video.js"></script>
+    <script src="assets/js/translations.js"></script>
+    <script src="assets/js/language-manager.js"></script>
     <script src="assets/js/main.js"></script>      
   </body>
 </html>
