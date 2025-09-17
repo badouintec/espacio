@@ -1,30 +1,49 @@
 /* only small desktops */
 @media (min-width: 992px) and (max-width: 1199px) {
+  #main-slide .carousel-caption {
+    top: 32%;
+  }
+  .carousel-indicators {
+    font-size: 14px;
+  }
+  #main-slide .carousel-item .carousel-caption .heading {
+    font-size: 20px;
+    margin-top: 5px;
+  }
+  #main-slide .carousel-item .carousel-caption p {
+    font-size: 13px;
+  }
   #hero-area .contents .head-title {
     font-size: 40px;
   }
   .navbar-expand-lg .navbar-nav .nav-link {
     padding: 0 10px;
   }
-  .single-intro-text h3 {
-    font-size: 18px;
-  }
   .counter-section .counter p {
     font-size: 14px;
   }
-  .schedule .card .schedule-slot-time {
-    padding: 38px 22px;
+  .schedule .schedule-tab-title .nav-tabs .nav-link {
+    width: 210px;
   }
   #pricing .price-block-wrapper .pricing-list {
     padding: 10px 35px 10px 45px;
   }
-  .blog-item .descr h3 a {
-    font-size: 16px;
+  #sponsors .spnsors-logo img {
+    width: 80%;
   }
 }
 
 /* tablets */
 @media (max-width: 991px) {
+  #main-slide .carousel-caption {
+    top: 32%;
+  }
+  #main-slide .carousel-item .carousel-caption .heading {
+    font-size: 20px;
+  }
+  #main-slide .carousel-item .carousel-caption p {
+    font-size: 13px;
+  }
   .page-title-section {
     padding: 40px 0;
   }
@@ -45,8 +64,7 @@
     width: 150px;
   }
   .schedule .card-header h4 {
-    font-size: 13px;
-    line-height: 18px;
+    font-size: 14px;
   }
   #pricing .price-block-wrapper .pricing-list {
     padding: 10px 35px 10px 45px;
@@ -54,43 +72,48 @@
   #sponsors .spnsors-logo img {
     width: 80%;
   }
+  .padding-none:nth-child(1) {
+    border-left: none;
+  }
+  .padding-none:nth-child(3) {
+    border-left: none;
+  }
+  .padding-none:nth-child(4) {
+    border-bottom: none;
+    border-left: 1px solid #ddd;
+  }
+  .padding-none:nth-child(5) {
+    border-bottom: none;
+    border-left: none;
+  }
+  .padding-none:nth-child(6) {
+    border-top: 1px solid #ddd;
+    border-bottom: none;
+  }
+  .footer-area h3 {
+    margin-top: 30px;
+  }
 }
 
 /* only small tablets */
 @media (min-width: 768px) and (max-width: 991px) {
-  #hero-area .contents .head-title {
-    font-size: 36px;
+  #main-slide .carousel-caption {
+    top: 32%;
   }
-  #information-bar ul {
-    text-align: left;
-    margin: 10px;
+  #main-slide .carousel-item .carousel-caption .heading {
+    font-size: 20px;
   }
-  .about-content .about-text h2 {
-    font-size: 30px;
-    margin-top: 30px;
-  }
-  .single-intro-text h3 {
-    font-size: 18px;
+  #main-slide .carousel-item .carousel-caption p {
+    font-size: 13px;
   }
   .countdown-timer .heading-count h2 {
     font-size: 25px;
-  }
-  .schedule .card-header {
-    padding: 20px 40px 35px 180px;
-  }
-  .schedule .card .schedule-slot-time {
-    font-size: 14px;
-    padding: 29px;
-    max-width: 22%;
   }
   .schedule .schedule-tab-title .nav-tabs .nav-link {
     width: 150px;
   }
   .schedule .card-header h4 {
     font-size: 14px;
-  }
-  .counter-section .counter {
-    margin-bottom: 30px;
   }
   #pricing .price-block-wrapper .pricing-list {
     padding: 10px 35px 10px 60px;
@@ -107,8 +130,23 @@
   #sponsors .spnsors-logo {
     padding: 30px;
   }
-  #event-up .event-item {
-    margin-bottom: 20px;
+  .padding-none:nth-child(1) {
+    border-left: none;
+  }
+  .padding-none:nth-child(3) {
+    border-left: none;
+  }
+  .padding-none:nth-child(4) {
+    border-bottom: none;
+    border-left: 1px solid #ddd;
+  }
+  .padding-none:nth-child(5) {
+    border-bottom: none;
+    border-left: none;
+  }
+  .padding-none:nth-child(6) {
+    border-top: 1px solid #ddd;
+    border-bottom: none;
   }
   .footer-area h3 {
     margin-top: 30px;
@@ -123,72 +161,45 @@
   .section-sub {
     font-size: 16px;
   }
+  #main-slide .carousel-caption {
+    top: 22%;
+  }
+  #main-slide .carousel-item .carousel-caption .heading {
+    font-size: 14px;
+    margin-top: 5px;
+  }
+  #main-slide .carousel-item .carousel-caption p {
+    font-size: 13px;
+  }
+  #main-slide .carousel-indicators {
+    display: none;
+  }
   #hero-area .contents {
     padding: 100px 0;
   }
   #hero-area .contents .head-title {
-    font-size: 20px;
-    margin-bottom: 10px;
-  }
-  #hero-area .contents .btn-date {
-    font-size: 12px;
+    font-size: 15px;
   }
   #hero-area .contents .btn {
     margin: 25px 3px 0 0;
   }
-  #hero-area .contents .banner-info {
-    font-size: 14px;
+  .countdown-timer .heading-count {
+    padding: 10px;
   }
-  #hero-area .contents .banner-desc {
-    padding: 0 10px;
+  .countdown-timer .heading-count h2 {
+    font-size: 24px;
   }
-  #information-bar ul {
-    text-align: left;
-    margin-bottom: 30px;
-  }
-  .about-content .about-text h2 {
-    font-size: 22px;
-    margin-top: 20px;
-  }
-  .about-content ul li {
-    font-size: 12px;
-  }
-  .time-entry {
-    width: 50%;
-    font-size: 14px;
-  }
-  .time-entry span {
-    font-size: 30px;
-  }
-  .time-entry b {
-    display: none;
-  }
-  .counter-section .counter {
-    margin-bottom: 30px;
-  }
-  .schedule .nav-tabs .nav-item {
-    margin: 15px 0px;
-  }
-  .schedule .nav-tabs .nav-link {
-    padding: 12px 10px;
-  }
-  .schedule .item-text h5 {
+  .countdown-timer .heading-count h4 {
     font-size: 12px;
   }
   .schedule .card-body {
     padding: 15px;
   }
-  .schedule .card .schedule-slot-time {
-    display: none;
-  }
-  .schedule .card-header {
-    padding: 30px;
-  }
   .schedule .schedule-tab-title .nav-tabs .nav-link {
     width: 288px;
   }
-  #event-up .event-item {
-    margin-bottom: 30px;
+  .accordion .header-title {
+    font-size: 11px;
   }
   #pricing .price-block-wrapper .pricing-list {
     padding: 10px 30px 10px 40px;
@@ -199,35 +210,507 @@
   .blog-item .descr h3 a {
     font-size: 18px;
   }
+  .subscribe-inner {
+    padding: 30px 15px;
+  }
+  .subscribe-inner .subscribe-title {
+    font-size: 18px;
+  }
+  .subscribe-inner .form-inline {
+    width: 100%;
+  }
+  .subscribe-inner .form-control {
+    width: 100%;
+  }
+  .subscribe-inner .sub-btn {
+    margin: 20px auto;
+    text-align: center;
+    position: inherit;
+  }
   .container-form .form-wrapper {
     padding: 20px;
   }
   .contact-item {
     margin-bottom: 40px;
   }
+  .thumb-left img {
+    width: 60%;
+  }
   #sponsors .spnsors-logo img {
     width: 80%;
   }
-  #contact-text ul {
-    text-align: left;
-    margin-bottom: 15px;
+  .footer-area h3 {
+    margin-top: 30px;
   }
-  .subscribe-inner .subscribe-title {
-    font-size: 16px;
+  .padding-none:nth-child(1) {
+    border-bottom: 1px solid #ddd;
   }
-  .subscribe-inner .subscribe-title::before {
-    left: 40%;
+  .padding-none:nth-child(4) {
+    border-bottom: 1px solid #ddd;
   }
-  .subscribe-inner .sub-btn {
-    width: 9rem;
-    min-width: 5rem;
-    padding: 18px 20px;
+  .padding-none:nth-child(5) {
+    border-bottom: 1px solid #ddd;
   }
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
+  #main-slide .carousel-item .carousel-caption .heading {
+    letter-spacing: 0;
+  }
+  #main-slide .carousel-item .carousel-caption p {
+    font-size: 14px;
+  }
+  #main-slide .carousel-caption .btn {
+    margin: 0;
+  }
+  #main-slide .carousel-indicators {
+    display: none;
+  }
+  #about .title-sub {
+    font-size: 24px;
+  }
+  .contact-map .container-form {
+    width: 350px;
+  }
+  .newsletter-wrapper .sub-btn {
+    padding: 11px 20px;
+  }
   .btn {
     padding: 5px 7px;
     font-size: 13px;
+  }
+}
+
+/* Mejoras específicas para el Coloquio - Móviles pequeños */
+@media (max-width: 480px) {
+  /* Hero section optimizada */
+  #main-slide .carousel-item .carousel-caption .heading {
+    font-size: 18px !important;
+    line-height: 1.2;
+    margin-bottom: 10px;
+  }
+  
+  #main-slide .carousel-item .carousel-caption p {
+    font-size: 12px !important;
+    margin-bottom: 15px;
+  }
+  
+  .carousel-caption .btn {
+    font-size: 11px;
+    padding: 8px 12px;
+    margin: 2px;
+    display: block;
+    width: 80%;
+    margin: 5px auto;
+  }
+  
+  /* Countdown section responsive */
+  .countdown-timer h2 {
+    font-size: 20px;
+  }
+  
+  .countdown-timer h3 {
+    font-size: 16px;
+  }
+  
+  .countdown-timer p {
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+  
+  /* Services section mobile */
+  .services-item {
+    margin-bottom: 30px;
+    background: rgba(0, 0, 0, 0.7) !important;
+    border-radius: 8px;
+    padding: 20px;
+  }
+  
+  .services-item h3 a {
+    color: #ffffff !important;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+  }
+  
+  .services-item p {
+    color: #ffffff !important;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+  }
+  
+  .services-item:hover h3 a {
+    color: #ffffff !important;
+  }  .services-item h3 {
+    font-size: 16px;
+  }
+  
+  .services-item h3 a {
+    color: #ffffff !important;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+  }
+  
+  .services-item p {
+    font-size: 13px;
+    color: #ffffff !important;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+  }
+  
+  .services-item:hover h3 a {
+    color: #ffffff !important;
+  }
+  
+  /* Schedule tabs mobile optimization */
+  .schedule .schedule-tab-title .nav-tabs .nav-link {
+    width: 100% !important;
+    font-size: 12px;
+    padding: 8px;
+  }
+  
+  .schedule .schedule-tab-title {
+    margin-bottom: 20px;
+  }
+  
+  .schedule .card-header h4 {
+    font-size: 13px;
+  }
+  
+  .schedule .card-header .time {
+    font-size: 11px;
+  }
+  
+  /* Pricing section mobile */
+  .price-block-wrapper {
+    margin-bottom: 30px;
+  }
+  
+  .price-block-wrapper h2 {
+    font-size: 24px;
+  }
+  
+  .pricing-list {
+    padding: 10px 20px !important;
+  }
+  
+  .pricing-list li {
+    font-size: 12px;
+  }
+  
+  /* Contact section mobile */
+  #contact-map h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+  
+  #contact-map p {
+    font-size: 13px;
+    margin-bottom: 10px;
+  }
+  
+  #contact-map .btn {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+  }
+}
+
+/* Mejoras para tablets */
+@media (min-width: 481px) and (max-width: 768px) {
+  /* Hero section tablet */
+  #main-slide .carousel-item .carousel-caption .heading {
+    font-size: 24px;
+  }
+  
+  /* Schedule tabs tablet */
+  .schedule .schedule-tab-title .nav-tabs {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .schedule .schedule-tab-title .nav-tabs .nav-link {
+    width: 50%;
+    font-size: 13px;
+  }
+  
+  /* Pricing responsive grid */
+  .price-block-wrapper {
+    margin-bottom: 25px;
+  }
+}
+
+/* Mejoras para pantallas grandes */
+@media (min-width: 1200px) {
+  /* Contenido optimizado para pantallas grandes */
+  .carousel-caption .heading {
+    font-size: 48px;
+  }
+  
+  .carousel-caption p {
+    font-size: 18px;
+  }
+  
+  .section-title {
+    font-size: 42px;
+  }
+  
+  .services-item {
+    height: 100%;
+    min-height: 300px;
+  }
+}
+
+/* Optimización para accesibilidad */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Modo alto contraste */
+@media (prefers-contrast: high) {
+  .btn {
+    border: 2px solid;
+  }
+  
+  .card-header {
+    border: 1px solid;
+  }
+  
+  .nav-link {
+    text-decoration: underline;
+  }
+}
+
+/* Footer temas clave - mejora de legibilidad */
+.footer-area ul li {
+  color: #ffffff !important;
+  font-size: 14px;
+  margin-bottom: 8px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+  font-weight: 400;
+}
+
+.footer-area h3 {
+  color: #ffffff !important;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+}
+
+.footer-area p {
+  color: #ffffff !important;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+}
+
+/* Cajas de información de contacto */
+.contact-info-box {
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid #f0f0f0;
+}
+
+.contact-info-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.contact-info-box h4 {
+  color: #333 !important;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.contact-info-box p {
+  color: #666 !important;
+  margin-bottom: 8px;
+  line-height: 1.6;
+}
+
+.contact-info-box .icon i {
+  color: #0eacf3 !important;
+}
+
+/* AUDITORÍA COMPLETA DE CONTRASTE - SOBRESCRIBIR TODOS LOS PROBLEMAS */
+
+/* 1. SOBRESCRIBIR PROBLEMAS DE CONTRASTE DEL BLUE.CSS */
+.services-item .services-content h3 a {
+  color: #ffffff !important;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
+  font-weight: 600;
+}
+
+.services-item:hover .services-content h3 a {
+  color: #ffffff !important;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
+}
+
+.services-item .services-content p {
+  color: #ffffff !important;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+}
+
+/* 2. ASEGURAR FOOTER COMPLETAMENTE LEGIBLE */
+.footer-area ul li {
+  color: #ffffff !important;
+  font-size: 14px;
+  margin-bottom: 8px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+  font-weight: 400;
+}
+
+.footer-area ul li a {
+  color: #ffffff !important;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+}
+
+.footer-area ul li a:hover {
+  color: #E91E63 !important;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+}
+
+.footer-area h3 {
+  color: #ffffff !important;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+}
+
+.footer-area p {
+  color: #ffffff !important;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+}
+
+/* 3. CRONOGRAMA Y TABLAS */
+.schedule .tab-content .table tbody tr td {
+  color: #333333 !important;
+}
+
+.schedule .tab-content .table tbody tr td .speakers .speaker h5 a {
+  color: #0eacf3 !important;
+  font-weight: 600;
+}
+
+.schedule .tab-content .table tbody tr td .speakers .speaker h5 a:hover {
+  color: #0056b3 !important;
+}
+
+/* 4. NAVEGACIÓN PRINCIPAL */
+.navbar-nav .nav-link {
+  color: #333333 !important;
+  font-weight: 500;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #0eacf3 !important;
+}
+
+.navbar-nav .nav-link.active {
+  color: #0eacf3 !important;
+  font-weight: 600;
+}
+
+/* 5. BOTONES DE ENLACE MEJORADOS */
+.btn-info {
+  background-color: #17a2b8 !important;
+  border-color: #17a2b8 !important;
+  color: #ffffff !important;
+  font-weight: 500;
+}
+
+.btn-info:hover {
+  background-color: #138496 !important;
+  border-color: #117a8b !important;
+  color: #ffffff !important;
+}
+
+/* 7. MEJORAS DE LEGIBILIDAD DEL MENÚ PRINCIPAL */
+.navbar-expand-lg .navbar-nav .nav-link {
+  background: rgba(0, 0, 0, 0.4) !important;
+  border-radius: 20px !important;
+  margin: 0 3px !important;
+  padding: 6px 12px !important;
+  color: #ffffff !important;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8) !important;
+  font-weight: 500 !important;
+  transition: all 0.3s ease !important;
+  backdrop-filter: blur(5px) !important;
+  -webkit-backdrop-filter: blur(5px) !important;
+  line-height: 1.2 !important;
+  display: inline-block !important;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link:hover {
+  background: rgba(14, 172, 243, 0.8) !important;
+  color: #ffffff !important;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.9) !important;
+  transform: translateY(-1px) !important;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3) !important;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link.active {
+  background: rgba(14, 172, 243, 0.9) !important;
+  color: #ffffff !important;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.9) !important;
+  font-weight: 600 !important;
+}
+
+/* Mejorar el navbar base para mejor contraste */
+.navbar {
+  background: rgba(0, 0, 0, 0.2) !important;
+  backdrop-filter: blur(10px) !important;
+  -webkit-backdrop-filter: blur(10px) !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+/* Mejorar legibilidad del logo */
+.navbar-brand {
+  background: rgba(0, 0, 0, 0.3) !important;
+  border-radius: 12px !important;
+  padding: 3px 8px !important;
+  backdrop-filter: blur(5px) !important;
+  -webkit-backdrop-filter: blur(5px) !important;
+}
+
+.navbar-brand img {
+  filter: drop-shadow(1px 1px 3px rgba(0, 0, 0, 0.8)) !important;
+}
+
+/* Cuando el navbar colapsa (scroll) */
+.top-nav-collapse {
+  background: rgba(0, 0, 0, 0.95) !important;
+  backdrop-filter: blur(15px) !important;
+  -webkit-backdrop-filter: blur(15px) !important;
+}
+
+/* 8. MEJORAS PARA MENÚ MÓVIL */
+@media (max-width: 991px) {
+  .navbar-collapse {
+    background: rgba(0, 0, 0, 0.95) !important;
+    border-radius: 10px !important;
+    margin-top: 10px !important;
+    padding: 15px !important;
+    backdrop-filter: blur(15px) !important;
+    -webkit-backdrop-filter: blur(15px) !important;
+  }
+  
+  .navbar-expand-lg .navbar-nav .nav-link {
+    background: rgba(255, 255, 255, 0.1) !important;
+    margin: 3px 0 !important;
+    border-radius: 15px !important;
+    text-align: center !important;
+    padding: 8px 12px !important;
+    line-height: 1.2 !important;
+  }
+  
+  .navbar-expand-lg .navbar-nav .nav-link:hover {
+    background: rgba(14, 172, 243, 0.8) !important;
+  }
+}
+
+/* Responsive para cajas de contacto */
+@media (max-width: 768px) {
+  .contact-info-box {
+    margin-bottom: 20px;
+  }
+  
+  .contact-info-box .icon i {
+    font-size: 2.5rem !important;
   }
 }

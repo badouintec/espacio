@@ -1,21 +1,21 @@
-MIT License
+III COLOQUIO INTERNACIONAL DE ESPACIO Y SOSTENIBILIDAD 2025
 
-Copyright (c) 2025 III Coloquio Internacional de Espacio y Sostenibilidad
+INFORMACIÓN DEL EVENTO
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+Sitio web oficial del III Coloquio Internacional de Espacio y Sostenibilidad 2025
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+FECHAS IMPORTANTES:
+- Fase 1 - Hermosillo: 3 de octubre de 2025
+- Fase 2 - Arizona: 14 de noviembre de 2025
+- NASA Space Apps Challenge: 4-5 de octubre de 2025
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+ORGANIZADORES:
+- Tecnológico de Monterrey, Campus Sonora Norte
+- NASA y aliados estratégicos
+- Colaboradores internacionales
+
+CONTACTO:
+Para más información sobre el evento, registro y participación,
+visite las secciones correspondientes en el sitio web.
+
+© 2025 III Coloquio Internacional de Espacio y Sostenibilidad

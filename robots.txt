@@ -1,9 +1,0 @@
-User-agent: *
-Allow: /
-
-# Sitemap
-Sitemap: https://espacioysostenibilidad.org/sitemap.xml
-
-# Allow all search engines to crawl the site
-# III Coloquio Internacional de Espacio y Sostenibilidad 2025
-# NASA Space and Sustainability Event
