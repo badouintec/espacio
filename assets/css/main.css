@@ -1,4 +1,23 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:400|Josefin+Sans:700");
+
+/* === PALETA DE COLORES PROFESIONAL === */
+:root {
+  /* Colores principales (identitarios) */
+  --color-azul-marino: #132542;
+  --color-verde-hoja: #5C7D49;
+  --color-blanco: #FFFFFF;
+  
+  /* Colores secundarios (apoyo visual) */
+  --color-azul-oceano: #2D89EF;
+  --color-azul-medio: #3A5E89;
+  --color-gris-claro: #F4F5F7;
+  --color-gris-medio: #7A8A99;
+  
+  /* Colores de acento */
+  --color-verde-claro: #9BCF82;
+  --color-azul-brillante: #1E90FF;
+}
+
 html {
   overflow-x: hidden;
 }
@@ -2216,4 +2235,220 @@ a.back-to-top:hover, a.back-to-top:focus {
   background: rgba(255, 255, 255, 0.2);
   color: #fff;
   border-color: #fff;
+}
+
+/* === APLICACIÓN DE LA NUEVA PALETA DE COLORES === */
+
+/* Navbar principal con azul marino */
+.navbar {
+  background: var(--color-azul-marino) !important;
+  padding: 0;
+}
+
+.navbar .navbar-nav .nav-link {
+  color: var(--color-blanco) !important;
+  font-weight: 500;
+}
+
+.navbar .navbar-nav .nav-link:hover {
+  color: var(--color-verde-claro) !important;
+}
+
+.navbar .navbar-nav .nav-link.active,
+.navbar li.active a.nav-link {
+  color: var(--color-verde-claro) !important;
+}
+
+/* Cuando el navbar colapsa mantener azul marino */
+.top-nav-collapse {
+  background: var(--color-azul-marino) !important;
+  z-index: 999999;
+  top: 0px !important;
+  min-height: 58px;
+  box-shadow: 0px 3px 6px 3px rgba(19, 37, 66, 0.15);
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+}
+
+.top-nav-collapse .navbar-nav .nav-link {
+  color: var(--color-blanco) !important;
+}
+
+.top-nav-collapse .navbar-nav .nav-link:hover {
+  color: var(--color-verde-claro) !important;
+}
+
+.top-nav-collapse .navbar-nav li.active a.nav-link {
+  color: var(--color-verde-claro) !important;
+}
+
+/* Fondo general con gris claro */
+body {
+  background: var(--color-gris-claro) !important;
+  color: var(--color-azul-marino) !important;
+  font-size: 15px;
+  font-weight: 400;
+  font-family: 'Lato', sans-serif;
+  line-height: 25px;
+}
+
+/* Títulos con azul marino */
+h1, h2, h3, h4 {
+  color: var(--color-azul-marino) !important;
+  font-size: 36px;
+  font-weight: 700;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+/* Enlaces con azul brillante */
+a {
+  color: var(--color-azul-brillante) !important;
+  text-decoration: none;
+  transition: all 0.2s linear;
+}
+
+a:hover {
+  color: var(--color-verde-hoja) !important;
+  text-decoration: none;
+}
+
+/* Botones primarios con verde hoja */
+.btn-primary,
+button.primary,
+.btn-common {
+  background: var(--color-verde-hoja) !important;
+  color: var(--color-blanco) !important;
+  border: 2px solid var(--color-verde-hoja) !important;
+  border-radius: 6px;
+  padding: 0.8rem 1.5rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover,
+button.primary:hover,
+.btn-common:hover {
+  background: var(--color-verde-claro) !important;
+  border-color: var(--color-verde-claro) !important;
+  color: var(--color-azul-marino) !important;
+  transform: translateY(-2px);
+}
+
+/* Botones secundarios con azul brillante */
+.btn-secondary,
+.btn-outline {
+  background: transparent !important;
+  color: var(--color-azul-brillante) !important;
+  border: 2px solid var(--color-azul-brillante) !important;
+  border-radius: 6px;
+  padding: 0.8rem 1.5rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-secondary:hover,
+.btn-outline:hover {
+  background: var(--color-azul-brillante) !important;
+  color: var(--color-blanco) !important;
+}
+
+/* Secciones destacadas con azul medio */
+.section-highlight,
+.featured-section {
+  background: var(--color-azul-medio) !important;
+  color: var(--color-blanco) !important;
+}
+
+/* Texto secundario con gris medio */
+.text-secondary,
+.subtitle,
+p.lead {
+  color: var(--color-gris-medio) !important;
+}
+
+/* Separadores y bordes con azul medio */
+hr,
+.border,
+.divider {
+  border-color: var(--color-azul-medio) !important;
+}
+
+/* Cards y contenedores */
+.card,
+.content-box {
+  background: var(--color-blanco) !important;
+  border: 1px solid rgba(58, 94, 137, 0.1) !important;
+  box-shadow: 0 2px 10px rgba(19, 37, 66, 0.1) !important;
+}
+
+/* Elementos decorativos y divisores */
+.section-title:before,
+.section-title:after,
+.section-sub:before {
+  background-color: var(--color-verde-hoja) !important;
+}
+
+/* Iconos y elementos de acento */
+.icon-close,
+.icon-check {
+  color: var(--color-verde-hoja) !important;
+}
+
+/* Botones de borde */
+.btn-border {
+  color: var(--color-azul-brillante) !important;
+  background-color: transparent !important;
+  border: 1px solid var(--color-azul-brillante) !important;
+}
+
+.btn-border:hover {
+  color: var(--color-blanco) !important;
+  background-color: var(--color-azul-brillante) !important;
+}
+
+/* Fondos específicos para secciones destacadas */
+.bg-gray,
+.section-alternate {
+  background: var(--color-gris-claro) !important;
+}
+
+.bg-primary,
+.section-primary {
+  background: var(--color-azul-medio) !important;
+  color: var(--color-blanco) !important;
+}
+
+/* Enlaces activos del navbar */
+.navbar-expand-lg .navbar-nav .nav-link:before {
+  background: var(--color-verde-claro) !important;
+}
+
+.navbar-expand-lg .navbar-nav .active a:before {
+  background: var(--color-verde-claro) !important;
+}
+
+/* Sobrescribir colores específicos existentes */
+.subscribe-inner .sub-btn,
+.newsletter-wrapper .sub-btn {
+  background: var(--color-verde-hoja) !important;
+  color: var(--color-blanco) !important;
+  border-color: var(--color-verde-hoja) !important;
+}
+
+.subscribe-inner .sub-btn:hover,
+.newsletter-wrapper .sub-btn:hover {
+  background: var(--color-verde-claro) !important;
+  color: var(--color-azul-marino) !important;
+}
+
+/* Actualizar el carousel y slider */
+#main-slide .carousel-caption .btn {
+  background: var(--color-verde-hoja) !important;
+  border-color: var(--color-verde-hoja) !important;
+  color: var(--color-blanco) !important;
+}
+
+#main-slide .carousel-caption .btn:hover {
+  background: var(--color-verde-claro) !important;
+  color: var(--color-azul-marino) !important;
 }

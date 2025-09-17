@@ -1,3 +1,6 @@
+/* === IMPORTAR VARIABLES DE LA NUEVA PALETA === */
+/* Las variables están definidas en main.css, aquí las reutilizamos */
+
 /* only small desktops */
 @media (min-width: 992px) and (max-width: 1199px) {
   #main-slide .carousel-caption {
@@ -593,24 +596,24 @@
 
 /* 4. NAVEGACIÓN PRINCIPAL */
 .navbar-nav .nav-link {
-  color: #333333 !important;
+  color: var(--color-azul-marino) !important;
   font-weight: 500;
 }
 
 .navbar-nav .nav-link:hover {
-  color: #0eacf3 !important;
+  color: var(--color-verde-hoja) !important;
 }
 
 .navbar-nav .nav-link.active {
-  color: #0eacf3 !important;
+  color: var(--color-verde-hoja) !important;
   font-weight: 600;
 }
 
 /* 5. BOTONES DE ENLACE MEJORADOS */
 .btn-info {
-  background-color: #17a2b8 !important;
-  border-color: #17a2b8 !important;
-  color: #ffffff !important;
+  background-color: var(--color-azul-brillante) !important;
+  border-color: var(--color-azul-brillante) !important;
+  color: var(--color-blanco) !important;
   font-weight: 500;
 }
 
@@ -622,12 +625,12 @@
 
 /* 7. MEJORAS DE LEGIBILIDAD DEL MENÚ PRINCIPAL */
 .navbar-expand-lg .navbar-nav .nav-link {
-  background: rgba(0, 0, 0, 0.4) !important;
+  background: rgba(19, 37, 66, 0.7) !important;
   border-radius: 20px !important;
   margin: 0 3px !important;
   padding: 6px 12px !important;
-  color: #ffffff !important;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8) !important;
+  color: var(--color-blanco) !important;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5) !important;
   font-weight: 500 !important;
   transition: all 0.3s ease !important;
   backdrop-filter: blur(5px) !important;
@@ -637,39 +640,39 @@
 }
 
 .navbar-expand-lg .navbar-nav .nav-link:hover {
-  background: rgba(14, 172, 243, 0.8) !important;
-  color: #ffffff !important;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.9) !important;
+  background: var(--color-verde-hoja) !important;
+  color: var(--color-blanco) !important;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5) !important;
   transform: translateY(-1px) !important;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3) !important;
+  box-shadow: 0 2px 6px rgba(19, 37, 66, 0.3) !important;
 }
 
 .navbar-expand-lg .navbar-nav .nav-link.active {
-  background: rgba(14, 172, 243, 0.9) !important;
-  color: #ffffff !important;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.9) !important;
+  background: var(--color-verde-claro) !important;
+  color: var(--color-azul-marino) !important;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3) !important;
   font-weight: 600 !important;
 }
 
-/* Mejorar el navbar base para mejor contraste */
+/* Navbar base con azul marino y transparencia */
 .navbar {
-  background: rgba(0, 0, 0, 0.2) !important;
+  background: rgba(19, 37, 66, 0.95) !important;
   backdrop-filter: blur(10px) !important;
   -webkit-backdrop-filter: blur(10px) !important;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
 }
 
-/* Mejorar legibilidad del logo */
+/* Logo sin fondo - transparente y limpio */
 .navbar-brand {
-  background: rgba(0, 0, 0, 0.3) !important;
-  border-radius: 12px !important;
-  padding: 3px 8px !important;
-  backdrop-filter: blur(5px) !important;
-  -webkit-backdrop-filter: blur(5px) !important;
+  background: transparent !important;
+  border-radius: 0 !important;
+  padding: 5px 10px !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
 }
 
 .navbar-brand img {
-  filter: drop-shadow(1px 1px 3px rgba(0, 0, 0, 0.8)) !important;
+  filter: drop-shadow(1px 1px 3px rgba(0, 0, 0, 0.3)) !important;
 }
 
 /* Cuando el navbar colapsa (scroll) */
