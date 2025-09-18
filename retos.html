@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retos - NASA Space Apps Sonora 2025</title>
+    <meta name="description" content="Explora los retos 2025 de NASA Space Apps Sonora: filtra y busca desafíos por tema, dificultad y palabras clave para tu equipo." />
+    <link rel="canonical" href="retos.html" />
+    <meta property="og:title" content="Retos 2025 – NASA Space Apps Sonora" />
+    <meta property="og:description" content="Busca y filtra los 2025 desafíos de NASA Space Apps para elegir el ideal para tu equipo." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://placehold.co/1200x630/0B3D91/DFFF00?text=Retos+Space+Apps+Sonora" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="preload" href="favicon.svg" as="image" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'space-dark-blue': '#0B3D91',
+                        'space-vibrant-blue': '#0052CC', 
+                        'space-lime-yellow': '#DFFF00',
+                        'space-dark': '#080A1A'
+                    },
+                    fontFamily: {
+                        'sans': ['Inter', 'system-ui', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body class="text-slate-100">
+    <header class="nav-glass sticky top-0 z-50" role="banner">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center" aria-label="Navegación principal">
+            <div class="flex items-center space-x-3">
+                <div class="w-10 h-10 flex items-center justify-center" aria-hidden="true">
+                    <svg class="w-full h-full text-white" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="50" cy="50" r="48" stroke="currentColor" stroke-width="4"/>
+                        <path d="M25 50C25 36.1929 36.1929 25 50 25" stroke="currentColor" stroke-width="4"/>
+                    </svg>
+                </div>
+                <a href="index.html" class="text-xl font-black text-white">Space Apps Sonora</a>
+            </div>
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="index.html#retos" class="text-slate-200 hover:text-white font-medium transition-colors">Inicio</a>
+                <a href="index.html#equipo" class="text-slate-200 hover:text-white font-medium transition-colors">Mentores</a>
+                <a href="index.html#bootcamp" class="text-slate-200 hover:text-white font-medium transition-colors">Bootcamp</a>
+                <a href="index.html#sede" class="text-slate-200 hover:text-white font-medium transition-colors">Sede</a>
+                <a href="index.html#faq" class="text-slate-200 hover:text-white font-medium transition-colors">FAQ</a>
+                <a href="https://www.spaceappschallenge.org/signup/" target="_blank" class="btn-nasa px-6 py-3 rounded-md font-bold text-sm">Registro</a>
+            </div>
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-white focus:outline-none" aria-expanded="false" aria-controls="mobile-menu">
+                    <span class="sr-only">Abrir menú</span>
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+        <div id="mobile-menu" class="hidden md:hidden px-6 pt-2 pb-4 space-y-3" role="menu">
+            <a href="index.html#retos" class="block text-slate-200 hover:text-white font-medium">Inicio</a>
+            <a href="index.html#equipo" class="block text-slate-200 hover:text-white font-medium">Mentores</a>
+            <a href="index.html#bootcamp" class="block text-slate-200 hover:text-white font-medium">Bootcamp</a>
+            <a href="index.html#sede" class="block text-slate-200 hover:text-white font-medium">Sede</a>
+            <a href="index.html#faq" class="block text-slate-200 hover:text-white font-medium">FAQ</a>
+            <a href="https://www.spaceappschallenge.org/signup/" target="_blank" class="block text-center mt-4 btn-nasa px-6 py-3 rounded-md font-bold">Registro</a>
+        </div>
+    </header>
+
+    <main id="retos" class="py-20 bg-gradient-to-br from-space-dark to-space-dark-blue" role="main">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h1 class="text-5xl font-black text-white mb-4">Retos 2025</h1>
+                <p class="text-xl text-slate-200 max-w-3xl mx-auto">
+                    Explora los 19 desafíos oficiales. Usa el buscador para filtrar por título, tema o descripción y encuentra el reto perfecto para tu equipo.
+                </p>
+                <div class="mt-6">
+                    <a href="https://www.spaceappschallenge.org/2025/challenges/" target="_blank" class="inline-flex items-center gap-2 btn-nasa px-6 py-3 rounded-md font-bold text-sm">
+                        Lista oficial completa
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="mb-12 max-w-2xl mx-auto" role="search" aria-label="Buscar retos">
+                <label for="challenge-search" class="sr-only">Buscar retos</label>
+                <div class="relative">
+                    <input type="text" id="challenge-search" placeholder="Buscar un reto (ej. 'Marte', 'IA', 'Tierra')..." class="w-full bg-white bg-opacity-10 text-white placeholder-slate-400 border-2 border-space-vibrant-blue rounded-lg py-4 pl-6 pr-20 focus:ring-2 focus:ring-space-lime-yellow focus:border-space-lime-yellow focus:outline-none transition-all" aria-describedby="challenge-help results-count" autocomplete="off">
+                    <div class="absolute inset-y-0 right-0 flex items-center pr-3 gap-2 pointer-events-none" aria-hidden="true">
+                        <svg class="w-5 h-5 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+                    </div>
+                    <button id="clear-search" type="button" class="absolute inset-y-0 right-0 my-2 mr-10 px-2 rounded text-slate-300 hover:text-white focus:outline-none focus:ring-2 focus:ring-space-lime-yellow hidden" aria-label="Limpiar búsqueda">×</button>
+                </div>
+                <p id="challenge-help" class="text-xs text-slate-400 mt-2">Busca por palabras clave en español o inglés. Ejemplos: <code class="text-space-lime-yellow">Marte</code>, <code class="text-space-lime-yellow">AI</code>, <code class="text-space-lime-yellow">ciencia</code>.</p>
+                <p id="results-count" class="text-xs text-slate-400 mt-1" aria-live="polite"></p>
+                <div class="mt-4 flex flex-wrap gap-2 items-center" role="group" aria-label="Filtrar por dificultad">
+                    <button class="diff-filter px-3 py-1 text-xs rounded-full bg-white/10 text-slate-300 hover:bg-white/20 focus:outline-none focus:ring-2 focus:ring-space-lime-yellow" data-diff="Principiante" aria-pressed="false">Principiante</button>
+                    <button class="diff-filter px-3 py-1 text-xs rounded-full bg-white/10 text-slate-300 hover:bg-white/20 focus:outline-none focus:ring-2 focus:ring-space-lime-yellow" data-diff="Intermedio" aria-pressed="false">Intermedio</button>
+                    <button class="diff-filter px-3 py-1 text-xs rounded-full bg-white/10 text-slate-300 hover:bg-white/20 focus:outline-none focus:ring-2 focus:ring-space-lime-yellow" data-diff="Avanzado" aria-pressed="false">Avanzado</button>
+                    <button id="reset-filters" class="ml-2 px-3 py-1 text-xs rounded-full bg-space-vibrant-blue text-white hover:bg-space-dark-blue focus:outline-none focus:ring-2 focus:ring-space-lime-yellow" type="button">Reset</button>
+                    <div class="ml-auto flex items-center gap-2">
+                        <label for="sort-select" class="sr-only">Ordenar</label>
+                        <select id="sort-select" class="bg-white/10 text-slate-200 text-xs rounded-md px-2 py-1 focus:ring-2 focus:ring-space-lime-yellow focus:outline-none">
+                            <option value="relevancia">Relevancia</option>
+                            <option value="titulo">Título A-Z</option>
+                            <option value="dificultad">Dificultad</option>
+                        </select>
+                        <button id="copy-link" type="button" class="px-2 py-1 text-xs rounded-md bg-white/10 text-slate-300 hover:text-white hover:bg-white/20 focus:outline-none focus:ring-2 focus:ring-space-lime-yellow" aria-label="Copiar enlace con filtros">🔗</button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="challenges-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" aria-live="polite" aria-label="Resultados de retos"></div>
+            <p id="no-results" class="text-center text-slate-300 text-lg mt-16 hidden">No se encontraron retos que coincidan con tu búsqueda.</p>
+        </div>
+    </main>
+
+    <footer class="bg-space-dark text-white py-16" role="contentinfo">
+        <div class="container mx-auto px-6 text-center">
+            <p class="text-slate-400 text-sm">
+                Tema 2025: <span class="text-space-lime-yellow font-bold">"Learn, Launch, Lead"</span> • 
+                Evento gratuito y abierto a todas las edades • 
+                <a href="https://www.spaceappschallenge.org" target="_blank" class="text-space-vibrant-blue hover:underline">spaceappschallenge.org</a>
+            </p>
+        </div>
+    </footer>
+
+        <script src="js/retos.js" defer></script>
+        <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "ItemList",
+            "name": "Lista de Retos NASA Space Apps 2025 (Sonora)",
+            "itemListElement": [
+                {"@type": "ListItem", "position": 1, "name": "Animación de Terra"},
+                {"@type": "ListItem", "position": 2, "name": "Exoplanetas con IA"},
+                {"@type": "ListItem", "position": 3, "name": "BloomWatch"}
+            ]
+        }
+        </script>
+    <script>
+        // Datos de retos (idénticos a la especificación original) extraídos a un script separado para futura modularización
+        const CHALLENGES_DATA = [
+            { title: "¡Celebración con Animación de TERRA!", englishTitle: "Animation Celebration of Terra Data!", keywords: "terra animación celebración datos tierra principiante intermedio avanzado clima artes multimedia análisis gestión visualización ciencias flora fauna satélites narración videografía fotografía animation celebration terra data", imgSrc: "https://placehold.co/600x400/0B3D91/DFFF00?text=TERRA", difficulties: ["Principiante", "Intermedio", "Avanzado"], description: "Usa datos del satélite Terra para crear una animación que cuente una historia sobre las ciencias de la Tierra y su impacto.", topics: ["Animación", "Ciencia de la Tierra", "Visualización"] },
+            { title: "Un Mundo Lejano: Cazando Exoplanetas con IA", englishTitle: "A World Away: Hunting for Exoplanets with AI", keywords: "mundo lejano cazando exoplanetas ia avanzado inteligencia artificial aprendizaje automático codificación análisis gestión visualización objetos extrasolares planetas lunas software exploración espacial a world away hunting exoplanets ai", imgSrc: "https://placehold.co/600x400/0B3D91/DFFF00?text=Exoplanetas", difficulties: ["Avanzado"], description: "Crea un modelo de IA/AA para analizar datos de la NASA e identificar automáticamente nuevos planetas fuera de nuestro sistema solar.", topics: ["IA/AA", "Exoplanetas", "Software"] },
+            { title: "BloomWatch: Fenología Global de la Floración", englishTitle: "BloomWatch: An Earth Observation Application for Global Flowering Phenology", keywords: "bloomwatch observación terrestre fenología floración principiante intermedio avanzado animación artes multimedia negocios economía análisis visualización ciencias tierra flora fauna pronósticos realidad virtual redacción comunicaciones earth observation application global flowering phenology", imgSrc: "https://placehold.co/600x400/0B3D91/DFFF00?text=BloomWatch", difficulties: ["Principiante", "Intermedio", "Avanzado"], description: "Crea una herramienta visual dinámica que muestre y/o detecte eventos de floración de plantas en todo el mundo usando datos de la NASA.", topics: ["Flora y Fauna", "Observación Terrestre", "Visualización"] },
+            { title: "Motor de Conocimiento de Biología Espacial", englishTitle: "Build a Space Biology Knowledge Engine", keywords: "construye motor conocimiento biología espacial principiante intermedio avanzado inteligencia artificial gestión datos educación flora fauna software redacción comunicaciones build space biology knowledge engine", imgSrc: "https://placehold.co/600x400/0B3D91/DFFF00?text=Biología", difficulties: ["Principiante", "Intermedio", "Avanzado"], description: "Construye un panel dinámico con IA para resumir y explorar publicaciones de biociencia de la NASA y los resultados de sus experimentos.", topics: ["IA", "Gestión de Datos", "Biología"] },
+            { title: "Comercializando la Órbita Terrestre Baja (LEO)", englishTitle: "Commercializing Low Earth Orbit (LEO)", keywords: "comercializando órbita terrestre baja leo intermedio avanzado negocios economía diseño ergonomía factores humanos hábitats hardware satélites artificiales commercializing low earth orbit", imgSrc: "https://placehold.co/600x400/0B3D91/DFFF00?text=LEO", difficulties: ["Intermedio", "Avanzado"], description: "Diseña un modelo de negocio escalable y sostenible, con un prototipo, que explore las oportunidades comerciales en LEO.", topics: ["Negocios", "Hardware", "Órbita Terrestre"] },
+            { title: "Crea Tu Propio Reto", englishTitle: "Create Your Own Challenge", keywords: "crea tu propio reto principiante juvenil create your own challenge", imgSrc: "https://placehold.co/600x400/0B3D91/DFFF00?text=Crea", difficulties: ["Principiante"], description: "¿Tienes una idea que no encaja en otro desafío? Propón tu propio reto. Nota: no es elegible para premios globales.", topics: ["Abierto", "Creatividad"] },
+            { title: "Vías de Datos hacia Ciudades Saludables", englishTitle: "Data Pathways to Healthy Cities and Human Settlements", keywords: "vías datos ciudades asentamientos humanos saludables intermedio avanzado negocios economía análisis diseño ciencias tierra ergonomía factores humanos hábitats contaminación residuos recursos data pathways healthy cities human settlements", imgSrc: "https://placehold.co/600x400/0052CC/FFFFFF?text=Ciudades", difficulties: ["Intermedio", "Avanzado"], description: "Demuestra cómo un planificador urbano puede usar datos de la NASA para desarrollar estrategias de crecimiento que mantengan el bienestar humano y ambiental.", topics: ["Ciudades", "Ciencia de Datos", "Medio Ambiente"] },
+            { title: "Inmersión Profunda: Historias de Datos del Océano al Cielo", englishTitle: "Deep Dive: Immersive Data Stories from Ocean to Sky", keywords: "inmersión profunda historias datos inmersivas océano cielo intermedio avanzado animación artes multimedia análisis gestión visualización ciencias tierra hábitats satélites exploración espacial narración realidad virtual redacción comunicaciones deep dive immersive data stories ocean sky", imgSrc: "https://placehold.co/600x400/0052CC/FFFFFF?text=Océano", difficulties: ["Intermedio", "Avanzado"], description: "Construye una experiencia de Realidad Virtual (RV) que utilice datos de la NASA para dar vida a historias sobre los océanos de nuestro planeta.", topics: ["Realidad Virtual", "Océanos", "Narración"] },
+            { title: "¡Agranda Tus Ojos!", englishTitle: "Embiggen Your Eyes!", keywords: "agranda tus ojos intermedio codificación análisis gestión datos visualización objetos extrasolares software exploración espacial videografía fotografía embiggen your eyes", imgSrc: "https://placehold.co/600x400/0052CC/FFFFFF?text=Imágenes", difficulties: ["Intermedio"], description: "Crea una plataforma para hacer zoom, etiquetar y descubrir patrones en los enormes conjuntos de imágenes de alta resolución de la NASA.", topics: ["Visualización", "Software", "Imágenes"] },
+            { title: "De EarthData a la Acción: Cielos Más Limpios", englishTitle: "From EarthData to Action: Predicting Cleaner, Safer Skies", keywords: "earthdata acción computación nube observación tierra predecir cielos limpios seguros intermedio avanzado ia negocios análisis ciencias tierra pronósticos contaminación clima desarrollo web from earthdata to action predicting cleaner safer skies", imgSrc: "https://placehold.co/600x400/0052CC/FFFFFF?text=Aire", difficulties: ["Intermedio", "Avanzado"], description: "Desarrolla una app web que pronostique la calidad del aire integrando datos de la misión TEMPO con mediciones terrestres y datos meteorológicos.", topics: ["Calidad del Aire", "Web App", "Pronósticos"] },
+            { title: "Apps del 25º Aniversario de la EEI", englishTitle: "International Space Station 25th Anniversary Apps", keywords: "aplicaciones 25 aniversario estación espacial internacional intermedio avanzado diseño órbita terrestre educación ergonomía factores humanos juegos diseño gráfico hábitats satélites artificiales exploración espacial international space station 25th anniversary apps", imgSrc: "https://placehold.co/600x400/DFFF00/0B3D91?text=ISS+25", difficulties: ["Intermedio", "Avanzado"], description: "Crea una herramienta visual para que el público entienda las experiencias sensoriales en la Estación Espacial Internacional (vista e ingravidez).", topics: ["EEI", "Educación", "Visualización"] },
+            { title: "Locura de Meteoritos", englishTitle: "Meteor Madness", keywords: "locura meteoritos principiante intermedio avanzado astrofísica codificación análisis datos visualización respuesta desastres objetos extrasolares pronósticos exploración espacial estadísticas meteor madness", imgSrc: "https://placehold.co/600x400/DFFF00/0B3D91?text=Asteroide", difficulties: ["Principiante", "Intermedio", "Avanzado"], description: "Desarrolla una herramienta de simulación interactiva para modelar escenarios de impacto de asteroides, predecir consecuencias y evaluar estrategias de mitigación.", topics: ["Asteroides", "Simulación", "Respuesta a Desastres"] },
+            { title: "Navegadores Agrícolas de la NASA", englishTitle: "NASA Farm Navigators", keywords: "navegadores agrícolas nasa exploración datos agricultura intermedio avanzado negocios economía análisis visualización ciencias tierra educación flora fauna juegos contaminación narración nasa farm navigators", imgSrc: "https://placehold.co/600x400/DFFF00/0B3D91?text=Agricultura", difficulties: ["Intermedio", "Avanzado"], description: "Crea un juego educativo que utilice datos de la NASA para simular escenarios agrícolas y enseñar sobre métodos sostenibles.", topics: ["Agricultura", "Juegos", "Educación"] },
+            { title: "Tiburones desde el Espacio", englishTitle: "Sharks from Space", keywords: "tiburones desde espacio avanzado animación análisis datos visualización diseño ciencias tierra flora fauna pronósticos hardware sharks from space", imgSrc: "https://placehold.co/600x400/DFFF00/0B3D91?text=Tiburones", difficulties: ["Avanzado"], description: "Crea un marco matemático para identificar tiburones y predecir sus hábitats de alimentación usando datos satelitales de la NASA.", topics: ["Biología Marina", "IA", "Hardware"] },
+            { title: "SpaceTrash Hack: Reciclaje en Marte", englishTitle: "SpaceTrash Hack: Revolutionizing Recycling on Mars", keywords: "spacetrash hack revolucionando reciclaje marte intermedio avanzado diseño ergonomía factores humanos hábitats planetas lunas exploración espacial residuos recursos revolutionizing recycling on mars", imgSrc: "https://placehold.co/600x400/0B3D91/FFFFFF?text=Marte", difficulties: ["Intermedio", "Avanzado"], description: "Diseña sistemas sostenibles para gestionar, reutilizar o reciclar los residuos inorgánicos acumulados en la superficie de Marte.", topics: ["Marte", "Sostenibilidad", "Diseño"] },
+            { title: "Historias Estelares: Clima Espacial", englishTitle: "Stellar Stories: Space Weather Through the Eyes of Earthlings", keywords: "historias estelares clima espacial ojos terrícolas principiante intermedio avanzado animación artes multimedia respuesta desastres educación clima espacial narración sol clima stellar stories space weather through eyes earthlings", imgSrc: "https://placehold.co/600x400/0B3D91/FFFFFF?text=Clima+Espacial", difficulties: ["Principiante", "Intermedio", "Avanzado"], description: "Escribe e ilustra un cuento infantil digital que explique qué es el clima espacial y sus diversos impactos en la Tierra.", topics: ["Clima Espacial", "Educación", "Narración"] },
+            { title: "A Través del Espejo del Radar (SAR)", englishTitle: "Through the Radar Looking Glass: Revealing Earth Processes with SAR", keywords: "través espejo radar revelando procesos terrestres sar intermedio avanzado animación análisis datos visualización ciencias tierra satélites artificiales narración through the radar looking glass revealing earth processes with sar", imgSrc: "https://placehold.co/600x400/0B3D91/FFFFFF?text=SAR", difficulties: ["Intermedio", "Avanzado"], description: "Usa datos de Radar de Apertura Sintética (SAR) de un área de tu elección para desarrollar hipótesis sobre los procesos físicos que operan allí.", topics: ["Radar SAR", "Geociencia", "Análisis de Datos"] },
+            { title: "¿Lloverá en Mi Desfile?", englishTitle: "Will It Rain On My Parade?", keywords: "lloverá mi desfile intermedio codificación análisis datos visualización pronósticos software clima desarrollo web will it rain on my parade", imgSrc: "https://placehold.co/600x400/0B3D91/FFFFFF?text=Clima", difficulties: ["Intermedio"], description: "Construye una app que permita a los usuarios consultar la probabilidad de condiciones climáticas adversas para un lugar y fecha específicos.", topics: ["Clima", "Web App", "Pronósticos"] },
+            { title: "Tu Hogar en el Espacio: Creador de Hábitats", englishTitle: "Your Home in Space: The Habitat Layout Creator", keywords: "tu hogar espacio creador diseños hábitat intermedio diseño órbita terrestre ergonomía factores humanos juegos diseño gráfico hábitats satélites artificiales exploración espacial residuos recursos your home in space the habitat layout creator", imgSrc: "https://placehold.co/600x400/0052CC/DFFF00?text=Hábitat", difficulties: ["Intermedio"], description: "Crea una herramienta visual que permita a los usuarios definir la forma y el volumen de un hábitat espacial y explorar posibles distribuciones internas.", topics: ["Hábitats Espaciales", "Diseño", "Software"] }
+        ];
+
+        function createChallengeCard(challenge) {
+            const difficultyTags = ["Principiante", "Intermedio", "Avanzado"].map(d => `<span class="difficulty-tag ${challenge.difficulties.includes(d) ? 'active' : ''} px-3 py-1 text-xs rounded-full">${d}</span>`).join('');
+            const topicTags = challenge.topics.map(t => `<span class="topic-tag text-xs font-medium px-2 py-1 rounded">${t}</span>`).join('');
+            return `
+                <div class="challenge-card rounded-2xl overflow-hidden flex flex-col" data-keywords="${challenge.keywords}">
+                    <img src="${challenge.imgSrc}" alt="Reto ${challenge.title}" class="w-full h-48 object-cover" loading="lazy">
+                    <div class="p-6 flex flex-col flex-grow">
+                        <div>
+                            <h3 class="text-xl font-bold text-white">${challenge.title}</h3>
+                            <p class="text-sm text-slate-400 mt-1 mb-3">Nombre en inglés: <span class="italic">${challenge.englishTitle}</span></p>
+                        </div>
+                        <div class="mb-4">
+                            <p class="text-sm font-semibold text-slate-300 mb-2">Dificultad:</p>
+                            <div class="flex flex-wrap gap-2">${difficultyTags}</div>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed mb-4 flex-grow">${challenge.description}</p>
+                        <div class="mt-auto pt-4 border-t border-white/10">
+                            <p class="text-sm font-semibold text-slate-300 mb-2">Temas:</p>
+                            <div class="flex flex-wrap gap-2">${topicTags}</div>
+                        </div>
+                    </div>
+                </div>`;
+        }
+
+        function renderChallenges(filter = '') {
+            const grid = document.getElementById('challenges-grid');
+            const noResults = document.getElementById('no-results');
+            grid.innerHTML = '';
+            const term = filter.toLowerCase().trim();
+            let matches = 0;
+            CHALLENGES_DATA.forEach(ch => {
+                if (!term || ch.keywords.toLowerCase().includes(term)) {
+                    grid.insertAdjacentHTML('beforeend', createChallengeCard(ch));
+                    matches++;
+                }
+            });
+            noResults.classList.toggle('hidden', matches > 0);
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const search = document.getElementById('challenge-search');
+            renderChallenges();
+            search.addEventListener('input', e => renderChallenges(e.target.value));
+        });
+    </script>
+</body>
+</html>

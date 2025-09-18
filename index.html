@@ -1,1843 +1,727 @@
 <!DOCTYPE html>
-<html lang="es">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
-    <!-- DNS Prefetch and Preconnect for Performance -->
-    <link rel="dns-prefetch" href="//fonts.googleapis.com">
-    <link rel="dns-prefetch" href="//www.google-analytics.com">
-    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>III Coloquio Internacional de Espacio y Sostenibilidad 2025 - Hermosillo, Sonora</title>
+    <meta name="description" content="III Coloquio Internacional de Espacio y Sostenibilidad 2025 en Hermosillo (3 octubre). Resiliencia climática del agua mediante tecnología espacial. Cooperación binacional México-Estados Unidos con NASA." />
+    <meta name="robots" content="index,follow" />
+    <link rel="canonical" href="https://espacio2025.com/" />
+    <meta name="theme-color" content="#132542" />
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <link rel="preload" href="favicon.png" as="image" />
+    <link rel="prefetch" href="retos.html" as="document" />
+    <!-- Open Graph -->
+    <meta property="og:site_name" content="III Coloquio Internacional de Espacio y Sostenibilidad" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="III Coloquio Internacional de Espacio y Sostenibilidad 2025 - Hermosillo" />
+    <meta property="og:description" content="Resiliencia climática del agua mediante tecnología espacial. Cooperación binacional México-Estados Unidos con participación de NASA. 3 de octubre 2025, Hermosillo." />
+    <meta property="og:image" content="https://placehold.co/1200x630/132542/FFFFFF?text=Coloquio+Espacio+Sostenibilidad+2025" />
+    <meta property="og:url" content="https://espacio2025.com/" />
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="III Coloquio Internacional de Espacio y Sostenibilidad 2025" />
+    <meta name="twitter:description" content="Resiliencia climática del agua mediante tecnología espacial. Cooperación binacional con NASA. 3 octubre 2025, Hermosillo." />
+    <meta name="twitter:image" content="https://placehold.co/1200x630/132542/FFFFFF?text=Coloquio+Espacio+2025" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!-- SEO Meta Tags -->
-    <meta name="description" content="III Coloquio Internacional de Espacio y Sostenibilidad 2025 - 3 de octubre Hermosillo, 14 de noviembre Arizona. Tecnología satelital, NASA, gestión hídrica y cooperación binacional México-Estados Unidos.">
-    <meta name="keywords" content="coloquio espacio sostenibilidad 2025, NASA, satélites agua, hermosillo sonora, arizona, tecnológico monterrey, gestión hídrica, inteligencia artificial, sequías, cooperación binacional, octubre noviembre 2025">
-    <meta name="author" content="III Coloquio Internacional de Espacio y Sostenibilidad">
-    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-    <link rel="canonical" href="https://badouintec.github.io/espacio/">
-    
-    <!-- Geo Meta Tags -->
-    <meta name="geo.region" content="MX-SON">
-    <meta name="geo.placename" content="Hermosillo, Sonora">
-    <meta name="geo.position" content="29.0729;-110.9559">
-    <meta name="ICBM" content="29.0729, -110.9559">
-    
-    <!-- Open Graph Meta Tags -->
-    <meta property="og:title" content="III Coloquio Internacional de Espacio y Sostenibilidad 2025 - Hermosillo & Arizona">
-    <meta property="og:description" content="Evento binacional de tecnología satelital y gestión hídrica. 3 oct Hermosillo, 14 nov Arizona. NASA, IA, cooperación México-USA.">
-    <meta property="og:type" content="event">
-    <meta property="og:url" content="https://badouintec.github.io/espacio/">
-    <meta property="og:image" content="https://badouintec.github.io/espacio/assets/img/logo.png">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
-    <meta property="og:site_name" content="III Coloquio Espacio y Sostenibilidad 2025">
-    <meta property="og:locale" content="es_MX">
-    <meta property="event:start_time" content="2025-10-03T08:00:00-07:00">
-    <meta property="event:end_time" content="2025-11-14T17:00:00-07:00">
-    
-    <!-- Twitter Card Meta Tags -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="III Coloquio Espacio y Sostenibilidad 2025">
-    <meta name="twitter:description" content="3 oct Hermosillo | 14 nov Arizona | NASA • Satélites • Agua • IA">
-    <meta name="twitter:image" content="https://badouintec.github.io/espacio/assets/img/logo.png">
-    <meta name="twitter:site" content="@ColoquioEspacio">
-    <meta name="twitter:creator" content="@BadouinTec">
-    
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="assets/img/favicon.png">
-    
-    <!-- PWA Manifest -->
-    <link rel="manifest" href="manifest.json">
-    <meta name="mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta name="apple-mobile-web-app-title" content="Coloquio Espacio 2025">
-    <link rel="apple-touch-icon" href="assets/img/logo.png">
-    
-    <!-- Theme Color -->
-    <meta name="theme-color" content="#1A365D">
-    <meta name="msapplication-TileColor" content="#1A365D">
-
-    <!-- Schema.org JSON-LD for Event SEO -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Event",
-      "name": "III Coloquio Internacional de Espacio y Sostenibilidad 2025",
-      "description": "Tecnología, ciencia y cooperación binacional por la resiliencia climática del agua. Evento binacional México-Estados Unidos centrado en tecnologías espaciales para la gestión sustentable de recursos hídricos.",
-      "startDate": "2025-10-03T08:00:00-07:00",
-      "endDate": "2025-11-14T17:00:00-07:00",
-      "eventStatus": "https://schema.org/EventScheduled",
-      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-      "location": [
-        {
-          "@type": "Place",
-          "name": "Tecnológico de Monterrey, Campus Sonora Norte",
-          "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "Carr. al Aeropuerto Km. 9.5",
-            "addressLocality": "Hermosillo",
-            "addressRegion": "Sonora",
-            "postalCode": "83309",
-            "addressCountry": "MX"
-          },
-          "geo": {
-            "@type": "GeoCoordinates",
-            "latitude": "29.0729",
-            "longitude": "-110.9559"
-          }
-        },
-        {
-          "@type": "Place",
-          "name": "Arizona Location",
-          "address": {
-            "@type": "PostalAddress",
-            "addressLocality": "Arizona",
-            "addressRegion": "AZ",
-            "addressCountry": "US"
-          }
-        }
-      ],
-      "organizer": {
-        "@type": "Organization",
-        "name": "III Coloquio Internacional de Espacio y Sostenibilidad",
-        "url": "https://badouintec.github.io/espacio/"
-      },
-      "offers": {
-        "@type": "Offer",
-        "price": "0",
-        "priceCurrency": "USD",
-        "availability": "https://schema.org/InStock",
-        "url": "https://badouintec.github.io/espacio/"
-      },
-      "performer": [
-        {
-          "@type": "Organization",
-          "name": "NASA"
-        },
-        {
-          "@type": "Organization", 
-          "name": "Tecnológico de Monterrey"
-        }
-      ],
-      "image": "https://badouintec.github.io/espacio/assets/img/logo.png",
-      "url": "https://badouintec.github.io/espacio/",
-      "sameAs": [
-        "https://github.com/badouintec/espacio"
-      ]
-    }
-    </script>
-
-    <title>III Coloquio Internacional de Espacio y Sostenibilidad 2025</title>
-
-    <!-- Preload Critical Resources -->
-    <link rel="preload" href="assets/css/bootstrap.min.css" as="style">
-    <link rel="preload" href="assets/css/main.css" as="style">
-    <link rel="preload" href="assets/fonts/line-icons.css" as="style">
-    <link rel="preload" href="assets/img/logoblanco.png" as="image">
-    <link rel="preload" href="assets/img/slider/slide1.jpg" as="image">
-    
-    <!-- Critical CSS -->
-    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
-    
-    <!-- Non-Critical CSS (loaded asynchronously) -->
-    <link rel="preload" href="assets/fonts/line-icons.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="assets/fonts/line-icons.css"></noscript>
-    
-    <link rel="preload" href="assets/css/slicknav.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="assets/css/slicknav.css"></noscript>
-    
-    <link rel="preload" href="assets/css/nivo-lightbox.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="assets/css/nivo-lightbox.css"></noscript>
-    
-    <link rel="preload" href="assets/css/animate.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="assets/css/animate.css"></noscript>
-    
-    <link rel="preload" href="assets/css/responsive.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="assets/css/responsive.css"></noscript>
-    
-    <!-- Accessibility CSS -->
-    <link rel="stylesheet" href="assets/css/accessibility.css">
-
-  </head>
-  <body>
-
-    <!-- Skip to main content for screen readers -->
-    <a class="skip-link" href="#main-content">Saltar al contenido principal</a>
-
-    <!-- Header Area wrapper Starts -->
-    <header id="header-wrap" role="banner">
-      <!-- Navbar Start -->
-      <nav class="navbar navbar-expand-lg fixed-top scrolling-navbar" role="navigation" aria-label="Navegación principal">
-        <div class="container">
-          <!-- Brand and toggle get grouped for better mobile display -->
-          <div class="navbar-header">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false" aria-label="Abrir menú de navegación">
-              <span class="navbar-toggler-icon"></span>
-              <span class="icon-menu"></span>
-              <span class="icon-menu"></span>
-              <span class="icon-menu"></span>
-            </button>
-            <a href="index.html" class="navbar-brand" aria-label="Ir al inicio - III Coloquio Internacional de Espacio y Sostenibilidad"><img src="assets/img/logoblanco.png" alt="Logo del III Coloquio Internacional de Espacio y Sostenibilidad 2025"></a>
-          </div>
-          <div class="collapse navbar-collapse" id="main-navbar">
-            <ul class="navbar-nav mr-auto w-100 justify-content-end" role="menubar">
-              <li class="nav-item active" role="none">
-                <a class="nav-link" href="#header-wrap" role="menuitem" aria-current="page" aria-label="Ir a la página de inicio">
-                  Inicio
-                </a>
-              </li>
-              <li class="nav-item" role="none">
-                <a class="nav-link" href="#about" role="menuitem" aria-label="Conocer más acerca del coloquio">
-                  Acerca
-                </a>
-              </li>
-              <li class="nav-item" role="none">
-                <a class="nav-link" href="#schedules" role="menuitem" aria-label="Ver el programa y cronograma del evento">
-                  Programa
-                </a>
-              </li>
-              <li class="nav-item" role="none">
-                <a class="nav-link" href="#team" role="menuitem" aria-label="Conocer a los participantes y ponentes">
-                  Participantes
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#gallery">
-                  Galería
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#faq">
-                  FAQ
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#sponsors">
-                  Aliados
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#pricing">
-                  Registro
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#google-map-area">
-                  Contacto
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- Mobile Menu Start -->
-        <ul class="mobile-menu">
-          <li>
-            <a class="page-scrool" href="#header-wrap">Inicio</a>
-          </li>
-          <li>
-            <a class="page-scrool" href="#about">Acerca</a>
-          </li>
-          <li>
-             <a class="page-scroll" href="#schedules">Programa</a>
-          </li>
-          <li>
-            <a class="page-scroll" href="#team">Participantes</a>
-          </li>
-          <li>
-            <a class="page-scroll" href="#gallery">Galería</a>
-          </li>
-          <li>
-            <a class="page-scroll" href="#faq">FAQ</a>
-          </li>
-          <li>
-            <a class="page-scroll" href="#sponsors">Aliados</a>
-          </li>
-          <li>
-            <a class="page-scroll" href="#pricing">Registro</a>
-          </li>
-          <li>
-            <a class="page-scroll" href="#google-map-area">Contacto</a>
-          </li>
-        </ul>
-        <!-- Mobile Menu End -->
-
-      </nav>
-      <!-- Navbar End -->
-
-      <!-- Main Carousel Section Start -->
-      <div id="main-slide" class="carousel slide" data-interval="false">
-        <ol class="carousel-indicators">
-          <li data-target="#main-slide" data-slide-to="0" class="active"></li>
-          <li data-target="#main-slide" data-slide-to="1"></li>
-          <li data-target="#main-slide" data-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img class="d-block w-100" src="assets/img/slider/slide1.jpg" alt="III Coloquio Internacional de Espacio y Sostenibilidad">
-            <div class="carousel-caption d-md-block">
-              <p class="fadeInUp wow" data-wow-delay=".6s">🌎 Tecnología, ciencia y cooperación binacional</p>
-              <h1 class="wow fadeInDown heading" data-wow-delay=".4s">III Coloquio Internacional de Espacio y Sostenibilidad 2025</h1>
-              <a href="#pricing" class="fadeInLeft wow btn btn-common btn-lg" data-wow-delay=".6s">Registro Gratuito</a>
-              <a href="#about" class="fadeInRight wow btn btn-border btn-lg" data-wow-delay=".6s">Conoce Más</a>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img class="d-block w-100" src="assets/img/slider/slide2.jpg" alt="Fase Hermosillo">
-            <div class="carousel-caption d-md-block">
-              <p class="fadeInUp wow" data-wow-delay=".6s">📍 Hermosillo, Sonora - 3 de octubre 2025</p>
-              <h1 class="wow bounceIn heading" data-wow-delay=".7s">Resiliencia Climática del Agua</h1>
-              <a href="#schedules" class="fadeInUp wow btn btn-border btn-lg" data-wow-delay=".8s">Ver Programa</a>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img class="d-block w-100" src="assets/img/slider/slide3.jpg" alt="Fase Arizona">
-            <div class="carousel-caption d-md-block">
-              <p class="fadeInUp wow" data-wow-delay=".6s">🇺🇸 Arizona - 14 de noviembre 2025</p>
-              <h1 class="wow fadeInUp heading" data-wow-delay=".6s">Cooperación NASA y Aliados</h1>
-              <a href="#team" class="fadeInUp wow btn btn-common btn-lg" data-wow-delay=".8s">Participantes</a>
-            </div>
-          </div>
-        </div>
-        <a class="carousel-control-prev" href="#main-slide" role="button" data-slide="prev">
-          <span class="carousel-control" aria-hidden="true"><i class="lni-chevron-left"></i></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#main-slide" role="button" data-slide="next">
-          <span class="carousel-control" aria-hidden="true"><i class="lni-chevron-right"></i></span>
-          <span class="sr-only">Next</span>
-        </a>
-      </div>
-      <!-- Main Carousel Section End -->
-
-    </header>
-    <!-- Header Area wrapper End -->
-
-    <!-- Main Content Area -->
-    <main id="main-content" role="main">
-
-    <!-- Coundown Section Start -->
-    <section class="countdown-timer section-padding" role="region" aria-labelledby="countdown-heading">
-      <div class="container">
-        <div class="row text-center">
-          <div class="col-md-12 col-sm-12 col-xs-12">
-            <div class="heading-count">
-              <h2 id="countdown-heading" class="wow fadeInDown" data-wow-delay="0.2s">Tiempo Restante para la Fase 1</h2>
-              <p class="lead wow fadeInUp" data-wow-delay="0.3s">¡No te pierdas este evento histórico!</p>
-            </div>
-          </div>
-          
-          <!-- Contador Regresivo Interactivo -->
-          <div class="col-12">
-            <div id="countdown-clock" class="countdown-display wow fadeInUp" data-wow-delay="0.4s">
-              <div class="countdown-item">
-                <span id="days" class="countdown-number">0</span>
-                <label>Días</label>
-              </div>
-              <div class="countdown-item">
-                <span id="hours" class="countdown-number">0</span>
-                <label>Horas</label>
-              </div>
-              <div class="countdown-item">
-                <span id="minutes" class="countdown-number">0</span>
-                <label>Minutos</label>
-              </div>
-              <div class="countdown-item">
-                <span id="seconds" class="countdown-number">0</span>
-                <label>Segundos</label>
-              </div>
-            </div>
-          </div>
-          
-          <!-- Fechas del Evento -->
-          <div class="col-md-6 col-sm-12 col-xs-12">
-            <div class="event-phase wow fadeInLeft" data-wow-delay="0.5s">
-              <div class="phase-header">
-                <span class="phase-flag">🇲🇽</span>
-                <h3>Fase 1 - Hermosillo</h3>
-              </div>
-              <div class="phase-details">
-                <p class="date"><strong>3 de octubre de 2025</strong></p>
-                <p class="venue">Tecnológico de Monterrey<br>Campus Sonora Norte</p>
-                <p class="time">08:00 - 13:00 hrs</p>
-                <div class="phase-highlights">
-                  <span class="highlight">🎤 6 Charlas Magistrales</span>
-                  <span class="highlight">🤝 Networking</span>
-                  <span class="highlight">🚀 Innovación</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-          <div class="col-md-6 col-sm-12 col-xs-12">
-            <div class="event-phase wow fadeInRight" data-wow-delay="0.6s">
-              <div class="phase-header">
-                <span class="phase-flag">🇺🇸</span>
-                <h3>Fase 2 - Arizona</h3>
-              </div>
-              <div class="phase-details">
-                <p class="date"><strong>14 de noviembre de 2025</strong></p>
-                <p class="venue">Colaboración NASA<br>y aliados estratégicos</p>
-                <p class="time">Continuación del diálogo</p>
-                <div class="phase-highlights">
-                  <span class="highlight">🛰️ NASA</span>
-                  <span class="highlight">🌊 Gestión Hídrica</span>
-                  <span class="highlight">🤖 IA</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-          <div class="col-md-12 col-sm-12 col-xs-12">
-            <div class="cta-section wow fadeInUp" data-wow-delay="0.7s">
-              <a href="#contact" class="btn btn-common btn-lg">
-                <i class="lni-ticket"></i> Registro Gratuito
-              </a>
-              <p class="cta-note">Evento gratuito • Registro requerido • Cupos limitados</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Coundown Section End -->
-
-     <!-- Services Section Start -->
-    <section id="services" class="services section-padding">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <div class="section-title-header text-center">
-              <h1 class="section-title wow fadeInUp" data-wow-delay="0.2s">Temas Prioritarios 2025</h1>
-              <p class="wow fadeInDown" data-wow-delay="0.2s">Resiliencia climática del agua mediante tecnología espacial</p>
-            </div>
-          </div>
-        </div>
-        <div class="row services-wrapper">
-          <!-- Services item -->
-          <div class="col-md-6 col-lg-4 col-xs-12 padding-none">
-            <div class="services-item wow fadeInDown" data-wow-delay="0.2s">
-              <div class="icon">
-                <i class="lni-weather"></i>
-              </div>
-              <div class="services-content">
-                <h3><a href="#">Monitoreo de Sequías</a></h3>
-                <p>📉 Monitoreo y pronóstico de sequías utilizando datos satelitales y modelos predictivos.</p>
-              </div>
-            </div>
-          </div>
-          <!-- Services item -->
-          <div class="col-md-6 col-lg-4 col-xs-12 padding-none">
-            <div class="services-item wow fadeInDown" data-wow-delay="0.4s">
-              <div class="icon">
-                <i class="lni-drop"></i>
-              </div>
-              <div class="services-content">
-                <h3><a href="#">Gestión de Inundaciones</a></h3>
-                <p>🌊 Estimaciones de escurrimientos y predicción de inundaciones mediante sensores remotos.</p>
-              </div>
-            </div>
-          </div>
-          <!-- Services item -->
-          <div class="col-md-6 col-lg-4 col-xs-12 padding-none">
-            <div class="services-item wow fadeInDown" data-wow-delay="0.6s">
-              <div class="icon">
-                <i class="lni-leaf"></i>
-              </div>
-              <div class="services-content">
-                <h3><a href="#">Calidad del Agua</a></h3>
-                <p>💧 Evaluación de la calidad del agua utilizando observaciones satelitales.</p>
-              </div>
-            </div>
-          </div>
-          <!-- Services item -->
-          <div class="col-md-6 col-lg-4 col-xs-12 padding-none">
-            <div class="services-item wow fadeInDown" data-wow-delay="0.8s">
-              <div class="icon">
-                <i class="lni-grow"></i>
-              </div>
-              <div class="services-content">
-                <h3><a href="#">Agricultura Inteligente</a></h3>
-                <p>🚜 Estimación de necesidades de riego y evapotranspiración.</p>
-              </div>
-            </div>
-          </div>
-           <!-- Services item -->
-          <div class="col-md-6 col-lg-4 col-xs-12 padding-none">
-            <div class="services-item wow fadeInDown" data-wow-delay="1s">
-              <div class="icon">
-                <i class="lni-cog"></i>
-              </div>
-              <div class="services-content">
-                <h3><a href="#">Inteligencia Artificial</a></h3>
-                <p>🔄 Análisis de interacciones clima-agua mediante IA y ciencia abierta.</p>
-              </div>
-            </div>
-          </div>
-           <!-- Services item -->
-          <div class="col-md-6 col-lg-4 col-xs-12 padding-none">
-            <div class="services-item wow fadeInDown" data-wow-delay="1.2s">
-              <div class="icon">
-                <i class="lni-world"></i>
-              </div>
-              <div class="services-content">
-                <h3><a href="#">Cooperación Binacional</a></h3>
-                <p>🌎 Colaboración entre México y Estados Unidos con participación de NASA.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Services Section End -->
-    
-
-    <!-- About Section Start -->
-    <section id="about" class="section-padding">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <div class="section-title-header text-center">
-              <h1 class="section-title wow fadeInUp" data-wow-delay="0.2s">Acerca del Coloquio</h1>
-              <p class="wow fadeInDown" data-wow-delay="0.2s">Tecnología, ciencia y cooperación binacional por la resiliencia climática del agua</p>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-xs-12 col-md-6 col-lg-4">
-            <div class="about-item">
-              <img class="img-fluid" src="assets/img/about/img1.jpg" alt="Objetivo del Coloquio" loading="lazy">
-              <div class="about-text">
-                <h3><a href="#">🎯 Nuestro Objetivo</a></h3>
-                <p>Impulsar la colaboración entre sectores clave para territorializar soluciones climáticas e hídricas, mediante ciencia abierta, sensores remotos y herramientas digitales.</p>
-                <a class="btn btn-common btn-rm" href="#schedules">Ver Programa</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-xs-12 col-md-6 col-lg-4">
-            <div class="about-item">
-              <img class="img-fluid" src="assets/img/about/img2.jpg" alt="Aprendizaje Tecnológico" loading="lazy">
-              <div class="about-text">
-                <h3><a href="#">🌎 ¿Qué Aprenderás?</a></h3>
-                <p>Uso de observaciones de la Tierra (ICESat-2, GEDI), plataformas de análisis (VEDA, MAAP) y herramientas de inteligencia artificial para la toma de decisiones.</p>
-                <a class="btn btn-common btn-rm" href="#team">Participantes</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-xs-12 col-md-6 col-lg-4">
-            <div class="about-item">
-              <img class="img-fluid" src="assets/img/about/img3.jpg" alt="Beneficios del Coloquio" loading="lazy">
-              <div class="about-text">
-                <h3><a href="#">🤝 ¿Cuáles son los Beneficios?</a></h3>
-                <p>Networking con expertos de NASA, gobierno, academia e industria. Acceso a datos abiertos, capacitación técnica y oportunidades de colaboración binacional.</p>
-                <a class="btn btn-common btn-rm" href="#pricing">Registro</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- About Section End -->
-
-    <!-- Counter Area Start-->
-    <section class="counter-section section-padding">
-      <div class="container">
-        <div class="row">
-          <!-- Counter Item -->
-          <div class="col-md-6 col-lg-3 col-xs-12 work-counter-widget text-center">
-            <div class="counter wow fadeInRight" data-wow-delay="0.3s">
-              <div class="icon"><i class="lni-map"></i></div>
-              <p>Tecnológico de Monterrey</p>
-              <span>Hermosillo, Sonora</span>
-            </div>
-          </div>
-          <!-- Counter Item -->
-          <div class="col-md-6 col-lg-3 col-xs-12 work-counter-widget text-center">
-            <div class="counter wow fadeInRight" data-wow-delay="0.6s">
-              <div class="icon"><i class="lni-timer"></i></div>
-              <p>February 14 - 19, 2018</p>
-              <span>09:00 AM – 05:00 PM</span>
-            </div>
-          </div>
-          <!-- Counter Item -->
-          <div class="col-md-6 col-lg-3 col-xs-12 work-counter-widget text-center">
-            <div class="counter wow fadeInRight" data-wow-delay="0.9s">
-              <div class="icon"><i class="lni-users"></i></div>
-              <p>343 Available Seats</p>       
-              <span>Hurryup! few tickets are left</span>
-            </div>
-          </div>
-          <!-- Counter Item -->
-          <div class="col-md-6 col-lg-3 col-xs-12 work-counter-widget text-center">
-            <div class="counter wow fadeInRight" data-wow-delay="1.2s">
-              <div class="icon"><i class="lni-coffee-cup"></i></div>
-              <p>Free Lunch & Snacks</p>
-              <span>Don’t miss it</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Counter Area End-->
-
-    <!-- Schedule Section Start -->
-    <section id="schedules" class="schedule section-padding">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <div class="section-title-header text-center">
-              <h1 class="section-title wow fadeInUp" data-wow-delay="0.2s">Programa del Coloquio</h1>
-              <p class="wow fadeInDown" data-wow-delay="0.2s">Dos fases de colaboración binacional <br> Hermosillo y Arizona 2025</p>
-            </div>
-          </div>
-        </div>
-        <div class="schedule-area row wow fadeInDown" data-wow-delay="0.3s">
-          <div class="schedule-tab-title col-md-3 col-lg-3 col-xs-12">
-            <div class="table-responsive">
-              <ul class="nav nav-tabs" id="myTab" role="tablist">
-                <li class="nav-item">
-                  <a class="nav-link active" id="hermosillo-tab" data-toggle="tab" href="#hermosillo" role="tab" aria-controls="hermosillo" aria-expanded="true">
-                    <div class="item-text">
-                      <h4>📍 Hermosillo</h4>
-                      <h5>3 de octubre</h5>
-                    </div>
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" id="arizona-tab" data-toggle="tab" href="#arizona" role="tab" aria-controls="arizona">
-                    <div class="item-text">
-                      <h4>🇺🇸 Arizona</h4>
-                      <h5>14 de noviembre</h5>
-                    </div>
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" id="hackathon-tab" data-toggle="tab" href="#hackathon" role="tab" aria-controls="hackathon">
-                    <div class="item-text">
-                      <h4>🛰️ NASA Apps</h4>
-                      <h5>Fin de semana</h5>
-                    </div>
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" id="topics-tab" data-toggle="tab" href="#topics" role="tab" aria-controls="topics">
-                    <div class="item-text">
-                      <h4>🧪 Convocatoria</h4>
-                      <h5>Ponencias</h5>
-                    </div>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="schedule-tab-content col-md-9 col-lg-9 col-xs-12 clearfix">
-            <div class="tab-content" id="myTabContent">
-              <div class="tab-pane fade show active" id="hermosillo" role="tabpanel" aria-labelledby="hermosillo-tab">
-                <div id="accordion">
-                  <div class="card">
-                    <div id="headingOne">
-                      <div class="collapsed card-header" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                        <div class="images-box">
-                          <img class="img-fluid" src="assets/img/speaker/speakers-1.jpg" alt="Registro y Networking del Coloquio" loading="lazy">
-                        </div>                     
-                        <span class="time">08:00 - 09:00</span>
-                        <h4>Registro y Networking</h4>
-                        <h5 class="name">Acreditación y Bienvenida</h5>
-                      </div>
-                    </div>
-                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
-                      <div class="card-body">
-                        <p>Acreditación, café de bienvenida y encuentro entre participantes, mentores y ponentes del III Coloquio Internacional de Espacio y Sostenibilidad.</p>
-                        <div class="location">
-                          <span>Ubicación:</span> Tecnológico de Monterrey, Campus Sonora Norte, Hermosillo
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card">
-                    <div id="headingTwo">
-                      <div class="collapsed card-header" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                        <div class="images-box">
-                          <img class="img-fluid" src="assets/img/speaker/speakers-2.jpg" alt="Ponentes Charlas Magistrales" loading="lazy">
-                        </div>                     
-                        <span class="time">09:00 - 11:00</span>
-                        <h4>Charlas Magistrales</h4>
-                        <h5 class="name">6 Ponencias Especializadas</h5>
-                      </div>
-                    </div>
-                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-                      <div class="card-body">
-                        <p>Sequías y calor extremo, inundaciones, calidad del agua, agricultura inteligente, datos abiertos e IA, y gobernanza regional del agua con observaciones de la Tierra.</p>
-                        <div class="location">
-                          <span>Temáticas:</span> ICESat-2, GEDI, VEDA, MAAP y herramientas de análisis satelital
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card">
-                    <div id="headingThree">
-                      <div class="collapsed card-header" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                        <div class="images-box">
-                          <img class="img-fluid" src="assets/img/speaker/speakers-3.jpg" alt="">
-                        </div>                     
-                        <span class="time">11:00 - 13:00</span>
-                        <h4>Mesas de Trabajo y Talleres</h4>
-                        <h5 class="name">Sesión Interactiva</h5>
-                      </div>
-                    </div>
-                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-                      <div class="card-body">
-                        <p>Mesas temáticas, sesión de carteles de estudiantes, talleres prácticos de análisis de datos satelitales y herramientas reproducibles.</p>
-                        <div class="location">
-                          <span>Actividades:</span> Priorización de problemas, indicadores y primeros pasos de implementación
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="tab-pane fade" id="arizona" role="tabpanel" aria-labelledby="arizona-tab">
-                <div id="accordion2">
-                  <div class="card">
-                    <div id="headingOne1">
-                      <div class="collapsed card-header" data-toggle="collapse" data-target="#collapseOne1" aria-expanded="false" aria-controls="collapseOne1">
-                        <div class="images-box">
-                          <img class="img-fluid" src="assets/img/speaker/speakers-1.jpg" alt="">
-                        </div>                     
-                        <span class="time">Todo el día</span>
-                        <h4>Colaboración Binacional NASA</h4>
-                        <h5 class="name">Representantes Internacionales</h5>
-                      </div>
-                    </div>
-                    <div id="collapseOne1" class="collapse show" aria-labelledby="headingOne1" data-parent="#accordion2">
-                      <div class="card-body">
-                        <p>Continuación del diálogo iniciado en Hermosillo con participación de representantes de NASA, gobiernos, academia y aliados estratégicos para fortalecer la cooperación binacional.</p>
-                        <div class="location">
-                          <span>Ubicación:</span> Arizona, Estados Unidos - Colaboración NASA
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card">
-                    <div id="headingTwo2">
-                      <div class="collapsed card-header" data-toggle="collapse" data-target="#collapseTwo2" aria-expanded="false" aria-controls="collapseTwo2">
-                        <div class="images-box">
-                          <img class="img-fluid" src="assets/img/speaker/speakers-2.jpg" alt="">
-                        </div>                     
-                        <span class="time">Seguimiento</span>
-                        <h4>Implementación de Acuerdos</h4>
-                        <h5 class="name">Evaluación Trimestral</h5>
-                      </div>
-                    </div>
-                    <div id="collapseTwo2" class="collapse" aria-labelledby="headingTwo2" data-parent="#accordion2">
-                      <div class="card-body">
-                        <p>Establecimiento de acuerdos binacionales para continuidad técnica y evaluaciones trimestrales de avance en los proyectos iniciados.</p>
-                        <div class="location">
-                          <span>Enfoque:</span> Pilotos, acuerdos y calendario de seguimiento
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="tab-pane fade" id="hackathon" role="tabpanel" aria-labelledby="hackathon-tab">
-                <div id="accordion3">
-                  <div class="card">
-                    <div id="headingOne3">
-                      <div class="collapsed card-header" data-toggle="collapse" data-target="#collapseOne3" aria-expanded="false" aria-controls="collapseOne3">
-                        <div class="images-box">
-                          <img class="img-fluid" src="assets/img/speaker/speakers-1.jpg" alt="">
-                        </div>                     
-                        <span class="time">Sábado-Domingo</span>
-                        <h4>🛰️ NASA Space Apps Challenge 2025</h4>
-                        <h5 class="name">Hackatón de Innovación</h5>
-                      </div>
-                    </div>
-                    <div id="collapseOne3" class="collapse show" aria-labelledby="headingOne3" data-parent="#accordion3">
-                      <div class="card-body">
-                        <p>Hackatón de innovación abierta de NASA que convoca a más de 150 países a resolver problemas reales con datos satelitales abiertos, ciencia ciudadana, IA y visualización.</p>
-                        <div class="location">
-                          <span>Ubicación:</span> Hermosillo - Inicio después del cierre del Coloquio
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card">
-                    <div id="headingTwo3">
-                      <div class="collapsed card-header" data-toggle="collapse" data-target="#collapseTwo3" aria-expanded="false" aria-controls="collapseTwo3">
-                        <div class="images-box">
-                          <img class="img-fluid" src="assets/img/speaker/speakers-2.jpg" alt="">
-                        </div>                     
-                        <span class="time">Desarrollo</span>
-                        <h4>Soluciones Innovadoras</h4>
-                        <h5 class="name">Equipos Multidisciplinarios</h5>
-                      </div>
-                    </div>
-                    <div id="collapseTwo3" class="collapse" aria-labelledby="headingTwo3" data-parent="#accordion3">
-                      <div class="card-body">
-                        <p>Equipos desarrollarán prototipos, aplicaciones, tableros o visualizaciones alineadas con los desafíos regionales del agua, el clima y el territorio.</p>
-                        <div class="location">
-                          <span>Enfoque:</span> Retos identificados en las charlas y mesas del coloquio
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card">
-                    <div id="headingThree3">
-                      <div class="collapsed card-header" data-toggle="collapse" data-target="#collapseThree3" aria-expanded="false" aria-controls="collapseThree3">
-                        <div class="images-box">
-                          <img class="img-fluid" src="assets/img/speaker/speakers-3.jpg" alt="">
-                        </div>                     
-                        <span class="time">Mentoría</span>
-                        <h4>Red de Mentores Especialistas</h4>
-                        <h5 class="name">Acompañamiento Técnico</h5>
-                      </div>
-                    </div>
-                    <div id="collapseThree3" class="collapse" aria-labelledby="headingThree3" data-parent="#accordion3">
-                      <div class="card-body">
-                        <p>Aprovechamiento de la red de mentores y materiales activados durante la mañana del coloquio para guiar el desarrollo de soluciones.</p>
-                        <div class="location">
-                          <span>Recursos:</span> Datos abiertos, herramientas NASA y expertos internacionales
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="tab-pane fade" id="topics" role="tabpanel" aria-labelledby="topics-tab">
-                <div id="accordion4">
-                  <div class="card">
-                    <div id="headingOne">
-                      <div class="collapsed card-header" data-toggle="collapse" data-target="#collapseOne4" aria-expanded="false" aria-controls="collapseOne4">
-                        <div class="images-box">
-                          <img class="img-fluid" src="assets/img/speaker/speakers-1.jpg" alt="">
-                        </div>                     
-                        <span class="time">Ejes Temáticos</span>
-                        <h4>🧪 Convocatoria de Ponencias</h4>
-                        <h5 class="name">Niveles Educativos</h5>
-                      </div>
-                    </div>
-                    <div id="collapseOne4" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion4">
-                      <div class="card-body">
-                        <p>Agua (calidad, disponibilidad, demanda), clima (sequía, calor urbano, incendios), agricultura (riego, productividad hídrica), riesgos (inundaciones, deslizamientos), gobernanza de datos y participación ciudadana.</p>
-                        <div class="location">
-                          <span>Niveles:</span> Secundaria, bachillerato y universidad
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card">
-                    <div id="headingTwo">
-                      <div class="collapsed card-header" data-toggle="collapse" data-target="#collapseTwo4" aria-expanded="false" aria-controls="collapseTwo4">
-                        <div class="images-box">
-                          <img class="img-fluid" src="assets/img/speaker/speakers-2.jpg" alt="">
-                        </div>                     
-                        <span class="time">Formato</span>
-                        <h4>📄 Requisitos de Participación</h4>
-                        <h5 class="name">Documentos Requeridos</h5>
-                      </div>
-                    </div>
-                    <div id="collapseTwo4" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion4">
-                      <div class="card-body">
-                        <p>Resumen de 300-500 palabras + 2-3 figuras/tablas. Cartel de 90×120 cm (vertical) o 120×90 cm (horizontal). Ponencia de 10 min exposición + 5 min preguntas.</p>
-                        <div class="location">
-                          <span>Criterios:</span> Relevancia regional, rigor técnico, replicabilidad, impacto social/ambiental
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card">
-                    <div id="headingThree4">
-                      <div class="collapsed card-header" data-toggle="collapse" data-target="#collapseThree4" aria-expanded="false" aria-controls="collapseThree4">
-                        <div class="images-box">
-                          <img class="img-fluid" src="assets/img/speaker/speakers-3.jpg" alt="">
-                        </div>                     
-                        <span class="time">Beneficios</span>
-                        <h4>🎯 Inclusión y Accesibilidad</h4>
-                        <h5 class="name">Diversidad y Participación</h5>
-                      </div>
-                    </div>
-                    <div id="collapseThree4" class="collapse" aria-labelledby="headingThree" data-parent="#accordion4">
-                      <div class="card-body">
-                        <p>Equilibrio mujeres-hombres en ponencias, traducción español-inglés, participación de comunidades indígenas y actores comunitarios, pautas de accesibilidad en materiales.</p>
-                        <div class="location">
-                          <span>Accesibilidad:</span> Tipografías legibles, alto contraste, texto alternativo
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Schedule Section End -->
-
-    <!-- Team Section Start -->
-    <section id="team" class="section-padding text-center">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <div class="section-title-header text-center">
-              <h1 class="section-title wow fadeInUp" data-wow-delay="0.2s">¿Quiénes Participan?</h1>
-              <p class="wow fadeInDown" data-wow-delay="0.2s">Representantes de gobierno, academia, industria y sociedad civil</p>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-6 col-md-6 col-lg-4">
-            <!-- Team Item Starts -->
-            <div class="team-item wow fadeInUp" data-wow-delay="0.2s">
-              <div class="team-img">
-                <img class="img-fluid" src="assets/img/team/team-01.jpg" alt="Especialistas NASA" loading="lazy">
-                <div class="team-overlay">
-                  <div class="overlay-social-icon text-center">
-                    <ul class="social-icons">
-                      <li><a href="#"><i class="lni-world" aria-hidden="true"></i></a></li>
-                      <li><a href="#"><i class="lni-linkedin-filled" aria-hidden="true"></i></a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="info-text">
-                <h3><a href="#">Especialistas NASA</a></h3>
-                <p>🚀 Expertos en observaciones de la Tierra y ciencia espacial</p>
-              </div>
-            </div>
-            <!-- Team Item Ends -->
-          </div>
-          <div class="col-sm-6 col-md-6 col-lg-4">
-            <!-- Team Item Starts -->
-            <div class="team-item wow fadeInUp" data-wow-delay="0.4s">
-              <div class="team-img">
-                <img class="img-fluid" src="assets/img/team/team-02.jpg" alt="Academia e Investigadores" loading="lazy">
-                <div class="team-overlay">
-                  <div class="overlay-social-icon text-center">
-                    <ul class="social-icons">
-                      <li><a href="#"><i class="lni-graduation" aria-hidden="true"></i></a></li>
-                      <li><a href="#"><i class="lni-linkedin-filled" aria-hidden="true"></i></a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="info-text">
-                <h3><a href="#">Academia e Investigadores</a></h3>
-                <p>🎓 Universidades y centros de investigación especializados</p>
-              </div>
-            </div>
-            <!-- Team Item Ends -->
-          </div>
-
-          <div class="col-sm-6 col-md-6 col-lg-4">
-            <!-- Team Item Starts -->
-            <div class="team-item wow fadeInUp" data-wow-delay="0.6s">
-              <div class="team-img">
-                <img class="img-fluid" src="assets/img/team/team-03.jpg" alt="Representantes Gubernamentales" loading="lazy">
-                <div class="team-overlay">
-                  <div class="overlay-social-icon text-center">
-                    <ul class="social-icons">
-                      <li><a href="#"><i class="lni-government" aria-hidden="true"></i></a></li>
-                      <li><a href="#"><i class="lni-linkedin-filled" aria-hidden="true"></i></a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="info-text">
-                <h3><a href="#">Gobierno y Política Pública</a></h3>
-                <p>🏛️ Autoridades mexicanas y estadounidenses</p>
-              </div>
-            </div>
-            <!-- Team Item Ends -->
-          </div>
-
-          <div class="col-sm-6 col-md-6 col-lg-4">
-            <!-- Team Item Starts -->
-            <div class="team-item wow fadeInUp" data-wow-delay="0.8s">
-              <div class="team-img">
-                <img class="img-fluid" src="assets/img/team/team-04.jpg" alt="Sector Industria" loading="lazy">
-                <div class="team-overlay">
-                  <div class="overlay-social-icon text-center">
-                    <ul class="social-icons">
-                      <li><a href="#"><i class="lni-cog" aria-hidden="true"></i></a></li>
-                      <li><a href="#"><i class="lni-linkedin-filled" aria-hidden="true"></i></a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="info-text">
-                <h3><a href="#">Industria y Tecnología</a></h3>
-                <p>🏢 Empresas especializadas en tecnología espacial</p>
-              </div>
-            </div>
-            <!-- Team Item Ends -->
-          </div>
-          <div class="col-sm-6 col-md-6 col-lg-4">
-            <!-- Team Item Starts -->
-            <div class="team-item wow fadeInUp" data-wow-delay="1s">
-              <div class="team-img">
-                <img class="img-fluid" src="assets/img/team/team-05.jpg" alt="Sociedad Civil" loading="lazy">
-                <div class="team-overlay">
-                  <div class="overlay-social-icon text-center">
-                    <ul class="social-icons">
-                      <li><a href="#"><i class="lni-users" aria-hidden="true"></i></a></li>
-                      <li><a href="#"><i class="lni-linkedin-filled" aria-hidden="true"></i></a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="info-text">
-                <h3><a href="#">Sociedad Civil Organizada</a></h3>
-                <p>🤝 ONGs y comunidades indígenas participantes</p>
-              </div>
-            </div>
-            <!-- Team Item Ends -->
-          </div>
-          <div class="col-sm-6 col-md-6 col-lg-4">
-            <!-- Team Item Starts -->
-            <div class="team-item wow fadeInUp" data-wow-delay="1.2s">
-              <div class="team-img">
-                <img class="img-fluid" src="assets/img/team/team-06.jpg" alt="Estudiantes e Innovadores" loading="lazy">
-                <div class="team-overlay">
-                  <div class="overlay-social-icon text-center">
-                    <ul class="social-icons">
-                      <li><a href="#"><i class="lni-graduation" aria-hidden="true"></i></a></li>
-                      <li><a href="#"><i class="lni-linkedin-filled" aria-hidden="true"></i></a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="info-text">
-                <h3><a href="#">Estudiantes e Innovadores</a></h3>
-                <p>🎓 Jóvenes talentos de secundaria, bachillerato y universidad</p>
-              </div>
-            </div>
-            <!-- Team Item Ends -->
-          </div>
-        </div>
-        <a href="speakers.html" class="btn btn-common mt-30 wow fadeInUp" data-wow-delay="1.9s">All Speakers</a>
-      </div>
-    </section>
-    <!-- Team Section End -->
-
-    <!-- Gallary Section Start -->
-    <section id="gallery" class="section-padding">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <div class="section-title-header text-center">
-              <h1 class="section-title wow fadeInUp" data-wow-delay="0.2s">Galería del Evento</h1>
-              <p class="wow fadeInDown" data-wow-delay="0.2s">Momentos destacados del coloquio binacional México-Estados Unidos</p>
-            </div>
-          </div> 
-        </div>
-        <div class="row">
-          <div class="col-md-6 col-sm-6 col-lg-4">
-            <div class="gallery-box">
-              <div class="img-thumb">
-                <img class="img-fluid" src="assets/img/gallery/img-1.jpg" alt="Momentos destacados del Coloquio" loading="lazy">
-              </div>
-              <div class="overlay-box text-center">
-                <a class="lightbox" href="assets/img/gallery/img-1.jpg">
-                  <i class="lni-plus"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="ccol-md-6 col-sm-6 col-lg-4">
-            <div class="gallery-box">
-              <div class="img-thumb">
-                <img class="img-fluid" src="assets/img/gallery/img-2.jpg" alt="Participantes y ponentes" loading="lazy">
-              </div>
-              <div class="overlay-box text-center">
-                <a class="lightbox" href="assets/img/gallery/img-2.jpg">
-                  <i class="lni-plus"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="ccol-md-6 col-sm-6 col-lg-4">
-            <div class="gallery-box">
-              <div class="img-thumb">
-                <img class="img-fluid" src="assets/img/gallery/img-3.jpg" alt="Presentaciones y conferencias" loading="lazy">
-              </div>
-              <div class="overlay-box text-center">
-                <a class="lightbox" href="assets/img/gallery/img-3.jpg">
-                  <i class="lni-plus"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="ccol-md-6 col-sm-6 col-lg-4">
-            <div class="gallery-box">
-              <div class="img-thumb">
-                <img class="img-fluid" src="assets/img/gallery/img-4.jpg" alt="Actividades de networking" loading="lazy">
-              </div>
-              <div class="overlay-box text-center">
-                <a class="lightbox" href="assets/img/gallery/img-4.jpg">
-                  <i class="lni-plus"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="ccol-md-6 col-sm-6 col-lg-4">
-            <div class="gallery-box">
-              <div class="img-thumb">
-                <img class="img-fluid" src="assets/img/gallery/img-5.jpg" alt="Mesa redonda y discusiones" loading="lazy">
-              </div>
-              <div class="overlay-box text-center">
-                <a class="lightbox" href="assets/img/gallery/img-5.jpg">
-                  <i class="lni-plus"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="ccol-md-6 col-sm-6 col-lg-4">
-            <div class="gallery-box">
-              <div class="img-thumb">
-                <img class="img-fluid" src="assets/img/gallery/img-6.jpg" alt="Ceremonia de clausura" loading="lazy">
-              </div>
-              <div class="overlay-box text-center">
-                <a class="lightbox" href="assets/img/gallery/img-6.jpg">
-                  <i class="lni-plus"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row justify-content-center mt-3">
-          <div class="col-xs-12">
-            <a href="#" class="btn btn-common">Browse All</a>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Gallary Section End -->
-
-    <!-- Ask Question Section Start -->
-    <section id="faq" class="section-padding">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <div class="section-title-header text-center">
-              <h1 class="section-title wow fadeInUp" data-wow-delay="0.2s">Ask Question?</h1>
-              <p class="wow fadeInDown" data-wow-delay="0.2s">Resuelve tus dudas sobre el III Coloquio Internacional</p>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12">
-            <div class="accordion">
-              <div class="card">
-                <div class="card-header" id="headingOne">
-                  <div class="header-title" data-toggle="collapse" data-target="#questionOne" aria-expanded="true" aria-controls="collapseOne">
-                    <i class="lni-pencil"></i> How to make a new event?
-                  </div>
-                </div>
-                <div id="questionOne" class="collapse" aria-labelledby="headingOne" data-parent="#question">
-                  <div class="card-body">
-                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
-                  </div>
-                </div>
-              </div>
-              <div class="card">
-                <div class="card-header" id="headingTwo">
-                    <div class="header-title" data-toggle="collapse" data-target="#questionTwo" aria-expanded="false" aria-controls="questionTwo">
-                      <i class="lni-pencil"></i>  Which payment methods do you accept? 
-                    </div>
-                </div>
-                <div id="questionTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#question">
-                  <div class="card-body">
-                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
-                  </div>
-                </div>
-              </div>
-              <div class="card">
-                <div class="card-header" id="headingThree">
-                  <div class="header-title" data-toggle="collapse" data-target="#questionThree" aria-expanded="false" aria-controls="questionThree">
-                    <i class="lni-pencil"></i>  Which document can i bring to meeting?   
-                  </div>
-                </div>
-                <div id="questionThree" class="collapse" aria-labelledby="headingThree" data-parent="#question">
-                  <div class="card-body">
-                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
-                  </div>
-                </div>
-              </div>
-              <div class="card">
-                <div class="card-header" id="headingThree">
-                  <div class="header-title" data-toggle="collapse" data-target="#questionFour" aria-expanded="false" aria-controls="questionFour">
-                   <i class="lni-pencil"></i> Who can join at the live event venue?
-                  </div>
-                </div>
-                <div id="questionFour" class="collapse" aria-labelledby="headingThree" data-parent="#question">
-                  <div class="card-body">
-                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12">
-            <div class="accordion">
-              <div class="card">
-                <div class="card-header" id="headingOne2">
-                  <div class="header-title" data-toggle="collapse" data-target="#questionOne2" aria-expanded="true" aria-controls="collapseOne">
-                    <i class="lni-pencil"></i> How to make a new event?
-                  </div>
-                </div>
-                <div id="questionOne2" class="collapse" aria-labelledby="headingOne" data-parent="#question">
-                  <div class="card-body">
-                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
-                  </div>
-                </div>
-              </div>
-              <div class="card">
-                <div class="card-header" id="headingTwo2">
-                    <div class="header-title" data-toggle="collapse" data-target="#questionTwo2" aria-expanded="false" aria-controls="questionTwo">
-                      <i class="lni-pencil"></i>  Which payment methods do you accept? 
-                    </div>
-                </div>
-                <div id="questionTwo2" class="collapse" aria-labelledby="headingTwo" data-parent="#question">
-                  <div class="card-body">
-                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
-                  </div>
-                </div>
-              </div>
-              <div class="card">
-                <div class="card-header" id="headingThree">
-                  <div class="header-title" data-toggle="collapse" data-target="#questionFive" aria-expanded="false" aria-controls="questionFive">
-                    <i class="lni-pencil"></i>How to set price? 
-                  </div>
-                </div>
-                <div id="questionFive" class="collapse" aria-labelledby="headingThree" data-parent="#question">
-                  <div class="card-body">
-                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
-                  </div>
-                </div>
-              </div>
-              <div class="card">
-                <div class="card-header" id="headingThree">
-                  <div class="header-title" data-toggle="collapse" data-target="#questionSix" aria-expanded="false" aria-controls="questionSix">
-                    <i class="lni-pencil"></i>  What our price list? 
-                  </div>
-                </div>
-                <div id="questionSix" class="collapse" aria-labelledby="headingThree" data-parent="#question">
-                  <div class="card-body">
-                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Ask Question Section End -->
-
-    <!-- Sponsors Section Start -->
-    <section id="sponsors" class="section-padding">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <div class="section-title-header text-center">
-              <h1 class="section-title wow fadeInUp" data-wow-delay="0.2s">Sponsores</h1>
-              <p class="wow fadeInDown" data-wow-delay="0.2s">Organizaciones que apoyan la cooperación espacial binacional</p>
-            </div>
-          </div>
-        </div>
-        <div class="row mb-30 text-center wow fadeInDown" data-wow-delay="0.3s">
-          <div class="col-md-3 col-sm-3 col-xs-12">
-            <div class="spnsors-logo">
-              <a href="#"><img class="img-fluid" src="assets/img/sponsors/logo-01.png" alt=""></a>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-3 col-xs-12">
-            <div class="spnsors-logo">
-              <a href="#"><img class="img-fluid" src="assets/img/sponsors/logo-02.png" alt=""></a>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-3 col-xs-12">
-            <div class="spnsors-logo">
-              <a href="#"><img class="img-fluid" src="assets/img/sponsors/logo-03.png" alt=""></a>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-3 col-xs-12">
-            <div class="spnsors-logo">
-              <a href="#"><img class="img-fluid" src="assets/img/sponsors/logo-04.png" alt=""></a>
-            </div>
-          </div>
-          <div class="col-12 text-center">
-            <a href="#" class="btn btn-common">become a sponsor</a>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Sponsors Section End -->
-
-    <!-- Ticket Pricing Area Start -->
-    <section id="pricing" class="section-padding">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <div class="section-title-header text-center">
-              <h1 class="section-title wow fadeInUp" data-wow-delay="0.2s">Registro y Participación</h1>
-              <p class="wow fadeInDown" data-wow-delay="0.2s">Acceso gratuito para estudiantes con becas disponibles</p>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-4 col-sm-6 col-xa-12 mb-3">
-            <div class="price-block-wrapper wow fadeInLeft" data-wow-delay="0.2s">
-              <div class="icon">
-                <i class="lni-graduation"></i>
-              </div>
-              <div class="colmun-title">
-                <h5>Estudiantes</h5>
-              </div>
-              <div class="price">
-                <h2>GRATUITO</h2>
-                <p>Con carta de motivación</p>
-              </div>
-              <div class="pricing-list">
-                <ul>
-                  <li><i class="lni-check-mark-circle"></i><span class="text">Acceso completo</span></li>
-                  <li><i class="lni-check-mark-circle"></i><span class="text">Café de bienvenida</span></li>
-                  <li><i class="lni-check-mark-circle"></i><span class="text">Material del evento</span></li>
-                  <li><i class="lni-check-mark-circle"></i><span class="text">Certificado</span></li>
-                  <li><i class="lni-check-mark-circle"></i><span class="text">Talleres técnicos</span></li>
-                  <li><i class="lni-check-mark-circle"></i><span class="text">Networking</span></li>
-                </ul>
-              </div>
-              <a href="#" class="btn btn-common">Registro Estudiante</a>
-            </div>
-          </div>
-          <div class="col-lg-4 col-sm-6 col-xa-12 mb-3">
-            <div class="price-block-wrapper wow fadeInUp" data-wow-delay="0.3s">
-              <div class="icon">
-                <i class="lni-blackboard"></i>
-              </div>
-              <div class="colmun-title">
-                <h5>Ponentes</h5>
-              </div>
-              <div class="price">
-                <h2>BECAS</h2>
-                <p>Movilidad disponible</p>
-              </div>
-              <div class="pricing-list">
-                <ul>
-                  <li><i class="lni-check-mark-circle"></i><span class="text">Acceso completo</span></li>
-                  <li><i class="lni-check-mark-circle"></i><span class="text">Apoyo de movilidad</span></li>
-                  <li><i class="lni-check-mark-circle"></i><span class="text">Espacio para cartel</span></li>
-                  <li><i class="lni-check-mark-circle"></i><span class="text">Presentación oral</span></li>
-                  <li><i class="lni-check-mark-circle"></i><span class="text">Mentoría</span></li>
-                  <li><i class="lni-check-mark-circle"></i><span class="text">Revisión de pares</span></li>
-                </ul>
-              </div>
-              <a href="#" class="btn btn-common">Enviar Propuesta</a>
-            </div>
-          </div>
-          <div class="col-lg-4 col-sm-6 col-xa-12 mb-3">
-            <div class="price-block-wrapper wow fadeInRight" data-wow-delay="0.4s">
-              <div class="icon">
-                <i class="lni-briefcase"></i>
-              </div>
-              <div class="colmun-title">
-                <h5>Profesionales</h5>
-              </div>
-              <div class="price">
-                <h2>ABIERTO</h2>
-                <p>Registro general</p>
-              </div>
-              <div class="pricing-list">
-                <ul>
-                  <li><i class="lni-check-mark-circle"></i><span class="text">Acceso completo</span></li>
-                  <li><i class="lni-check-mark-circle"></i><span class="text">Networking</span></li>
-                  <li><i class="lni-check-mark-circle"></i><span class="text">Capacitación técnica</span></li>
-                  <li><i class="lni-check-mark-circle"></i><span class="text">Colaboración NASA</span></li>
-                  <li><i class="lni-check-mark-circle"></i><span class="text">Certificado</span></li>
-                  <li><i class="lni-check-mark-circle"></i><span class="text">Materiales</span></li>
-                </ul>
-              </div>
-              <a href="#" class="btn btn-common">Registro General</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Ticket Pricing Area End -->
-
-    <!-- Event Slides Section Start -->
-    <section id="event-slides" class="section-padding">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <div class="section-title-header text-center">
-              <h1 class="section-title wow fadeInUp" data-wow-delay="0.2s">Convocatoria de Ponencias</h1>
-              <p class="wow fadeInDown" data-wow-delay="0.2s">Participación de secundaria, bachillerato y universidad</p>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-6 col-xs-12 wow fadeInRight" data-wow-delay="0.3s">
-            <div class="video">
-              <img class="img-fluid" src="assets/img/about/about.jpg" alt="">
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-6 col-xs-12 wow fadeInLeft" data-wow-delay="0.3s">
-            <p class="intro-desc">Invitamos a estudiantes de todos los niveles a presentar sus proyectos relacionados con agua, clima, agricultura, riesgos, gobernanza de datos y participación ciudadana utilizando tecnología espacial.
-            </p>
-            <h2 class="intro-title">Requisitos</h2>
-            <ul class="list-specification">
-              <li><i class="lni-check-mark-circle"></i> Resumen de 300-500 palabras + 2-3 figuras</li>
-              <li><i class="lni-check-mark-circle"></i> Cartel de 90×120 cm o 120×90 cm</li>
-              <li><i class="lni-check-mark-circle"></i> Ponencia de 10 min + 5 min preguntas</li>
-              <li><i class="lni-check-mark-circle"></i> Relevancia regional y rigor técnico</li> 
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Event Slides Section End -->
-
-    <!-- Blog Section Start -->
-    <section id="blog" class="section-padding">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <div class="section-title-header text-center">
-              <h1 class="section-title wow fadeInUp" data-wow-delay="0.2s">Our Latest News & Articles</h1>
-              <p class="wow fadeInDown" data-wow-delay="0.2s">Noticias y recursos sobre tecnología espacial y sostenibilidad</p>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 col-xs-12">
-            <div class="blog-item">
-              <div class="blog-image">
-                <a href="#">
-                  <img class="img-fluid" src="assets/img/blog/img-1.jpg" alt="">
-                </a>
-              </div>
-              <div class="descr">
-                <div class="tag">Design</div>
-                <h3 class="title">
-                  <a href="single-blog.html">
-                    The 9 Design Trends You Need to Know
-                  </a>
-                </h3>
-                <div class="meta-tags">
-                  <span class="date">Jan 20, 2018</span>
-                  <span class="comments">| <a href="#"> by Cindy Jefferson</a></span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 col-xs-12">
-            <div class="blog-item">
-              <div class="blog-image">
-                <a href="#">
-                  <img class="img-fluid" src="assets/img/blog/img-2.jpg" alt="">
-                </a>
-              </div>
-              <div class="descr">
-                <div class="tag">Design</div>
-                <h3 class="title">
-                  <a href="single-blog.html">
-                    The 9 Design Trends You Need to Know
-                  </a>
-                </h3>
-                <div class="meta-tags">
-                  <span class="date">Jan 20, 2018 </span>
-                  <span class="comments">| <a href="#"> by Cindy Jefferson</a></span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 col-xs-12">
-            <div class="blog-item">
-              <div class="blog-image">
-                <a href="#">
-                  <img class="img-fluid" src="assets/img/blog/img-3.jpg" alt="">
-                </a>
-              </div>
-              <div class="descr">
-                <div class="tag">Design</div>
-                <h3 class="title">
-                  <a href="single-blog.html">
-                    The 9 Design Trends You Need to Know
-                  </a>
-                </h3>
-                <div class="meta-tags">
-                  <span class="date">Jan 20, 2018</span> 
-                  <span class="comments">| <a href="#"> by Cindy Jefferson</a></span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 text-center">
-            <a href="#pricing" class="btn btn-common">Ver Más Información del Coloquio</a>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Blog Section End -->
-
-    <!-- Map Section Start -->
-    <section id="google-map-area">
-      <div class="container-fluid">
-        <div class="row">
-        </div>
-      </div>
-    </section>
-    <!-- Map Section End -->
-
-    <!-- Contact Us Section -->
-    <section id="contact-map" class="section-padding">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-lg-10">
-            <div class="section-title-header text-center mb-5">
-              <h1 class="section-title wow fadeInUp" data-wow-delay="0.2s">Información del Evento</h1>
-              <p class="wow fadeInDown" data-wow-delay="0.2s">III Coloquio Internacional de Espacio y Sostenibilidad 2025</p>
-            </div>
-            
-            <!-- Información de fechas y sedes -->
-            <div class="row">
-              <div class="col-md-4 mb-4">
-                <div class="contact-info-box text-center p-4 h-100">
-                  <div class="icon mb-3">
-                    <i class="lni-map-marker" style="font-size: 3rem; color: #0eacf3;"></i>
-                  </div>
-                  <h4>📍 Fase 1 - Hermosillo</h4>
-                  <p><strong>Tecnológico de Monterrey</strong><br>
-                  Campus Sonora Norte</p>
-                  <p class="mb-1">📅 <strong>3 de octubre de 2025</strong></p>
-                  <p class="mb-1">🕐 08:00 - 13:00 hrs</p>
-                  <p>📍 Hermosillo, Sonora, México</p>
-                </div>
-              </div>
-              
-              <div class="col-md-4 mb-4">
-                <div class="contact-info-box text-center p-4 h-100">
-                  <div class="icon mb-3">
-                    <i class="lni-world" style="font-size: 3rem; color: #0eacf3;"></i>
-                  </div>
-                  <h4>🇺🇸 Fase 2 - Arizona</h4>
-                  <p><strong>Colaboración NASA</strong><br>
-                  y Aliados Estratégicos</p>
-                  <p class="mb-1">📅 <strong>14 de noviembre de 2025</strong></p>
-                  <p>🤝 Continuación del diálogo binacional</p>
-                </div>
-              </div>
-              
-              <div class="col-md-4 mb-4">
-                <div class="contact-info-box text-center p-4 h-100">
-                  <div class="icon mb-3">
-                    <i class="lni-rocket" style="font-size: 3rem; color: #0eacf3;"></i>
-                  </div>
-                  <h4>🛰️ NASA Space Apps</h4>
-                  <p><strong>Hackatón de Innovación</strong><br>
-                  Challenge 2025</p>
-                  <p class="mb-1">📅 <strong>4-5 de octubre</strong></p>
-                  <p>💡 Prototipos alineados con el coloquio</p>
-                </div>
-              </div>
-            </div>
-            
-            <!-- Enlaces y recursos -->
-            <div class="row mt-5">
-              <div class="col-lg-8 mx-auto">
-                <div class="text-center">
-                  <h4 class="mb-4">🔗 Enlaces de Referencia</h4>
-                  <div class="row">
-                    <div class="col-md-4 mb-3">
-                      <a href="https://eo4sdg.org/space-and-sustainability-colloquium/" target="_blank" class="btn btn-info btn-block text-white">
-                        🌐 EO4SDG<br>
-                        <small>Edición 2023</small>
-                      </a>
-                    </div>
-                    <div class="col-md-4 mb-3">
-                      <a href="https://science.nasa.gov/learning-resources/science-activation/" target="_blank" class="btn btn-info btn-block text-white">
-                        🚀 NASA Science<br>
-                        <small>Recursos Científicos</small>
-                      </a>
-                    </div>
-                    <div class="col-md-4 mb-3">
-                      <a href="https://michoacan.gob.mx" target="_blank" class="btn btn-info btn-block text-white">
-                        🏛️ Gobierno Michoacán<br>
-                        <small>Edición 2024</small>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            <!-- Botones de acción -->
-            <div class="text-center mt-5">
-              <a href="#pricing" class="btn btn-common btn-lg mr-3 mb-3">
-                <i class="lni-ticket"></i> Registro Gratuito
-              </a>
-              <a href="#schedules" class="btn btn-border btn-lg mb-3">
-                <i class="lni-calendar"></i> Ver Programa
-              </a>
-            </div>
-            
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Contact Us Section End -->
-
-    <!-- Footer Section Start -->
-    <footer class="footer-area section-padding">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6 col-lg-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-delay="0.2s">
-            <h3><img src="assets/img/logoblanco.png" alt="III Coloquio Internacional de Espacio y Sostenibilidad 2025" style="max-width: 200px; height: auto;"></h3>
-            <p>
-              III Coloquio Internacional de Espacio y Sostenibilidad 2025. Tecnología, ciencia y cooperación binacional por la resiliencia climática del agua.
-            </p>
-          </div>
-          <div class="col-md-6 col-lg-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-delay="0.4s">
-            <h3>NAVEGACIÓN</h3>
-            <ul>
-              <li><a href="#about">Acerca del Coloquio</a></li>
-              <li><a href="#team">Participantes</a></li>
-              <li><a href="#schedules">Programa</a></li>
-              <li><a href="#pricing">Registro</a></li>
-              <li><a href="#gallery">Galería</a></li>
-            </ul>
-          </div>
-          <div class="col-md-6 col-lg-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-delay="0.6s">
-            <h3>TEMAS CLAVE</h3>
-            <ul>
-              <li>🌧️ Monitoreo de sequías</li>
-              <li>🌊 Gestión de inundaciones</li>
-              <li>💧 Calidad del agua</li>
-              <li>🚜 Agricultura inteligente</li>
-              <li>🔄 Inteligencia artificial</li>
-            </ul>
-          </div>
-          <div class="col-md-6 col-lg-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-delay="0.8s">
-            <h3>FECHAS IMPORTANTES</h3>
-            <div class="widget">
-              <p><strong>📍 Fase 1 - Hermosillo</strong><br>
-              3 de octubre de 2025<br>
-              Tecnológico de Monterrey</p>
-              
-              <p><strong>🇺🇸 Fase 2 - Arizona</strong><br>
-              14 de noviembre de 2025<br>
-              Colaboración NASA</p>
-              
-              <p><strong>🛰️ NASA Space Apps</strong><br>
-              Fin de semana octubre<br>
-              Hackatón de innovación</p>
-            </div>
-            <!-- /.widget -->
-            <div class="widget">
-              <h5 class="widget-title">SÍGUENOS</h5>
-              <ul class="footer-social">
-                <li><a class="facebook" href="#"><i class="lni-facebook-filled"></i></a></li>
-                <li><a class="twitter" href="#"><i class="lni-twitter-filled"></i></a></li>
-                <li><a class="linkedin" href="#"><i class="lni-linkedin-filled"></i></a></li>
-                <li><a class="google-plus" href="#"><i class="lni-google-plus"></i></a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
-    <!-- Footer Section End -->
-
-    <div id="copyright">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="site-info">
-              <p>© 2025 III Coloquio Internacional de Espacio y Sostenibilidad - Hermosillo, Sonora & Arizona</p>
-            </div>      
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Go to Top Link -->
-    <a href="#" class="back-to-top">
-    	<i class="lni-chevron-up"></i>
-    </a>
-
-    <div id="preloader">
-      <div class="sk-circle">
-        <div class="sk-circle1 sk-child"></div>
-        <div class="sk-circle2 sk-child"></div>
-        <div class="sk-circle3 sk-child"></div>
-        <div class="sk-circle4 sk-child"></div>
-        <div class="sk-circle5 sk-child"></div>
-        <div class="sk-circle6 sk-child"></div>
-        <div class="sk-circle7 sk-child"></div>
-        <div class="sk-circle8 sk-child"></div>
-        <div class="sk-circle9 sk-child"></div>
-        <div class="sk-circle10 sk-child"></div>
-        <div class="sk-circle11 sk-child"></div>
-        <div class="sk-circle12 sk-child"></div>
-      </div>
-    </div>
-
-    </main>
-    <!-- Main Content Area End -->
-
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="assets/js/jquery-min.js"></script>
-    <script src="assets/js/popper.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/jquery.countdown.min.js"></script>
-    <script src="assets/js/jquery.nav.js"></script>
-    <script src="assets/js/jquery.easing.min.js"></script>
-    <script src="assets/js/wow.js"></script>
-    <script src="assets/js/jquery.slicknav.js"></script>
-    <script src="assets/js/nivo-lightbox.js"></script>
-    <script src="assets/js/main.js"></script>
-
-    <!-- Service Worker Registration -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;500;600;700&family=Josefin+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" defer></script>
     <script>
-      // Register Service Worker for PWA functionality
-      if ('serviceWorker' in navigator) {
-        window.addEventListener('load', () => {
-          navigator.serviceWorker.register('/sw.js')
-            .then(registration => {
-              console.log('SW registered: ', registration);
-              
-              // Check for updates
-              registration.addEventListener('updatefound', () => {
-                const newWorker = registration.installing;
-                newWorker.addEventListener('statechange', () => {
-                  if (newWorker.state === 'installed' && navigator.serviceWorker.controller) {
-                    // New content available, show update prompt
-                    if (confirm('Nueva versión disponible. ¿Actualizar ahora?')) {
-                      window.location.reload();
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'coloquio-navy': '#132542',
+                        'coloquio-blue': '#22395a', 
+                        'coloquio-ocean': '#2D89EF',
+                        'coloquio-bright': '#1A365D',
+                        'coloquio-light': '#F4F5F7',
+                        'coloquio-gray': '#7A8A99'
+                    },
+                    fontFamily: {
+                        'sans': ['Lato', 'system-ui', 'sans-serif'],
+                        'heading': ['Josefin Sans', 'system-ui', 'sans-serif']
                     }
-                  }
-                });
-              });
-            })
-            .catch(registrationError => {
-              console.log('SW registration failed: ', registrationError);
-            });
-        });
-      }
-
-      // PWA Install Prompt
-      let deferredPrompt;
-      window.addEventListener('beforeinstallprompt', (e) => {
-        e.preventDefault();
-        deferredPrompt = e;
-        
-        // Show install button (can be customized)
-        const installButton = document.createElement('button');
-        installButton.textContent = '📱 Instalar App';
-        installButton.style.cssText = `
-          position: fixed;
-          bottom: 20px;
-          right: 20px;
-          z-index: 1000;
-          background: var(--color-azul-brillante);
-          color: white;
-          border: none;
-          padding: 12px 20px;
-          border-radius: 25px;
-          cursor: pointer;
-          font-weight: 600;
-          box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-          transition: all 0.3s ease;
-        `;
-        
-        installButton.addEventListener('click', async () => {
-          if (deferredPrompt) {
-            deferredPrompt.prompt();
-            const { outcome } = await deferredPrompt.userChoice;
-            console.log('PWA install outcome:', outcome);
-            deferredPrompt = null;
-            installButton.remove();
-          }
-        });
-        
-        // Add to page after a delay to avoid immediate popup
-        setTimeout(() => {
-          document.body.appendChild(installButton);
-        }, 3000);
-      });
-
-      // ================================
-      // CONTADOR REGRESIVO OPTIMIZADO
-      // ================================
-      function initCountdown() {
-        // Fecha del evento: 3 de octubre de 2025, 08:00 (hora de Hermosillo)
-        const eventDate = new Date('2025-10-03T08:00:00-07:00').getTime();
-        
-        function updateCountdown() {
-          const now = new Date().getTime();
-          const distance = eventDate - now;
-          
-          if (distance < 0) {
-            // El evento ya comenzó
-            document.getElementById('countdown-clock').innerHTML = `
-              <div class="event-started">
-                <h3>🎉 ¡El evento ha comenzado!</h3>
-                <p>Síguenos en redes sociales para actualizaciones en vivo</p>
-              </div>
-            `;
-            return;
-          }
-          
-          // Calcular tiempo restante
-          const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-          const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-          const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-          const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-          
-          // Actualizar displays con animación
-          animateNumber('days', days);
-          animateNumber('hours', hours);
-          animateNumber('minutes', minutes);
-          animateNumber('seconds', seconds);
+                }
+            }
         }
-        
-        function animateNumber(elementId, newValue) {
-          const element = document.getElementById(elementId);
-          if (element && element.textContent != newValue) {
-            element.style.transform = 'scale(1.1)';
-            element.textContent = newValue.toString().padStart(2, '0');
-            
-            setTimeout(() => {
-              element.style.transform = 'scale(1)';
-            }, 200);
-          }
-        }
-        
-        // Ejecutar inmediatamente y luego cada segundo
-        updateCountdown();
-        setInterval(updateCountdown, 1000);
-      }
-      
-      // Inicializar contador cuando el DOM esté listo
-      if (document.readyState === 'loading') {
-        document.addEventListener('DOMContentLoaded', initCountdown);
-      } else {
-        initCountdown();
-      }
-
-      // Analytics and Performance Monitoring (Google Analytics 4)
-      // Uncomment when ready to implement
-      /*
-      gtag('config', 'GA_MEASUREMENT_ID', {
-        page_title: 'III Coloquio Espacio y Sostenibilidad 2025',
-        page_location: window.location.href,
-        custom_map: {
-          'custom_parameter': 'event_category'
-        }
-      });
-      */
     </script>
-  </body>
+    <link rel="stylesheet" href="css/styles.css" />
+        <!-- Structured Data (Event + FAQ) -->
+        <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Event",
+            "name": "III Coloquio Internacional de Espacio y Sostenibilidad 2025",
+            "description": "Resiliencia climática del agua mediante tecnología espacial. Cooperación binacional México-Estados Unidos con participación de NASA.",
+            "startDate": "2025-10-03T08:00:00-07:00",
+            "endDate": "2025-10-03T13:00:00-07:00",
+            "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+            "eventStatus": "https://schema.org/EventScheduled",
+            "location": {
+                "@type": "Place",
+                "name": "Tecnológico de Monterrey, Campus Sonora Norte",
+                "address": {
+                    "@type": "PostalAddress",
+                    "addressLocality": "Hermosillo",
+                    "addressRegion": "Sonora",
+                    "addressCountry": "MX"
+                }
+            },
+            "image": ["https://placehold.co/1200x630/132542/FFFFFF?text=Coloquio+Espacio+Sostenibilidad+2025"],
+            "organizer": {
+                "@type": "Organization",
+                "name": "Tecnológico de Monterrey",
+                "url": "https://tec.mx/"
+            },
+            "offers": {
+                "@type": "Offer",
+                "price": "0",
+                "priceCurrency": "MXN",
+                "availability": "https://schema.org/InStock"
+            }
+        }
+        </script>
+        <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+                {"@type": "Question","name": "¿El evento tiene algún costo?","acceptedAnswer": {"@type": "Answer","text": "No. Es completamente gratuito e incluye mentorías, comidas y recursos."}},
+                {"@type": "Question","name": "¿Habrá comida en el evento?","acceptedAnswer": {"@type": "Answer","text": "Sí. Habrá comida disponible durante el evento para los participantes."}},
+                {"@type": "Question","name": "¿De qué tamaño deben ser los equipos?","acceptedAnswer": {"@type": "Answer","text": "De 1 a 6 personas. Se recomienda multidisciplinario."}},
+                {"@type": "Question","name": "¿Cómo puedo formar o unirme a un equipo?","acceptedAnswer": {"@type": "Answer","text": "Team Finder oficial, networking local y actividades de bootcamp."}},
+                {"@type": "Question","name": "¿Qué premios puedo ganar?","acceptedAnswer": {"@type": "Answer","text": "Premios locales y 6 premios globales (Best Use of Data, Technology, etc.)."}},
+                {"@type": "Question","name": "¿Qué necesito llevar al evento?","acceptedAnswer": {"@type": "Answer","text": "Laptop, identificación, ropa cómoda, higiene personal y actitud innovadora."}}
+            ]
+        }
+        </script>
+</head>
+<body class="text-gray-900 bg-white font-sans">
+
+    <!-- Header and Navigation -->
+    <header class="nav-glass sticky top-0 z-50" role="banner">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center" aria-label="Navegación principal">
+            <div class="flex items-center space-x-3">
+                <div class="w-12 h-12 flex items-center justify-center">
+                    <img src="logoblanco.png" alt="Logo III Coloquio Internacional de Espacio y Sostenibilidad" class="w-full h-full object-contain">
+                </div>
+                <a href="#inicio" class="text-xl font-black text-white font-heading">Coloquio Espacio 2025</a>
+            </div>
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="#acerca" class="text-slate-200 hover:text-white font-medium transition-colors">Acerca</a>
+                <a href="#programa" class="text-slate-200 hover:text-white font-medium transition-colors">Programa</a>
+                <a href="#participantes" class="text-slate-200 hover:text-white font-medium transition-colors">Participantes</a>
+                <a href="#galeria" class="text-slate-200 hover:text-white font-medium transition-colors">Galería</a>
+                <a href="#faq" class="text-slate-200 hover:text-white font-medium transition-colors">FAQ</a>
+                <a href="#aliados" class="text-slate-200 hover:text-white font-medium transition-colors">Aliados</a>
+                <a href="#registro" class="bg-coloquio-ocean hover:bg-coloquio-bright px-6 py-3 rounded-md font-bold text-sm text-white transition-colors">Registro</a>
+            </div>
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-white focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+        <div id="mobile-menu" class="hidden md:hidden px-6 pt-2 pb-4 space-y-3">
+            <a href="#acerca" class="block text-slate-200 hover:text-white font-medium">Acerca</a>
+            <a href="#programa" class="block text-slate-200 hover:text-white font-medium">Programa</a>
+            <a href="#participantes" class="block text-slate-200 hover:text-white font-medium">Participantes</a>
+            <a href="#galeria" class="block text-slate-200 hover:text-white font-medium">Galería</a>
+            <a href="#faq" class="block text-slate-200 hover:text-white font-medium">FAQ</a>
+            <a href="#aliados" class="block text-slate-200 hover:text-white font-medium">Aliados</a>
+            <a href="#registro" class="block text-center mt-4 bg-coloquio-ocean hover:bg-coloquio-bright px-6 py-3 rounded-md font-bold text-white">Registro</a>
+        </div>
+    </header>
+
+    <main id="contenido-principal" role="main">
+        <!-- Hero Section -->
+    <section id="inicio" class="hero-bg pt-24 pb-32 md:pt-40 md:pb-48 text-center overflow-hidden" aria-labelledby="hero-title">
+            <canvas id="hero-canvas" aria-hidden="true"></canvas>
+            <div class="absolute inset-0 bg-gradient-to-t from-space-dark via-space-dark/50 to-transparent"></div>
+            <div class="container mx-auto px-6 relative z-10">
+                <h1 id="hero-title" class="hero-title glow-text text-5xl md:text-7xl font-black leading-tight">
+                    NASA Space Apps<br>
+                    <span class="text-4xl md:text-6xl">Sonora 2025</span>
+                </h1>
+                <div class="mt-8 flex items-center justify-center space-x-4 text-xl md:text-2xl font-semibold">
+                    <div class="flex items-center space-x-2">
+                        <div class="w-3 h-3 bg-space-lime-yellow rounded-full animate-pulse"></div>
+                        <span class="text-white">Hermosillo</span>
+                    </div>
+                    <span class="text-slate-300">•</span>
+                    <span class="text-white">3–5 de octubre de 2025</span>
+                </div>
+                <div class="mt-4 flex items-center justify-center gap-2 text-sm md:text-base font-medium text-slate-200">
+                    <span class="text-space-lime-yellow" role="img" aria-label="Sede">📍</span>
+                    <span>Tec de Monterrey Campus Sonora Norte · Salón de Congresos</span>
+                </div>
+                <p class="mt-8 max-w-4xl mx-auto text-lg md:text-xl text-slate-200 leading-relaxed">
+                    En 48 horas intensas, equipos multidisciplinarios utilizan <strong class="text-white">datos abiertos de la NASA</strong> y agencias espaciales aliadas para crear soluciones innovadoras que impacten tanto la Tierra como el espacio. Completamente gratuito. Asiste también al bootcamp previo el sábado 27 de septiembre para prepararte mejor y formar tu equipo.
+                </p>
+                <div class="mt-12 flex flex-col sm:flex-row justify-center items-center gap-6">
+                    <a href="https://www.spaceappschallenge.org/2025/local-events/mexico-city/" target="_blank" class="btn-nasa px-8 py-4 rounded-md font-bold text-lg">
+                        🚀 Regístrate ahora al Hackathon
+                    </a>
+                    <a href="bootcamp.html" class="btn-secondary px-8 py-4 rounded-md font-bold text-lg">
+                        👨‍🚀 Registro bootcamp previo
+                    </a>
+                </div>
+                <div class="mt-12 max-w-2xl mx-auto bg-black bg-opacity-30 backdrop-filter backdrop-blur-sm rounded-2xl p-6 border border-white border-opacity-20">
+                    <p class="text-sm text-slate-300">
+                        <span class="text-space-lime-yellow font-bold">⚠️ Importante:</span> Para ser elegible a premios globales, registra a todo tu equipo en el mismo evento local y envía tu proyecto en el sitio oficial antes del deadline.
+                    </p>
+                </div>
+                <div class="mt-6 flex justify-center">
+                    <a href="https://chat.whatsapp.com/GrMrRufdCdj6s37XNsfw5q?mode=ems_copy_c" target="_blank" rel="noopener" class="px-6 py-3 rounded-md font-bold text-sm flex items-center gap-2 shadow-lg transition-transform hover:-translate-y-1 focus:outline-none focus:ring-2 focus:ring-space-lime-yellow" style="background-color:#25D366; border:2px solid #25D366; color:#ffffff;">
+                        <span aria-hidden="true">💬</span>
+                        <span>Únete al grupo de WhatsApp de participantes</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Key Dates Section -->
+    <section id="fechas" class="py-20 section-bg" aria-labelledby="fechas-title">
+            <div class="container mx-auto px-6 text-center">
+        <h2 id="fechas-title" class="text-4xl font-black text-space-dark-blue mb-4">Fechas Clave</h2>
+                <p class="text-lg text-slate-600 mb-12 max-w-2xl mx-auto">El camino hacia el hackathón. Marca tu calendario y prepárate para el despegue hacia la innovación espacial.</p>
+                
+                <div class="relative max-w-3xl mx-auto mt-16">
+                    <div class="absolute left-1/2 w-1 h-full bg-gradient-to-b from-space-dark-blue to-space-vibrant-blue -translate-x-1/2 rounded-full"></div>
+                    <div class="space-y-16">
+                        <!-- Timeline Item 3 -->
+                        <div class="relative flex items-center">
+                            <div class="w-1/2 pr-8 text-right">
+                                <div class="bg-white rounded-xl p-6 shadow-lg border-l-4 border-space-dark-blue">
+                                    <p class="font-black text-space-dark-blue text-lg">27 de septiembre de 2025</p>
+                                    <h3 class="font-bold text-xl text-slate-800 mt-2">🎓 Bootcamp Presencial</h3>
+                                    <p class="text-slate-600 mt-2">Sesión intensiva en el Design Thinking Lab (PEI) para prepararte.</p>
+                                </div>
+                            </div>
+                            <div class="timeline-dot absolute left-1/2 w-6 h-6 rounded-full -translate-x-1/2 border-4 border-white"></div>
+                        </div>
+                        
+                        <!-- Timeline Item 4 -->
+                        <div class="relative flex items-center">
+                            <div class="w-1/2"></div>
+                            <div class="w-1/2 pl-8 text-left">
+                                <div class="bg-space-dark-blue text-white rounded-xl p-6 shadow-xl">
+                                    <p class="font-black text-lg text-space-lime-yellow">3–5 de octubre de 2025</p>
+                                    <h3 class="font-bold text-xl mt-2">🚀 Hackathón Global</h3>
+                                    <p class="mt-2">¡El evento principal! 48 horas de innovación en el Salón de Congresos.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Challenges Section -->
+    <section id="retos" class="py-20 bg-gradient-to-br from-space-dark to-space-dark-blue text-center" aria-labelledby="retos-title">
+            <div class="container mx-auto px-6">
+        <h2 id="retos-title" class="text-4xl font-black text-white mb-4">Retos 2025</h2>
+                <p class="text-xl text-slate-200 mb-8 max-w-3xl mx-auto">Hay 19 retos curados por expertos de la NASA. Elige el que más te inspire, forma tu equipo y empieza a crear. El tema de este año es <strong class="text-space-lime-yellow">"Learn, Launch, Lead"</strong>.</p>
+                
+                
+                <!-- Preview Grid de 3 Retos Destacados -->
+                <div class="mt-12 max-w-6xl mx-auto">
+                    <div class="grid gap-8 md:grid-cols-3 text-left">
+                        <!-- Card 1 -->
+                        <a href="retos.html" class="group block bg-white/10 backdrop-blur rounded-2xl p-6 hover:bg-white/15 transition card-hover">
+                            <div class="flex items-center justify-between mb-3">
+                                <span class="text-xs font-bold px-2 py-1 rounded-full bg-space-vibrant-blue text-white">Visualización</span>
+                                <span class="text-[10px] tracking-wide font-semibold text-space-lime-yellow">MULTI NIVEL</span>
+                            </div>
+                            <h3 class="font-bold text-lg text-white leading-snug">Animación de Datos Terra</h3>
+                            <p class="text-slate-300 text-sm mt-2 line-clamp-3">Crea una animación que comunique una historia usando datos abiertos de observación terrestre.</p>
+                            <span class="inline-flex items-center text-space-lime-yellow font-semibold text-sm mt-4 group-hover:translate-x-1 transition">Ver más →</span>
+                        </a>
+                        <!-- Card 2 -->
+                        <a href="retos.html" class="group block bg-white/10 backdrop-blur rounded-2xl p-6 hover:bg-white/15 transition card-hover">
+                            <div class="flex items-center justify-between mb-3">
+                                <span class="text-xs font-bold px-2 py-1 rounded-full bg-space-dark-blue text-white">IA / Ciencia</span>
+                                <span class="text-[10px] tracking-wide font-semibold text-space-lime-yellow">AVANZADO</span>
+                            </div>
+                            <h3 class="font-bold text-lg text-white leading-snug">Exoplanetas con IA</h3>
+                            <p class="text-slate-300 text-sm mt-2 line-clamp-3">Entrena modelos para identificar candidatos a nuevos exoplanetas en datasets astronómicos.</p>
+                            <span class="inline-flex items-center text-space-lime-yellow font-semibold text-sm mt-4 group-hover:translate-x-1 transition">Ver más →</span>
+                        </a>
+                        <!-- Card 3 -->
+                        <a href="retos.html" class="group block bg-white/10 backdrop-blur rounded-2xl p-6 hover:bg-white/15 transition card-hover">
+                            <div class="flex items-center justify-between mb-3">
+                                <span class="text-xs font-bold px-2 py-1 rounded-full bg-space-lime-yellow text-space-dark-blue">Clima / Datos</span>
+                                <span class="text-[10px] tracking-wide font-semibold text-space-lime-yellow">INTERMEDIO</span>
+                            </div>
+                            <h3 class="font-bold text-lg text-white leading-snug">Calidad del Aire</h3>
+                            <p class="text-slate-300 text-sm mt-2 line-clamp-3">Integra datos satelitales y meteorológicos para estimar condiciones y tendencias locales.</p>
+                            <span class="inline-flex items-center text-space-lime-yellow font-semibold text-sm mt-4 group-hover:translate-x-1 transition">Ver más →</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Grupo de CTAs -->
+                <div class="mt-14 flex flex-col md:flex-row justify-center gap-6">
+                    <a href="retos.html" class="btn-nasa px-8 py-4 rounded-md font-bold text-lg inline-flex items-center gap-2">
+                        <span>🔎 Ver más Retos</span>
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" /></svg>
+                    </a>
+                    <a href="https://www.spaceappschallenge.org/2025/challenges/" target="_blank" rel="noopener" class="btn-secondary px-8 py-4 rounded-md font-bold text-lg inline-flex items-center gap-2">
+                        <span>🌐 Retos Oficiales Globales</span>
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 11h6m0 0v6m0-6l-7 7M5 5l5.586 5.586m0 0L16 5m-5.414 5.586L5 16" /></svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mentors Section -->
+    <section id="equipo" class="py-20 section-bg text-center" aria-labelledby="equipo-title">
+            <div class="container mx-auto px-6">
+        <h2 id="equipo-title" class="text-4xl font-black text-space-dark-blue mb-4">Mentores</h2>
+                <p class="text-lg text-slate-600 mb-12 max-w-3xl mx-auto">Conecta con especialistas en ingeniería, datos, software y ciencia para llevar tu proyecto al siguiente nivel.</p>
+                
+                <div id="team-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+                    
+                    <!-- Primeros 4 mentores visibles -->
+                    <div class="team-card card-hover bg-white rounded-2xl shadow-lg overflow-hidden text-left">
+                        <div class="p-6">
+                            <div class="flex items-center space-x-3 mb-4">
+                                <div class="w-12 h-12 bg-space-lime-yellow rounded-full flex items-center justify-center text-space-dark-blue font-bold text-lg">LA</div>
+                                <div><h3 class="font-bold text-lg text-slate-800">Luis Alberto López</h3><p class="text-space-dark-blue font-medium text-sm">NASA</p></div>
+                            </div>
+                            <span class="team-badge text-white text-xs font-bold px-3 py-1 rounded-full">Datos Satelitales/Software</span>
+                            <p class="text-slate-600 mt-4 text-sm leading-relaxed">Ingeniero de software de la NASA. Ofrece una perspectiva única sobre el manejo y la aplicación de datos satelitales en soluciones de software.</p>
+                        </div>
+                    </div>
+                    <div class="team-card card-hover bg-white rounded-2xl shadow-lg overflow-hidden text-left">
+                        <div class="p-6">
+                            <div class="flex items-center space-x-3 mb-4">
+                                <div class="w-12 h-12 bg-space-vibrant-blue rounded-full flex items-center justify-center text-white font-bold text-lg">EL</div>
+                                <div><h3 class="font-bold text-lg text-slate-800">Edgar León</h3><p class="text-space-vibrant-blue font-medium text-sm">Tec de Monterrey</p></div>
+                            </div>
+                            <span class="team-badge text-white text-xs font-bold px-3 py-1 rounded-full">IA/Deep Learning</span>
+                            <p class="text-slate-600 mt-4 text-sm leading-relaxed">Experto en inteligencia artificial y deep learning. Guía a los equipos en la implementación de redes neuronales y modelos avanzados de ciencia de datos.</p>
+                        </div>
+                    </div>
+                    <div class="team-card card-hover bg-white rounded-2xl shadow-lg overflow-hidden text-left">
+                        <div class="p-6">
+                            <div class="flex items-center space-x-3 mb-4">
+                                <div class="w-12 h-12 bg-space-lime-yellow rounded-full flex items-center justify-center text-space-dark-blue font-bold text-lg">JW</div>
+                                <div><h3 class="font-bold text-lg text-slate-800">Julio Waissman</h3><p class="text-space-dark-blue font-medium text-sm">UNISON</p></div>
+                            </div>
+                            <span class="team-badge text-white text-xs font-bold px-3 py-1 rounded-full">IA/Ciencia de Datos</span>
+                            <p class="text-slate-600 mt-4 text-sm leading-relaxed">Investigador experto en la intersección de la ciencia de datos, las matemáticas y la IA. Mentoría en la aplicación de algoritmos complejos.</p>
+                        </div>
+                    </div>
+                    <div class="team-card card-hover bg-white rounded-2xl shadow-lg overflow-hidden text-left">
+                        <div class="p-6">
+                            <div class="flex items-center space-x-3 mb-4">
+                                <div class="w-12 h-12 bg-space-dark-blue rounded-full flex items-center justify-center text-white font-bold text-lg">AE</div>
+                                <div><h3 class="font-bold text-lg text-slate-800">Armando Elizondo</h3><p class="text-space-dark-blue font-medium text-sm">Tec de Monterrey</p></div>
+                            </div>
+                            <span class="team-badge text-white text-xs font-bold px-3 py-1 rounded-full">Diseño/Simulación</span>
+                            <p class="text-slate-600 mt-4 text-sm leading-relaxed">Experto en diseño de productos y simulación de sistemas dinámicos. Asesora en la validación de diseños y aplicación de ciencia de datos.</p>
+                        </div>
+                    </div>
+                    <div class="team-card card-hover bg-white rounded-2xl shadow-lg overflow-hidden text-left" style="display:none">
+                        <div class="p-6">
+                            <div class="flex items-center space-x-3 mb-4">
+                                <div class="w-12 h-12 bg-space-dark-blue rounded-full flex items-center justify-center text-white font-bold text-lg">JCA</div>
+                                <div><h3 class="font-bold text-lg text-slate-800">Julio Cesar Avila</h3><p class="text-space-dark-blue font-medium text-sm">Tec de Monterrey</p></div>
+                            </div>
+                            <span class="team-badge text-white text-xs font-bold px-3 py-1 rounded-full">Gestión de Proyectos</span>
+                            <p class="text-slate-600 mt-4 text-sm leading-relaxed">Mentor con amplia experiencia en la gestión y desarrollo de proyectos de ingeniería. Ayuda a los equipos a definir alcances y a mantenerse en el camino correcto.</p>
+                        </div>
+                    </div>
+                    <div class="team-card card-hover bg-white rounded-2xl shadow-lg overflow-hidden text-left" style="display:none">
+                        <div class="p-6">
+                            <div class="flex items-center space-x-3 mb-4">
+                                <div class="w-12 h-12 bg-space-dark-blue rounded-full flex items-center justify-center text-white font-bold text-lg">CF</div>
+                                <div><h3 class="font-bold text-lg text-slate-800">Christopher Falcón</h3><p class="text-space-dark-blue font-medium text-sm">Tec de Monterrey</p></div>
+                            </div>
+                            <span class="team-badge text-white text-xs font-bold px-3 py-1 rounded-full">Ingeniería Mecánica</span>
+                            <p class="text-slate-600 mt-4 text-sm leading-relaxed">Especialista en mecánica y sistemas físicos. Ofrece guía en el diseño, análisis y construcción de componentes y prototipos mecánicos.</p>
+                        </div>
+                    </div>
+                    <div class="team-card card-hover bg-white rounded-2xl shadow-lg overflow-hidden text-left" style="display:none">
+                        <div class="p-6">
+                            <div class="flex items-center space-x-3 mb-4">
+                                <div class="w-12 h-12 bg-space-dark-blue rounded-full flex items-center justify-center text-white font-bold text-lg">LR</div>
+                                <div><h3 class="font-bold text-lg text-slate-800">Luis F. Reséndez</h3><p class="text-space-dark-blue font-medium text-sm">Tec de Monterrey</p></div>
+                            </div>
+                            <span class="team-badge text-white text-xs font-bold px-3 py-1 rounded-full">Modelo de Negocio</span>
+                            <p class="text-slate-600 mt-4 text-sm leading-relaxed">Experto en la creación de modelos de negocio sostenibles. Ayuda a transformar ideas tecnológicas en proyectos viables con un plan claro.</p>
+                        </div>
+                    </div>
+                    <div class="team-card card-hover bg-white rounded-2xl shadow-lg overflow-hidden text-left" style="display:none">
+                        <div class="p-6">
+                            <div class="flex items-center space-x-3 mb-4">
+                                <div class="w-12 h-12 bg-space-dark-blue rounded-full flex items-center justify-center text-white font-bold text-lg">LF</div>
+                                <div><h3 class="font-bold text-lg text-slate-800">Luis Carlos Félix</h3><p class="text-space-dark-blue font-medium text-sm">Tec de Monterrey</p></div>
+                            </div>
+                            <span class="team-badge text-white text-xs font-bold px-3 py-1 rounded-full">Control/Mecatrónica</span>
+                            <p class="text-slate-600 mt-4 text-sm leading-relaxed">Especialista en sistemas de control automático y mecatrónica. Asesora en la integración de sensores, actuadores y algoritmos de control.</p>
+                        </div>
+                    </div>
+                    <div class="team-card card-hover bg-white rounded-2xl shadow-lg overflow-hidden text-left" style="display:none">
+                        <div class="p-6">
+                            <div class="flex items-center space-x-3 mb-4">
+                                <div class="w-12 h-12 bg-space-dark-blue rounded-full flex items-center justify-center text-white font-bold text-lg">JC</div>
+                                <div><h3 class="font-bold text-lg text-slate-800">Jocelyn Castro</h3><p class="text-space-dark-blue font-medium text-sm">Tec de Monterrey</p></div>
+                            </div>
+                            <span class="team-badge text-white text-xs font-bold px-3 py-1 rounded-full">Data Science/Estadística</span>
+                            <p class="text-slate-600 mt-4 text-sm leading-relaxed">Especialista en el fundamento matemático y estadístico de la ciencia de datos. Ayuda a validar modelos y a aplicar técnicas estadísticas robustas.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex justify-center mt-8">
+                    <button id="show-all-mentors" class="bg-space-dark-blue text-white font-bold px-6 py-3 rounded-full shadow-lg hover:bg-space-vibrant-blue transition-colors flex items-center gap-2">
+                        <span>Ver todos los mentores</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+                    </button>
+                </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bootcamp Section -->
+    <section id="bootcamp" class="py-20 bg-slate-50" aria-labelledby="bootcamp-title">
+            <div class="container mx-auto px-6 text-center">
+        <h2 id="bootcamp-title" class="text-4xl font-black text-space-dark-blue mb-4">Bootcamp de Preparación</h2>
+                <p class="text-lg text-slate-600 mb-12 max-w-3xl mx-auto">Llega listo al hackathón con el Virtual Bootcamp oficial y nuestra sesión presencial enfocada en habilidades clave.</p>
+                
+                <div class="grid md:grid-cols-2 gap-8 text-left max-w-5xl mx-auto mt-12">
+                    <!-- Official Bootcamp Card -->
+                    <div class="bg-white rounded-2xl p-8 shadow-lg card-hover border-t-4 border-space-dark-blue">
+                        <div class="flex items-center space-x-3 mb-4">
+                           <div class="w-12 h-12 bg-space-dark-blue rounded-full flex items-center justify-center">
+                               <span class="text-white text-xl">🎓</span>
+                           </div>
+                           <h3 class="font-bold text-2xl text-slate-800">Bootcamp Virtual (Oficial)</h3>
+                       </div>
+                       <p class="text-slate-600 mb-6">Una colección completa de videos y guías de la NASA para prepararte en temas como registro, tips de proyectos y resúmenes de retos.</p>
+                       <ul class="text-slate-600 space-y-2 mb-6">
+                           <li class="flex items-center space-x-2">
+                               <span class="text-green-500">✓</span>
+                               <span>Introducción a los datos de NASA</span>
+                           </li>
+                           <li class="flex items-center space-x-2">
+                               <span class="text-green-500">✓</span>
+                               <span>Metodologías de design thinking</span>
+                           </li>
+                           <li class="flex items-center space-x-2">
+                               <span class="text-green-500">✓</span>
+                               <span>Técnicas de prototipado rápido</span>
+                           </li>
+                       </ul>
+                       <a href="https://www.spaceappschallenge.org/resources/virtual-bootcamp/" target="_blank" class="inline-flex items-center space-x-2 text-space-dark-blue font-bold hover:underline">
+                           <span>Ver videos y guías</span>
+                           <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                           </svg>
+                       </a>
+                    </div>
+                   
+                    <!-- Local Bootcamp Card -->
+                   <div class="bg-white rounded-2xl p-8 shadow-lg card-hover border-t-4 border-space-vibrant-blue">
+                       <div class="flex items-center space-x-3 mb-4">
+                           <div class="w-12 h-12 bg-space-vibrant-blue rounded-full flex items-center justify-center">
+                               <span class="text-white text-xl">🌵</span>
+                           </div>
+                           <h3 class="font-bold text-2xl text-slate-800">Bootcamp Presencial (Sonora)</h3>
+                       </div>
+                       <p class="text-slate-600 mb-6">Una sesión intensiva para alinear expectativas, pulir tu narrativa y salir con un plan claro para tu pitch y demo final.</p>
+                       <div class="bg-blue-50 border-l-4 border-space-vibrant-blue p-4 rounded-lg">
+                           <p class="font-bold text-space-dark-blue text-lg">📅 Sábado 27 de septiembre</p>
+                           <p class="text-slate-700 mt-1">📍 Design Thinking Lab (PEI), Tec de Monterrey</p>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </section>
+
+       <!-- Venue Section -->
+       <section id="sede" class="py-20 bg-gradient-to-br from-space-dark to-space-dark-blue text-center text-white" aria-labelledby="sede-title">
+           <div class="container mx-auto px-6">
+           <h2 id="sede-title" class="text-4xl font-black mb-4">Sede del Evento</h2>
+               <p class="text-xl mb-12 max-w-2xl mx-auto">Nos reuniremos en un espacio inspirador diseñado para fomentar la colaboración y la innovación tecnológica.</p>
+               
+               <div class="max-w-2xl mx-auto bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg rounded-2xl p-8 border border-white border-opacity-20">
+                   <div class="flex items-center justify-center space-x-3 mb-6">
+                       <div class="w-16 h-16 bg-space-lime-yellow rounded-full flex items-center justify-center">
+                           <span class="text-2xl">🏫</span>
+                       </div>
+                       <div>
+                           <h3 class="text-2xl font-bold">Tec de Monterrey</h3>
+                           <p class="text-xl text-space-lime-yellow">Campus Sonora Norte</p>
+                       </div>
+                   </div>
+                   
+                   <div class="bg-space-vibrant-blue bg-opacity-80 rounded-lg p-4 mb-6">
+                       <p class="text-white font-bold text-lg">📍 Salón de Congresos</p>
+                   </div>
+                   
+                   <p class="text-slate-200 leading-relaxed mb-6">Aquí encontrarás todo lo necesario para 48 horas de creación:</p>
+                   
+                   <div class="grid md:grid-cols-2 gap-4 text-left">
+                       <div class="bg-white bg-opacity-10 rounded-lg p-4">
+                           <h4 class="font-bold text-space-vibrant-blue flex items-center space-x-2">
+                               <span>🗺️</span>
+                               <span>Ubicación & Mapa</span>
+                           </h4>
+                           <p class="text-sm text-slate-300 mt-1">Direcciones precisas y rutas de acceso</p>
+                       </div>
+                       <div class="bg-white bg-opacity-10 rounded-lg p-4">
+                           <h4 class="font-bold text-space-lime-yellow flex items-center space-x-2">
+                               <span>🕐</span>
+                               <span>Horarios</span>
+                           </h4>
+                           <p class="text-sm text-slate-300 mt-1">Check-in, comidas y cronograma</p>
+                       </div>
+                       <div class="bg-white bg-opacity-10 rounded-lg p-4">
+                           <h4 class="font-bold text-white flex items-center space-x-2">
+                               <span>📶</span>
+                               <span>Servicios</span>
+                           </h4>
+                           <p class="text-sm text-slate-300 mt-1">Wi-Fi, café, zonas de descanso</p>
+                       </div>
+                       <div class="bg-white bg-opacity-10 rounded-lg p-4">
+                           <h4 class="font-bold text-slate-400 flex items-center space-x-2">
+                               <span>🚗</span>
+                               <span>Estacionamiento</span>
+                           </h4>
+                           <p class="text-sm text-slate-300 mt-1">Espacios disponibles y alternativas</p>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </section>
+
+       <!-- FAQ Section -->
+       <section id="faq" class="py-20 section-bg" aria-labelledby="faq-title">
+           <div class="container mx-auto px-6 max-w-4xl">
+           <h2 id="faq-title" class="text-4xl font-black text-space-dark-blue text-center mb-4">Preguntas Frecuentes</h2>
+               <p class="text-lg text-slate-600 text-center mb-12">Resolvemos las dudas más comunes sobre el hackathón. ¿No encuentras tu respuesta? ¡Contáctanos!</p>
+               
+               <div class="space-y-4">
+                   <!-- FAQ Item 1 -->
+                   <div class="faq-item bg-white rounded-2xl shadow-lg overflow-hidden" >
+                       <button class="faq-question w-full flex justify-between items-center text-left p-6 font-bold text-slate-800 hover:bg-slate-50 transition-colors" id="faq-q1" aria-expanded="false" aria-controls="faq-a1">
+                           <span class="flex items-center space-x-3">
+                               <span class="text-space-dark-blue">💰</span>
+                               <span>¿El evento tiene algún costo?</span>
+                           </span>
+                           <span class="transform transition-transform duration-300 text-space-dark-blue text-xl">▼</span>
+                       </button>
+                       <div class="faq-answer hidden px-6 pb-6 text-slate-600" id="faq-a1" role="region" aria-labelledby="faq-q1">
+                           <div class="bg-green-50 border-l-4 border-green-500 p-4 rounded">
+                               <p class="font-bold text-green-800">Completamente gratuito - $0 MXN</p>
+                               <p class="text-green-700 mt-1">Incluye acceso al evento, mentorías, comidas y todos los recursos necesarios para participar.</p>
+                           </div>
+                       </div>
+                   </div>
+                   
+                   <!-- FAQ Item 2 (reemplazado) -->
+                   <div class="faq-item bg-white rounded-2xl shadow-lg overflow-hidden">
+                       <button class="faq-question w-full flex justify-between items-center text-left p-6 font-bold text-slate-800 hover:bg-slate-50 transition-colors" id="faq-q2" aria-expanded="false" aria-controls="faq-a2">
+                           <span class="flex items-center space-x-3">
+                               <span class="text-space-vibrant-blue">🍽️</span>
+                               <span>¿Habrá comida en el evento?</span>
+                           </span>
+                           <span class="transform transition-transform duration-300 text-space-dark-blue text-xl">▼</span>
+                       </button>
+                       <div class="faq-answer hidden px-6 pb-6 text-slate-600" id="faq-a2" role="region" aria-labelledby="faq-q2">
+                           <div class="bg-blue-50 border-l-4 border-blue-500 p-4 rounded">
+                               <p class="font-bold text-blue-800">Sí, habrá comida</p>
+                               <p class="text-blue-700 mt-1">Durante el desarrollo del hackathón se proporcionará comida para los participantes.</p>
+                           </div>
+                       </div>
+                   </div>
+                   
+                   <!-- FAQ Item 3 -->
+                   <div class="faq-item bg-white rounded-2xl shadow-lg overflow-hidden">
+                       <button class="faq-question w-full flex justify-between items-center text-left p-6 font-bold text-slate-800 hover:bg-slate-50 transition-colors" id="faq-q3" aria-expanded="false" aria-controls="faq-a3">
+                           <span class="flex items-center space-x-3">
+                               <span class="text-space-dark-blue">👥</span>
+                               <span>¿De qué tamaño deben ser los equipos?</span>
+                           </span>
+                           <span class="transform transition-transform duration-300 text-space-dark-blue text-xl">▼</span>
+                       </button>
+                       <div class="faq-answer hidden px-6 pb-6 text-slate-600" id="faq-a3" role="region" aria-labelledby="faq-q3">
+                           <div class="bg-purple-50 border-l-4 border-purple-500 p-4 rounded">
+                               <p class="font-bold text-purple-800">Entre 1 y 6 personas por equipo</p>
+                               <p class="text-purple-700 mt-1">Puedes participar individualmente, pero la colaboración en equipo multidisciplinario es altamente recomendada para mejores resultados.</p>
+                           </div>
+                       </div>
+                   </div>
+                   
+                   <!-- FAQ Item 4 -->
+                   <div class="faq-item bg-white rounded-2xl shadow-lg overflow-hidden">
+                       <button class="faq-question w-full flex justify-between items-center text-left p-6 font-bold text-slate-800 hover:bg-slate-50 transition-colors" id="faq-q4" aria-expanded="false" aria-controls="faq-a4">
+                           <span class="flex items-center space-x-3">
+                               <span class="text-space-lime-yellow">🤝</span>
+                               <span>¿Cómo puedo formar o unirme a un equipo?</span>
+                           </span>
+                           <span class="transform transition-transform duration-300 text-space-dark-blue text-xl">▼</span>
+                       </button>
+                       <div class="faq-answer hidden px-6 pb-6 text-slate-600" id="faq-a4" role="region" aria-labelledby="faq-q4">
+                           <div class="bg-orange-50 border-l-4 border-orange-500 p-4 rounded">
+                               <p class="font-bold text-orange-800">Varias opciones disponibles:</p>
+                               <ul class="text-orange-700 mt-2 space-y-1">
+                                   <li>• <strong>Team Finder oficial:</strong> Disponible desde el 21 de agosto en el sitio de Space Apps</li>
+                                   <li>• <strong>Networking local:</strong> Canales de comunicación del evento de Sonora</li>
+                                   <li>• <strong>Sesión presencial:</strong> Actividades de team building durante el bootcamp</li>
+                               </ul>
+                           </div>
+                       </div>
+                   </div>
+                   
+                   <!-- FAQ Item 5 -->
+                   <div class="faq-item bg-white rounded-2xl shadow-lg overflow-hidden">
+                       <button class="faq-question w-full flex justify-between items-center text-left p-6 font-bold text-slate-800 hover:bg-slate-50 transition-colors" id="faq-q5" aria-expanded="false" aria-controls="faq-a5">
+                           <span class="flex items-center space-x-3">
+                               <span class="text-space-dark-blue">🏆</span>
+                               <span>¿Qué premios puedo ganar?</span>
+                           </span>
+                           <span class="transform transition-transform duration-300 text-space-dark-blue text-xl">▼</span>
+                       </button>
+                       <div class="faq-answer hidden px-6 pb-6 text-slate-600" id="faq-a5" role="region" aria-labelledby="faq-q5">
+                           <div class="bg-red-50 border-l-4 border-red-500 p-4 rounded">
+                               <p class="font-bold text-red-800">Premios locales y globales:</p>
+                               <ul class="text-red-700 mt-2 space-y-1">
+                                   <li>• <strong>Locales:</strong> Reconocimientos y premios del evento de Sonora</li>
+                                   <li>• <strong>Globales:</strong> 6 premios internacionales de NASA (Best Use of Data, Technology, etc.)</li>
+                                   <li>• <strong>Requisito:</strong> Todo el equipo debe registrarse en el mismo evento local</li>
+                               </ul>
+                           </div>
+                       </div>
+                   </div>
+                   
+                   <!-- FAQ Item 6 -->
+                   <div class="faq-item bg-white rounded-2xl shadow-lg overflow-hidden">
+                       <button class="faq-question w-full flex justify-between items-center text-left p-6 font-bold text-slate-800 hover:bg-slate-50 transition-colors" id="faq-q6" aria-expanded="false" aria-controls="faq-a6">
+                           <span class="flex items-center space-x-3">
+                               <span class="text-green-600">💻</span>
+                               <span>¿Qué necesito llevar al evento?</span>
+                           </span>
+                           <span class="transform transition-transform duration-300 text-space-dark-blue text-xl">▼</span>
+                       </button>
+                       <div class="faq-answer hidden px-6 pb-6 text-slate-600" id="faq-a6" role="region" aria-labelledby="faq-q6">
+                           <div class="bg-green-50 border-l-4 border-green-500 p-4 rounded">
+                               <p class="font-bold text-green-800">Lista esencial:</p>
+                               <ul class="text-green-700 mt-2 space-y-1">
+                                   <li>• Laptop con cargador y software necesario</li>
+                                   <li>• Identificación oficial</li>
+                                   <li>• Ropa cómoda para 48 horas</li>
+                                   <li>• Artículos de higiene personal</li>
+                                   <li>• ¡Muchas ganas de innovar! 🚀</li>
+                               </ul>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </section>
+   </main>
+
+    <!-- Footer -->
+    <footer class="bg-space-dark text-white py-16" role="contentinfo">
+       <div class="container mx-auto px-6">
+           <div class="text-center">
+               <div class="flex items-center justify-center space-x-4 mb-6">
+                   <div class="w-16 h-16 flex items-center justify-center">
+                        <svg class="w-full h-full text-white" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="50" cy="50" r="48" stroke="currentColor" stroke-width="4"/>
+                            <path d="M25 50C25 36.1929 36.1929 25 50 25" stroke="currentColor" stroke-width="4"/>
+                        </svg>
+                   </div>
+                   <div>
+                       <h3 class="text-2xl font-black">NASA International Space Apps Challenge 2025</h3>
+                       <p class="text-space-vibrant-blue font-semibold">Evento Local: Hermosillo, Sonora</p>
+                   </div>
+               </div>
+               
+               <div class="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto mb-12">
+                   <div class="bg-white bg-opacity-10 rounded-lg p-6">
+                       <h4 class="font-bold text-space-lime-yellow mb-3">📅 Fechas Importantes</h4>
+                       <ul class="text-sm space-y-2 text-slate-300">
+                           <li>Registro: 17 julio 2025</li>
+                           <li>Bootcamp: 27 septiembre 2025</li>
+                           <li>Hackathón: 3-5 octubre 2025</li>
+                       </ul>
+                   </div>
+                   <div class="bg-white bg-opacity-10 rounded-lg p-6">
+                       <h4 class="font-bold text-space-vibrant-blue mb-3">👥 Equipos</h4>
+                       <ul class="text-sm space-y-2 text-slate-300">
+                           <li>1-6 integrantes por equipo</li>
+                           <li>Formación desde 21 agosto</li>
+                           <li>Multidisciplinario recomendado</li>
+                       </ul>
+                   </div>
+                   <div class="bg-white bg-opacity-10 rounded-lg p-6">
+                       <h4 class="font-bold text-white mb-3">🏆 Elegibilidad Global</h4>
+                       <ul class="text-sm space-y-2 text-slate-300">
+                           <li>Mismo evento local todo el equipo</li>
+                           <li>Envío en sitio oficial</li>
+                           <li>Antes del deadline</li>
+                       </ul>
+                   </div>
+               </div>
+
+               <!-- Social Media Links -->
+               <div class="mb-8">
+                   <h4 class="font-bold text-lg text-white mb-4">Síguenos en Redes</h4>
+                   <div class="flex justify-center items-center space-x-6">
+                       <a href="https://www.facebook.com/share/1Fnq176biq/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" class="text-slate-300 hover:text-space-lime-yellow transition-colors duration-300">
+                           <span class="sr-only">Facebook</span>
+                           <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                               <path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" />
+                           </svg>
+                       </a>
+                       <a href="https://www.instagram.com/spaceappshmo?igsh=cmZsdjBvMjd3cDJo" target="_blank" rel="noopener noreferrer" class="text-slate-300 hover:text-space-lime-yellow transition-colors duration-300">
+                           <span class="sr-only">Instagram</span>
+                           <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                               <path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.024.06 1.378.06 3.808s-.012 2.784-.06 3.808c-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.024.048-1.378.06-3.808.06s-2.784-.012-3.808-.06c-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.048-1.024-.06-1.378-.06-3.808s.012-2.784.06-3.808c.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 016.08 2.525c.636-.247 1.363-.416 2.427-.465C9.53 2.013 9.884 2 12.315 2zM12 7a5 5 0 100 10 5 5 0 000-10zm0 8a3 3 0 110-6 3 3 0 010 6zm5.25-9.75a1.25 1.25 0 100-2.5 1.25 1.25 0 000 2.5z" clip-rule="evenodd" />
+                           </svg>
+                       </a>
+                   </div>
+               </div>
+           </div>
+           
+           <div class="border-t border-white border-opacity-20 pt-8 text-center">
+               <p class="text-slate-400 text-sm">
+                   Tema 2025: <span class="text-space-lime-yellow font-bold">"Learn, Launch, Lead"</span> • 
+                   Evento gratuito y abierto a todas las edades • 
+                   <a href="https://www.spaceappschallenge.org" target="_blank" class="text-space-vibrant-blue hover:underline">spaceappschallenge.org</a>
+               </p>
+           </div>
+       </div>
+   </footer>
+
+   <!-- Modal Mentor -->
+    <div id="mentor-modal" class="fixed inset-0 hidden items-center justify-center z-50" role="dialog" aria-modal="true" aria-labelledby="mentor-modal-title" aria-describedby="mentor-modal-desc">
+        <div class="absolute inset-0 bg-black/70" data-close-modal></div>
+          <div class="relative bg-white rounded-2xl max-w-md w-full p-6 shadow-2xl border border-slate-200" role="document">
+            <button class="absolute top-3 right-3 text-slate-400 hover:text-slate-700 text-2xl leading-none" data-close-modal aria-label="Cerrar modal">&times;</button>
+            <div id="mentor-modal-content"></div>
+        </div>
+   </div>
+
+    <script src="js/index.js" defer></script>
+        <style>
+            /* Solo los primeros 4 visibles, el resto oculto */
+            #team-grid .team-card { display: none; }
+            #team-grid .team-card:nth-child(1),
+            #team-grid .team-card:nth-child(2),
+            #team-grid .team-card:nth-child(3),
+            #team-grid .team-card:nth-child(4) { display: block; }
+        </style>
+        <!-- Script para mostrar todos los mentores movido a js/index.js -->
+
+</body>
 </html>
