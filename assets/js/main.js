@@ -28,14 +28,52 @@
       +'<div class="time-entry seconds"><span>%S</span> Segundos</div> '));
     });
 
-    /* slicknav mobile menu active  */
+    /* Mobile Navigation Mejorada */
     $('.mobile-menu').slicknav({
         prependTo: '.navbar-header',
-        parentTag: 'liner',
+        parentTag: 'div',
         allowParentLinks: true,
         duplicate: true,
         label: '',
-      });
+        closedSymbol: '',
+        openedSymbol: '',
+        init: function(){
+          // Agregar overlay
+          if (!$('.mobile-menu-overlay').length) {
+            $('body').append('<div class="mobile-menu-overlay"></div>');
+          }
+        },
+        beforeOpen: function(trigger) {
+          $('.mobile-menu-overlay').addClass('active');
+          $('.navbar-toggler').addClass('active');
+          $('body').addClass('menu-open');
+        },
+        beforeClose: function(trigger) {
+          $('.mobile-menu-overlay').removeClass('active');
+          $('.navbar-toggler').removeClass('active');
+          $('body').removeClass('menu-open');
+        }
+    });
+
+    // Cerrar menú al hacer click en overlay
+    $(document).on('click', '.mobile-menu-overlay', function() {
+      $('.mobile-menu').slicknav('close');
+    });
+
+    // Cerrar menú al hacer click en un enlace
+    $(document).on('click', '.slicknav_nav a', function() {
+      $('.mobile-menu').slicknav('close');
+    });
+
+    // Prevenir scroll del body cuando el menú está abierto
+    $('body').on('menu-open', function() {
+      $('body').css('overflow', 'hidden');
+    });
+
+    // Restaurar scroll cuando se cierra el menú
+    $('.mobile-menu').on('close', function() {
+      $('body').css('overflow', 'auto');
+    });
 
       /* WOW Scroll Spy
     ========================================================*/
