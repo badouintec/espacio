@@ -1,27 +1,339 @@
-/* Core custom styles extracted from inline <style> in index.html & retos.html */
-body {
-  font-family: 'Inter', sans-serif;
-  background-color: #080A1A;
-  background-attachment: fixed;
+/* CSS para III Coloquio Internacional de Espacio y Sostenibilidad 2025 */
+
+/* === VARIABLES CSS === */
+:root {
+  --coloquio-navy: #132542;
+  --coloquio-blue: #22395a;
+  --coloquio-ocean: #2D89EF;
+  --coloquio-bright: #1A365D;
+  --coloquio-light: #F4F5F7;
+  --coloquio-gray: #7A8A99;
+  --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
-#hero-canvas { position:absolute; top:0; left:0; width:100%; height:100%; z-index:0; }
-.hero-bg { position:relative; }
-.card-hover { transition: all 0.3s cubic-bezier(0.4,0,0.2,1); }
-.card-hover:hover { transform: translateY(-8px); box-shadow:0 25px 50px -12px rgba(0,0,0,0.25); }
-.btn-nasa { background-color:#DFFF00; color:#0B3D91; transition:all .3s ease; }
-.btn-nasa:hover { transform:translateY(-2px); box-shadow:0 10px 25px rgba(223,255,0,0.4); filter:brightness(1.1); }
-.btn-secondary { background:transparent; border:2px solid #DFFF00; color:#DFFF00; transition:all .3s ease; }
-.btn-secondary:hover { background:#DFFF00; color:#0B3D91; transform:translateY(-2px); box-shadow:0 10px 25px rgba(223,255,0,0.4); }
-.section-bg { background:#f8f9fa; }
-.timeline-dot { background:#DFFF00; box-shadow:0 0 20px rgba(223,255,0,0.5); }
-.filter-btn.active { background:#0B3D91; color:#fff; }
-.team-badge { background:#0052CC; }
-.nav-glass { background:rgba(11,61,145,0.9); backdrop-filter:blur(10px); border-bottom:1px solid rgba(255,255,255,0.1); }
-.hero-title { background:linear-gradient(45deg,#ffffff,#f8f9ff,#e3f2fd); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text; }
-.glow-text { text-shadow:0 0 30px rgba(255,255,255,0.5); }
-/* retos.html specific */
-.challenge-card { border:1px solid rgba(255,255,255,0.1); transition:all .3s cubic-bezier(.4,0,.2,1); background:rgba(11,61,145,0.2); }
-.challenge-card:hover { transform:translateY(-8px); box-shadow:0 25px 50px -12px rgba(223,255,0,0.1); border-color:rgba(223,255,0,0.5); }
-.difficulty-tag { background-color:rgba(255,255,255,0.1); color:#a7b3c2; }
-.difficulty-tag.active { background:#DFFF00; color:#0B3D91; font-weight:bold; }
-.topic-tag { background:#0052CC; color:#e0e0e0; }
+
+/* === ESTILOS BASE === */
+body {
+  font-family: 'Lato', sans-serif;
+  line-height: 1.6;
+  color: #111111;
+  scroll-behavior: smooth;
+}
+
+.font-heading {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+/* === NAVEGACIÓN === */
+.nav-glass {
+  background: rgba(19, 37, 66, 0.95);
+  backdrop-filter: blur(15px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  transition: var(--transition-smooth);
+}
+
+.nav-glass.bg-transparent {
+  background: rgba(19, 37, 66, 0.3);
+}
+
+/* === CARRUSEL === */
+.carousel-slide {
+  opacity: 0;
+  transition: opacity 0.8s ease-in-out;
+  z-index: 1;
+}
+
+.carousel-slide.active {
+  opacity: 1;
+  z-index: 2;
+}
+
+.carousel-dot {
+  cursor: pointer;
+  transition: var(--transition-smooth);
+}
+
+.carousel-dot:hover,
+.carousel-dot.active {
+  opacity: 1 !important;
+  transform: scale(1.2);
+}
+
+/* === CONTADOR REGRESIVO === */
+#days, #hours, #minutes, #seconds {
+  transition: transform 0.3s ease;
+  font-variant-numeric: tabular-nums;
+}
+
+#days:hover, 
+#hours:hover, 
+#minutes:hover, 
+#seconds:hover {
+  transform: scale(1.05);
+  color: var(--coloquio-ocean);
+}
+
+/* === TARJETAS Y COMPONENTES === */
+.card-hover {
+  transition: var(--transition-smooth);
+}
+
+.card-hover:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 25px 50px -12px rgba(19, 37, 66, 0.25);
+}
+
+/* === TEMAS PRIORITARIOS === */
+.tema-card {
+  border: 1px solid transparent;
+  transition: var(--transition-smooth);
+}
+
+.tema-card:hover {
+  border-color: var(--coloquio-ocean);
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px -10px rgba(45, 137, 239, 0.2);
+}
+
+/* === BOTONES === */
+.btn-coloquio {
+  background: var(--coloquio-ocean);
+  color: white;
+  transition: var(--transition-smooth);
+  font-weight: 600;
+}
+
+.btn-coloquio:hover {
+  background: var(--coloquio-bright);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(45, 137, 239, 0.4);
+}
+
+.btn-outline-coloquio {
+  background: transparent;
+  border: 2px solid white;
+  color: white;
+  transition: var(--transition-smooth);
+}
+
+.btn-outline-coloquio:hover {
+  background: white;
+  color: var(--coloquio-navy);
+  transform: translateY(-2px);
+}
+
+/* === SECCIONES === */
+.section-bg {
+  background: var(--coloquio-light);
+}
+
+.section-hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* === ANIMACIONES === */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeInUp {
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animate-slideInLeft {
+  animation: slideInLeft 0.8s ease-out forwards;
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animate-slideInRight {
+  animation: slideInRight 0.8s ease-out forwards;
+}
+
+/* === EFECTOS DE HOVER === */
+.hover-lift:hover {
+  transform: translateY(-3px);
+  transition: var(--transition-smooth);
+}
+
+.hover-scale:hover {
+  transform: scale(1.05);
+  transition: var(--transition-smooth);
+}
+
+/* === ICONOS === */
+.icon-wrapper {
+  transition: var(--transition-smooth);
+}
+
+.icon-wrapper:hover {
+  transform: rotate(5deg) scale(1.1);
+  color: var(--coloquio-ocean);
+}
+
+/* === FORMULARIOS === */
+.form-input {
+  border: 2px solid #e5e7eb;
+  transition: var(--transition-smooth);
+}
+
+.form-input:focus {
+  border-color: var(--coloquio-ocean);
+  box-shadow: 0 0 0 3px rgba(45, 137, 239, 0.1);
+  outline: none;
+}
+
+.form-input.error {
+  border-color: #ef4444;
+  box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.1);
+}
+
+/* === FOOTER === */
+footer {
+  background: linear-gradient(135deg, var(--coloquio-navy) 0%, var(--coloquio-blue) 100%);
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 768px) {
+  .carousel-slide h1 {
+    font-size: 2.5rem;
+    line-height: 1.2;
+  }
+  
+  .countdown-item {
+    margin: 0 0.5rem;
+  }
+  
+  .tema-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .carousel-slide h1 {
+    font-size: 2rem;
+  }
+  
+  .nav-glass .container {
+    padding: 1rem;
+  }
+  
+  #days, #hours, #minutes, #seconds {
+    font-size: 2rem;
+  }
+}
+
+/* === ACCESIBILIDAD === */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  
+  .carousel-slide {
+    transition: none;
+  }
+}
+
+/* === FOCUS STATES === */
+*:focus {
+  outline: 2px solid var(--coloquio-ocean);
+  outline-offset: 2px;
+}
+
+button:focus,
+a:focus {
+  outline-color: var(--coloquio-bright);
+}
+
+/* === UTILIDADES === */
+.text-shadow {
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.text-shadow-lg {
+  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.bg-gradient-coloquio {
+  background: linear-gradient(135deg, var(--coloquio-navy) 0%, var(--coloquio-ocean) 100%);
+}
+
+.bg-gradient-coloquio-light {
+  background: linear-gradient(135deg, var(--coloquio-ocean) 0%, var(--coloquio-bright) 100%);
+}
+
+/* === SCROLLBAR PERSONALIZADA === */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--coloquio-light);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--coloquio-ocean);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--coloquio-bright);
+}
+
+/* === ESTADOS DE LOADING === */
+.loading {
+  opacity: 0.7;
+  pointer-events: none;
+}
+
+.loading::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 20px;
+  height: 20px;
+  margin: -10px 0 0 -10px;
+  border: 2px solid var(--coloquio-light);
+  border-top: 2px solid var(--coloquio-ocean);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
