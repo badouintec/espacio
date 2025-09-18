@@ -1,52 +1,429 @@
-#  III Coloquio Internacional de Espacio y Sostenibilidad 2025
+# 🌎 III Coloquio Internacional de Espacio y Sostenibilidad 2025
 
-**Sitio web oficial**: [espacioysostenibilidad.com](https://espacioysostenibilidad.com)
+**Sitio web oficial del evento binacional México-Estados Unidos centrado en tecnologías espaciales para la gestión sustentable de recursos hídricos.**
 
-**Evento de cooperación México-Estados Unidos en gestión hídrica y resiliencia climática mediante tecnología satelital.**
-
----
-
-## 📋 Resumen Ejecutivo
-
-Sitio web profesional para el III Coloquio Internacional de Espacio y Sostenibilidad, un evento binacional México-Estados Unidos centrado en la aplicación de tecnologías espaciales para la gestión sustentable de recursos hídricos en la región fronteriza.
-
-## 🔍 **AUDITORÍA TÉCNICA COMPLETA - JULIO 2025**
-
-### 🎯 **Características Principales**
-
-- ✅ **Diseño responsivo** moderno y profesional### � **Estadísticas del Proyecto**
-
-- ✅ **Multi-sección** con navegación suave- **Total de archivos web**: 32 (HTML, CSS, JS)
-
-- ✅ **Sistema de conteo regresivo** para el evento- **Tamaño total de assets**: 6.7MB
-
-- ✅ **Galería de imágenes** con lightbox- **Líneas de código JavaScript**: 2,838 líneas
-
-- ✅ **Sección de ponentes** con perfiles detallados- **Imágenes optimizadas**: 42 archivos (JPG, PNG, WebP)
-
-- ✅ **Horarios interactivos** por días- **Biggest image**: 460KB (fondo1-optimized.jpg)
-
-- ✅ **Sistema de precios** y registro
-
-- ✅ **Sección FAQ** con acordeones---
-
-- ✅ **Integración de mapas** y contacto
-
-## 🚀 **ANÁLISIS DE PERFORMANCE**
+[![Deploy Status](https://img.shields.io/badge/deploy-active-brightgreen)](https://badouintec.github.io/espacio/)
+[![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white)](https://developer.mozilla.org/docs/Web/HTML)
+[![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white)](https://developer.mozilla.org/docs/Web/CSS)
+[![Bootstrap](https://img.shields.io/badge/Bootstrap-4.6-7952B3?style=flat&logo=bootstrap&logoColor=white)](https://getbootstrap.com/)
+[![jQuery](https://img.shields.io/badge/jQuery-3.6-0769AD?style=flat&logo=jquery&logoColor=white)](https://jquery.com/)
 
 ---
 
-### ✅ **Fortalezas Implementadas**
+## 📋 Información del Evento
 
-## 🏗️ Estructura del Proyecto1. **Lazy Loading Avanzado** ✓
+### 🗓️ **Fechas Importantes**
+- **Fase Hermosillo**: 3 de octubre de 2025, Sonora, México
+- **Fase Arizona**: 14 de noviembre de 2025, Estados Unidos
 
-   - IntersectionObserver API para imágenes
+### 🎯 **Objetivo Principal**
+Fomentar la cooperación binacional en el uso de tecnologías espaciales y satelitales para abordar desafíos de gestión hídrica y resiliencia climática en la región fronteriza México-Estados Unidos.
 
-```   - Placeholders SVG optimizados (data URLs)
+### 🌟 **Temas Centrales**
+- 🛰️ Tecnologías satelitales para monitoreo hídrico
+- 🌡️ Resiliencia climática del agua
+- 🤝 Cooperación NASA y aliados internacionales
+- 🔬 Inteligencia artificial aplicada a recursos naturales
+- 🌊 Gestión sustentable de cuencas transfronterizas
 
-espacio/   - Background diferido para hero section
+---
 
-├── index.html                    # Página principal (1,523 líneas)
+## � Demo en Vivo
+
+**🔗 [Ver sitio web](https://badouintec.github.io/espacio/)**
+
+---
+
+## 🏗️ Arquitectura Técnica
+
+### 📦 **Stack Tecnológico**
+
+| Tecnología | Versión | Propósito |
+|------------|---------|-----------|
+| **HTML5** | Estándar | Estructura semántica |
+| **CSS3** | Estándar | Diseño y animaciones |
+| **Bootstrap** | 4.6 | Framework responsivo |
+| **jQuery** | 3.6 | Interactividad DOM |
+| **WOW.js** | 1.1.3 | Animaciones scroll |
+| **Nivo Lightbox** | 1.3.1 | Galería de imágenes |
+
+### 🎨 **Paleta de Colores**
+
+```css
+:root {
+  /* Colores principales */
+  --color-azul-marino: #132542;    /* Header, títulos principales */
+  --color-azul-medio: #22395a;     /* Botones, acentos */
+  --color-azul-oceano: #2D89EF;    /* Enlaces, CTA secundarios */
+  --color-azul-brillante: #1E90FF; /* Call-to-action, hover */
+  
+  /* Colores neutros */
+  --color-blanco: #FFFFFF;         /* Texto sobre fondos oscuros */
+  --color-gris-claro: #F4F5F7;     /* Fondos de sección */
+  --color-gris-medio: #7A8A99;     /* Texto secundario */
+  --color-negro: #111111;          /* Texto principal */
+}
+```
+
+### 📱 **Características de Diseño**
+- ✅ **Totalmente responsivo** - Mobile-first design
+- ✅ **Navegación fija** con smooth scroll
+- ✅ **Carousel manual** (sin auto-play)
+- ✅ **Menú semitransparente** con blur effects
+- ✅ **Logo limpio** sin fondos innecesarios
+- ✅ **Contraste optimizado** para accesibilidad
+
+---
+
+## 📁 Estructura del Proyecto
+
+```
+espacio/
+├── index.html                    # Página principal (1,525 líneas)
+├── README.md                     # Documentación del proyecto
+├── license.txt                   # Información de licencia
+├── coloquio.md                   # Detalles del evento
+└── assets/                       # Recursos estáticos
+    ├── css/                      # Hojas de estilo
+    │   ├── bootstrap.min.css     # Framework CSS
+    │   ├── main.css             # Estilos principales
+    │   ├── responsive.css       # Ajustes responsivos
+    │   ├── animate.css          # Animaciones CSS
+    │   ├── nivo-lightbox.css    # Galería de imágenes
+    │   ├── slicknav.css         # Menú móvil
+    │   └── colors/blue.css      # Variaciones de color
+    ├── js/                      # Scripts JavaScript
+    │   ├── jquery-min.js        # Biblioteca principal
+    │   ├── bootstrap.min.js     # Funcionalidad Bootstrap
+    │   ├── main.js              # Lógica personalizada
+    │   ├── wow.js               # Animaciones scroll
+    │   ├── nivo-lightbox.js     # Galería interactiva
+    │   ├── jquery.countdown.min.js # Contador regresivo
+    │   └── [otros scripts]      # Utilidades adicionales
+    ├── img/                     # Recursos gráficos
+    │   ├── slider/              # Imágenes del carrusel
+    │   ├── team/                # Fotos de ponentes
+    │   ├── gallery/             # Galería del evento
+    │   ├── sponsors/            # Logos de patrocinadores
+    │   ├── background/          # Fondos y banners
+    │   ├── logoblanco.png       # Logo principal
+    │   └── favicon.png          # Icono del sitio
+    └── fonts/                   # Tipografías e iconos
+        ├── LineIcons.*          # Set de iconos vectoriales
+        └── line-icons.css       # Estilos de iconos
+```
+
+---
+
+## 🎯 Secciones del Sitio
+
+### 🏠 **1. Header y Navegación**
+- Navbar fijo con transparencia inteligente
+- Menú responsivo con efectos visuales
+- Logo adaptable según contexto
+- Call-to-action destacados
+
+### 🎠 **2. Hero Section (Carrusel)**
+- Carrusel de 3 slides con control manual
+- Información de ambas fases del evento
+- Botones de acción contextuales
+- Efectos de animación suaves
+
+### ⏰ **3. Contador Regresivo**
+- Timer dinámico hasta la fecha del evento
+- Diseño visual atractivo
+- Actualización en tiempo real
+
+### 🎯 **4. Sección Acerca de**
+- Información detallada del coloquio
+- Objetivos y metas del evento
+- Estadísticas relevantes
+- Diseño en tarjetas organizadas
+
+### 📅 **5. Programa/Horarios**
+- Tabs interactivos por días
+- Agenda detallada de actividades
+- Información de ponentes
+- Horarios y ubicaciones
+
+### 👥 **6. Ponentes/Speakers**
+- Perfiles detallados de expertos
+- Fotos profesionales
+- Biografías y especializaciones
+- Enlaces a redes sociales
+
+### 🎫 **7. Registro y Precios**
+- Información de inscripción
+- Diferentes tipos de entrada
+- Beneficios por categoría
+- Call-to-action claro
+
+### 🖼️ **8. Galería**
+- Imágenes de eventos anteriores
+- Lightbox para visualización
+- Organización por categorías
+- Optimización de carga
+
+### 🏢 **9. Patrocinadores**
+- Logos de organizaciones participantes
+- Diferentes niveles de patrocinio
+- Enlaces a sitios web
+- Reconocimiento oficial
+
+### 📧 **10. Contacto**
+- Formulario de contacto funcional
+- Información de ubicación
+- Mapas integrados
+- Datos de coordinadores
+
+### 🦶 **11. Footer**
+- Links de navegación
+- Información legal
+- Redes sociales
+- Logo institucional
+
+---
+
+## 🛠️ Instalación y Uso
+
+### 📋 **Prerrequisitos**
+- Navegador web moderno (Chrome 80+, Firefox 75+, Safari 13+)
+- Servidor web local (opcional para desarrollo)
+
+### ⚡ **Instalación Rápida**
+
+1. **Clonar el repositorio**
+```bash
+git clone https://github.com/badouintec/espacio.git
+cd espacio
+```
+
+2. **Servir localmente** (opcional)
+```bash
+# Con Python 3
+python -m http.server 8000
+
+# Con Node.js (http-server)
+npx http-server -p 8000
+
+# Con Live Server (VS Code)
+# Usar extensión Live Server
+```
+
+3. **Abrir en navegador**
+```
+http://localhost:8000
+```
+
+### 🔧 **Personalización**
+
+#### Cambiar información del evento:
+```html
+<!-- En index.html, líneas ~160-180 -->
+<h1>III Coloquio Internacional de Espacio y Sostenibilidad 2025</h1>
+<p>🌎 Tecnología, ciencia y cooperación binacional</p>
+```
+
+#### Actualizar fechas del contador:
+```javascript
+// En assets/js/main.js, línea ~15
+$('.countdown').countdown('2025/10/03', function(event) {
+  // Lógica del contador
+});
+```
+
+#### Modificar colores:
+```css
+/* En assets/css/main.css, líneas 3-16 */
+:root {
+  --color-azul-marino: #132542; /* Cambiar por tu color */
+  /* ... resto de variables */
+}
+```
+
+---
+
+## 🎨 Guía de Estilo
+
+### 🖌️ **Tipografía**
+- **Principal**: 'Lato', sans-serif (cuerpo del texto)
+- **Títulos**: 'Josefin Sans', sans-serif (headings)
+- **Tamaños**: Escala responsiva 14px-40px
+
+### 🎯 **Componentes Reutilizables**
+
+#### Botones
+```html
+<!-- Botón principal -->
+<a href="#" class="btn btn-common btn-lg">Registro Gratuito</a>
+
+<!-- Botón secundario -->
+<a href="#" class="btn btn-border btn-lg">Conoce Más</a>
+```
+
+#### Secciones
+```html
+<!-- Estructura de sección estándar -->
+<section id="seccion" class="section-padding">
+  <div class="container">
+    <div class="section-header text-center">
+      <h2 class="section-title">Título de Sección</h2>
+      <div class="section-sub">Subtítulo</div>
+    </div>
+    <!-- Contenido -->
+  </div>
+</section>
+```
+
+---
+
+## 🚀 Optimizaciones Implementadas
+
+### ⚡ **Performance**
+- ✅ CSS crítico inline
+- ✅ Scripts diferidos (async/defer)
+- ✅ Lazy loading de imágenes
+- ✅ Compresión de assets
+- ✅ Minificación de código
+
+### 📱 **Responsividad**
+- ✅ Mobile-first design
+- ✅ Breakpoints optimizados
+- ✅ Menú móvil nativo
+- ✅ Imágenes adaptables
+- ✅ Touch-friendly navigation
+
+### ♿ **Accesibilidad**
+- ✅ Contraste WCAG AA
+- ✅ Alt text en imágenes
+- ✅ Navegación por teclado
+- ✅ Estructura semántica
+- ✅ ARIA labels donde necesario
+
+---
+
+## 🔧 Desarrollo y Contribución
+
+### 🌿 **Ramas del Repositorio**
+- `main` - Código de producción
+- `develop` - Desarrollo activo
+- `feature/*` - Nuevas características
+- `hotfix/*` - Correcciones urgentes
+
+### 📝 **Estándares de Código**
+
+#### HTML
+```html
+<!-- Usar estructura semántica -->
+<section>
+  <header>
+    <h2>Título</h2>
+  </header>
+  <article>
+    <p>Contenido...</p>
+  </article>
+</section>
+```
+
+#### CSS
+```css
+/* Usar variables CSS y BEM methodology */
+.component {}
+.component__element {}
+.component--modifier {}
+```
+
+#### JavaScript
+```javascript
+// Usar const/let, funciones flecha y ES6+
+const initializeComponent = () => {
+  // Lógica del componente
+};
+```
+
+### 🐛 **Reportar Issues**
+1. Usar el [template de issues](https://github.com/badouintec/espacio/issues/new)
+2. Incluir información del navegador/dispositivo
+3. Proporcionar pasos para reproducir
+4. Adjuntar capturas de pantalla si es relevante
+
+---
+
+## 📈 Analytics y Monitoreo
+
+### 📊 **Métricas Clave**
+- **Page Load Speed**: < 3 segundos
+- **Mobile Score**: 95+/100
+- **Accessibility Score**: 90+/100
+- **SEO Score**: 85+/100
+
+### 🔍 **Herramientas de Monitoreo**
+- Google Analytics (configurar)
+- Google Search Console
+- Lighthouse CI
+- Web Vitals monitoring
+
+---
+
+## 🌐 SEO y Marketing
+
+### 🔍 **Optimización SEO**
+- ✅ Meta tags optimizados
+- ✅ Open Graph tags
+- ✅ Twitter Card tags
+- ✅ Structured data (JSON-LD)
+- ✅ XML sitemap
+- ✅ Robots.txt
+
+### 📱 **Redes Sociales**
+- Facebook: [enlace]
+- Twitter: [enlace]  
+- LinkedIn: [enlace]
+- Instagram: [enlace]
+
+---
+
+## 📄 Licencia
+
+Este proyecto está licenciado bajo la **MIT License**. Ver [LICENSE.txt](license.txt) para más detalles.
+
+---
+
+## 👥 Equipo y Créditos
+
+### 🎯 **Organizadores**
+- **México**: [Institución mexicana]
+- **Estados Unidos**: [Institución estadounidense]
+
+### 💻 **Desarrollo Web**
+- **Desarrollo**: [Nombre del desarrollador]
+- **Diseño**: [Nombre del diseñador]
+- **Contenido**: [Equipo de contenido]
+
+### 🙏 **Agradecimientos**
+- NASA por su colaboración técnica
+- Instituciones participantes
+- Comunidad open source
+- Beta testers y colaboradores
+
+---
+
+## 📞 Contacto
+
+- 📧 **Email**: info@espacioysostenibilidad.com
+- 🌐 **Website**: https://badouintec.github.io/espacio/
+- 📱 **Teléfono**: [Número de contacto]
+- 📍 **Ubicación**: Hermosillo, Sonora & Arizona
+
+---
+
+<div align="center">
+
+**🌎 Construyendo puentes de conocimiento entre México y Estados Unidos 🇲🇽🇺🇸**
+
+*Hecho con ❤️ para la comunidad científica internacional*
+
+</div>
 
 ├── license.txt                   # Información de licencia2. **Optimización de Recursos** ✓
 

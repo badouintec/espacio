@@ -1,0 +1,260 @@
+/* ================================================
+   MEJORAS DE ACCESIBILIDAD - WCAG AA COMPLIANCE
+   ================================================ */
+
+/* Navegación por teclado mejorada */
+:focus {
+  outline: 3px solid var(--color-azul-oceano) !important;
+  outline-offset: 2px !important;
+  box-shadow: 0 0 0 1px var(--color-blanco) !important;
+}
+
+/* Focus visible solo para navegación por teclado */
+.js-focus-visible :focus:not(.focus-visible) {
+  outline: none;
+}
+
+/* Skip to main content link */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 6px;
+  background: var(--color-azul-marino);
+  color: var(--color-blanco);
+  padding: 8px;
+  text-decoration: none;
+  z-index: 100000;
+  border-radius: 4px;
+  font-weight: 600;
+  transition: top 0.3s;
+}
+
+.skip-link:focus {
+  top: 6px;
+  outline: 3px solid var(--color-azul-oceano);
+  outline-offset: 2px;
+}
+
+/* Enlaces más accesibles */
+a:focus {
+  text-decoration: underline !important;
+}
+
+/* Botones más accesibles */
+.btn:focus,
+button:focus {
+  outline: 3px solid var(--color-azul-oceano) !important;
+  outline-offset: 2px !important;
+  box-shadow: 0 0 0 1px var(--color-blanco) !important;
+}
+
+/* Texto oculto para lectores de pantalla */
+.sr-only {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+
+.sr-only-focusable:focus {
+  position: static !important;
+  width: auto !important;
+  height: auto !important;
+  padding: inherit !important;
+  margin: inherit !important;
+  overflow: visible !important;
+  clip: auto !important;
+  white-space: inherit !important;
+}
+
+/* Mejoras de contraste para elementos interactivos */
+.navbar-nav .nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+/* Indicadores de estado mejorados */
+.navbar-nav .active .nav-link {
+  position: relative;
+}
+
+.navbar-nav .active .nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  height: 2px;
+  background: var(--color-azul-oceano);
+  border-radius: 1px;
+}
+
+/* Mejoras para elementos de formulario */
+input:focus,
+textarea:focus,
+select:focus {
+  outline: 3px solid var(--color-azul-oceano) !important;
+  outline-offset: 2px !important;
+  border-color: var(--color-azul-brillante) !important;
+}
+
+/* Estados de error más visibles */
+.form-control.is-invalid {
+  border-color: #dc3545 !important;
+  box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.25) !important;
+}
+
+.invalid-feedback {
+  color: #dc3545 !important;
+  font-weight: 600 !important;
+}
+
+/* Mejoras para el carousel */
+.carousel-control-prev,
+.carousel-control-next {
+  width: 5% !important;
+  background-color: rgba(26, 54, 93, 0.7) !important;
+  border-radius: 4px;
+}
+
+.carousel-control-prev:focus,
+.carousel-control-next:focus {
+  outline: 3px solid var(--color-azul-oceano) !important;
+  outline-offset: 2px !important;
+}
+
+.carousel-indicators li {
+  background-color: var(--color-gris-medio) !important;
+  border-radius: 50% !important;
+  width: 12px !important;
+  height: 12px !important;
+  margin: 0 5px !important;
+}
+
+.carousel-indicators .active {
+  background-color: var(--color-azul-brillante) !important;
+}
+
+/* Mejoras para el accordion */
+.card-header[data-toggle="collapse"] {
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.card-header[data-toggle="collapse"]:hover {
+  background-color: var(--color-gris-claro) !important;
+}
+
+.card-header[data-toggle="collapse"]:focus {
+  outline: 3px solid var(--color-azul-oceano) !important;
+  outline-offset: 2px !important;
+}
+
+/* Indicadores de colapso mejorados */
+.card-header[aria-expanded="true"]::after {
+  content: "−";
+  float: right;
+  font-size: 1.5rem;
+  line-height: 1;
+  color: var(--color-azul-brillante);
+}
+
+.card-header[aria-expanded="false"]::after {
+  content: "+";
+  float: right;
+  font-size: 1.5rem;
+  line-height: 1;
+  color: var(--color-azul-brillante);
+}
+
+/* Mejoras para el preloader */
+#preloader {
+  background-color: var(--color-blanco) !important;
+}
+
+#preloader .sk-circle .sk-child:before {
+  background-color: var(--color-azul-brillante) !important;
+}
+
+/* Animaciones respetuosas con preferencias de usuario */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  
+  .wow {
+    animation: none !important;
+  }
+}
+
+/* Mejoras para alto contraste */
+@media (prefers-contrast: high) {
+  :root {
+    --color-azul-brillante: #0F2942;
+    --color-azul-oceano: #1A365D;
+    --color-gris-medio: #2D3748;
+  }
+  
+  .btn {
+    border-width: 2px !important;
+  }
+  
+  .card,
+  .event-phase {
+    border-width: 2px !important;
+    border-color: var(--color-azul-marino) !important;
+  }
+}
+
+/* Soporte para modo oscuro del sistema */
+@media (prefers-color-scheme: dark) {
+  /* Implementación futura del modo oscuro */
+  /* Se mantiene el diseño actual por ahora */
+}
+
+/* Mejoras de legibilidad para tamaños de fuente */
+@media (max-width: 768px) {
+  body {
+    font-size: 16px !important;
+    line-height: 1.6 !important;
+  }
+  
+  .btn {
+    min-height: 44px !important;
+    min-width: 44px !important;
+  }
+  
+  .nav-link {
+    min-height: 44px !important;
+    display: flex !important;
+    align-items: center !important;
+  }
+}
+
+/* Estados hover más claros para dispositivos táctiles */
+@media (hover: hover) {
+  .btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+}
+
+/* Mejoras para pantallas de alta densidad */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .countdown-number {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
