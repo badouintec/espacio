@@ -2,12 +2,22 @@
 <html lang="es" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
     
-    <!-- Cache Control Meta Tags -->
+    <!-- Cache Control Meta Tags - FORCE REFRESH -->
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
     <meta http-equiv="Pragma" content="no-cache">
     <meta http-equiv="Expires" content="0">
+    <meta name="cache-control" content="max-age=0">
+    <meta name="last-modified" content="Wed, 18 Sep 2025 18:00:00 GMT">
+    
+    <!-- Force Browser Refresh -->
+    <script>
+        // Force cache clear on load
+        if (performance.navigation.type === performance.navigation.TYPE_RELOAD) {
+            window.location.reload(true);
+        }
+    </script>
     
     <title>III Coloquio Internacional de Espacio y Sostenibilidad 2025 - Hermosillo, Sonora</title>
     <meta name="description" content="III Coloquio Internacional de Espacio y Sostenibilidad 2025 en Hermosillo (3 octubre). Resiliencia climática del agua mediante tecnología espacial. Cooperación internacional México-Estados Unidos con NASA." />
@@ -54,7 +64,7 @@
             }
         }
     </script>
-    <link rel="stylesheet" href="css/styles.css?v=1758187319" />
+    <link rel="stylesheet" href="css/styles.css?v=2025091801" />
         <!-- Structured Data (Event + FAQ) -->
         <script type="application/ld+json">
         {
@@ -107,39 +117,48 @@
 </head>
 <body class="text-gray-900 bg-white font-sans">
 
-    <!-- Header and Navigation -->
-    <header class="nav-glass sticky top-0 z-50" role="banner">
-        <nav class="container mx-auto px-4 sm:px-6 py-3 sm:py-4 flex justify-between items-center" aria-label="Navegación principal">
-            <div class="flex items-center">
-                <div class="h-12 sm:h-16 flex items-center justify-center">
-                    <img src="logoblanco.png?v=1758187319" alt="Logo III Coloquio Internacional de Espacio y Sostenibilidad" class="h-full w-auto object-contain">
+    <!-- Header and Navigation - MEJORADO RESPONSIVO -->
+    <header class="nav-glass fixed top-0 left-0 right-0 z-50" role="banner">
+        <nav class="container mx-auto px-4 sm:px-6 py-3 sm:py-4 flex justify-between items-center relative z-10" aria-label="Navegación principal">
+            <!-- Logo -->
+            <div class="flex items-center z-20">
+                <div class="h-10 sm:h-12 lg:h-14 flex items-center justify-center">
+                    <img src="logoblanco.png?v=2025091801" alt="Logo III Coloquio Internacional de Espacio y Sostenibilidad" class="nav-logo h-full w-auto object-contain">
                 </div>
             </div>
-            <div class="hidden md:flex items-center space-x-8">
-                <a href="#acerca" class="text-slate-200 hover:text-white font-medium transition-colors">Acerca</a>
-                <a href="#programa" class="text-slate-200 hover:text-white font-medium transition-colors">Programa</a>
-                <a href="#participantes" class="text-slate-200 hover:text-white font-medium transition-colors">Participantes</a>
-                <a href="#galeria" class="text-slate-200 hover:text-white font-medium transition-colors">Galería</a>
-                <a href="#faq" class="text-slate-200 hover:text-white font-medium transition-colors">FAQ</a>
-                <a href="#aliados" class="text-slate-200 hover:text-white font-medium transition-colors">Aliados</a>
-                <a href="#registro" class="bg-coloquio-ocean hover:bg-coloquio-bright px-6 py-3 rounded-md font-bold text-sm text-white transition-colors">Registro</a>
+            
+            <!-- Navegación Desktop -->
+            <div class="nav-links hidden lg:flex items-center space-x-6 xl:space-x-8">
+                <a href="#acerca" class="nav-link">Acerca</a>
+                <a href="#programa" class="nav-link">Programa</a>
+                <a href="#participantes" class="nav-link">Participantes</a>
+                <a href="#temas" class="nav-link">Temas</a>
+                <a href="#galeria" class="nav-link">Galería</a>
+                <a href="#aliados" class="nav-link">Aliados</a>
+                <a href="#faq" class="nav-link">FAQ</a>
+                <a href="#registro" class="btn btn-primary text-sm px-4 py-2">Registrarse</a>
             </div>
-            <div class="md:hidden">
-                <button id="mobile-menu-button" class="text-white focus:outline-none p-2 hover:bg-white hover:bg-opacity-10 rounded-md transition-colors">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
-                    </svg>
-                </button>
-            </div>
+            
+            <!-- Botón Menú Móvil -->
+            <button class="mobile-menu-btn lg:hidden z-20" aria-label="Abrir menú de navegación" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </nav>
-        <div id="mobile-menu" class="hidden md:hidden px-4 pt-2 pb-6 space-y-4 bg-coloquio-navy bg-opacity-95 backdrop-blur-sm border-t border-white border-opacity-20">
-            <a href="#acerca" class="block text-slate-200 hover:text-white font-medium py-2 px-3 rounded hover:bg-white hover:bg-opacity-10 transition-colors">Acerca</a>
-            <a href="#programa" class="block text-slate-200 hover:text-white font-medium py-2 px-3 rounded hover:bg-white hover:bg-opacity-10 transition-colors">Programa</a>
-            <a href="#participantes" class="block text-slate-200 hover:text-white font-medium py-2 px-3 rounded hover:bg-white hover:bg-opacity-10 transition-colors">Participantes</a>
-            <a href="#galeria" class="block text-slate-200 hover:text-white font-medium py-2 px-3 rounded hover:bg-white hover:bg-opacity-10 transition-colors">Galería</a>
-            <a href="#faq" class="block text-slate-200 hover:text-white font-medium py-2 px-3 rounded hover:bg-white hover:bg-opacity-10 transition-colors">FAQ</a>
-            <a href="#aliados" class="block text-slate-200 hover:text-white font-medium py-2 px-3 rounded hover:bg-white hover:bg-opacity-10 transition-colors">Aliados</a>
-            <a href="#registro" class="block text-center mt-4 bg-coloquio-ocean hover:bg-coloquio-bright px-6 py-4 rounded-md font-bold text-white transition-colors shadow-lg">Registro</a>
+        
+        <!-- Menú Móvil -->
+        <div class="mobile-menu lg:hidden">
+            <div class="flex flex-col items-center justify-center h-full space-y-6">
+                <a href="#acerca" class="mobile-menu-item">Acerca</a>
+                <a href="#programa" class="mobile-menu-item">Programa</a>
+                <a href="#participantes" class="mobile-menu-item">Participantes</a>
+                <a href="#temas" class="mobile-menu-item">Temas</a>
+                <a href="#galeria" class="mobile-menu-item">Galería</a>
+                <a href="#aliados" class="mobile-menu-item">Aliados</a>
+                <a href="#faq" class="mobile-menu-item">FAQ</a>
+                <a href="#registro" class="btn btn-primary mt-4">Registrarse</a>
+            </div>
         </div>
     </header>
 
@@ -147,7 +166,7 @@
         <!-- Carrusel Principal -->
         <section id="inicio" class="relative min-h-screen overflow-hidden">
             <!-- Slide 1 -->
-            <div class="carousel-slide active absolute inset-0 bg-gradient-to-br from-coloquio-navy to-coloquio-blue flex items-center" style="background-image: url('imageHERO2.png'); background-size: cover; background-position: center; background-blend-mode: multiply;">
+            <div class="carousel-slide active absolute inset-0 bg-gradient-to-br from-coloquio-navy to-coloquio-blue flex items-center" style="background-image: url('imagehero3.png'); background-size: cover; background-position: center; background-blend-mode: multiply; top: -100px; height: calc(100vh + 100px); padding-top: 100px;">
                 <!-- Overlay adicional para oscurecer -->
                 <div class="absolute inset-0 bg-black bg-opacity-40"></div>
                 <div class="container mx-auto px-4 sm:px-6 text-center text-white relative z-10">
@@ -434,281 +453,89 @@
         <section id="programa" class="py-12 sm:py-16 md:py-20 bg-white">
             <div class="container mx-auto px-4 sm:px-6">
                 <div class="text-center mb-12 sm:mb-16">
-                    <h2 class="text-2xl sm:text-3xl md:text-4xl font-heading font-black text-coloquio-navy mb-4">Programa del Coloquio</h2>
+                    <h2 class="text-2xl sm:text-3xl md:text-4xl font-heading font-black text-coloquio-navy mb-4 flex items-center justify-center">
+                        <span class="mr-3">📅</span>
+                        Programa
+                    </h2>
                     <p class="text-base sm:text-lg text-coloquio-gray max-w-3xl mx-auto">
-                        Colaboración internacional — Hermosillo 2025
+                        3 de octubre de 2025 — Hermosillo, Sonora
                     </p>
                 </div>
 
-                <!-- Pestañas del Programa -->
-                <div class="max-w-6xl mx-auto">
-                    <div class="flex flex-wrap justify-center mb-8 border-b border-coloquio-light">
-                        <button class="programa-tab active px-4 sm:px-6 py-3 text-sm sm:text-base font-medium text-coloquio-navy border-b-2 border-coloquio-ocean transition-colors" data-tab="hermosillo">
-                            Hermosillo
-                        </button>
-                        <button class="programa-tab px-4 sm:px-6 py-3 text-sm sm:text-base font-medium text-coloquio-gray hover:text-coloquio-navy border-b-2 border-transparent transition-colors" data-tab="colaboracion">
-                            Colaboración NASA
-                        </button>
-                        <button class="programa-tab px-4 sm:px-6 py-3 text-sm sm:text-base font-medium text-coloquio-gray hover:text-coloquio-navy border-b-2 border-transparent transition-colors" data-tab="apps">
-                            NASA Space Apps
-                        </button>
-                        <button class="programa-tab px-4 sm:px-6 py-3 text-sm sm:text-base font-medium text-coloquio-gray hover:text-coloquio-navy border-b-2 border-transparent transition-colors" data-tab="convocatoria">
-                            Convocatoria
-                        </button>
-                    </div>
-
-                    <!-- Contenido de Pestañas -->
-                    <div class="programa-content">
-                        <!-- Pestaña Hermosillo -->
-                        <div id="hermosillo" class="tab-content active">
-                            <div class="bg-coloquio-light rounded-xl sm:rounded-2xl p-6 sm:p-8 mb-6">
-                                <h3 class="text-xl sm:text-2xl font-heading font-bold text-coloquio-navy mb-4 flex items-center">
-                                    <svg class="w-6 h-6 mr-3 text-coloquio-ocean" fill="currentColor" viewBox="0 0 24 24">
-                                        <path d="M19,3H18V1H16V3H8V1H6V3H5A2,2 0 0,0 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5A2,2 0 0,0 19,3M19,19H5V8H19V19Z"/>
-                                    </svg>
-                                    3 de octubre de 2025 — Hermosillo, Sonora
-                                </h3>
-                                <p class="text-base sm:text-lg text-coloquio-gray mb-6">Tecnológico de Monterrey, Campus Sonora Norte</p>
-                                
-                                <div class="space-y-4">
-                                    <details class="bg-white rounded-lg shadow-sm border border-coloquio-light">
-                                        <summary class="px-6 py-4 cursor-pointer font-medium text-coloquio-navy hover:bg-coloquio-light transition-colors">
-                                            08:00 - 09:00 | Registro y Networking
-                                        </summary>
-                                        <div class="px-6 pb-4 text-coloquio-gray">
-                                            <p>Recepción de participantes, entrega de materiales y oportunidades de networking inicial con representantes de todas las instituciones participantes.</p>
-                                        </div>
-                                    </details>
-
-                                    <details class="bg-white rounded-lg shadow-sm border border-coloquio-light">
-                                        <summary class="px-6 py-4 cursor-pointer font-medium text-coloquio-navy hover:bg-coloquio-light transition-colors">
-                                            09:00 - 11:00 | 6 Charlas Magistrales
-                                        </summary>
-                                        <div class="px-6 pb-4 text-coloquio-gray space-y-3">
-                                            <p><strong>Charlas confirmadas:</strong></p>
-                                            <ul class="list-disc list-inside space-y-1 ml-4">
-                                                <li>Monitoreo de sequías con datos satelitales</li>
-                                                <li>Gestión de inundaciones mediante sensores remotos</li>
-                                                <li>Evaluación de calidad del agua con observaciones espaciales</li>
-                                                <li>Agricultura inteligente y evapotranspiración</li>
-                                                <li>Inteligencia artificial para análisis clima-agua</li>
-                                                <li>Cooperación internacional en tecnología espacial</li>
-                                            </ul>
-                                        </div>
-                                    </details>
-
-                                    <details class="bg-white rounded-lg shadow-sm border border-coloquio-light">
-                                        <summary class="px-6 py-4 cursor-pointer font-medium text-coloquio-navy hover:bg-coloquio-light transition-colors">
-                                            11:00 - 13:00 | Mesas de Trabajo y Talleres
-                                        </summary>
-                                        <div class="px-6 pb-4 text-coloquio-gray">
-                                            <p>Sesiones prácticas con herramientas como ICESat-2, GEDI, MODIS y Sentinel. Trabajo colaborativo en grupos multisectoriales para identificar oportunidades de implementación.</p>
-                                        </div>
-                                    </details>
+                <div class="max-w-4xl mx-auto">
+                    <div class="bg-coloquio-light rounded-xl sm:rounded-2xl p-6 sm:p-8">
+                        <div class="space-y-6">
+                            <!-- Registro y networking -->
+                            <div class="flex items-start space-x-4 p-4 bg-white rounded-lg shadow-sm">
+                                <div class="w-20 flex-shrink-0">
+                                    <span class="text-sm font-bold text-coloquio-ocean">08:00 – 09:00</span>
+                                </div>
+                                <div class="flex-1">
+                                    <h3 class="font-bold text-coloquio-navy mb-1">Registro y networking previo</h3>
+                                    <p class="text-coloquio-gray text-sm">(café y conexiones)</p>
                                 </div>
                             </div>
-                        </div>
 
-                        <!-- Pestaña Colaboración NASA -->
-                        <div id="colaboracion" class="tab-content hidden">
-                            <div class="bg-coloquio-light rounded-xl sm:rounded-2xl p-6 sm:p-8">
-                                <h3 class="text-xl sm:text-2xl font-heading font-bold text-coloquio-navy mb-4 flex items-center">
-                                    <svg class="w-6 h-6 mr-3 text-coloquio-ocean" fill="currentColor" viewBox="0 0 24 24">
-                                        <path d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12,4A8,8 0 0,1 20,12A8,8 0 0,1 12,20A8,8 0 0,1 4,12A8,8 0 0,1 12,4M12,6A6,6 0 0,0 6,12A6,6 0 0,0 12,18A6,6 0 0,0 18,12A6,6 0 0,0 12,6M12,8A4,4 0 0,1 16,12A4,4 0 0,1 12,16A4,4 0 0,1 8,12A4,4 0 0,1 12,8Z"/>
-                                    </svg>
-                                    14 de noviembre de 2025 — Colaboración NASA
-                                </h3>
-                                <p class="text-base sm:text-lg text-coloquio-gray mb-6">Continuación del diálogo y implementación de acuerdos</p>
-                                
-                                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                                    <div class="bg-white rounded-lg p-6">
-                                        <h4 class="font-bold text-coloquio-navy mb-3">Objetivos</h4>
-                                        <ul class="text-coloquio-gray space-y-2">
-                                            <li class="flex items-start">
-                                                <svg class="w-4 h-4 mt-1 mr-2 text-coloquio-ocean flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-                                                </svg>
-                                                Establecer acuerdos de cooperación bilateral
-                                            </li>
-                                            <li class="flex items-start">
-                                                <svg class="w-4 h-4 mt-1 mr-2 text-coloquio-ocean flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-                                                </svg>
-                                                Definir proyectos conjuntos de investigación
-                                            </li>
-                                            <li class="flex items-start">
-                                                <svg class="w-4 h-4 mt-1 mr-2 text-coloquio-ocean flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-                                                </svg>
-                                                Intercambio de datos y metodologías
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    
-                                    <div class="bg-white rounded-lg p-6">
-                                        <h4 class="font-bold text-coloquio-navy mb-3">Resultados Esperados</h4>
-                                        <ul class="text-coloquio-gray space-y-2">
-                                            <li class="flex items-start">
-                                                <svg class="w-4 h-4 mt-1 mr-2 text-coloquio-ocean flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-                                                </svg>
-                                                Memorandos de entendimiento firmados
-                                            </li>
-                                            <li class="flex items-start">
-                                                <svg class="w-4 h-4 mt-1 mr-2 text-coloquio-ocean flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-                                                </svg>
-                                                Roadmap de implementación 2026-2028
-                                            </li>
-                                            <li class="flex items-start">
-                                                <svg class="w-4 h-4 mt-1 mr-2 text-coloquio-ocean flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-                                                </svg>
-                                                Red de investigadores consolidada
-                                            </li>
-                                        </ul>
-                                    </div>
+                            <!-- Ceremonia de apertura -->
+                            <div class="flex items-start space-x-4 p-4 bg-white rounded-lg shadow-sm">
+                                <div class="w-20 flex-shrink-0">
+                                    <span class="text-sm font-bold text-coloquio-ocean">09:00 – 09:20</span>
+                                </div>
+                                <div class="flex-1">
+                                    <h3 class="font-bold text-coloquio-navy">Ceremonia de apertura</h3>
                                 </div>
                             </div>
-                        </div>
 
-                        <!-- Pestaña NASA Space Apps -->
-                        <div id="apps" class="tab-content hidden">
-                            <div class="bg-coloquio-light rounded-xl sm:rounded-2xl p-6 sm:p-8">
-                                <h3 class="text-xl sm:text-2xl font-heading font-bold text-coloquio-navy mb-4 flex items-center">
-                                    <svg class="w-6 h-6 mr-3 text-coloquio-ocean" fill="currentColor" viewBox="0 0 24 24">
-                                        <path d="M12 2L13.09 8.26L20 9L13.09 9.74L12 16L10.91 9.74L4 9L10.91 8.26L12 2M12 4.89L11.42 7.58L8.58 8L11.42 8.42L12 11.11L12.58 8.42L15.42 8L12.58 7.58L12 4.89M21 10C21 10 21.5 8.5 21.5 7.5C21.5 6.5 21 5 21 5C21 5 20.5 6.5 20.5 7.5C20.5 8.5 21 10 21 10M16 6C16 6 16.5 4.5 16.5 3.5C16.5 2.5 16 1 16 1C16 1 15.5 2.5 15.5 3.5C15.5 4.5 16 6 16 6Z"/>
-                                    </svg>
-                                    NASA Space Apps Challenge 2025
-                                </h3>
-                                <p class="text-base sm:text-lg text-coloquio-gray mb-6">Fin de semana de innovación y desarrollo</p>
-                                
-                                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-                                    <div>
-                                        <h4 class="font-bold text-coloquio-navy mb-4">Cronograma</h4>
-                                        <div class="space-y-3">
-                                            <div class="bg-white rounded-lg p-4 flex items-center">
-                                                <div class="w-3 h-3 bg-coloquio-ocean rounded-full mr-4"></div>
-                                                <div>
-                                                    <p class="font-medium text-coloquio-navy">Viernes 3 octubre</p>
-                                                    <p class="text-sm text-coloquio-gray">Apertura y formación de equipos</p>
-                                                </div>
-                                            </div>
-                                            <div class="bg-white rounded-lg p-4 flex items-center">
-                                                <div class="w-3 h-3 bg-coloquio-blue rounded-full mr-4"></div>
-                                                <div>
-                                                    <p class="font-medium text-coloquio-navy">Sábado 4 octubre</p>
-                                                    <p class="text-sm text-coloquio-gray">Desarrollo intensivo - 48 horas</p>
-                                                </div>
-                                            </div>
-                                            <div class="bg-white rounded-lg p-4 flex items-center">
-                                                <div class="w-3 h-3 bg-coloquio-bright rounded-full mr-4"></div>
-                                                <div>
-                                                    <p class="font-medium text-coloquio-navy">Domingo 5 octubre</p>
-                                                    <p class="text-sm text-coloquio-gray">Presentaciones y premiación</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    
-                                    <div>
-                                        <h4 class="font-bold text-coloquio-navy mb-4">Categorías de Retos</h4>
-                                        <div class="space-y-2">
-                                            <div class="bg-white rounded-lg p-3 text-sm text-coloquio-gray">
-                                                <span class="font-medium text-coloquio-navy">Best Use of Data:</span> Uso innovador de datos espaciales
-                                            </div>
-                                            <div class="bg-white rounded-lg p-3 text-sm text-coloquio-gray">
-                                                <span class="font-medium text-coloquio-navy">Technology:</span> Soluciones tecnológicas avanzadas
-                                            </div>
-                                            <div class="bg-white rounded-lg p-3 text-sm text-coloquio-gray">
-                                                <span class="font-medium text-coloquio-navy">Impact:</span> Mayor impacto social y ambiental
-                                            </div>
-                                            <div class="bg-white rounded-lg p-3 text-sm text-coloquio-gray">
-                                                <span class="font-medium text-coloquio-navy">Galactic Problem Solver:</span> Solución más innovadora
-                                            </div>
-                                        </div>
-                                    </div>
+                            <!-- Charlas magistrales -->
+                            <div class="flex items-start space-x-4 p-4 bg-white rounded-lg shadow-sm">
+                                <div class="w-20 flex-shrink-0">
+                                    <span class="text-sm font-bold text-coloquio-ocean">09:20 – 11:00</span>
+                                </div>
+                                <div class="flex-1">
+                                    <h3 class="font-bold text-coloquio-navy mb-1">Charlas magistrales</h3>
+                                    <p class="text-coloquio-gray text-sm">(NASA, investigadores del agua, tomadores de decisiones)</p>
                                 </div>
                             </div>
-                        </div>
 
-                        <!-- Pestaña Convocatoria -->
-                        <div id="convocatoria" class="tab-content hidden">
-                            <div class="bg-coloquio-light rounded-xl sm:rounded-2xl p-6 sm:p-8">
-                                <h3 class="text-xl sm:text-2xl font-heading font-bold text-coloquio-navy mb-4 flex items-center">
-                                    <svg class="w-6 h-6 mr-3 text-coloquio-ocean" fill="currentColor" viewBox="0 0 24 24">
-                                        <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z"/>
-                                    </svg>
-                                    Convocatoria de Ponencias
-                                </h3>
-                                <p class="text-base sm:text-lg text-coloquio-gray mb-6">Oportunidades de participación y presentación</p>
-                                
-                                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                                    <div>
-                                        <h4 class="font-bold text-coloquio-navy mb-4">Requisitos de Participación</h4>
-                                        <ul class="space-y-3 text-coloquio-gray">
-                                            <li class="flex items-start">
-                                                <svg class="w-4 h-4 mt-1 mr-3 text-coloquio-ocean flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-                                                </svg>
-                                                Investigación relacionada con tecnología espacial y agua
-                                            </li>
-                                            <li class="flex items-start">
-                                                <svg class="w-4 h-4 mt-1 mr-3 text-coloquio-ocean flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-                                                </svg>
-                                                Afiliación institucional (academia, gobierno, industria)
-                                            </li>
-                                            <li class="flex items-start">
-                                                <svg class="w-4 h-4 mt-1 mr-3 text-coloquio-ocean flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-                                                </svg>
-                                                Resumen de 300 palabras máximo
-                                            </li>
-                                            <li class="flex items-start">
-                                                <svg class="w-4 h-4 mt-1 mr-3 text-coloquio-ocean flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-                                                </svg>
-                                                CV actualizado del ponente principal
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    
-                                    <div>
-                                        <h4 class="font-bold text-coloquio-navy mb-4">Beneficios</h4>
-                                        <ul class="space-y-3 text-coloquio-gray">
-                                            <li class="flex items-start">
-                                                <svg class="w-4 h-4 mt-1 mr-3 text-coloquio-bright flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-                                                </svg>
-                                                Espacio para presentación de cartel
-                                            </li>
-                                            <li class="flex items-start">
-                                                <svg class="w-4 h-4 mt-1 mr-3 text-coloquio-bright flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-                                                </svg>
-                                                Networking con expertos internacionales
-                                            </li>
-                                            <li class="flex items-start">
-                                                <svg class="w-4 h-4 mt-1 mr-3 text-coloquio-bright flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-                                                </svg>
-                                                Certificado de participación
-                                            </li>
-                                            <li class="flex items-start">
-                                                <svg class="w-4 h-4 mt-1 mr-3 text-coloquio-bright flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-                                                </svg>
-                                                Apoyo para movilidad (casos seleccionados)
-                                            </li>
-                                        </ul>
-                                    </div>
+                            <!-- Pausa -->
+                            <div class="flex items-start space-x-4 p-4 bg-white rounded-lg shadow-sm">
+                                <div class="w-20 flex-shrink-0">
+                                    <span class="text-sm font-bold text-coloquio-ocean">11:00 – 11:10</span>
                                 </div>
-                                
-                                <div class="mt-8 text-center">
-                                    <a href="#registro" class="inline-block bg-coloquio-ocean hover:bg-coloquio-bright text-white px-8 py-3 rounded-md font-bold text-lg transition-colors">
-                                        Enviar Propuesta
-                                    </a>
+                                <div class="flex-1">
+                                    <h3 class="font-bold text-coloquio-navy">Pausa breve de descanso</h3>
+                                </div>
+                            </div>
+
+                            <!-- Mesas de trabajo -->
+                            <div class="flex items-start space-x-4 p-4 bg-white rounded-lg shadow-sm">
+                                <div class="w-20 flex-shrink-0">
+                                    <span class="text-sm font-bold text-coloquio-ocean">11:10 – 12:00</span>
+                                </div>
+                                <div class="flex-1">
+                                    <h3 class="font-bold text-coloquio-navy mb-1">Mesas de trabajo</h3>
+                                    <p class="text-coloquio-gray text-sm">(ejercicio de creación de valor)</p>
+                                </div>
+                            </div>
+
+                            <!-- Networking -->
+                            <div class="flex items-start space-x-4 p-4 bg-white rounded-lg shadow-sm">
+                                <div class="w-20 flex-shrink-0">
+                                    <span class="text-sm font-bold text-coloquio-ocean">12:00 – 12:40</span>
+                                </div>
+                                <div class="flex-1">
+                                    <h3 class="font-bold text-coloquio-navy mb-1">Sesión de networking, carteles y stands</h3>
+                                </div>
+                            </div>
+
+                            <!-- Cierre -->
+                            <div class="flex items-start space-x-4 p-4 bg-white rounded-lg shadow-sm">
+                                <div class="w-20 flex-shrink-0">
+                                    <span class="text-sm font-bold text-coloquio-ocean">12:40 – 13:00</span>
+                                </div>
+                                <div class="flex-1">
+                                    <h3 class="font-bold text-coloquio-navy mb-1">Mensaje de cierre</h3>
+                                    <p class="text-coloquio-gray text-sm">y enlace con el NASA Space Apps Challenge</p>
                                 </div>
                             </div>
                         </div>
@@ -717,29 +544,10 @@
             </div>
         </section>
 
-        <!-- Sección Participantes -->
-        <section id="participantes" class="py-12 sm:py-16 md:py-20 bg-coloquio-light">
-            <div class="container mx-auto px-4 sm:px-6">
-                <div class="text-center mb-12 sm:mb-16">
-                    <h2 class="text-2xl sm:text-3xl md:text-4xl font-heading font-black text-coloquio-navy mb-4">Participantes</h2>
-                    <p class="text-base sm:text-lg text-coloquio-gray max-w-3xl mx-auto">
-                        Expertos internacionales, instituciones líderes y colaboradores estratégicos
-                    </p>
-                </div>
 
-                <!-- Pestañas de Participantes -->
-                <div class="max-w-6xl mx-auto">
-                    <div class="flex flex-wrap justify-center mb-8 border-b border-white">
-                        <button class="participantes-tab active px-4 sm:px-6 py-3 text-sm sm:text-base font-medium text-coloquio-navy border-b-2 border-coloquio-ocean transition-colors" data-tab="ponentes">
-                            Ponentes Magistrales
-                        </button>
-                        <button class="participantes-tab px-4 sm:px-6 py-3 text-sm sm:text-base font-medium text-coloquio-gray hover:text-coloquio-navy border-b-2 border-transparent transition-colors" data-tab="instituciones">
-                            Instituciones
-                        </button>
-                        <button class="participantes-tab px-4 sm:px-6 py-3 text-sm sm:text-base font-medium text-coloquio-gray hover:text-coloquio-navy border-b-2 border-transparent transition-colors" data-tab="comite">
-                            Comité Organizador
-                        </button>
-                    </div>
+
+
+
 
                     <!-- Contenido de Pestañas -->
                     <div class="participantes-content">
@@ -1048,228 +856,6 @@
             </div>
         </section>
 
-        <!-- Sección Galería -->
-        <section id="galeria" class="py-12 sm:py-16 md:py-20 bg-white">
-            <div class="container mx-auto px-4 sm:px-6">
-                <div class="text-center mb-12 sm:mb-16">
-                    <h2 class="text-2xl sm:text-3xl md:text-4xl font-heading font-black text-coloquio-navy mb-4">Galería</h2>
-                    <p class="text-base sm:text-lg text-coloquio-gray max-w-3xl mx-auto">
-                        Momentos destacados de ediciones anteriores y eventos relacionados
-                    </p>
-                </div>
-
-                <!-- Filtros de Galería -->
-                <div class="max-w-4xl mx-auto mb-8">
-                    <div class="flex flex-wrap justify-center gap-2 sm:gap-4">
-                        <button class="galeria-filter active px-4 sm:px-6 py-2 sm:py-3 text-sm sm:text-base font-medium bg-coloquio-ocean text-white rounded-md transition-colors hover:bg-coloquio-bright" data-filter="todos">
-                            Todos
-                        </button>
-                        <button class="galeria-filter px-4 sm:px-6 py-2 sm:py-3 text-sm sm:text-base font-medium bg-coloquio-light text-coloquio-navy rounded-md transition-colors hover:bg-coloquio-ocean hover:text-white" data-filter="conferencias">
-                            Conferencias
-                        </button>
-                        <button class="galeria-filter px-4 sm:px-6 py-2 sm:py-3 text-sm sm:text-base font-medium bg-coloquio-light text-coloquio-navy rounded-md transition-colors hover:bg-coloquio-ocean hover:text-white" data-filter="talleres">
-                            Talleres
-                        </button>
-                        <button class="galeria-filter px-4 sm:px-6 py-2 sm:py-3 text-sm sm:text-base font-medium bg-coloquio-light text-coloquio-navy rounded-md transition-colors hover:bg-coloquio-ocean hover:text-white" data-filter="networking">
-                            Networking
-                        </button>
-                        <button class="galeria-filter px-4 sm:px-6 py-2 sm:py-3 text-sm sm:text-base font-medium bg-coloquio-light text-coloquio-navy rounded-md transition-colors hover:bg-coloquio-ocean hover:text-white" data-filter="nasa-apps">
-                            NASA Space Apps
-                        </button>
-                    </div>
-                </div>
-
-                <!-- Grid de Galería -->
-                <div class="max-w-7xl mx-auto">
-                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6" id="galeria-grid">
-                        
-                        <!-- Imagen 1 - Conferencias -->
-                        <div class="galeria-item conferencias" data-category="conferencias">
-                            <div class="relative group cursor-pointer overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
-                                <div class="aspect-square bg-gradient-to-br from-coloquio-ocean to-coloquio-blue flex items-center justify-center">
-                                    <svg class="w-16 h-16 text-white opacity-80" fill="currentColor" viewBox="0 0 24 24">
-                                        <path d="M16,18H18V6H16M6.5,18H7.5V6H6.5M9.5,12H10.5V6H9.5M12.5,16H13.5V6H12.5M19,4H5C3.89,4 3,4.89 3,6V18A2,2 0 0,0 5,20H19A2,2 0 0,0 21,18V6C21,4.89 20.11,4 19,4Z"/>
-                                    </svg>
-                                </div>
-                                <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-opacity duration-300 flex items-center justify-center">
-                                    <svg class="w-12 h-12 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300" fill="currentColor" viewBox="0 0 24 24">
-                                        <path d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M10,16.5L6,12.5L7.5,11L10,13.5L16.5,7L18,8.5L10,16.5Z"/>
-                                    </svg>
-                                </div>
-                                <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-4">
-                                    <h3 class="text-white font-bold text-sm sm:text-base">Charlas Magistrales 2024</h3>
-                                    <p class="text-gray-300 text-xs sm:text-sm">Ponencias internacionales</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Imagen 2 - Talleres -->
-                        <div class="galeria-item talleres" data-category="talleres">
-                            <div class="relative group cursor-pointer overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
-                                <div class="aspect-square bg-gradient-to-br from-coloquio-blue to-coloquio-bright flex items-center justify-center">
-                                    <svg class="w-16 h-16 text-white opacity-80" fill="currentColor" viewBox="0 0 24 24">
-                                        <path d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12,4A8,8 0 0,1 20,12A8,8 0 0,1 12,20A8,8 0 0,1 4,12A8,8 0 0,1 12,4M12,6A6,6 0 0,0 6,12A6,6 0 0,0 12,18A6,6 0 0,0 18,12A6,6 0 0,0 12,6M12,8A4,4 0 0,1 16,12A4,4 0 0,1 12,16A4,4 0 0,1 8,12A4,4 0 0,1 12,8Z"/>
-                                    </svg>
-                                </div>
-                                <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-opacity duration-300 flex items-center justify-center">
-                                    <svg class="w-12 h-12 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300" fill="currentColor" viewBox="0 0 24 24">
-                                        <path d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M10,16.5L6,12.5L7.5,11L10,13.5L16.5,7L18,8.5L10,16.5Z"/>
-                                    </svg>
-                                </div>
-                                <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-4">
-                                    <h3 class="text-white font-bold text-sm sm:text-base">Taller de Teledetección</h3>
-                                    <p class="text-gray-300 text-xs sm:text-sm">Herramientas MODIS y Sentinel</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Imagen 3 - Networking -->
-                        <div class="galeria-item networking" data-category="networking">
-                            <div class="relative group cursor-pointer overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
-                                <div class="aspect-square bg-gradient-to-br from-coloquio-bright to-coloquio-ocean flex items-center justify-center">
-                                    <svg class="w-16 h-16 text-white opacity-80" fill="currentColor" viewBox="0 0 24 24">
-                                        <path d="M16,4C18.11,4 19.8,5.69 19.8,7.8C19.8,9.91 18.11,11.6 16,11.6C13.89,11.6 12.2,9.91 12.2,7.8C12.2,5.69 13.89,4 16,4M16,13.4C18.67,13.4 24,14.73 24,17.4V20H8V17.4C8,14.73 13.33,13.4 16,13.4M8,4C10.11,4 11.8,5.69 11.8,7.8C11.8,9.91 10.11,11.6 8,11.6C5.89,11.6 4.2,9.91 4.2,7.8C4.2,5.69 5.89,4 8,4M8,13.4C8.21,13.4 8.53,13.42 8.97,13.45C7.46,14.24 6.5,15.27 6.5,17.4V20H0V17.4C0,14.73 5.33,13.4 8,13.4Z"/>
-                                    </svg>
-                                </div>
-                                <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-opacity duration-300 flex items-center justify-center">
-                                    <svg class="w-12 h-12 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300" fill="currentColor" viewBox="0 0 24 24">
-                                        <path d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M10,16.5L6,12.5L7.5,11L10,13.5L16.5,7L18,8.5L10,16.5Z"/>
-                                    </svg>
-                                </div>
-                                <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-4">
-                                    <h3 class="text-white font-bold text-sm sm:text-base">Networking Internacional</h3>
-                                    <p class="text-gray-300 text-xs sm:text-sm">Conexiones globales</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Imagen 4 - NASA Apps -->
-                        <div class="galeria-item nasa-apps" data-category="nasa-apps">
-                            <div class="relative group cursor-pointer overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
-                                <div class="aspect-square bg-gradient-to-br from-coloquio-navy to-coloquio-blue flex items-center justify-center">
-                                    <svg class="w-16 h-16 text-white opacity-80" fill="currentColor" viewBox="0 0 24 24">
-                                        <path d="M12 2L13.09 8.26L20 9L13.09 9.74L12 16L10.91 9.74L4 9L10.91 8.26L12 2M12 4.89L11.42 7.58L8.58 8L11.42 8.42L12 11.11L12.58 8.42L15.42 8L12.58 7.58L12 4.89M21 10C21 10 21.5 8.5 21.5 7.5C21.5 6.5 21 5 21 5C21 5 20.5 6.5 20.5 7.5C20.5 8.5 21 10 21 10M16 6C16 6 16.5 4.5 16.5 3.5C16.5 2.5 16 1 16 1C16 1 15.5 2.5 15.5 3.5C15.5 4.5 16 6 16 6Z"/>
-                                    </svg>
-                                </div>
-                                <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-opacity duration-300 flex items-center justify-center">
-                                    <svg class="w-12 h-12 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300" fill="currentColor" viewBox="0 0 24 24">
-                                        <path d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M10,16.5L6,12.5L7.5,11L10,13.5L16.5,7L18,8.5L10,16.5Z"/>
-                                    </svg>
-                                </div>
-                                <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-4">
-                                    <h3 class="text-white font-bold text-sm sm:text-base">NASA Space Apps 2023</h3>
-                                    <p class="text-gray-300 text-xs sm:text-sm">Hackathon espacial</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Imagen 5 - Conferencias -->
-                        <div class="galeria-item conferencias" data-category="conferencias">
-                            <div class="relative group cursor-pointer overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
-                                <div class="aspect-square bg-gradient-to-br from-coloquio-ocean to-coloquio-bright flex items-center justify-center">
-                                    <svg class="w-16 h-16 text-white opacity-80" fill="currentColor" viewBox="0 0 24 24">
-                                        <path d="M18,15H16V17H18M18,11H16V13H18M20,19H12V17H14V15H12V13H14V11H12V9H20M10,7H8V5H10M10,11H8V9H10M10,15H8V13H10M10,19H8V17H10M6,7H4V5H6M6,11H4V9H6M6,15H4V13H6M6,19H4V17H6M12,7V3H2V21H22V7H12Z"/>
-                                    </svg>
-                                </div>
-                                <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-opacity duration-300 flex items-center justify-center">
-                                    <svg class="w-12 h-12 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300" fill="currentColor" viewBox="0 0 24 24">
-                                        <path d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M10,16.5L6,12.5L7.5,11L10,13.5L16.5,7L18,8.5L10,16.5Z"/>
-                                    </svg>
-                                </div>
-                                <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-4">
-                                    <h3 class="text-white font-bold text-sm sm:text-base">Panel de Expertos</h3>
-                                    <p class="text-gray-300 text-xs sm:text-sm">Discusión colaborativa</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Imagen 6 - Talleres -->
-                        <div class="galeria-item talleres" data-category="talleres">
-                            <div class="relative group cursor-pointer overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
-                                <div class="aspect-square bg-gradient-to-br from-coloquio-blue to-coloquio-navy flex items-center justify-center">
-                                    <svg class="w-16 h-16 text-white opacity-80" fill="currentColor" viewBox="0 0 24 24">
-                                        <path d="M19,3H5C3.9,3 3,3.9 3,5V19C3,20.1 3.9,21 5,21H19C20.1,21 21,20.1 21,19V5C21,3.9 20.1,3 19,3M5,19V5H19V19H5M6.5,17.5H9.5C10.3,17.5 11,16.8 11,16V15C11,14.2 10.3,13.5 9.5,13.5H7.5V12.5H11V11H6.5C5.7,11 5,11.7 5,12.5V13.5C5,14.3 5.7,15 6.5,15H8.5V16H5V17.5M19,12H17V15H15.5V12H13.5V17.5H15V16H17V17.5H18.5V12H19Z"/>
-                                    </svg>
-                                </div>
-                                <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-opacity duration-300 flex items-center justify-center">
-                                    <svg class="w-12 h-12 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300" fill="currentColor" viewBox="0 0 24 24">
-                                        <path d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M10,16.5L6,12.5L7.5,11L10,13.5L16.5,7L18,8.5L10,16.5Z"/>
-                                    </svg>
-                                </div>
-                                <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-4">
-                                    <h3 class="text-white font-bold text-sm sm:text-base">Sesión Práctica ICESat-2</h3>
-                                    <p class="text-gray-300 text-xs sm:text-sm">Análisis de datos LiDAR</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Imagen 7 - Networking -->
-                        <div class="galeria-item networking" data-category="networking">
-                            <div class="relative group cursor-pointer overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
-                                <div class="aspect-square bg-gradient-to-br from-coloquio-bright to-coloquio-blue flex items-center justify-center">
-                                    <svg class="w-16 h-16 text-white opacity-80" fill="currentColor" viewBox="0 0 24 24">
-                                        <path d="M12,2A3,3 0 0,1 15,5V11A3,3 0 0,1 12,14A3,3 0 0,1 9,11V5A3,3 0 0,1 12,2M19,11C19,14.53 16.39,17.44 13,17.93V21H11V17.93C7.61,17.44 5,14.53 5,11H7A5,5 0 0,0 12,16A5,5 0 0,0 17,11H19Z"/>
-                                    </svg>
-                                </div>
-                                <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-opacity duration-300 flex items-center justify-center">
-                                    <svg class="w-12 h-12 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300" fill="currentColor" viewBox="0 0 24 24">
-                                        <path d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M10,16.5L6,12.5L7.5,11L10,13.5L16.5,7L18,8.5L10,16.5Z"/>
-                                    </svg>
-                                </div>
-                                <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-4">
-                                    <h3 class="text-white font-bold text-sm sm:text-base">Mesa Redonda</h3>
-                                    <p class="text-gray-300 text-xs sm:text-sm">Cooperación bilateral</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Imagen 8 - NASA Apps -->
-                        <div class="galeria-item nasa-apps" data-category="nasa-apps">
-                            <div class="relative group cursor-pointer overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
-                                <div class="aspect-square bg-gradient-to-br from-coloquio-navy to-coloquio-bright flex items-center justify-center">
-                                    <svg class="w-16 h-16 text-white opacity-80" fill="currentColor" viewBox="0 0 24 24">
-                                        <path d="M15.5,12C18,12 20,14 20,16.5C20,17.38 19.75,18.21 19.31,18.9L22.39,22L21,23.39L17.88,20.32C17.19,20.75 16.37,21 15.5,21C13,21 11,19 11,16.5C11,14 13,12 15.5,12M15.5,14A2.5,2.5 0 0,0 13,16.5A2.5,2.5 0 0,0 15.5,19A2.5,2.5 0 0,0 18,16.5A2.5,2.5 0 0,0 15.5,14M6.5,2H17.5L22,6.5V15.31C21.36,14.83 20.64,14.47 19.87,14.25C19.96,14.16 20,14.08 20,14V7L15,2H6.5A1.5,1.5 0 0,0 5,3.5V14.5C5,15.05 5.17,15.58 5.46,16.03C5.16,16.56 5,17.15 5,17.78C5,18.4 5.16,19 5.46,19.54C5.17,19.99 5,20.5 5,21.04V21.5A1.5,1.5 0 0,0 6.5,23H10.23C10.4,22.41 10.65,21.86 10.96,21.35H6.5A0.5,0.5 0 0,1 6,21V20.5A0.5,0.5 0 0,1 6.5,20H11.81C12.47,19.11 13.34,18.38 14.34,17.85C14.12,17.59 14,17.26 14,16.91V16.5C14,15.12 14.62,13.9 15.61,13.13C15.39,12.46 14.78,12 14.08,12H6.5A0.5,0.5 0 0,1 6,11.5V11A0.5,0.5 0 0,1 6.5,10.5H14.08C14.78,10 15.39,9.54 15.61,8.87C14.62,8.1 14,6.88 14,5.5V5.09C14,4.74 14.12,4.41 14.34,4.15C13.34,3.62 12.47,2.89 11.81,2H6.5A1.5,1.5 0 0,0 5,3.5V7H6.5A0.5,0.5 0 0,1 7,7.5V8A0.5,0.5 0 0,1 6.5,8.5H5V9.5A1.5,1.5 0 0,0 6.5,11H7V12H6.5A2.5,2.5 0 0,1 4,9.5V3.5A2.5,2.5 0 0,1 6.5,1H17.5L23,6.5V14.31C22.36,13.83 21.64,13.47 20.87,13.25C20.96,13.16 21,13.08 21,13V7L16,2H6.5A0.5,0.5 0 0,0 6,2.5V6H7.5A0.5,0.5 0 0,1 8,6.5V7A0.5,0.5 0 0,1 7.5,7.5H6V8.5A0.5,0.5 0 0,0 6.5,9H8V10H6.5A1.5,1.5 0 0,1 5,8.5V2.5A1.5,1.5 0 0,1 6.5,1Z"/>
-                                    </svg>
-                                </div>
-                                <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-opacity duration-300 flex items-center justify-center">
-                                    <svg class="w-12 h-12 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300" fill="currentColor" viewBox="0 0 24 24">
-                                        <path d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M10,16.5L6,12.5L7.5,11L10,13.5L16.5,7L18,8.5L10,16.5Z"/>
-                                    </svg>
-                                </div>
-                                <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-4">
-                                    <h3 class="text-white font-bold text-sm sm:text-base">Proyectos Ganadores</h3>
-                                    <p class="text-gray-300 text-xs sm:text-sm">Premiación final</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Mensaje para imágenes no encontradas -->
-                <div id="no-images" class="hidden text-center py-8">
-                    <svg class="w-16 h-16 text-coloquio-gray mx-auto mb-4" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z"/>
-                    </svg>
-                    <p class="text-coloquio-gray text-lg">No se encontraron imágenes para esta categoría</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Modal Lightbox -->
-        <div id="lightbox" class="hidden fixed inset-0 z-50 bg-black bg-opacity-90 flex items-center justify-center p-4">
-            <div class="relative max-w-4xl max-h-full">
-                <button id="lightbox-close" class="absolute top-4 right-4 text-white text-4xl hover:text-coloquio-bright transition-colors z-10">
-                    ×
-                </button>
-                <div id="lightbox-content" class="bg-white rounded-lg overflow-hidden">
-                    <!-- El contenido se insertará dinámicamente -->
-                </div>
-                <div class="absolute bottom-4 left-4 right-4 text-white text-center">
-                    <h3 id="lightbox-title" class="text-xl font-bold mb-2"></h3>
-                    <p id="lightbox-description" class="text-gray-300"></p>
-                </div>
-            </div>
-        </div>
     </main>
 
     <!-- Sección FAQ -->
@@ -1345,7 +931,7 @@
                                     <div class="text-coloquio-gray leading-relaxed space-y-2">
                                         <p><strong>• Promover la cooperación internacional</strong> en tecnología espacial para sostenibilidad</p>
                                         <p><strong>• Compartir metodologías avanzadas</strong> de teledetección y análisis de datos espaciales</p>
-                                        <p><strong>• Establecer alianzas estratégicas</strong> entre instituciones académicas y agencias espaciales</p>
+                                        <p><strong>• Establecer alianzas</strong> entre instituciones académicas y agencias espaciales</p>
                                         <p><strong>• Desarrollar capacidades técnicas</strong> en el uso de herramientas como ICESat-2, GEDI y Sentinel</p>
                                     </div>
                                 </div>
@@ -1353,12 +939,6 @@
 
                             <div class="faq-item border-b border-coloquio-light last:border-b-0">
                                 <button class="faq-question w-full px-6 py-5 text-left flex items-center justify-between hover:bg-coloquio-light transition-colors group">
-                                    <span class="text-base sm:text-lg font-semibold text-coloquio-navy group-hover:text-coloquio-ocean pr-4">
-                                        ¿Quiénes pueden participar en el coloquio?
-                                    </span>
-                                    <svg class="faq-icon w-5 h-5 text-coloquio-ocean transition-transform duration-300 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
-                                        <path d="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z"/>
-                                    </svg>
                                 </button>
                                 <div class="faq-answer hidden px-6 pb-5">
                                     <div class="text-coloquio-gray leading-relaxed space-y-2">
@@ -1582,6 +1162,253 @@
         </div>
     </section>
 
+    <!-- Sección Aliados -->
+    <section id="aliados" class="py-12 sm:py-16 md:py-20 bg-white">
+        <div class="container mx-auto px-4 sm:px-6">
+            <div class="text-center mb-12 sm:mb-16">
+                <h2 class="text-2xl sm:text-3xl md:text-4xl font-heading font-black text-coloquio-navy mb-4">Aliados y Patrocinadores</h2>
+                <p class="text-base sm:text-lg text-coloquio-gray max-w-3xl mx-auto">
+                    Instituciones estratégicas que hacen posible este encuentro internacional
+                </p>
+            </div>
+
+            <div class="max-w-6xl mx-auto">
+                <!-- Aliados Principales -->
+                <div class="mb-12 sm:mb-16">
+                    <h3 class="text-xl sm:text-2xl font-heading font-bold text-coloquio-navy mb-8 text-center">Organizadores</h3>
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8 items-center">
+                        <div class="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow text-center">
+                            <div class="w-full h-16 bg-coloquio-light rounded-lg flex items-center justify-center mb-4">
+                                <span class="text-coloquio-navy font-bold text-sm">NASA</span>
+                            </div>
+                            <p class="text-sm text-coloquio-gray">National Aeronautics and Space Administration</p>
+                        </div>
+                        <div class="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow text-center">
+                            <div class="w-full h-16 bg-coloquio-light rounded-lg flex items-center justify-center mb-4">
+                                <span class="text-coloquio-navy font-bold text-sm">CONACYT</span>
+                            </div>
+                            <p class="text-sm text-coloquio-gray">Consejo Nacional de Ciencia y Tecnología</p>
+                        </div>
+                        <div class="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow text-center">
+                            <div class="w-full h-16 bg-coloquio-light rounded-lg flex items-center justify-center mb-4">
+                                <span class="text-coloquio-navy font-bold text-sm">TEC</span>
+                            </div>
+                            <p class="text-sm text-coloquio-gray">Tecnológico de Monterrey</p>
+                        </div>
+                        <div class="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow text-center">
+                            <div class="w-full h-16 bg-coloquio-light rounded-lg flex items-center justify-center mb-4">
+                                <span class="text-coloquio-navy font-bold text-sm">UNISON</span>
+                            </div>
+                            <p class="text-sm text-coloquio-gray">Universidad de Sonora</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Aliados Estratégicos -->
+                <div class="mb-12 sm:mb-16">
+                    <h3 class="text-xl sm:text-2xl font-heading font-bold text-coloquio-navy mb-8 text-center">Aliados Estratégicos</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
+                        <div class="bg-coloquio-light rounded-xl p-6 text-center">
+                            <div class="w-full h-16 bg-white rounded-lg flex items-center justify-center mb-4">
+                                <span class="text-coloquio-navy font-bold text-sm">ESA</span>
+                            </div>
+                            <h4 class="font-bold text-coloquio-navy mb-2">European Space Agency</h4>
+                            <p class="text-sm text-coloquio-gray">Colaboración en observación de la Tierra</p>
+                        </div>
+                        <div class="bg-coloquio-light rounded-xl p-6 text-center">
+                            <div class="w-full h-16 bg-white rounded-lg flex items-center justify-center mb-4">
+                                <span class="text-coloquio-navy font-bold text-sm">AEM</span>
+                            </div>
+                            <h4 class="font-bold text-coloquio-navy mb-2">Agencia Espacial Mexicana</h4>
+                            <p class="text-sm text-coloquio-gray">Coordinación nacional espacial</p>
+                        </div>
+                        <div class="bg-coloquio-light rounded-xl p-6 text-center">
+                            <div class="w-full h-16 bg-white rounded-lg flex items-center justify-center mb-4">
+                                <span class="text-coloquio-navy font-bold text-sm">CEAG</span>
+                            </div>
+                            <h4 class="font-bold text-coloquio-navy mb-2">Centro de Estudios de Agua</h4>
+                            <p class="text-sm text-coloquio-gray">Investigación hídrica regional</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Patrocinadores -->
+                <div>
+                    <h3 class="text-xl sm:text-2xl font-heading font-bold text-coloquio-navy mb-8 text-center">Patrocinadores</h3>
+                    <div class="grid grid-cols-2 md:grid-cols-5 gap-4 sm:gap-6 items-center">
+                        <div class="bg-white rounded-lg p-4 shadow hover:shadow-lg transition-shadow text-center">
+                            <div class="w-full h-12 bg-coloquio-light rounded flex items-center justify-center mb-2">
+                                <span class="text-coloquio-navy font-medium text-xs">Gov. Sonora</span>
+                            </div>
+                            <p class="text-xs text-coloquio-gray">Gobierno del Estado</p>
+                        </div>
+                        <div class="bg-white rounded-lg p-4 shadow hover:shadow-lg transition-shadow text-center">
+                            <div class="w-full h-12 bg-coloquio-light rounded flex items-center justify-center mb-2">
+                                <span class="text-coloquio-navy font-medium text-xs">IMTA</span>
+                            </div>
+                            <p class="text-xs text-coloquio-gray">Instituto Mexicano de Tecnología del Agua</p>
+                        </div>
+                        <div class="bg-white rounded-lg p-4 shadow hover:shadow-lg transition-shadow text-center">
+                            <div class="w-full h-12 bg-coloquio-light rounded flex items-center justify-center mb-2">
+                                <span class="text-coloquio-navy font-medium text-xs">CICESE</span>
+                            </div>
+                            <p class="text-xs text-coloquio-gray">Centro de Investigación Científica</p>
+                        </div>
+                        <div class="bg-white rounded-lg p-4 shadow hover:shadow-lg transition-shadow text-center">
+                            <div class="w-full h-12 bg-coloquio-light rounded flex items-center justify-center mb-2">
+                                <span class="text-coloquio-navy font-medium text-xs">CIAD</span>
+                            </div>
+                            <p class="text-xs text-coloquio-gray">Centro de Investigación en Alimentación</p>
+                        </div>
+                        <div class="bg-white rounded-lg p-4 shadow hover:shadow-lg transition-shadow text-center">
+                            <div class="w-full h-12 bg-coloquio-light rounded flex items-center justify-center mb-2">
+                                <span class="text-coloquio-navy font-medium text-xs">COLSON</span>
+                            </div>
+                            <p class="text-xs text-coloquio-gray">El Colegio de Sonora</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Ediciones Preview -->
+    <section id="ediciones-preview" class="py-12 sm:py-16 bg-gradient-to-br from-coloquio-navy to-coloquio-blue">
+        <div class="container mx-auto px-4 sm:px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl sm:text-4xl md:text-5xl font-heading font-black mb-6 text-white">
+                    Ediciones Anteriores
+                </h2>
+                <p class="text-lg md:text-xl text-coloquio-light mb-8 leading-relaxed max-w-4xl mx-auto">
+                    Conoce la evolución del Coloquio Internacional de Espacio y Sostenibilidad a través de sus ediciones anteriores
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+                <!-- I Coloquio 2023 -->
+                <div class="bg-white bg-opacity-10 backdrop-blur-sm rounded-2xl p-8 border border-white border-opacity-20 hover:bg-opacity-20 transition-all">
+                    <div class="flex items-center mb-6">
+                        <div class="w-16 h-16 bg-coloquio-ocean bg-opacity-20 rounded-full flex items-center justify-center mr-4">
+                            <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2L13.09 8.26L20 9L13.09 9.74L12 16L10.91 9.74L4 9L10.91 8.26L12 2M12 4.89L11.42 7.58L8.58 8L11.42 8.42L12 11.11L12.58 8.42L15.42 8L12.58 7.58L12 4.89M21 10C21 10 21.5 8.5 21.5 7.5C21.5 6.5 21 5 21 5C21 5 20.5 6.5 20.5 7.5C20.5 8.5 21 10 21 10M16 6C16 6 16.5 4.5 16.5 3.5C16.5 2.5 16 1 16 1C16 1 15.5 2.5 15.5 3.5C15.5 4.5 16 6 16 6Z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-heading font-bold text-white mb-1">
+                                I Coloquio Internacional 2023
+                            </h3>
+                            <p class="text-coloquio-light text-sm">Guadalajara, Jalisco</p>
+                        </div>
+                    </div>
+                    <p class="text-coloquio-light mb-4 leading-relaxed">
+                        Primera edición en colaboración con NASA. Se abordó el uso de observaciones satelitales para la toma de decisiones públicas.
+                    </p>
+                    <div class="flex items-center text-coloquio-light text-sm">
+                        <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M16,4C18.22,4 20,5.78 20,8C20,10.22 18.22,12 16,12C13.78,12 12,10.22 12,8C12,5.78 13.78,4 16,4M16,6A2,2 0 0,0 14,8A2,2 0 0,0 16,10A2,2 0 0,0 18,8A2,2 0 0,0 16,6M16,13C18.67,13 22,14.33 22,17V20H10V17C10,14.33 13.33,13 16,13M8,12C10.22,12 12,10.22 12,8C12,5.78 10.22,4 8,4C5.78,4 4,5.78 4,8C4,10.22 5.78,12 8,12M8,6A2,2 0 0,1 10,8A2,2 0 0,1 8,10A2,2 0 0,1 6,8A2,2 0 0,1 8,6M8,13C10.67,13 14,14.33 14,17V20H2V17C2,14.33 5.33,13 8,13Z"/>
+                        </svg>
+                        ~100 participantes multisectoriales
+                    </div>
+                </div>
+
+                <!-- II Coloquio 2024 -->
+                <div class="bg-white bg-opacity-10 backdrop-blur-sm rounded-2xl p-8 border border-white border-opacity-20 hover:bg-opacity-20 transition-all">
+                    <div class="flex items-center mb-6">
+                        <div class="w-16 h-16 bg-coloquio-ocean bg-opacity-20 rounded-full flex items-center justify-center mr-4">
+                            <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12,3.25C12,3.25 6,10 6,14C6,17.32 8.69,20 12,20A6,6 0 0,0 18,14C18,10 12,3.25 12,3.25M14.47,9.97L15.53,11.03L9.53,17.03L8.47,15.97M9.75,10A1.25,1.25 0 0,1 11,11.25A1.25,1.25 0 0,1 9.75,12.5A1.25,1.25 0 0,1 8.5,11.25A1.25,1.25 0 0,1 9.75,10M14.25,14.5A1.25,1.25 0 0,1 15.5,15.75A1.25,1.25 0 0,1 14.25,17A1.25,1.25 0 0,1 13,15.75A1.25,1.25 0 0,1 14.25,14.5Z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-heading font-bold text-white mb-1">
+                                II Coloquio Internacional 2024
+                            </h3>
+                            <p class="text-coloquio-light text-sm">Morelia, Michoacán • "Espacio y Justicia Ambiental"</p>
+                        </div>
+                    </div>
+                    <p class="text-coloquio-light mb-4 leading-relaxed">
+                        Segunda edición enfocada en justicia ambiental y el impacto de la tecnología espacial en comunidades vulnerables.
+                    </p>
+                    <div class="flex items-center text-coloquio-light text-sm">
+                        <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12,3L2,12H5V20H19V12H22L12,3M12,5.7L17,10.7V18H15V13H9V18H7V10.7L12,5.7Z"/>
+                        </svg>
+                        Universidad Michoacana de San Nicolás de Hidalgo
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center">
+                <a href="ediciones.html" class="inline-flex items-center px-8 py-4 bg-white text-coloquio-navy rounded-lg font-bold text-lg hover:bg-coloquio-light transition-colors shadow-lg hover:shadow-xl">
+                    <svg class="w-6 h-6 mr-3" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M19,3H18V1H16V3H8V1H6V3H5A2,2 0 0,0 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5A2,2 0 0,0 19,3M19,19H5V8H19V19Z"/>
+                    </svg>
+                    Ver Todas las Ediciones
+                    <svg class="w-5 h-5 ml-2" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Registro -->
+    <section id="registro" class="py-12 sm:py-16 md:py-20 bg-gradient-to-br from-coloquio-navy to-coloquio-blue">
+        <div class="container mx-auto px-4 sm:px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl sm:text-4xl md:text-5xl font-heading font-black text-white mb-6">
+                    Registro
+                </h2>
+                <p class="text-lg md:text-xl text-coloquio-light mb-8 leading-relaxed max-w-3xl mx-auto">
+                    Únete al III Coloquio Internacional de Espacio y Sostenibilidad 2025
+                </p>
+            </div>
+
+            <div class="max-w-2xl mx-auto text-center">
+                <div class="bg-white rounded-2xl p-8 mb-8">
+                    <h3 class="text-2xl font-heading font-bold text-coloquio-navy mb-6">
+                        Evento Gratuito
+                    </h3>
+                    <div class="space-y-4 mb-8">
+                        <div class="flex items-center justify-center space-x-3">
+                            <svg class="w-6 h-6 text-coloquio-ocean" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                            <span class="text-lg text-coloquio-gray">Acceso completo al coloquio</span>
+                        </div>
+                        <div class="flex items-center justify-center space-x-3">
+                            <svg class="w-6 h-6 text-coloquio-ocean" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                            <span class="text-lg text-coloquio-gray">Certificado oficial (20 hrs)</span>
+                        </div>
+                        <div class="flex items-center justify-center space-x-3">
+                            <svg class="w-6 h-6 text-coloquio-ocean" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                            <span class="text-lg text-coloquio-gray">Materiales y coffee breaks</span>
+                        </div>
+                    </div>
+
+                    <a href="https://luma.com/qhkq8lji" target="_blank" rel="noopener noreferrer"
+                       class="inline-flex items-center justify-center bg-coloquio-ocean hover:bg-coloquio-bright text-white px-8 py-4 rounded-xl font-bold text-xl transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl">
+                        <svg class="w-6 h-6 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M10 2L13.09 8.26L20 9L13.09 9.74L10 16L6.91 9.74L0 9L6.91 8.26L10 2Z"/>
+                        </svg>
+                        Regístrate Ahora
+                        <svg class="w-5 h-5 ml-3" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/>
+                        </svg>
+                    </a>
+
+                    <p class="text-sm text-coloquio-gray mt-6">
+                        ⚡ Cupos limitados • 🗓️ Fecha límite: 25 de septiembre 2025
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Footer -->
     <footer class="bg-coloquio-navy text-white py-12 sm:py-16">
         <div class="container mx-auto px-4 sm:px-6">
@@ -1589,7 +1416,7 @@
                 <!-- Información del Evento -->
                 <div class="sm:col-span-2 md:col-span-1">
                     <div class="flex items-center space-x-3 mb-4">
-                        <img src="logoblanco.png?v=1758187319" alt="Logo Coloquio" class="h-10 sm:h-12 w-auto object-contain">
+                        <img src="logoblanco.png?v=1758187774" alt="Logo Coloquio" class="h-10 sm:h-12 w-auto object-contain">
                         <div>
                             <h3 class="text-lg sm:text-xl font-heading font-bold">Coloquio Espacio 2025</h3>
                             <p class="text-xs sm:text-sm text-coloquio-light">Hermosillo, Sonora</p>
@@ -1659,7 +1486,7 @@
         </div>
     </footer>
 
-    <script src="js/index.js?v=1758187319" defer></script>
+    <script src="js/index.js?v=2025091801" defer></script>
     <style>
         /* Carrusel Styles */
         .carousel-slide {
