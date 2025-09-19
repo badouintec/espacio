@@ -46,27 +46,27 @@ document.addEventListener('DOMContentLoaded', function () {
     const answer = item.querySelector('.faq-answer');
     const icon = item.querySelector('.faq-icon');
 
-    if (question && answer) {
+    if (question && answer && icon) {
       question.addEventListener('click', () => {
-        const isExpanded = answer.classList.contains('hidden');
+        const isExpanded = !answer.classList.contains('hidden');
         
         // Cerrar todas las otras FAQ
         faqItems.forEach(otherItem => {
           if (otherItem !== item) {
             const otherAnswer = otherItem.querySelector('.faq-answer');
             const otherIcon = otherItem.querySelector('.faq-icon');
-            otherAnswer.classList.add('hidden');
-            otherIcon.style.transform = 'rotate(0deg)';
+            if (otherAnswer) otherAnswer.classList.add('hidden');
+            if (otherIcon) otherIcon.style.transform = 'rotate(0deg)';
           }
         });
 
         // Toggle actual
         if (isExpanded) {
-          answer.classList.remove('hidden');
-          icon.style.transform = 'rotate(45deg)';
-        } else {
           answer.classList.add('hidden');
           icon.style.transform = 'rotate(0deg)';
+        } else {
+          answer.classList.remove('hidden');
+          icon.style.transform = 'rotate(45deg)';
         }
       });
     }
