@@ -3,38 +3,6 @@
 
 document.addEventListener('DOMContentLoaded', function () {
   
-  // --- Configuración del Carrusel ---
-  let currentSlide = 0;
-  const slides = document.querySelectorAll('.carousel-slide');
-  const dots = document.querySelectorAll('.carousel-dot');
-  const totalSlides = slides.length;
-
-  if (slides.length > 0 && dots.length > 0) {
-    function showSlide(index) {
-      slides.forEach(slide => slide.classList.remove('active'));
-      dots.forEach(dot => dot.classList.remove('active'));
-      
-      slides[index].classList.add('active');
-      dots[index].classList.add('active');
-    }
-
-    function nextSlide() {
-      currentSlide = (currentSlide + 1) % totalSlides;
-      showSlide(currentSlide);
-    }
-
-    // Auto-avance del carrusel cada 5 segundos
-    setInterval(nextSlide, 5000);
-
-    // Control manual del carrusel
-    dots.forEach((dot, index) => {
-      dot.addEventListener('click', () => {
-        currentSlide = index;
-        showSlide(currentSlide);
-      });
-    });
-  }
-
   // --- Funcionalidad de Pestañas de Participantes ---
   const participantesTabs = document.querySelectorAll('.participantes-tab');
   const participantesContents = document.querySelectorAll('.participantes-content .tab-content');
