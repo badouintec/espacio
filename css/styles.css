@@ -390,79 +390,6 @@ body {
   }
 }
 
-/* === CONTADOR REGRESIVO RESPONSIVO === */
-.countdown-container {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 1rem;
-  max-width: 600px;
-  margin: 0 auto;
-}
-
-@media (max-width: 640px) {
-  .countdown-container {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 0.75rem;
-  }
-}
-
-.countdown-item {
-  text-align: center;
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 1rem;
-  padding: 1.5rem 1rem;
-  backdrop-filter: blur(10px);
-  transition: var(--transition-smooth);
-}
-
-@media (max-width: 768px) {
-  .countdown-item {
-    padding: 1rem 0.75rem;
-    border-radius: 0.75rem;
-  }
-}
-
-.countdown-item:hover {
-  background: rgba(255, 255, 255, 0.2);
-  transform: translateY(-4px);
-}
-
-#days, #hours, #minutes, #seconds {
-  transition: transform 0.3s ease;
-  font-variant-numeric: tabular-nums;
-  font-size: 2.5rem;
-  font-weight: bold;
-  color: white;
-  display: block;
-  margin-bottom: 0.5rem;
-}
-
-@media (max-width: 768px) {
-  #days, #hours, #minutes, #seconds {
-    font-size: 2rem;
-  }
-}
-
-@media (max-width: 480px) {
-  #days, #hours, #minutes, #seconds {
-    font-size: 1.75rem;
-  }
-}
-
-.countdown-label {
-  color: rgba(255, 255, 255, 0.9);
-  font-size: 0.875rem;
-  font-weight: 500;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-}
-
-@media (max-width: 768px) {
-  .countdown-label {
-    font-size: 0.75rem;
-  }
-}
-
 /* === SECCIONES RESPONSIVAS === */
 .section {
   padding: 4rem 0;
@@ -1018,10 +945,6 @@ footer {
   .carousel-slide h1 {
     font-size: 2.5rem;
     line-height: 1.2;
-  }
-  
-  .countdown-item {
-    margin: 0 0.5rem;
   }
   
   .tema-grid {
