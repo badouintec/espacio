@@ -137,7 +137,7 @@
             </div>
             
             <!-- Botón Menú Móvil -->
-            <button class="mobile-menu-btn lg:hidden z-20" aria-label="Abrir menú de navegación" aria-expanded="false">
+            <button id="mobile-menu-button" class="mobile-menu-btn lg:hidden z-20" aria-label="Abrir menú de navegación" aria-expanded="false">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -145,7 +145,7 @@
         </nav>
         
         <!-- Menú Móvil -->
-        <div class="mobile-menu lg:hidden">
+        <div id="mobile-menu" class="mobile-menu lg:hidden hidden">
             <div class="flex flex-col items-center justify-center h-full space-y-6">
                 <a href="#acerca" class="mobile-menu-item">Acerca</a>
                 <a href="#programa" class="mobile-menu-item">Programa</a>
@@ -160,20 +160,20 @@
         <!-- Hero Section FIJO (SIN CARRUSEL) -->
         <section id="inicio" class="min-h-screen flex items-center bg-gradient-to-br from-coloquio-navy to-coloquio-blue text-white relative">
             <div class="absolute inset-0 bg-black bg-opacity-50" style="background-image: url('imagehero3.png'); background-size: cover; background-position: center; background-blend-mode: multiply;"></div>
-            <div class="container mx-auto px-6 text-center relative z-10">
-                <p class="text-lg md:text-xl mb-4">Ciencia y cooperación internacional para la gestión sostenible del agua</p>
-                <h1 class="text-4xl md:text-6xl font-heading font-black mb-6">
-                    III Coloquio Internacional de<br>
-                    Espacio y Sostenibilidad 2025
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+                <p class="text-base sm:text-lg md:text-xl lg:text-2xl mb-3 sm:mb-4 md:mb-6">Ciencia y cooperación internacional para la gestión sostenible del agua</p>
+                <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-heading font-black mb-4 sm:mb-6 md:mb-8 leading-tight">
+                    <span class="block">III Coloquio Internacional de</span>
+                    <span class="block">Espacio y Sostenibilidad 2025</span>
                 </h1>
-                <p class="text-xl md:text-2xl mb-8">
+                <p class="text-lg sm:text-xl md:text-2xl lg:text-3xl mb-6 sm:mb-8 md:mb-10 font-medium">
                     3 de octubre • Hermosillo, Sonora
                 </p>
-                <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                    <a href="https://luma.com/qhkq8lji" target="_blank" class="bg-coloquio-ocean hover:bg-coloquio-bright px-8 py-4 rounded-md font-bold text-lg transition-colors">
+                <div class="flex flex-col sm:flex-row gap-3 sm:gap-4 md:gap-6 justify-center items-center max-w-md sm:max-w-none mx-auto">
+                    <a href="https://luma.com/qhkq8lji" target="_blank" class="w-full sm:w-auto bg-coloquio-ocean hover:bg-coloquio-bright px-6 sm:px-8 py-3 sm:py-4 rounded-md font-bold text-base sm:text-lg transition-colors transform hover:scale-105">
                         Registro Gratuito
                     </a>
-                    <a href="#acerca" class="border-2 border-white text-white hover:bg-white hover:text-coloquio-navy px-8 py-4 rounded-md font-bold text-lg transition-colors">
+                    <a href="#acerca" class="w-full sm:w-auto border-2 border-white text-white hover:bg-white hover:text-coloquio-navy px-6 sm:px-8 py-3 sm:py-4 rounded-md font-bold text-base sm:text-lg transition-all transform hover:scale-105">
                         Conoce Más
                     </a>
                 </div>
@@ -182,45 +182,45 @@
 
 
         <!-- Temas Prioritarios -->
-        <section id="temas" class="py-12 sm:py-16 md:py-20 bg-white text-center">
-            <div class="container mx-auto px-4 sm:px-6">
-                <h2 class="text-2xl sm:text-3xl md:text-4xl font-heading font-black text-coloquio-navy mb-2 sm:mb-4">Temas Prioritarios 2025</h2>
-                <p class="text-base sm:text-lg text-coloquio-gray mb-8 sm:mb-12 max-w-3xl mx-auto">
+        <section id="temas" class="py-16 sm:py-20 md:py-24 lg:py-28 bg-white text-center">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-heading font-black text-coloquio-navy mb-3 sm:mb-4 md:mb-6">Temas Prioritarios 2025</h2>
+                <p class="text-base sm:text-lg md:text-xl text-coloquio-gray mb-10 sm:mb-12 md:mb-16 max-w-4xl mx-auto leading-relaxed">
                     Resiliencia climática del agua mediante tecnología espacial
                 </p>
                 
-                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8 max-w-6xl mx-auto">
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 md:gap-10 max-w-7xl mx-auto">
                     <!-- Tema 1 -->
-                    <div class="bg-coloquio-light rounded-xl sm:rounded-2xl p-6 sm:p-8 text-center hover:shadow-lg transition-shadow">
-                        <div class="w-12 h-12 sm:w-16 sm:h-16 bg-coloquio-ocean rounded-full mx-auto mb-3 sm:mb-4 flex items-center justify-center">
-                            <svg class="w-6 h-6 sm:w-8 sm:h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+                    <div class="bg-coloquio-light rounded-xl sm:rounded-2xl p-6 sm:p-8 md:p-10 text-center hover:shadow-xl hover:shadow-coloquio-navy/10 transition-all duration-300 transform hover:-translate-y-1">
+                        <div class="w-14 h-14 sm:w-16 sm:h-16 md:w-20 md:h-20 bg-coloquio-ocean rounded-full mx-auto mb-4 sm:mb-5 md:mb-6 flex items-center justify-center">
+                            <svg class="w-7 h-7 sm:w-8 sm:h-8 md:w-10 md:h-10 text-white" fill="currentColor" viewBox="0 0 20 20">
                                 <path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h-2z"/>
                             </svg>
                         </div>
-                        <h3 class="text-lg sm:text-xl font-bold text-coloquio-navy mb-2 sm:mb-3">Monitoreo y pronóstico de sequías</h3>
-                        <p class="text-sm sm:text-base text-coloquio-gray">Sistemas avanzados de seguimiento y predicción de condiciones de sequía</p>
+                        <h3 class="text-lg sm:text-xl md:text-2xl font-bold text-coloquio-navy mb-3 sm:mb-4 md:mb-5 leading-tight">Monitoreo y pronóstico de sequías</h3>
+                        <p class="text-sm sm:text-base md:text-lg text-coloquio-gray leading-relaxed">Sistemas avanzados de seguimiento y predicción de condiciones de sequía</p>
                     </div>
                     
                     <!-- Tema 2 -->
-                    <div class="bg-coloquio-light rounded-xl sm:rounded-2xl p-6 sm:p-8 text-center hover:shadow-lg transition-shadow">
-                        <div class="w-12 h-12 sm:w-16 sm:h-16 bg-coloquio-blue rounded-full mx-auto mb-3 sm:mb-4 flex items-center justify-center">
-                            <svg class="w-6 h-6 sm:w-8 sm:h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+                    <div class="bg-coloquio-light rounded-xl sm:rounded-2xl p-6 sm:p-8 md:p-10 text-center hover:shadow-xl hover:shadow-coloquio-navy/10 transition-all duration-300 transform hover:-translate-y-1">
+                        <div class="w-14 h-14 sm:w-16 sm:h-16 md:w-20 md:h-20 bg-coloquio-blue rounded-full mx-auto mb-4 sm:mb-5 md:mb-6 flex items-center justify-center">
+                            <svg class="w-7 h-7 sm:w-8 sm:h-8 md:w-10 md:h-10 text-white" fill="currentColor" viewBox="0 0 20 20">
                                 <path fill-rule="evenodd" d="M5.5 3A2.5 2.5 0 003 5.5v2.879a2.5 2.5 0 00.732 1.767L6.5 12.914a2.5 2.5 0 001.768.732H8.5V15.5a2.5 2.5 0 005 0v-1.854a2.5 2.5 0 001.732-2.732L15.5 10.5a2.5 2.5 0 000-1l-.268-.414a2.5 2.5 0 00-1.732-2.732V4.5a2.5 2.5 0 00-5 0v1.854a2.5 2.5 0 00-1.768.732L3.232 9.353A2.5 2.5 0 002.5 11.121V14.5a2.5 2.5 0 005 0v-1.854z" clip-rule="evenodd"/>
                             </svg>
                         </div>
-                        <h3 class="text-lg sm:text-xl font-bold text-coloquio-navy mb-2 sm:mb-3">Estimaciones de escurrimientos e inundaciones</h3>
-                        <p class="text-sm sm:text-base text-coloquio-gray">Modelado y predicción de flujos hídricos y eventos de inundación</p>
+                        <h3 class="text-lg sm:text-xl md:text-2xl font-bold text-coloquio-navy mb-3 sm:mb-4 md:mb-5 leading-tight">Estimaciones de escurrimientos e inundaciones</h3>
+                        <p class="text-sm sm:text-base md:text-lg text-coloquio-gray leading-relaxed">Modelado y predicción de flujos hídricos y eventos de inundación</p>
                     </div>
                     
                     <!-- Tema 3 -->
-                    <div class="bg-coloquio-light rounded-xl sm:rounded-2xl p-6 sm:p-8 text-center hover:shadow-lg transition-shadow">
-                        <div class="w-12 h-12 sm:w-16 sm:h-16 bg-coloquio-bright rounded-full mx-auto mb-3 sm:mb-4 flex items-center justify-center">
-                            <svg class="w-6 h-6 sm:w-8 sm:h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+                    <div class="bg-coloquio-light rounded-xl sm:rounded-2xl p-6 sm:p-8 md:p-10 text-center hover:shadow-xl hover:shadow-coloquio-navy/10 transition-all duration-300 transform hover:-translate-y-1">
+                        <div class="w-14 h-14 sm:w-16 sm:h-16 md:w-20 md:h-20 bg-coloquio-bright rounded-full mx-auto mb-4 sm:mb-5 md:mb-6 flex items-center justify-center">
+                            <svg class="w-7 h-7 sm:w-8 sm:h-8 md:w-10 md:h-10 text-white" fill="currentColor" viewBox="0 0 20 20">
                                 <path fill-rule="evenodd" d="M5 2a1 1 0 011 1v1h1a1 1 0 010 2H6v1a1 1 0 01-2 0V6H3a1 1 0 010-2h1V3a1 1 0 011-1zm0 10a1 1 0 011 1v1h1a1 1 0 110 2H6v1a1 1 0 11-2 0v-1H3a1 1 0 110-2h1v-1a1 1 0 011-1zM12 2a1 1 0 01.967.744L14.146 7.2 17.5 9.134a1 1 0 010 1.732L14.146 12.8l-1.179 4.456a1 1 0 01-1.934 0L9.854 12.8 6.5 10.866a1 1 0 010-1.732L9.854 7.2l1.179-4.456A1 1 0 0112 2z" clip-rule="evenodd"/>
                             </svg>
                         </div>
-                        <h3 class="text-lg sm:text-xl font-bold text-coloquio-navy mb-2 sm:mb-3">Evaluación de la calidad del agua</h3>
-                        <p class="text-sm sm:text-base text-coloquio-gray">Análisis y monitoreo de parámetros de calidad hídrica</p>
+                        <h3 class="text-lg sm:text-xl md:text-2xl font-bold text-coloquio-navy mb-3 sm:mb-4 md:mb-5 leading-tight">Evaluación de la calidad del agua</h3>
+                        <p class="text-sm sm:text-base md:text-lg text-coloquio-gray leading-relaxed">Análisis y monitoreo de parámetros de calidad hídrica</p>
                     </div>
                     
                     <!-- Tema 4 -->
@@ -261,16 +261,16 @@
         </section>
 
         <!-- Sección Acerca del Coloquio -->
-        <section id="acerca" class="py-12 sm:py-16 md:py-20 bg-coloquio-light">
-            <div class="container mx-auto px-4 sm:px-6">
-                <div class="text-center mb-12 sm:mb-16">
-                    <h2 class="text-2xl sm:text-3xl md:text-4xl font-heading font-black text-coloquio-navy mb-4">Acerca del Coloquio</h2>
-                    <p class="text-base sm:text-lg text-coloquio-gray max-w-3xl mx-auto">
+        <section id="acerca" class="py-16 sm:py-20 md:py-24 lg:py-28 bg-coloquio-light">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12 sm:mb-16 md:mb-20">
+                    <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-heading font-black text-coloquio-navy mb-4 sm:mb-6">Acerca del Coloquio</h2>
+                    <p class="text-base sm:text-lg md:text-xl text-coloquio-gray max-w-4xl mx-auto leading-relaxed">
                         Tecnología, ciencia y cooperación internacional por la resiliencia climática del agua
                     </p>
                 </div>
 
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 mb-12 sm:mb-16">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 sm:gap-10 md:gap-12 mb-16 sm:mb-20 md:mb-24">
                     <!-- Nuestro Objetivo -->
                     <div class="bg-white rounded-xl sm:rounded-2xl p-6 sm:p-8 text-center shadow-lg hover:shadow-xl transition-shadow">
                         <div class="w-16 h-16 sm:w-20 sm:h-20 bg-coloquio-ocean rounded-full mx-auto mb-4 sm:mb-6 flex items-center justify-center">
