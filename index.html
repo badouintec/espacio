@@ -9,14 +9,17 @@
     <meta http-equiv="Pragma" content="no-cache">
     <meta http-equiv="Expires" content="0">
     <meta name="cache-control" content="max-age=0">
-    <meta name="last-modified" content="Wed, 18 Sep 2025 18:00:00 GMT">
+    <meta name="last-modified" content="Thu, 19 Sep 2025 22:30:00 GMT">
+    <meta name="build-version" content="v2025.09.19.2230">
     
-    <!-- Force Browser Refresh -->
+    <!-- Force Browser Refresh + Cloudflare Optimization -->
     <script>
-        // Force cache clear on load
+        // Force cache clear on load + Cloudflare bypass
         if (performance.navigation.type === performance.navigation.TYPE_RELOAD) {
             window.location.reload(true);
         }
+        // Add timestamp to force Cloudflare refresh
+        window.__BUILD_TIME__ = '2025091922300';
     </script>
     
     <title>III Coloquio Internacional de Espacio y Sostenibilidad 2025 - Hermosillo, Sonora</title>
@@ -64,7 +67,7 @@
             }
         }
     </script>
-    <link rel="stylesheet" href="css/styles.css?v=2025091801" />
+    <link rel="stylesheet" href="css/styles.css?v=2025091922" />
         <!-- Structured Data (Event + FAQ) -->
         <script type="application/ld+json">
         {
@@ -987,8 +990,26 @@
         }
     </style>
 
-</body>
-</html>
+    <!-- Cloudflare Cache Busting Script -->
+    <script>
+        // Aggressive cache busting for Cloudflare Pages
+        (function() {
+            const buildTime = '20250919223000';
+            const lastBuildTime = localStorage.getItem('lastBuildTime');
+            
+            if (lastBuildTime !== buildTime) {
+                localStorage.setItem('lastBuildTime', buildTime);
+                // Force reload if this is a new build
+                if (lastBuildTime && lastBuildTime !== buildTime) {
+                    window.location.reload(true);
+                }
+            }
+            
+            // Add build timestamp to console for debugging
+            console.log('🚀 Espacio 2025 - Build:', buildTime);
+            console.log('🔄 Cache Status: Fresh');
+        })();
+    </script>
 
 </body>
 </html>

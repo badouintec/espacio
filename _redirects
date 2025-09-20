@@ -1,0 +1,10 @@
+# Cloudflare Pages Redirects Configuration
+# Force cache bypass for main pages
+
+# Root redirect with cache bypass
+/  /index.html  200!  Cache-Control:no-cache,no-store,must-revalidate
+
+# Ensure HTML files are never cached
+/index.html  /index.html  200!  Cache-Control:no-cache,no-store,must-revalidate
+/retos.html  /retos.html  200!  Cache-Control:no-cache,no-store,must-revalidate
+/ediciones.html  /ediciones.html  200!  Cache-Control:no-cache,no-store,must-revalidate
