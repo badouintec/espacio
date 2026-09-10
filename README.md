@@ -22,7 +22,7 @@ Estado editorial: **anuncio inicial / save the date**. Primera Circular, Convoca
 | `assets/img/` | Logo, cartel oficial 2027 (`hero-2027.jpg`, hero a sangre; `hero-2027-source.png` original) e imagen Open Graph (`og-2027.jpg`, generada con `scripts/make-og.mjs`). |
 | `scripts/` | Utilidades locales (Node ≥ 18, sin dependencias). |
 | `docs/spec-edicion-2027.md` | Documento maestro de contenido y criterios editoriales de la edición 2027. |
-| `archive/2025/` | Material heredado de 2025 que no forma parte del sitio vigente: respaldo del home anterior, página de retos de Space Apps Sonora (`/retos.html` redirige aquí), imágenes de hero y documentación de 2025. |
+| `archive/2025/` | Material heredado de 2025 que no forma parte del sitio vigente: respaldo del home anterior, página de retos de Space Apps Sonora (`/retos` redirige aquí), imágenes de hero y documentación de 2025. |
 
 ## Referencias y miniaturas
 

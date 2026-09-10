@@ -1,9 +1,6 @@
 # Cloudflare Pages Redirects Configuration
-
-# Rutas limpias por página
-/ediciones     /ediciones.html    200
-/referencias   /referencias.html  200
+# Pages ya sirve /ediciones y /referencias sin extensión (clean URLs); no añadir reglas para eso.
 
 # Material heredado de 2025 movido al archivo
-/retos.html    /archive/2025/retos.html  301
-/retos         /archive/2025/retos.html  301
+/retos.html    /archive/2025/retos  301
+/retos         /archive/2025/retos  301
