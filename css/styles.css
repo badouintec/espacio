@@ -1568,3 +1568,17 @@ footer { background: var(--sky) !important; border-top: 1px solid rgba(255,255,2
 .sec--white .feature__title, .sec--paper .feature__title { color: var(--ink); }
 .feature__label { display: block; }
 .hero-2027__tagline[style] { margin: 0 0 1.25rem; }
+
+/* v3 · estados sin "badge": filas de estado con punto hueco, caja baja, sin bordes */
+.soon-list { display: grid; gap: 0.45rem; list-style: none; padding: 0; margin: 0; }
+.soon-list li { display: flex; align-items: baseline; gap: 0.6rem; font-weight: 500; color: #fff; font-size: 0.98rem; }
+.soon-list li::before { content: ''; width: 0.5rem; height: 0.5rem; border-radius: 50%; border: 1.5px solid var(--teal); flex: none; transform: translateY(-1px); }
+.soon-list li span { font-family: var(--mono); font-size: 0.7rem; letter-spacing: 0.08em; color: #9FB0C3; }
+.doc-card__status { font-family: var(--mono); font-size: 0.7rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); margin: 0; display: inline-flex; align-items: center; gap: 0.5rem; }
+.doc-card__status::before { content: ''; width: 0.5rem; height: 0.5rem; border-radius: 50%; border: 1.5px solid var(--teal-ink); }
+.doc-card__status--live { color: var(--teal-ink); }
+.doc-card__status--live::before { background: var(--teal-ink); }
+.doc-card__soon { margin: 0; font-weight: 600; color: var(--ink); font-size: 0.95rem; display: flex; align-items: baseline; gap: 0.6rem; }
+.doc-card__soon::before { content: ''; width: 0.5rem; height: 0.5rem; border-radius: 50%; border: 1.5px solid var(--teal-ink); flex: none; transform: translateY(-1px); }
+.doc-card__soon span { font-family: var(--mono); font-size: 0.7rem; letter-spacing: 0.08em; color: var(--muted); }
+.ficha-inline { display: inline-flex; align-items: center; font-weight: 500; color: #fff; }

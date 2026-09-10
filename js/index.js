@@ -94,8 +94,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const meta = [/\.pdf(\?|$)/i.test(url) ? 'PDF' : '', el.dataset.docSize || ''].filter(Boolean).join(' · ');
     if (meta) a.insertAdjacentHTML('beforeend', ` <span class="btn__meta">${meta}</span>`);
     el.replaceChildren(a);
-    const pill = el.closest('.doc-card')?.querySelector('.status-pill');
-    if (pill) { pill.textContent = 'Disponible'; pill.classList.add('status-pill--live'); }
+    const status = el.closest('.doc-card')?.querySelector('.doc-card__status');
+    if (status) { status.textContent = 'Disponible'; status.classList.add('doc-card__status--live'); }
   });
 
   // --- Tarjetas de referencias ---
