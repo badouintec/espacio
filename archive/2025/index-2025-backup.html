@@ -15,7 +15,7 @@
     <script>
         // Force cache clear on load
         if (performance.navigation.type === performance.navigation.TYPE_RELOAD) {
-            window.location.reload(true);
+            /* recarga forzada desactivada en el archivo */
         }
     </script>
     
@@ -24,8 +24,8 @@
     <meta name="robots" content="index,follow" />
     <link rel="canonical" href="https://espacio2025.com/" />
     <meta name="theme-color" content="#132542" />
-    <link rel="icon" type="image/png" href="favicon.png" />
-    <link rel="preload" href="favicon.png" as="image" />
+    <link rel="icon" type="image/png" href="../../favicon.png" />
+    <link rel="preload" href="../../favicon.png" as="image" />
     <link rel="prefetch" href="retos.html" as="document" />
     <!-- Open Graph -->
     <meta property="og:site_name" content="III Coloquio Internacional de Espacio y Sostenibilidad" />
@@ -64,7 +64,7 @@
             }
         }
     </script>
-    <link rel="stylesheet" href="css/styles.css?v=2025091801" />
+    <link rel="stylesheet" href="../../css/styles.css?v=2025091801" />
         <!-- Structured Data (Event + FAQ) -->
         <script type="application/ld+json">
         {
@@ -123,7 +123,7 @@
             <!-- Logo -->
             <div class="flex items-center z-20">
                 <div class="h-10 sm:h-12 lg:h-14 flex items-center justify-center">
-                    <img src="logoblanco.png?v=2025091801" alt="Logo III Coloquio Internacional de Espacio y Sostenibilidad" class="nav-logo h-full w-auto object-contain">
+                    <img src="../../assets/img/logo-blanco.png?v=2025091801" alt="Logo III Coloquio Internacional de Espacio y Sostenibilidad" class="nav-logo h-full w-auto object-contain">
                 </div>
             </div>
             
@@ -165,7 +165,7 @@
     <main id="contenido-principal" role="main">
         <!-- Hero Section FIJO (SIN CARRUSEL) -->
         <section id="inicio" class="min-h-screen flex items-center bg-gradient-to-br from-coloquio-navy to-coloquio-blue text-white relative">
-            <div class="absolute inset-0 bg-black bg-opacity-50" style="background-image: url('imagehero3.png'); background-size: cover; background-position: center; background-blend-mode: multiply;"></div>
+            <div class="absolute inset-0 bg-black bg-opacity-50" style="background-image: url('img/hero-2025-3.png'); background-size: cover; background-position: center; background-blend-mode: multiply;"></div>
             <div class="container mx-auto px-6 text-center relative z-10">
                 <p class="text-lg md:text-xl mb-4">Ciencia y cooperación internacional para la gestión sostenible del agua</p>
                 <h1 class="text-4xl md:text-6xl font-heading font-black mb-6">
@@ -1369,7 +1369,7 @@
                 <!-- Información del Evento -->
                 <div class="sm:col-span-2 md:col-span-1">
                     <div class="flex items-center space-x-3 mb-4">
-                        <img src="logoblanco.png?v=1758187774" alt="Logo Coloquio" class="h-10 sm:h-12 w-auto object-contain">
+                        <img src="../../assets/img/logo-blanco.png?v=1758187774" alt="Logo Coloquio" class="h-10 sm:h-12 w-auto object-contain">
                         <div>
                             <h3 class="text-lg sm:text-xl font-heading font-bold">Coloquio Espacio 2025</h3>
                             <p class="text-xs sm:text-sm text-coloquio-light">Hermosillo, Sonora</p>
@@ -1439,7 +1439,7 @@
         </div>
     </footer>
 
-    <script src="js/index.js?v=2025091801" defer></script>
+    <script src="../../js/index.js?v=2025091801" defer></script>
     <style>
         /* Animaciones de contador */
         #days, #hours, #minutes, #seconds {

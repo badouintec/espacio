@@ -3,61 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
-    
-    <!-- Cache Control Meta Tags - FORCE REFRESH -->
-    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
-    <meta http-equiv="Pragma" content="no-cache">
-    <meta http-equiv="Expires" content="0">
-    <meta name="cache-control" content="max-age=0">
-    <meta name="last-modified" content="Thu, 19 Sep 2025 22:30:00 GMT">
-    <meta name="build-version" content="v2025.09.19.2230">
-    
-    <!-- Force Browser Refresh + Cloudflare Optimization -->
-    <script>
-        // Force cache clear on load + Cloudflare bypass
-        if (performance.navigation.type === performance.navigation.TYPE_RELOAD) {
-            window.location.reload(true);
-        }
-        // Add timestamp to force Cloudflare refresh
-        window.__BUILD_TIME__ = '2025091922300';
-    </script>
-    
-    <title>III Coloquio Internacional de Espacio y Sostenibilidad 2025 - Hermosillo, Sonora</title>
-    <meta name="description" content="III Coloquio Internacional de Espacio y Sostenibilidad 2025 en Hermosillo (3 octubre). Resiliencia climática del agua mediante tecnología espacial. Cooperación internacional México-Estados Unidos." />
-    <meta name="robots" content="index,follow" />
-    <link rel="canonical" href="https://espacio2025.com/" />
-    <meta name="theme-color" content="#132542" />
-    <link rel="icon" type="image/png" href="favicon.png" />
-    <link rel="preload" href="favicon.png" as="image" />
-    <link rel="prefetch" href="retos.html" as="document" />
+
+    <title>IV Coloquio Internacional de Espacio y Sostenibilidad 2027 | CDMX</title>
+    <meta name="description" content="El IV Coloquio Internacional de Espacio y Sostenibilidad se realizará el 10, 11 y 12 de febrero de 2027 en Ciudad de México. Tema: Salud ambiental y territorio. Próximamente: Primera Circular, Convocatoria de Carteles, programa y registro.">
+    <meta name="robots" content="index,follow">
+    <link rel="canonical" href="https://espacioysostenibilidad.com/">
+    <meta name="theme-color" content="#132542">
+    <link rel="icon" type="image/png" href="favicon.png">
+
     <!-- Open Graph -->
-    <meta property="og:site_name" content="III Coloquio Internacional de Espacio y Sostenibilidad" />
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="III Coloquio Internacional de Espacio y Sostenibilidad 2025 - Hermosillo" />
-    <meta property="og:description" content="Resiliencia climática del agua mediante tecnología espacial. Cooperación internacional México-Estados Unidos. 3 de octubre 2025, Hermosillo." />
-    <meta property="og:image" content="https://placehold.co/1200x630/132542/FFFFFF?text=Coloquio+Espacio+Sostenibilidad+2025" />
-    <meta property="og:url" content="https://espacio2025.com/" />
+    <meta property="og:site_name" content="Espacio y Sostenibilidad">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="es_MX">
+    <meta property="og:title" content="IV Coloquio Internacional de Espacio y Sostenibilidad 2027">
+    <meta property="og:description" content="Salud ambiental y territorio · 10–12 febrero 2027 · Ciudad de México">
+    <!-- Portada 2027: sustituir assets/img/og-2027.jpg por la portada oficial cuando exista (1200×630 recomendado). -->
+    <meta property="og:image" content="https://espacioysostenibilidad.com/assets/img/og-2027.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:url" content="https://espacioysostenibilidad.com/">
     <!-- Twitter -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="III Coloquio Internacional de Espacio y Sostenibilidad 2025" />
-    <meta name="twitter:description" content="Resiliencia climática del agua mediante tecnología espacial. Cooperación internacional. 3 octubre 2025, Hermosillo." />
-    <meta name="twitter:image" content="https://placehold.co/1200x630/132542/FFFFFF?text=Coloquio+Espacio+2025" />
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="IV Coloquio Internacional de Espacio y Sostenibilidad 2027">
+    <meta name="twitter:description" content="Salud ambiental y territorio · 10–12 febrero 2027 · Ciudad de México">
+    <meta name="twitter:image" content="https://espacioysostenibilidad.com/assets/img/og-2027.jpg">
+
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;500;600;700&family=Josefin+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;500;600;700&family=Josefin+Sans:wght@400;500;600;700;800;900&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     colors: {
                         'coloquio-navy': '#132542',
-                        'coloquio-blue': '#22395a', 
+                        'coloquio-blue': '#22395a',
                         'coloquio-ocean': '#2D89EF',
                         'coloquio-bright': '#1A365D',
                         'coloquio-light': '#F4F5F7',
-                        'coloquio-gray': '#7A8A99'
+                        'coloquio-gray': '#7A8A99',
+                        'coloquio-mint': '#3ECF9A'
                     },
                     fontFamily: {
                         'sans': ['Lato', 'system-ui', 'sans-serif'],
@@ -67,1036 +53,608 @@
             }
         }
     </script>
-    <link rel="stylesheet" href="css/styles.css?v=2025091922" />
-        <!-- Structured Data (Event + FAQ) -->
-        <script type="application/ld+json">
-        {
-            "@context": "https://schema.org",
-            "@type": "Event",
-            "name": "III Coloquio Internacional de Espacio y Sostenibilidad 2025",
-            "description": "Resiliencia climática del agua mediante tecnología espacial. Cooperación internacional México-Estados Unidos.",
-            "startDate": "2025-10-03T08:00:00-07:00",
-            "endDate": "2025-10-03T13:00:00-07:00",
-            "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-            "eventStatus": "https://schema.org/EventScheduled",
-            "location": {
-                "@type": "Place",
-                "name": "Tecnológico de Monterrey, Campus Sonora Norte",
-                "address": {
-                    "@type": "PostalAddress",
-                    "addressLocality": "Hermosillo",
-                    "addressRegion": "Sonora",
-                    "addressCountry": "MX"
-                }
-            },
-            "image": ["https://placehold.co/1200x630/132542/FFFFFF?text=Coloquio+Espacio+Sostenibilidad+2025"],
-            "organizer": {
-                "@type": "Organization",
-                "name": "Tecnológico de Monterrey",
-                "url": "https://tec.mx/"
-            },
-            "offers": {
-                "@type": "Offer",
-                "price": "0",
-                "priceCurrency": "MXN",
-                "availability": "https://schema.org/InStock"
-            }
-        }
-        </script>
-        <script type="application/ld+json">
-        {
-            "@context": "https://schema.org",
-            "@type": "FAQPage",
-            "mainEntity": [
-                {"@type": "Question","name": "¿El evento tiene algún costo?","acceptedAnswer": {"@type": "Answer","text": "No. Es completamente gratuito e incluye mentorías, comidas y recursos."}},
-                {"@type": "Question","name": "¿Habrá comida en el evento?","acceptedAnswer": {"@type": "Answer","text": "Sí. Habrá comida disponible durante el evento para los participantes."}},
-                {"@type": "Question","name": "¿De qué tamaño deben ser los equipos?","acceptedAnswer": {"@type": "Answer","text": "De 1 a 6 personas. Se recomienda multidisciplinario."}},
-                {"@type": "Question","name": "¿Cómo puedo formar o unirme a un equipo?","acceptedAnswer": {"@type": "Answer","text": "Team Finder oficial, networking local y actividades de bootcamp."}},
-                {"@type": "Question","name": "¿Qué premios puedo ganar?","acceptedAnswer": {"@type": "Answer","text": "Premios locales y 6 premios globales (Best Use of Data, Technology, etc.)."}},
-                {"@type": "Question","name": "¿Qué necesito llevar al evento?","acceptedAnswer": {"@type": "Answer","text": "Laptop, identificación, ropa cómoda, higiene personal y actitud innovadora."}}
-            ]
-        }
-        </script>
-</head>
-<body class="text-gray-900 bg-white font-sans">
+    <link rel="stylesheet" href="css/styles.css?v=2027.1">
 
-    <!-- Header and Navigation - MEJORADO RESPONSIVO -->
-    <header class="nav-glass fixed top-0 left-0 right-0 z-50" role="banner">
+    <!-- Structured data: solo información confirmada (sin sede específica, precio, offers, organizador ni aliados) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Event",
+      "name": "IV Coloquio Internacional de Espacio y Sostenibilidad 2027",
+      "description": "Salud ambiental y territorio",
+      "startDate": "2027-02-10",
+      "endDate": "2027-02-12",
+      "eventStatus": "https://schema.org/EventScheduled",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "url": "https://espacioysostenibilidad.com/",
+      "image": ["https://espacioysostenibilidad.com/assets/img/og-2027.jpg"],
+      "organizer": { "@type": "Organization", "name": "Espacio y Sostenibilidad", "url": "https://espacioysostenibilidad.com/" },
+      "location": {
+        "@type": "Place",
+        "name": "Ciudad de México",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Ciudad de México",
+          "addressCountry": "MX"
+        }
+      }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {"@type": "Question","name": "¿Cuándo se realizará el IV Coloquio?","acceptedAnswer": {"@type": "Answer","text": "Los días 10, 11 y 12 de febrero de 2027."}},
+        {"@type": "Question","name": "¿Dónde se realizará?","acceptedAnswer": {"@type": "Answer","text": "En Ciudad de México. La sede específica se anunciará próximamente."}},
+        {"@type": "Question","name": "¿Cuál es la temática de 2027?","acceptedAnswer": {"@type": "Answer","text": "Salud ambiental y territorio, con énfasis en aplicaciones de observación de la Tierra, datos geoespaciales, emisiones e inteligencia territorial."}},
+        {"@type": "Question","name": "¿Ya está abierto el registro?","acceptedAnswer": {"@type": "Answer","text": "No. El registro se anunciará próximamente."}},
+        {"@type": "Question","name": "¿Habrá Convocatoria de Carteles?","acceptedAnswer": {"@type": "Answer","text": "Sí. Las bases serán publicadas próximamente."}},
+        {"@type": "Question","name": "¿Dónde podré consultar la Primera Circular?","acceptedAnswer": {"@type": "Answer","text": "Se publicará en este sitio. Próximamente estará disponible para descarga."}}
+      ]
+    }
+    </script>
+</head>
+<body class="text-gray-900 bg-white font-sans has-hero">
+
+    <a href="#contenido-principal" class="skip-link">Ir al contenido principal</a>
+
+    <!-- Header -->
+    <header class="nav-glass fixed top-0 left-0 right-0 z-50">
         <nav class="container mx-auto px-4 sm:px-6 py-3 sm:py-4 flex justify-between items-center relative z-10" aria-label="Navegación principal">
-            <!-- Logo -->
-            <div class="flex items-center z-20">
-                <div class="h-10 sm:h-12 lg:h-14 flex items-center justify-center">
-                    <img src="logoblanco.png?v=2025091801" alt="Logo III Coloquio Internacional de Espacio y Sostenibilidad" class="nav-logo h-full w-auto object-contain">
-                </div>
-            </div>
-            
-            <!-- Navegación Desktop -->
-            <div class="nav-links hidden lg:flex items-center space-x-6 xl:space-x-8">
-                <a href="#acerca" class="nav-link">Acerca</a>
-                <a href="#programa" class="nav-link">Programa</a>
-                <a href="#temas" class="nav-link">Temas</a>
+            <a href="#inicio" class="flex items-center z-20" aria-label="Inicio — Coloquio Internacional de Espacio y Sostenibilidad">
+                <img src="assets/img/logo-blanco.png" alt="Coloquio Internacional de Espacio y Sostenibilidad" class="nav-logo h-10 sm:h-12 lg:h-14 w-auto object-contain">
+            </a>
+
+            <div class="nav-links hidden lg:flex items-center space-x-2 xl:space-x-4">
+                <a href="#inicio" class="nav-link">Inicio</a>
+                <a href="#nosotros" class="nav-link">Nosotros</a>
+                <a href="#salud-ambiental-territorio" class="nav-link">2027</a>
+                <a href="ediciones.html" class="nav-link">Ediciones</a>
+                <a href="referencias.html" class="nav-link">Referencias</a>
                 <a href="#faq" class="nav-link">FAQ</a>
-                <a href="#registro" class="btn btn-primary text-sm px-4 py-2">Registrarse</a>
+                <span class="status-pill status-pill--nav">Registro · Próximamente</span>
             </div>
-            
-            <!-- Botón Menú Móvil -->
-            <button id="mobile-menu-button" class="mobile-menu-btn lg:hidden z-20" aria-label="Abrir menú de navegación" aria-expanded="false">
-                <span></span>
-                <span></span>
-                <span></span>
+
+            <button type="button" id="mobile-menu-button" class="mobile-menu-btn lg:hidden z-20" aria-label="Abrir menú de navegación" aria-expanded="false" aria-controls="mobile-menu">
+                <span></span><span></span><span></span>
             </button>
         </nav>
-        
-        <!-- Menú Móvil -->
+
         <div id="mobile-menu" class="mobile-menu lg:hidden hidden">
-            <div class="flex flex-col items-center justify-center h-full space-y-6">
-                <a href="#acerca" class="mobile-menu-item">Acerca</a>
-                <a href="#programa" class="mobile-menu-item">Programa</a>
-                <a href="#temas" class="mobile-menu-item">Temas</a>
+            <div class="flex flex-col items-center justify-center h-full space-y-4">
+                <a href="#inicio" class="mobile-menu-item">Inicio</a>
+                <a href="#nosotros" class="mobile-menu-item">Nosotros</a>
+                <a href="#salud-ambiental-territorio" class="mobile-menu-item">2027</a>
+                <a href="ediciones.html" class="mobile-menu-item">Ediciones</a>
+                <a href="referencias.html" class="mobile-menu-item">Referencias</a>
                 <a href="#faq" class="mobile-menu-item">FAQ</a>
-                <a href="#registro" class="btn btn-primary mt-4">Registrarse</a>
+                <span class="status-pill mt-4">Registro · Próximamente</span>
             </div>
         </div>
     </header>
 
-    <main id="contenido-principal" role="main">
-        <!-- Hero Section FIJO (SIN CARRUSEL) -->
-        <section id="inicio" class="min-h-screen flex items-center bg-gradient-to-br from-coloquio-navy to-coloquio-blue text-white relative">
-            <div class="absolute inset-0 bg-black bg-opacity-50" style="background-image: url('imagehero3.png'); background-size: cover; background-position: center; background-blend-mode: multiply;"></div>
-            <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
-                <p class="text-base sm:text-lg md:text-xl lg:text-2xl mb-3 sm:mb-4 md:mb-6">Ciencia y cooperación internacional para la gestión sostenible del agua</p>
-                <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-heading font-black mb-4 sm:mb-6 md:mb-8 leading-tight">
-                    <span class="block">III Coloquio Internacional de</span>
-                    <span class="block">Espacio y Sostenibilidad 2025</span>
-                </h1>
-                <p class="text-lg sm:text-xl md:text-2xl lg:text-3xl mb-6 sm:mb-8 md:mb-10 font-medium">
-                    3 de octubre • Hermosillo, Sonora
-                </p>
-                <div class="flex flex-col sm:flex-row gap-3 sm:gap-4 md:gap-6 justify-center items-center max-w-md sm:max-w-none mx-auto">
-                    <a href="https://luma.com/qhkq8lji" target="_blank" class="w-full sm:w-auto bg-coloquio-ocean hover:bg-coloquio-bright px-6 sm:px-8 py-3 sm:py-4 rounded-md font-bold text-base sm:text-lg transition-colors transform hover:scale-105">
-                        Registro Gratuito
-                    </a>
-                    <a href="#acerca" class="w-full sm:w-auto border-2 border-white text-white hover:bg-white hover:text-coloquio-navy px-6 sm:px-8 py-3 sm:py-4 rounded-md font-bold text-base sm:text-lg transition-all transform hover:scale-105">
-                        Conoce Más
-                    </a>
-                </div>
+    <main id="contenido-principal">
+
+        <!-- ============ HERO 2027 ============ -->
+        <section id="inicio" class="hero-2027">
+            <!-- Cartel oficial 2027 (assets/img/hero-2027.jpg). Original: assets/img/hero-2027-source.png. El menú fijo se superpone al cielo. -->
+            <div class="hero-2027__banner">
+                <img src="assets/img/hero-2027.jpg" alt="Cartel del IV Coloquio Internacional de Espacio y Sostenibilidad: Salud ambiental y territorio, febrero de 2027, Ciudad de México. Ejes: la ciudad después del anochecer, emisiones que también tienen geografía y de observar a decidir." fetchpriority="high" decoding="async" width="2200" height="917">
             </div>
-        </section>
 
+            <div class="has-waves">
+                <canvas class="waves" data-waves="dots" data-tone="dark" data-top="0.15" data-spread="0.85" aria-hidden="true"></canvas>
+                <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="hero-2027__caption">
+                        <div class="hero-2027__title">
+                            <p class="eyebrow">IV Coloquio Internacional de Espacio y Sostenibilidad</p>
+                            <h1>Salud ambiental y territorio</h1>
+                            <p class="hero-2027__tagline">Del espacio al territorio. Del territorio a la salud.</p>
+                            <p class="hero-2027__lead">Observación de la Tierra, datos geoespaciales y ciencia aplicada para comprender cómo el ambiente y el territorio influyen en la salud de las personas.</p>
+                        </div>
 
-        <!-- Temas Prioritarios -->
-        <section id="temas" class="py-16 sm:py-20 md:py-24 lg:py-28 bg-white text-center">
-            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-                <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-heading font-black text-coloquio-navy mb-3 sm:mb-4 md:mb-6">Temas Prioritarios 2025</h2>
-                <p class="text-base sm:text-lg md:text-xl text-coloquio-gray mb-10 sm:mb-12 md:mb-16 max-w-4xl mx-auto leading-relaxed">
-                    Resiliencia climática del agua mediante tecnología espacial
-                </p>
-                
-                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 md:gap-10 max-w-7xl mx-auto">
-                    <!-- Tema 1 -->
-                    <div class="bg-coloquio-light rounded-xl sm:rounded-2xl p-6 sm:p-8 md:p-10 text-center hover:shadow-xl hover:shadow-coloquio-navy/10 transition-all duration-300 transform hover:-translate-y-1">
-                        <div class="w-14 h-14 sm:w-16 sm:h-16 md:w-20 md:h-20 bg-coloquio-ocean rounded-full mx-auto mb-4 sm:mb-5 md:mb-6 flex items-center justify-center">
-                            <svg class="w-7 h-7 sm:w-8 sm:h-8 md:w-10 md:h-10 text-white" fill="currentColor" viewBox="0 0 20 20">
-                                <path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h-2z"/>
-                            </svg>
-                        </div>
-                        <h3 class="text-lg sm:text-xl md:text-2xl font-bold text-coloquio-navy mb-3 sm:mb-4 md:mb-5 leading-tight">Observación y sostenibilidad de los océanos</h3>
-                        <p class="text-sm sm:text-base md:text-lg text-coloquio-gray leading-relaxed">Tecnologías de desalinización y monitoreo oceánico</p>
+                        <dl class="ficha">
+                            <div class="ficha__row">
+                                <dt>Fechas</dt>
+                                <dd><time datetime="2027-02-10">10, 11 y 12 de febrero de 2027</time></dd>
+                            </div>
+                            <div class="ficha__row">
+                                <dt>Lugar</dt>
+                                <dd>Ciudad de México <span class="ficha__note">· sede por anunciar</span></dd>
+                            </div>
+                            <div class="ficha__row">
+                                <dt>Estado</dt>
+                                <dd id="estado-2027"><span class="status-dot" aria-hidden="true"></span>Próximamente más información</dd>
+                            </div>
+                            <div class="ficha__row">
+                                <dt>Convocatorias</dt>
+                                <dd>
+                                    <div class="soon-list" aria-describedby="estado-2027">
+                                        <button type="button" class="btn-soon" disabled>Primera Circular <span>Próximamente</span></button>
+                                        <button type="button" class="btn-soon" disabled>Convocatoria de Carteles <span>Próximamente</span></button>
+                                        <button type="button" class="btn-soon" disabled>Registro <span>Próximamente</span></button>
+                                    </div>
+                                </dd>
+                            </div>
+                        </dl>
                     </div>
-                    
-                    <!-- Tema 2 -->
-                    <div class="bg-coloquio-light rounded-xl sm:rounded-2xl p-6 sm:p-8 md:p-10 text-center hover:shadow-xl hover:shadow-coloquio-navy/10 transition-all duration-300 transform hover:-translate-y-1">
-                        <div class="w-14 h-14 sm:w-16 sm:h-16 md:w-20 md:h-20 bg-coloquio-blue rounded-full mx-auto mb-4 sm:mb-5 md:mb-6 flex items-center justify-center">
-                            <svg class="w-7 h-7 sm:w-8 sm:h-8 md:w-10 md:h-10 text-white" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M5.5 3A2.5 2.5 0 003 5.5v2.879a2.5 2.5 0 00.732 1.767L6.5 12.914a2.5 2.5 0 001.768.732H8.5V15.5a2.5 2.5 0 005 0v-1.854a2.5 2.5 0 001.732-2.732L15.5 10.5a2.5 2.5 0 000-1l-.268-.414a2.5 2.5 0 00-1.732-2.732V4.5a2.5 2.5 0 00-5 0v1.854a2.5 2.5 0 00-1.768.732L3.232 9.353A2.5 2.5 0 002.5 11.121V14.5a2.5 2.5 0 005 0v-1.854z" clip-rule="evenodd"/>
-                            </svg>
-                        </div>
-                        <h3 class="text-lg sm:text-xl md:text-2xl font-bold text-coloquio-navy mb-3 sm:mb-4 md:mb-5 leading-tight">Monitoreo y pronóstico de sequías</h3>
-                        <p class="text-sm sm:text-base md:text-lg text-coloquio-gray leading-relaxed">Sistemas de seguimiento y predicción de precipitación</p>
-                    </div>
-                    
-                    <!-- Tema 3 -->
-                    <div class="bg-coloquio-light rounded-xl sm:rounded-2xl p-6 sm:p-8 md:p-10 text-center hover:shadow-xl hover:shadow-coloquio-navy/10 transition-all duration-300 transform hover:-translate-y-1">
-                        <div class="w-14 h-14 sm:w-16 sm:h-16 md:w-20 md:h-20 bg-coloquio-bright rounded-full mx-auto mb-4 sm:mb-5 md:mb-6 flex items-center justify-center">
-                            <svg class="w-7 h-7 sm:w-8 sm:h-8 md:w-10 md:h-10 text-white" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M5 2a1 1 0 011 1v1h1a1 1 0 010 2H6v1a1 1 0 01-2 0V6H3a1 1 0 010-2h1V3a1 1 0 011-1zm0 10a1 1 0 011 1v1h1a1 1 0 110 2H6v1a1 1 0 11-2 0v-1H3a1 1 0 110-2h1v-1a1 1 0 011-1zM12 2a1 1 0 01.967.744L14.146 7.2 17.5 9.134a1 1 0 010 1.732L14.146 12.8l-1.179 4.456a1 1 0 01-1.934 0L9.854 12.8 6.5 10.866a1 1 0 010-1.732L9.854 7.2l1.179-4.456A1 1 0 0112 2z" clip-rule="evenodd"/>
-                            </svg>
-                        </div>
-                        <h3 class="text-lg sm:text-xl md:text-2xl font-bold text-coloquio-navy mb-3 sm:mb-4 md:mb-5 leading-tight">Estimaciones de escurrimientos e inundaciones</h3>
-                        <p class="text-sm sm:text-base md:text-lg text-coloquio-gray leading-relaxed">Modelado y predicción de eventos hidrológicos</p>
-                    </div>
-                    
-                    <!-- Tema 4 -->
-                    <div class="bg-coloquio-light rounded-xl sm:rounded-2xl p-6 sm:p-8 md:p-10 text-center hover:shadow-xl hover:shadow-coloquio-navy/10 transition-all duration-300 transform hover:-translate-y-1">
-                        <div class="w-14 h-14 sm:w-16 sm:h-16 md:w-20 md:h-20 bg-coloquio-ocean rounded-full mx-auto mb-4 sm:mb-5 md:mb-6 flex items-center justify-center">
-                            <svg class="w-7 h-7 sm:w-8 sm:h-8 md:w-10 md:h-10 text-white" fill="currentColor" viewBox="0 0 20 20">
-                                <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3zM6 8a2 2 0 11-4 0 2 2 0 014 0zM16 18v-3a5.972 5.972 0 00-.75-2.906A3.005 3.005 0 0119 15v3h-3zM4.75 12.094A5.973 5.973 0 004 15v3H1v-3a3 3 0 013.75-2.906z"/>
-                            </svg>
-                        </div>
-                        <h3 class="text-lg sm:text-xl md:text-2xl font-bold text-coloquio-navy mb-3 sm:mb-4 md:mb-5 leading-tight">Gobernanza y políticas públicas del agua</h3>
-                        <p class="text-sm sm:text-base md:text-lg text-coloquio-gray leading-relaxed">Aspectos sociales y toma de decisiones</p>
-                    </div>
-                    
-                    <!-- Tema 5 -->
-                    <div class="bg-coloquio-light rounded-xl sm:rounded-2xl p-6 sm:p-8 md:p-10 text-center hover:shadow-xl hover:shadow-coloquio-navy/10 transition-all duration-300 transform hover:-translate-y-1">
-                        <div class="w-14 h-14 sm:w-16 sm:h-16 md:w-20 md:h-20 bg-coloquio-blue rounded-full mx-auto mb-4 sm:mb-5 md:mb-6 flex items-center justify-center">
-                            <svg class="w-7 h-7 sm:w-8 sm:h-8 md:w-10 md:h-10 text-white" fill="currentColor" viewBox="0 0 20 20">
-                                <path d="M9 6a3 3 0 11-6 0 3 3 0 016 0zM17 6a3 3 0 11-6 0 3 3 0 016 0zM12.93 17c.046-.327.07-.66.07-1a6.97 6.97 0 00-1.5-4.33A5 5 0 0119 16v1h-6.07zM6 11a5 5 0 015 5v1H1v-1a5 5 0 015-5z"/>
-                            </svg>
-                        </div>
-                        <h3 class="text-lg sm:text-xl md:text-2xl font-bold text-coloquio-navy mb-3 sm:mb-4 md:mb-5 leading-tight">Sistemas agroalimentarios</h3>
-                        <p class="text-sm sm:text-base md:text-lg text-coloquio-gray leading-relaxed">Estimación de necesidades hídricas y optimización</p>
-                    </div>
-                    
-                    <!-- Tema 6 -->
-                    <div class="bg-coloquio-light rounded-xl sm:rounded-2xl p-6 sm:p-8 md:p-10 text-center hover:shadow-xl hover:shadow-coloquio-navy/10 transition-all duration-300 transform hover:-translate-y-1">
-                        <div class="w-14 h-14 sm:w-16 sm:h-16 md:w-20 md:h-20 bg-coloquio-bright rounded-full mx-auto mb-4 sm:mb-5 md:mb-6 flex items-center justify-center">
-                            <svg class="w-7 h-7 sm:w-8 sm:h-8 md:w-10 md:h-10 text-white" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M3 5a2 2 0 012-2h10a2 2 0 012 2v8a2 2 0 01-2 2h-2.22l.123.489.804.804A1 1 0 0113 18H7a1 1 0 01-.707-1.707l.804-.804L7.22 15H5a2 2 0 01-2-2V5zm5.771 7H5V5h10v7H8.771z" clip-rule="evenodd"/>
-                            </svg>
-                        </div>
-                        <h3 class="text-lg sm:text-xl md:text-2xl font-bold text-coloquio-navy mb-3 sm:mb-4 md:mb-5 leading-tight">Procesamiento de datos hídricos</h3>
-                        <p class="text-sm sm:text-base md:text-lg text-coloquio-gray leading-relaxed">Modelación, software y análisis avanzado</p>
-                    </div>
-                </div>
-            </div>
-        </section>
 
-        <!-- Sección Acerca del Coloquio -->
-        <section id="acerca" class="py-16 sm:py-20 md:py-24 lg:py-28 bg-coloquio-light">
-            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="text-center mb-12 sm:mb-16 md:mb-20">
-                    <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-heading font-black text-coloquio-navy mb-4 sm:mb-6">Acerca del Coloquio</h2>
-                    <p class="text-base sm:text-lg md:text-xl text-coloquio-gray max-w-4xl mx-auto leading-relaxed">
-                        Tecnología, ciencia y cooperación internacional por la resiliencia climática del agua
-                    </p>
-                </div>
-
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 sm:gap-10 md:gap-12 mb-16 sm:mb-20 md:mb-24">
-                    <!-- Nuestro Objetivo -->
-                    <div class="bg-white rounded-xl sm:rounded-2xl p-6 sm:p-8 text-center shadow-lg hover:shadow-xl transition-shadow">
-                        <div class="w-16 h-16 sm:w-20 sm:h-20 bg-coloquio-ocean rounded-full mx-auto mb-4 sm:mb-6 flex items-center justify-center">
-                            <svg class="w-8 h-8 sm:w-10 sm:h-10 text-white" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M12 2C13.1 2 14 2.9 14 4C14 5.1 13.1 6 12 6C10.9 6 10 5.1 10 4C10 2.9 10.9 2 12 2M21 9V7L15 1L13.5 2.5L16.17 5.17L10.5 10.84L15.16 15.5L20.83 9.83L23.33 12.33L22 13.67L15 6.67L9.33 12.33L12.67 15.67L11.33 17L5 10.67L4 11.67V13.67L9.67 19.33L11 18L13 20L15 18L20.67 12.33L19.33 11Z"/>
-                            </svg>
-                        </div>
-                        <h3 class="text-lg sm:text-xl font-heading font-bold text-coloquio-navy mb-3 sm:mb-4">Nuestro Objetivo</h3>
-                        <p class="text-sm sm:text-base text-coloquio-gray mb-4 sm:mb-6">
-                            Fortalecer la colaboración intersectorial entre gobierno, academia, industria y sociedad civil para abordar la resiliencia climática del agua mediante tecnología espacial.
-                        </p>
-                        <a href="#programa" class="inline-block bg-coloquio-ocean hover:bg-coloquio-bright text-white px-6 py-3 rounded-md font-medium text-sm transition-colors">
-                            Ver Programa
+                    <!-- Índice de ejes (estilo franja de portada NASA) -->
+                    <nav class="index-strip" aria-label="Ejes temáticos 2027">
+                        <a href="#ciudad-anochecer" class="index-strip__item">
+                            <span class="index-strip__eyebrow">Eje 01 · Luces nocturnas</span>
+                            <span class="index-strip__title">La ciudad después del anochecer <span class="arrow" aria-hidden="true">→</span></span>
                         </a>
-                    </div>
-
-                    <!-- ¿Qué Aprenderás? -->
-                    <div class="bg-white rounded-xl sm:rounded-2xl p-6 sm:p-8 text-center shadow-lg hover:shadow-xl transition-shadow">
-                        <div class="w-16 h-16 sm:w-20 sm:h-20 bg-coloquio-blue rounded-full mx-auto mb-4 sm:mb-6 flex items-center justify-center">
-                            <svg class="w-8 h-8 sm:w-10 sm:h-10 text-white" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M9,5V9H21V5M9,19H21V15H9M9,14H21V10H9M4,9H8V5H4M4,19H8V15H4M4,14H8V10H4V14Z"/>
-                            </svg>
-                        </div>
-                        <h3 class="text-lg sm:text-xl font-heading font-bold text-coloquio-navy mb-3 sm:mb-4">¿Qué Aprenderás?</h3>
-                        <p class="text-sm sm:text-base text-coloquio-gray mb-4 sm:mb-6">
-                            Herramientas satelitales avanzadas como ICESat-2, GEDI, VEDA y MAAP para monitoreo de sequías, gestión de inundaciones y evaluación de calidad del agua.
-                        </p>
-                    </div>
-
-                    <!-- Beneficios -->
-                    <div class="bg-white rounded-xl sm:rounded-2xl p-6 sm:p-8 text-center shadow-lg hover:shadow-xl transition-shadow">
-                        <div class="w-16 h-16 sm:w-20 sm:h-20 bg-coloquio-bright rounded-full mx-auto mb-4 sm:mb-6 flex items-center justify-center">
-                            <svg class="w-8 h-8 sm:w-10 sm:h-10 text-white" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M16,4C18.22,4 20,5.78 20,8C20,10.22 18.22,12 16,12C13.78,12 12,10.22 12,8C12,5.78 13.78,4 16,4M16,6A2,2 0 0,0 14,8A2,2 0 0,0 16,10A2,2 0 0,0 18,8A2,2 0 0,0 16,6M16,13C18.67,13 22,14.33 22,17V20H10V17C10,14.33 13.33,13 16,13M8,12C10.22,12 12,10.22 12,8C12,5.78 10.22,4 8,4C5.78,4 4,5.78 4,8C4,10.22 5.78,12 8,12M8,6A2,2 0 0,1 10,8A2,2 0 0,1 8,10A2,2 0 0,1 6,8A2,2 0 0,1 8,6M8,13C10.67,13 14,14.33 14,17V20H2V17C2,14.33 5.33,13 8,13Z"/>
-                            </svg>
-                        </div>
-                        <h3 class="text-lg sm:text-xl font-heading font-bold text-coloquio-navy mb-3 sm:mb-4">Beneficios</h3>
-                        <p class="text-sm sm:text-base text-coloquio-gray mb-4 sm:mb-6">
-                            Networking con expertos internacionales, acceso a herramientas de ciencia abierta y certificación.
-                        </p>
-                        <a href="#registro" class="inline-block bg-coloquio-bright hover:bg-coloquio-ocean text-white px-6 py-3 rounded-md font-medium text-sm transition-colors">
-                            Registro
+                        <a href="#emisiones-geografia" class="index-strip__item">
+                            <span class="index-strip__eyebrow">Eje 02 · Gases de efecto invernadero</span>
+                            <span class="index-strip__title">Emisiones que también tienen geografía <span class="arrow" aria-hidden="true">→</span></span>
                         </a>
+                        <a href="#observar-decidir" class="index-strip__item">
+                            <span class="index-strip__eyebrow">Eje 03 · Inteligencia territorial</span>
+                            <span class="index-strip__title">De observar a decidir <span class="arrow" aria-hidden="true">→</span></span>
+                        </a>
+                    </nav>
+                    <p class="coords hidden lg:block" aria-hidden="true">19.43 N · 99.13 W · 2240 msnm · VIIRS DNB · OCO-3 SAM · CDMX 2027</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ LA ORGANIZACIÓN ============ -->
+        <section id="nosotros" class="sec sec--white">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid lg:grid-cols-12 gap-10 lg:gap-16">
+                    <div class="lg:col-span-5">
+                        <p class="eyebrow eyebrow--dark">Quiénes somos</p>
+                        <h2 class="display">Democratizar la complejidad planetaria.</h2>
+                    </div>
+                    <div class="lg:col-span-7 prose-coloquio prose-coloquio--lg space-y-6">
+                        <p>
+                            <strong>Espacio y Sostenibilidad</strong> es la organización no gubernamental que organiza el Coloquio Internacional de Espacio y Sostenibilidad. Acercamos la observación de la Tierra, los datos satelitales y la ciencia abierta a gobiernos, academia, empresas, comunidades y estudiantes, para que las decisiones sobre el territorio se tomen con mejor evidencia.
+                        </p>
+                        <p>
+                            Creemos que un planeta más sano, en el que podamos cohabitar durante muchos años, se construye entendiendo primero cómo funciona. Por eso nuestra manera de mirar empieza arriba: <strong>ver el panorama completo desde el espacio</strong>, y luego bajarlo al territorio, a las decisiones y a las personas.
+                        </p>
+                        <ul class="hairline-list">
+                            <li><span class="hairline-list__k">Coloquio</span><span>Un encuentro internacional anual, cada edición en un territorio distinto de México, desde 2023.</span></li>
+                            <li><span class="hairline-list__k">Comunidad</span><span>Ciencia espacial, datos abiertos y actores locales alrededor de problemas concretos.</span></li>
+                            <li><span class="hairline-list__k">Método</span><span>Espacio → datos → territorio → decisiones → impacto.</span></li>
+                        </ul>
+                        <a href="#ediciones" class="link-arrow">La historia de las cuatro ediciones <span aria-hidden="true">→</span></a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Sección Programa -->
-        <section id="programa" class="py-16 sm:py-20 md:py-24 bg-gradient-to-b from-white via-white to-coloquio-light/10">
-            <div class="container mx-auto px-4 sm:px-6">
-                <div class="text-center mb-16">
-                    <span class="text-sm font-semibold text-coloquio-ocean bg-blue-50 px-4 py-2 rounded-full mb-6 inline-block">Agenda Completa</span>
-                    <h2 class="text-3xl sm:text-4xl md:text-5xl font-heading font-black text-coloquio-navy mb-6 flex items-center justify-center">
-                        <span class="mr-3">📅</span>
-                        Programa
-                    </h2>
-                    <p class="text-lg sm:text-xl text-coloquio-gray max-w-3xl mx-auto">
-                        3 de octubre de 2025 — Hermosillo, Sonora
-                    </p>
+        <!-- ============ INTRODUCCIÓN 2027 ============ -->
+        <section id="salud-ambiental-territorio" class="sec sec--paper">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <nav class="subnav mb-12" aria-label="Secciones de la edición 2027">
+                    <a href="#salud-ambiental-territorio">Salud ambiental y territorio</a>
+                    <a href="#aplicaciones">Aplicaciones</a>
+                    <a href="#carteles">Carteles</a>
+                    <a href="#primera-circular">Primera Circular</a>
+                </nav>
+
+                <div class="grid lg:grid-cols-12 gap-10 lg:gap-16">
+                    <div class="lg:col-span-5">
+                        <p class="eyebrow eyebrow--dark">Edición 2027</p>
+                        <h2 class="display">El territorio también determina nuestra salud</h2>
+                        <ul class="chips mt-8">
+                            <li>Calidad ambiental</li><li>Emisiones</li><li>Infraestructura</li><li>Clima</li><li>Energía</li>
+                            <li>Agua</li><li>Movilidad</li><li>Urbanización</li><li>Desigualdad territorial</li><li>Exposición</li>
+                        </ul>
+                    </div>
+                    <div class="lg:col-span-7 prose-coloquio prose-coloquio--lg space-y-6">
+                        <p>
+                            La salud de una población no depende únicamente de lo que ocurre dentro de un hospital. También se construye en el territorio: en la calidad del aire, las emisiones, la infraestructura, el acceso a servicios, el clima, la energía, el agua, la movilidad y la forma en que las ciudades crecen y responden ante eventos extremos.
+                        </p>
+                        <p>
+                            El <strong>IV Coloquio Internacional de Espacio y Sostenibilidad</strong> llegará a <strong>Ciudad de México los días 10, 11 y 12 de febrero de 2027</strong> con la temática <strong>“Salud ambiental y territorio”</strong>.
+                        </p>
+                        <p>
+                            La cuarta edición explorará aplicaciones de <strong>observación de la Tierra, datos satelitales, sistemas geoespaciales, ciencia abierta e inteligencia artificial</strong> para observar patrones territoriales, identificar riesgos ambientales y convertir datos en mejores decisiones para ciudades y comunidades.
+                        </p>
+                        <p>
+                            Esta edición tendrá una orientación especialmente aplicada, tomando como referentes capacidades como <strong>NASA Black Marble</strong>, que permite estudiar cambios en la actividad y luminosidad nocturna de los territorios, y los enfoques del <strong>U.S. Greenhouse Gas Center</strong>, que integran observaciones y modelos para analizar gases de efecto invernadero, emisiones urbanas y grandes eventos de metano.
+                        </p>
+                        <p class="note">
+                            Black Marble y el U.S. Greenhouse Gas Center se mencionan como referentes científicos y tecnológicos de la temática 2027, no como instituciones participantes u organizadoras del evento.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ DECLARACIÓN (imagen a sangre) ============ -->
+        <section class="statement" aria-labelledby="statement-title">
+            <img src="assets/thumbs/bm-02.jpg" alt="" aria-hidden="true" class="statement__img" loading="lazy">
+            <div class="statement__veil" aria-hidden="true"></div>
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 statement__body">
+                <p class="eyebrow">La tesis de 2027</p>
+                <h2 id="statement-title" class="display display--xl">La ciudad deja señales observables desde el espacio.</h2>
+                <p class="statement__lead">Algunas son luz. Otras son emisiones. Ambas pueden convertirse, junto con datos locales, en información territorial para tomar mejores decisiones sobre ambiente y salud.</p>
+                <p class="credit">Imagen: NASA Scientific Visualization Studio · Black Marble</p>
+            </div>
+        </section>
+
+        <!-- ============ TRES APLICACIONES ============ -->
+        <section id="aplicaciones" class="sec sec--white">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="sec-head">
+                    <div>
+                        <p class="eyebrow eyebrow--dark">Aplicaciones prioritarias 2027</p>
+                        <h2 class="display">Tres formas de observar el territorio</h2>
+                    </div>
+                    <a href="referencias.html#referentes-2027" class="link-arrow">Todas las referencias <span aria-hidden="true">→</span></a>
                 </div>
 
-                <div class="max-w-5xl mx-auto">
-                    <div class="bg-coloquio-light/50 backdrop-blur-sm rounded-xl sm:rounded-2xl p-6 sm:p-8 shadow-lg">
-                        <div class="space-y-4">
-                            <!-- Registro -->
-                            <div class="flex items-start space-x-4 p-5 bg-white rounded-xl shadow-sm hover:shadow-md transition-all duration-300 border border-gray-100">
-                                <div class="w-24 flex-shrink-0">
-                                    <span class="text-sm font-bold text-coloquio-ocean bg-blue-50 px-3 py-1 rounded-full">08:00 – 09:00</span>
-                                </div>
-                                <div class="flex-1">
-                                    <h3 class="font-bold text-coloquio-navy text-lg">Registro y networking previo</h3>
-                                    <p class="text-coloquio-gray text-sm mt-1">Café y conexiones, registro, entrega de gafetes</p>
-                                </div>
-                            </div>
+                <!-- 01 -->
+                <article id="ciudad-anochecer" class="feature">
+                    <figure class="feature__media">
+                        <img src="assets/thumbs/bm-04.jpg" alt="Luces nocturnas de Puerto Rico después del huracán María, observadas con Black Marble (NASA Scientific Visualization Studio)" loading="lazy">
+                        <figcaption class="credit">Imagen: NASA SVS · Black Marble, Puerto Rico tras el huracán María (2017)</figcaption>
+                    </figure>
+                    <div class="feature__body">
+                        <p class="feature__num">01</p>
+                        <p class="eyebrow eyebrow--dark">Black Marble, actividad humana y resiliencia territorial</p>
+                        <h3 class="feature__title">La ciudad después del anochecer</h3>
+                        <div class="prose-coloquio space-y-4">
+                            <p>Las luces nocturnas observadas desde el espacio permiten analizar otra dimensión de las ciudades: cambios en patrones de actividad, electrificación, crecimiento urbano, interrupciones de energía y recuperación después de desastres.</p>
+                            <p><strong>NASA Black Marble</strong>, basado en observaciones VIIRS Day/Night Band, ofrece una serie global de productos de luces nocturnas (radiancia) que puede utilizarse como una capa de inteligencia territorial para estudiar cómo cambia la presencia humana sobre el territorio.</p>
+                        </div>
+                        <h4 class="feature__label">Aplicaciones a destacar</h4>
+                        <ul class="app-list app-list--dark">
+                            <li>Cambios en actividad y expansión urbana</li>
+                            <li>Continuidad o interrupción de infraestructura eléctrica</li>
+                            <li>Respuesta y recuperación ante eventos extremos</li>
+                            <li>Desigualdades territoriales visibles en acceso y actividad nocturna</li>
+                            <li>Iluminación artificial como variable ambiental</li>
+                            <li>Combinación con capas de clima, población, infraestructura y exposición</li>
+                        </ul>
+                        <blockquote class="feature__example">
+                            <p>Black Marble fue utilizado para observar la pérdida y recuperación de electricidad en Puerto Rico después del huracán María: un dato satelital que pasa de ser una imagen del planeta de noche a una herramienta para comprender vulnerabilidad, infraestructura y recuperación comunitaria.</p>
+                        </blockquote>
+                        <p class="note">Precisión técnica: Black Marble no mide salud. Mide radiancia nocturna y puede usarse como indicador o variable territorial dentro de análisis más amplios. Black Marble HD (30 m) es un producto modelado orientado a visualización; para análisis cuantitativo se usan los productos científicos VNP46.</p>
+                        <h4 class="feature__label">Referente técnico y fuentes</h4>
+                        <ul class="src-list">
+                            <li><a href="https://svs.gsfc.nasa.gov/14872/" target="_blank" rel="noopener noreferrer">NASA SVS — Black Marble: Stories from the Night Sky</a></li>
+                            <li><a href="https://blackmarble.gsfc.nasa.gov/VNP46A1.html" target="_blank" rel="noopener noreferrer">NASA Black Marble — VNP46 product suite</a></li>
+                            <li><a href="https://earthobservatory.nasa.gov/IOTD/view.php?id=90008" target="_blank" rel="noopener noreferrer">NASA Earth Observatory — Night Light Maps Open Up New Applications</a></li>
+                            <li><a href="https://svs.gsfc.nasa.gov/12616" target="_blank" rel="noopener noreferrer">NASA SVS — Puerto Rico after Hurricane Maria</a></li>
+                        </ul>
+                    </div>
+                </article>
 
-                            <!-- Ceremonia de apertura -->
-                            <div class="flex items-start space-x-4 p-4 bg-white rounded-lg shadow-sm">
-                                <div class="w-20 flex-shrink-0">
-                                    <span class="text-sm font-bold text-coloquio-ocean">09:00 – 09:15</span>
-                                </div>
-                                <div class="flex-1">
-                                    <h3 class="font-bold text-coloquio-navy">Ceremonia de apertura</h3>
-                                    <p class="text-coloquio-gray text-sm">Bienvenida oficial</p>
-                                </div>
-                            </div>
+                <!-- 02 -->
+                <article id="emisiones-geografia" class="feature feature--flip">
+                    <figure class="feature__media">
+                        <img src="assets/thumbs/ghg-09.jpg" alt="Instrumento EMIT a bordo de la Estación Espacial Internacional, usado para detectar plumas de metano (U.S. Greenhouse Gas Center / NASA)" loading="lazy">
+                        <figcaption class="credit">Imagen: U.S. Greenhouse Gas Center / NASA · EMIT</figcaption>
+                    </figure>
+                    <div class="feature__body">
+                        <p class="feature__num">02</p>
+                        <p class="eyebrow eyebrow--dark">Gases de efecto invernadero, aire y salud urbana</p>
+                        <h3 class="feature__title">Emisiones que también tienen geografía</h3>
+                        <div class="prose-coloquio space-y-4">
+                            <p>Las emisiones no son únicamente cifras nacionales. Tienen fuentes, corredores, industrias, zonas urbanas y patrones espaciales.</p>
+                            <p>El <strong>U.S. Greenhouse Gas Center</strong> es un referente de cómo integrar observaciones satelitales, mediciones terrestres, inventarios y modelos para estudiar CO₂, CH₄, fuentes antropogénicas, emisiones urbanas y eventos de gran emisión.</p>
+                        </div>
+                        <h4 class="feature__label">Aplicaciones a destacar</h4>
+                        <ul class="app-list app-list--dark">
+                            <li>Detección y seguimiento de grandes emisiones de metano</li>
+                            <li>Análisis espacial de CO₂ y CH₄ en territorios urbanos</li>
+                            <li>Integración de observaciones satelitales con redes terrestres</li>
+                            <li>Relación metodológica entre emisiones climáticas y contaminantes atmosféricos</li>
+                            <li>Evaluación territorial de estrategias de reducción de emisiones</li>
+                            <li>Localización de fuentes y apoyo a decisiones ambientales</li>
+                        </ul>
+                        <dl class="hairline-list hairline-list--dl">
+                            <div><dt>OCO-3 y ciudades</dt><dd>Observaciones de CO₂ sobre grandes ciudades para evaluar patrones asociados a transporte, industria y actividad urbana.</dd></div>
+                            <div><dt>GRA²PES</dt><dd>Integra gases de efecto invernadero y especies de calidad del aire (CO₂, CO, NOₓ, SO₂, PM2.5): referente metodológico para conectar clima y salud pública.</dd></div>
+                            <div><dt>Metano · EMIT · AVIRIS</dt><dd>Detección de grandes plumas de metano desde plataformas espaciales y aerotransportadas para localizar eventos que requieren mitigación.</dd></div>
+                        </dl>
+                        <p class="note">Precisión territorial: muchos conjuntos de datos del U.S. GHG Center cubren Estados Unidos. Se presentan como referentes de metodología, interoperabilidad y aplicación, no como cobertura operativa para México. Gases de efecto invernadero y contaminantes del aire no son sinónimos, aunque puedan estudiarse de forma conjunta.</p>
+                        <h4 class="feature__label">Referente técnico y fuentes</h4>
+                        <ul class="src-list">
+                            <li><a href="https://earth.gov/ghgcenter/" target="_blank" rel="noopener noreferrer">U.S. Greenhouse Gas Center</a></li>
+                            <li><a href="https://earth.gov/ghgcenter/data-catalog?taxonomy=%7B%22Topics%22%3A%5B%22urban%22%5D%7D" target="_blank" rel="noopener noreferrer">Data Catalog — Urban</a></li>
+                            <li><a href="https://earth.gov/ghgcenter/stories/losangeles" target="_blank" rel="noopener noreferrer">OCO-3 sobre Los Ángeles</a></li>
+                            <li><a href="https://earth.gov/ghgcenter/stories/urban-testbed" target="_blank" rel="noopener noreferrer">Urban Testbeds</a></li>
+                            <li><a href="https://earth.gov/ghgcenter/stories/emit-extension-aviris-flights" target="_blank" rel="noopener noreferrer">Metano: EMIT y AVIRIS</a></li>
+                            <li><a href="https://ocov3.jpl.nasa.gov/" target="_blank" rel="noopener noreferrer">NASA JPL — OCO-3</a></li>
+                        </ul>
+                    </div>
+                </article>
 
-                            <!-- Ponente 1 -->
-                            <div class="flex items-start space-x-4 p-4 bg-white rounded-lg shadow-sm">
-                                <div class="w-20 flex-shrink-0">
-                                    <span class="text-sm font-bold text-coloquio-ocean">09:15 – 09:30</span>
-                                </div>
-                                <div class="flex-1">
-                                    <h3 class="font-bold text-coloquio-navy">Mtro. Luis Alberto López</h3>
-                                    <p class="text-sm text-coloquio-ocean">National Snow and Ice Data Center (NSIDC), NASA Earth Science Division</p>
-                                    <p class="text-coloquio-gray text-sm">Oportunidades de Observaciones Satelitales para la Toma de Decisiones en Países en Desarrollo</p>
-                                </div>
+                <!-- 03 -->
+                <article id="observar-decidir" class="feature">
+                    <div class="feature__media feature__media--diagram" aria-hidden="true">
+                        <div class="decide-diagram">
+                            <div class="decide-diagram__col">
+                                <span>Observaciones de la Tierra</span><span>Sensores terrestres</span><span>Inventarios</span><span>Población</span><span>Infraestructura urbana</span>
                             </div>
+                            <div class="decide-diagram__arrow">→</div>
+                            <div class="decide-diagram__col decide-diagram__col--mid">
+                                <span>Modelos ambientales</span><span>Inteligencia artificial</span><span>Ciencia abierta</span>
+                            </div>
+                            <div class="decide-diagram__arrow">→</div>
+                            <div class="decide-diagram__col decide-diagram__col--out">
+                                <span>Exposición y vulnerabilidad</span><span>Desigualdades territoriales</span><span>Política pública</span>
+                            </div>
+                        </div>
+                        <p class="credit credit--dark">Diagrama: de las observaciones a la decisión</p>
+                    </div>
+                    <div class="feature__body">
+                        <p class="feature__num">03</p>
+                        <p class="eyebrow eyebrow--dark">Inteligencia territorial para salud ambiental</p>
+                        <h3 class="feature__title">De observar a decidir</h3>
+                        <div class="prose-coloquio space-y-4">
+                            <p>La observación satelital adquiere valor cuando se combina con información local y conduce a decisiones. Este bloque conecta observaciones de la Tierra, sensores terrestres, inventarios, información de población, infraestructura urbana, modelos ambientales, inteligencia artificial, ciencia abierta y política pública. El énfasis está en casos de uso, no en presentar tecnologías como fines en sí mismas.</p>
+                        </div>
+                        <h4 class="feature__label">Preguntas guía</h4>
+                        <ul class="app-list app-list--dark">
+                            <li>¿Qué puede observarse desde el espacio que sea útil para la salud ambiental?</li>
+                            <li>¿Qué variables necesitan complementarse con sensores o datos terrestres?</li>
+                            <li>¿Cómo se traducen emisiones y cambios territoriales en exposición y vulnerabilidad?</li>
+                            <li>¿Cómo identificamos desigualdades entre colonias, municipios o regiones?</li>
+                            <li>¿Cómo pasamos de un mapa a una decisión pública?</li>
+                            <li>¿Qué productos pueden construir estudiantes, investigadores, gobiernos y organizaciones con datos abiertos?</li>
+                        </ul>
+                        <h4 class="feature__label">Referentes</h4>
+                        <ul class="src-list">
+                            <li><a href="https://earth.gov/ghgcenter/stories" target="_blank" rel="noopener noreferrer">U.S. GHG Center — casos de uso (ciudades, metano, redes urbanas)</a></li>
+                            <li><a href="https://worldview.earthdata.nasa.gov/" target="_blank" rel="noopener noreferrer">NASA Worldview — exploración de capas satelitales</a></li>
+                            <li><a href="referencias.html">Ver todas las referencias 2027</a></li>
+                        </ul>
+                    </div>
+                </article>
+            </div>
+        </section>
 
-                            <!-- Ponente 2 -->
-                            <div class="flex items-start space-x-4 p-4 bg-white rounded-lg shadow-sm">
-                                <div class="w-20 flex-shrink-0">
-                                    <span class="text-sm font-bold text-coloquio-ocean">09:30 – 09:45</span>
-                                </div>
-                                <div class="flex-1">
-                                    <h3 class="font-bold text-coloquio-navy">Mtro. Arturo López</h3>
-                                    <p class="text-sm text-coloquio-ocean">Comisión Nacional del Agua (CONAGUA)</p>
-                                    <p class="text-coloquio-gray text-sm">Situación hidrológica y sequía en Sonora</p>
-                                </div>
-                            </div>
+        <!-- ============ PRIMERA CIRCULAR + CARTELES ============ -->
+        <section id="convocatorias" class="sec sec--paper">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="sec-head">
+                    <div>
+                        <p class="eyebrow eyebrow--dark">Documentos de la edición</p>
+                        <h2 class="display">Convocatorias 2027</h2>
+                    </div>
+                    <p class="sec-head__aside">Ninguna convocatoria está abierta todavía. Se publicarán en esta página.</p>
+                </div>
 
-                            <!-- Ponente 3 -->
-                            <div class="flex items-start space-x-4 p-4 bg-white rounded-lg shadow-sm">
-                                <div class="w-20 flex-shrink-0">
-                                    <span class="text-sm font-bold text-coloquio-ocean">09:45 – 10:00</span>
-                                </div>
-                                <div class="flex-1">
-                                    <h3 class="font-bold text-coloquio-navy">Dr. Carlos Minjarez</h3>
-                                    <p class="text-sm text-coloquio-ocean">Universidad de Sonora (UNISON)</p>
-                                    <p class="text-coloquio-gray text-sm">Estudio climatológico de la precipitación en Sonora y predicción del tiempo por PROMETHEUS</p>
-                                </div>
-                            </div>
+                <div class="grid md:grid-cols-2 gap-6 lg:gap-8">
+                    <article id="primera-circular" class="doc-card">
+                        <div class="doc-card__head">
+                            <p class="eyebrow eyebrow--dark">Documento</p>
+                            <span class="status-pill status-pill--dark">Próximamente</span>
+                        </div>
+                        <h3 class="doc-card__title">Primera Circular 2027</h3>
+                        <p class="prose-coloquio">
+                            La Primera Circular del IV Coloquio Internacional de Espacio y Sostenibilidad presentará la información inicial de la edición 2027: objetivos, ejes de aplicación, modalidades de participación, sede, actividades, información de registro y Convocatoria de Carteles.
+                        </p>
+                        <p class="doc-card__meta">Ciudad de México · 10–12 de febrero de 2027 · Salud ambiental y territorio</p>
+                        <!--
+                          Para activar la descarga cuando exista el PDF: agregar data-doc-url="docs/primera-circular-2027.pdf"
+                          (y opcionalmente data-doc-size="1.2 MB"). js/index.js convierte el botón en “Descargar Primera Circular”.
+                        -->
+                        <div class="doc-card__action" data-doc="primera-circular" data-doc-label="Descargar Primera Circular">
+                            <button type="button" class="btn-soon btn-soon--dark" disabled>Primera Circular <span>Próximamente</span></button>
+                        </div>
+                    </article>
 
-                            <!-- Ponente 4 -->
-                            <div class="flex items-start space-x-4 p-4 bg-white rounded-lg shadow-sm">
-                                <div class="w-20 flex-shrink-0">
-                                    <span class="text-sm font-bold text-coloquio-ocean">10:00 – 10:15</span>
-                                </div>
-                                <div class="flex-1">
-                                    <h3 class="font-bold text-coloquio-navy">Dr. Germán Dévora</h3>
-                                    <p class="text-sm text-coloquio-ocean">Instituto Tecnológico de Sonora (ITSON)</p>
-                                    <p class="text-coloquio-gray text-sm">Un mar de oportunidades para la desalinización y energías renovables en Sonora</p>
-                                </div>
-                            </div>
+                    <article id="carteles" class="doc-card">
+                        <div class="doc-card__head">
+                            <p class="eyebrow eyebrow--dark">Convocatoria</p>
+                            <span class="status-pill status-pill--dark">Próximamente</span>
+                        </div>
+                        <h3 class="doc-card__title">Convocatoria de Carteles 2027</h3>
+                        <div class="prose-coloquio space-y-3">
+                            <p>El IV Coloquio Internacional de Espacio y Sostenibilidad abrirá una Convocatoria de Carteles para presentar proyectos, investigaciones, prototipos y aplicaciones relacionados con <strong>salud ambiental, territorio, observación de la Tierra y datos geoespaciales</strong>.</p>
+                            <p>Se dará prioridad a trabajos que transformen datos en aplicaciones, análisis territoriales o herramientas útiles para comunidades e instituciones.</p>
+                        </div>
+                        <p class="doc-card__meta">Bases, fechas, formato y criterios de participación serán publicados próximamente.</p>
+                        <div class="doc-card__action" data-doc="carteles" data-doc-label="Consultar Convocatoria de Carteles">
+                            <button type="button" class="btn-soon btn-soon--dark" disabled>Convocatoria de Carteles <span>Próximamente</span></button>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
 
-                            <!-- Ponente 5 -->
-                            <div class="flex items-start space-x-4 p-4 bg-white rounded-lg shadow-sm">
-                                <div class="w-20 flex-shrink-0">
-                                    <span class="text-sm font-bold text-coloquio-ocean">10:15 – 10:30</span>
-                                </div>
-                                <div class="flex-1">
-                                    <h3 class="font-bold text-coloquio-navy">Mtro. Norberto Álvarez</h3>
-                                    <p class="text-sm text-coloquio-ocean">BIOMISIÓN</p>
-                                    <p class="text-coloquio-gray text-sm">Desde Biósfera 2 hasta el replanteamiento de nuestro hábitat</p>
-                                </div>
-                            </div>
+        <!-- ============ REFERENTES 2027 ============ -->
+        <section id="referentes" class="sec sec--sky text-white">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="sec-head">
+                    <div>
+                        <p class="eyebrow">Referentes científicos 2027</p>
+                        <h2 class="display">Referentes para la conversación 2027</h2>
+                        <p class="sec-head__lead">Plataformas, productos y casos de uso que muestran cómo la observación de la Tierra puede convertirse en inteligencia territorial.</p>
+                    </div>
+                    <a href="referencias.html#referentes-2027" class="link-arrow link-arrow--light">Ver todas las fuentes <span aria-hidden="true">→</span></a>
+                </div>
 
-                            <!-- Ponente 6 -->
-                            <div class="flex items-start space-x-4 p-4 bg-white rounded-lg shadow-sm">
-                                <div class="w-20 flex-shrink-0">
-                                    <span class="text-sm font-bold text-coloquio-ocean">10:30 – 10:45</span>
-                                </div>
-                                <div class="flex-1">
-                                    <h3 class="font-bold text-coloquio-navy">Dr. Antonio Cañez</h3>
-                                    <p class="text-sm text-coloquio-ocean">COLSON</p>
-                                    <p class="text-coloquio-gray text-sm">Perspectivas de gobernanza del agua en Sonora</p>
-                                </div>
-                            </div>
+                <div class="ref-grid ref-grid--overlay" data-refs="home:technical" data-style="overlay"></div>
 
-                            <!-- Sesión de preguntas -->
-                            <div class="flex items-start space-x-4 p-4 bg-white rounded-lg shadow-sm">
-                                <div class="w-20 flex-shrink-0">
-                                    <span class="text-sm font-bold text-coloquio-ocean">10:45 – 11:00</span>
-                                </div>
-                                <div class="flex-1">
-                                    <h3 class="font-bold text-coloquio-navy">Sesión de preguntas</h3>
-                                    <p class="text-coloquio-gray text-sm">Espacio para preguntas con los seis ponentes anteriores (seleccionadas previamente)</p>
-                                </div>
-                            </div>
+                <p class="note note--dark mt-8 max-w-3xl">
+                    Las fuentes citadas son referencias públicas de NASA y del U.S. Greenhouse Gas Center. Su mención no implica participación, organización, patrocinio ni aval de la edición 2027.
+                </p>
+            </div>
+        </section>
 
-                            <!-- Pausa -->
-                            <div class="flex items-start space-x-4 p-4 bg-white rounded-lg shadow-sm">
-                                <div class="w-20 flex-shrink-0">
-                                    <span class="text-sm font-bold text-coloquio-ocean">11:00 – 11:10</span>
-                                </div>
-                                <div class="flex-1">
-                                    <h3 class="font-bold text-coloquio-navy">Pausa breve</h3>
-                                    <p class="text-coloquio-gray text-sm">Descanso</p>
-                                </div>
-                            </div>
+        <!-- ============ CUATRO EDICIONES ============ -->
+        <section id="ediciones" class="sec sec--deep text-white has-waves">
+            <canvas class="waves" data-waves="lines" data-tone="dark" data-fade="0.3" aria-hidden="true"></canvas>
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="sec-head">
+                    <div>
+                        <p class="eyebrow">Trayectoria</p>
+                        <h2 class="display">Cuatro ediciones, cuatro territorios</h2>
+                        <p class="sec-head__lead">Cada edición del Coloquio ha llevado la observación de la Tierra a un territorio y a una pregunta distinta: primero aprender a observar, después proteger, luego gestionar un recurso crítico y, en 2027, cuidar la salud de las personas a través del territorio.</p>
+                    </div>
+                    <a href="ediciones.html" class="link-arrow link-arrow--light">Ediciones anteriores y archivo 2025 <span aria-hidden="true">→</span></a>
+                </div>
 
-                            <!-- Mesas de trabajo -->
-                            <div class="flex items-start space-x-4 p-4 bg-white rounded-lg shadow-sm">
-                                <div class="w-20 flex-shrink-0">
-                                    <span class="text-sm font-bold text-coloquio-ocean">11:10 – 11:50</span>
-                                </div>
-                                <div class="flex-1">
-                                    <h3 class="font-bold text-coloquio-navy">Mesas de trabajo</h3>
-                                    <p class="text-coloquio-gray text-sm">Ejercicio de creación de valor</p>
-                                </div>
-                            </div>
+                <ol class="timeline">
+                    <li class="timeline__item">
+                        <span class="timeline__year">2023</span>
+                        <span class="timeline__concept">Observar</span>
+                        <h3 class="timeline__title">I Coloquio Internacional</h3>
+                        <p class="timeline__place">Guadalajara, Jalisco</p>
+                        <p class="timeline__theme">Observación de la Tierra para la sostenibilidad</p>
+                        <p class="timeline__idea">Más de 120 participantes de academia, gobierno, empresas y organizaciones, con especialistas vinculados a NASA, alrededor de misiones como ICESat-2, GEDI, Landsat y el programa GLOBE.</p>
+                    </li>
+                    <li class="timeline__item">
+                        <span class="timeline__year">2024</span>
+                        <span class="timeline__concept">Proteger</span>
+                        <h3 class="timeline__title">II Coloquio Internacional</h3>
+                        <p class="timeline__place">Morelia, Michoacán</p>
+                        <p class="timeline__theme">Espacio y Justicia Ambiental</p>
+                        <p class="timeline__idea">Tecnología espacial para proteger territorios y comunidades: el caso de Guardián Forestal y la detección satelital de deforestación.</p>
+                    </li>
+                    <li class="timeline__item">
+                        <span class="timeline__year">2025</span>
+                        <span class="timeline__concept">Gestionar</span>
+                        <h3 class="timeline__title">III Coloquio Internacional</h3>
+                        <p class="timeline__place">Hermosillo, Sonora</p>
+                        <p class="timeline__theme">Ciencia y cooperación internacional para la gestión sostenible del agua</p>
+                        <p class="timeline__idea">Agua, sequía, océanos y gobernanza con datos satelitales; taller con NASA Openscapes y 200 asistentes registrados.</p>
+                    </li>
+                    <li class="timeline__item timeline__item--current" aria-current="true">
+                        <span class="timeline__year">2027</span>
+                        <span class="timeline__concept">Cuidar</span>
+                        <h3 class="timeline__title">IV Coloquio Internacional</h3>
+                        <p class="timeline__place">Ciudad de México</p>
+                        <p class="timeline__theme">Salud ambiental y territorio</p>
+                        <p class="timeline__idea">Luces nocturnas, emisiones e inteligencia territorial para entender cómo el territorio se relaciona con la salud de las personas. 10, 11 y 12 de febrero de 2027.</p>
+                    </li>
+                </ol>
+                <p class="coords mt-10" aria-hidden="true">Datos → territorio → decisiones → personas</p>
+            </div>
+        </section>
 
-                            <!-- Networking y carteles -->
-                            <div class="flex items-start space-x-4 p-4 bg-white rounded-lg shadow-sm">
-                                <div class="w-20 flex-shrink-0">
-                                    <span class="text-sm font-bold text-coloquio-ocean">12:00 – 12:40</span>
-                                </div>
-                                <div class="flex-1">
-                                    <h3 class="font-bold text-coloquio-navy">Networking y carteles</h3>
-                                    <p class="text-coloquio-gray text-sm">Interacción entre participantes y presentación de los carteles</p>
-                                </div>
-                            </div>
+        <!-- ============ ARCHIVO Y COBERTURA ============ -->
+        <section id="cobertura" class="sec sec--white">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="sec-head">
+                    <div>
+                        <p class="eyebrow eyebrow--dark">Archivo y cobertura del Coloquio</p>
+                        <h2 class="display">Lo que se ha documentado sobre el Coloquio</h2>
+                        <p class="sec-head__lead">Fuentes institucionales, académicas y periodísticas de las ediciones 2023, 2024 y 2025.</p>
+                    </div>
+                    <a href="referencias.html#archivo" class="link-arrow">Ver todas las fuentes <span aria-hidden="true">→</span></a>
+                </div>
+                <div class="ref-grid" data-refs="home:history"></div>
+            </div>
+        </section>
 
-                            <!-- Invitación CNO -->
-                            <div class="flex items-start space-x-4 p-4 bg-white rounded-lg shadow-sm">
-                                <div class="w-20 flex-shrink-0">
-                                    <span class="text-sm font-bold text-coloquio-ocean">12:40 – 12:55</span>
-                                </div>
-                                <div class="flex-1">
-                                    <h3 class="font-bold text-coloquio-navy">Ocean. Silvia Carreño</h3>
-                                    <p class="text-sm text-coloquio-ocean">Asociación de Oceanólogos de México, A.C.</p>
-                                    <p class="text-coloquio-gray text-sm">Charla de invitación al XXIII Congreso Nacional de Oceanografía</p>
-                                </div>
-                            </div>
-
-                            <!-- Cierre -->
-                            <div class="flex items-start space-x-4 p-4 bg-white rounded-lg shadow-sm">
-                                <div class="w-20 flex-shrink-0">
-                                    <span class="text-sm font-bold text-coloquio-ocean">12:55 – 13:10</span>
-                                </div>
-                                <div class="flex-1">
-                                    <h3 class="font-bold text-coloquio-navy">Mensaje final de cierre</h3>
-                                    <p class="text-coloquio-gray text-sm">Anuncio del NASA Space Apps Challenge</p>
-                                </div>
-                            </div>
+        <!-- ============ FAQ ============ -->
+        <section id="faq" class="sec sec--paper">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid lg:grid-cols-12 gap-10 lg:gap-16">
+                    <div class="lg:col-span-4">
+                        <p class="eyebrow eyebrow--dark">FAQ 2027</p>
+                        <h2 class="display">Preguntas frecuentes</h2>
+                        <p class="prose-coloquio mt-6">¿Tienes otra pregunta? Escríbenos y te responderemos conforme se confirme la información de la edición 2027.</p>
+                        <a href="mailto:badouin@tec.mx" class="link-arrow mt-4 inline-block">Escribir al equipo organizador <span aria-hidden="true">→</span></a>
+                    </div>
+                    <div class="lg:col-span-8 faq-list">
+                        <div class="faq-item">
+                            <h3><button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-1"><span>¿Cuándo se realizará el IV Coloquio?</span><svg class="faq-icon" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z"/></svg></button></h3>
+                            <div class="faq-answer hidden" id="faq-1"><p>Los días <strong>10, 11 y 12 de febrero de 2027</strong>.</p></div>
+                        </div>
+                        <div class="faq-item">
+                            <h3><button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-2"><span>¿Dónde se realizará?</span><svg class="faq-icon" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z"/></svg></button></h3>
+                            <div class="faq-answer hidden" id="faq-2"><p>En <strong>Ciudad de México</strong>. La sede específica se anunciará próximamente.</p></div>
+                        </div>
+                        <div class="faq-item">
+                            <h3><button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-3"><span>¿Cuál es la temática de 2027?</span><svg class="faq-icon" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z"/></svg></button></h3>
+                            <div class="faq-answer hidden" id="faq-3"><p><strong>Salud ambiental y territorio</strong>, con énfasis en aplicaciones de observación de la Tierra, datos geoespaciales, emisiones e inteligencia territorial.</p></div>
+                        </div>
+                        <div class="faq-item">
+                            <h3><button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-4"><span>¿Ya está abierto el registro?</span><svg class="faq-icon" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z"/></svg></button></h3>
+                            <div class="faq-answer hidden" id="faq-4"><p>No. <strong>El registro se anunciará próximamente.</strong></p></div>
+                        </div>
+                        <div class="faq-item">
+                            <h3><button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-5"><span>¿Habrá Convocatoria de Carteles?</span><svg class="faq-icon" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z"/></svg></button></h3>
+                            <div class="faq-answer hidden" id="faq-5"><p>Sí. <strong>Las bases serán publicadas próximamente.</strong></p></div>
+                        </div>
+                        <div class="faq-item">
+                            <h3><button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-6"><span>¿Dónde podré consultar la Primera Circular?</span><svg class="faq-icon" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z"/></svg></button></h3>
+                            <div class="faq-answer hidden" id="faq-6"><p>Se publicará en este sitio. <strong>Próximamente estará disponible para descarga.</strong></p></div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
+        <!-- ============ CTA FINAL ============ -->
+        <section id="proximamente" class="cta-final sec text-white has-waves">
+            <canvas class="waves" data-waves="dots" data-tone="dark" data-fade="0" data-seed="11" data-top="0.1" data-spread="0.9" aria-hidden="true"></canvas>
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid lg:grid-cols-12 gap-10 items-end">
+                    <div class="lg:col-span-8">
+                        <p class="eyebrow">Ciudad de México · febrero de 2027</p>
+                        <h2 class="display display--xl">El territorio también determina nuestra salud.</h2>
+                        <p class="statement__lead">El IV Coloquio Internacional de Espacio y Sostenibilidad reunirá nuevas conversaciones sobre observación de la Tierra, emisiones, datos e inteligencia territorial.</p>
+                    </div>
+                    <div class="lg:col-span-4">
+                        <dl class="ficha">
+                            <div class="ficha__row"><dt>Fechas</dt><dd><time datetime="2027-02-10">10, 11 y 12 de febrero de 2027</time></dd></div>
+                            <div class="ficha__row"><dt>Estado</dt><dd><span class="status-dot" aria-hidden="true"></span>Próximamente más información</dd></div>
+                            <div class="ficha__row"><dt>Convocatorias</dt><dd><div class="soon-list"><button type="button" class="btn-soon" disabled>Primera Circular <span>Próximamente</span></button><button type="button" class="btn-soon" disabled>Carteles <span>Próximamente</span></button></div></dd></div>
+                            <div class="ficha__row"><dt>Síguenos</dt><dd><a href="https://www.instagram.com/espacioysostenibilidad/" target="_blank" rel="noopener noreferrer" class="link-arrow link-arrow--light">Instagram @espacioysostenibilidad <span aria-hidden="true">↗</span></a></dd></div>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
-    <!-- Sección FAQ -->
-    <section id="faq" class="py-12 sm:py-16 md:py-20 bg-coloquio-light">
-        <div class="container mx-auto px-4 sm:px-6">
-            <div class="text-center mb-12 sm:mb-16">
-                <h2 class="text-2xl sm:text-3xl md:text-4xl font-heading font-black text-coloquio-navy mb-4">Preguntas Frecuentes</h2>
-                <p class="text-base sm:text-lg text-coloquio-gray max-w-3xl mx-auto">
-                    Resolvemos las dudas más comunes sobre el III Coloquio Internacional
-                </p>
-            </div>
-
-            <!-- Categorías FAQ -->
-            <div class="max-w-5xl mx-auto">
-                <div class="flex flex-wrap justify-center mb-8 gap-2 sm:gap-4">
-                    <button class="faq-category active px-4 sm:px-6 py-2 sm:py-3 text-sm sm:text-base font-medium bg-coloquio-ocean text-white rounded-lg transition-all duration-300 hover:bg-coloquio-bright shadow-md" data-category="general">
-                        <svg class="w-4 h-4 inline-block mr-2" fill="currentColor" viewBox="0 0 24 24">
-                            <path d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12,17A1.5,1.5 0 0,1 10.5,15.5A1.5,1.5 0 0,1 12,14A1.5,1.5 0 0,1 13.5,15.5A1.5,1.5 0 0,1 12,17M12,10.5C10.07,10.5 8.5,8.93 8.5,7A3.5,3.5 0 0,1 12,3.5A3.5,3.5 0 0,1 15.5,7C15.5,8.93 13.93,10.5 12,10.5Z"/>
-                        </svg>
-                        Todas las Preguntas
-                    </button>
-                </div>
-
-                <!-- Contenido FAQ -->
-                <div class="space-y-4">
-                    <!-- FAQ General -->
-                    <div class="faq-section general">
-                        <div class="bg-white rounded-xl shadow-lg border border-coloquio-light overflow-hidden">
-                            
-                            <!-- Pregunta 1 -->
-                            <div class="faq-item border-b border-coloquio-light last:border-b-0">
-                                <button class="faq-question w-full px-6 py-5 text-left flex items-center justify-between hover:bg-coloquio-light transition-colors group">
-                                    <span class="text-base sm:text-lg font-semibold text-coloquio-navy group-hover:text-coloquio-ocean pr-4">
-                                        ¿Cuándo y dónde se llevará a cabo el Coloquio?
-                                    </span>
-                                    <svg class="faq-icon w-5 h-5 text-coloquio-ocean transition-transform duration-300 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
-                                        <path d="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z"/>
-                                    </svg>
-                                </button>
-                                <div class="faq-answer hidden px-6 pb-5">
-                                    <p class="text-coloquio-gray leading-relaxed">
-                                        El viernes 3 de octubre de 2025, en el Salón de Congresos del Tecnológico de Monterrey, Campus Sonora Norte, en Hermosillo, Sonora.
-                                    </p>
-                                </div>
-                            </div>
-
-                            <!-- Pregunta 2 -->
-                            <div class="faq-item border-b border-coloquio-light last:border-b-0">
-                                <button class="faq-question w-full px-6 py-5 text-left flex items-center justify-between hover:bg-coloquio-light transition-colors group">
-                                    <span class="text-base sm:text-lg font-semibold text-coloquio-navy group-hover:text-coloquio-ocean pr-4">
-                                        ¿Cuál es el objetivo del Coloquio?
-                                    </span>
-                                    <svg class="faq-icon w-5 h-5 text-coloquio-ocean transition-transform duration-300 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
-                                        <path d="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z"/>
-                                    </svg>
-                                </button>
-                                <div class="faq-answer hidden px-6 pb-5">
-                                    <p class="text-coloquio-gray leading-relaxed">
-                                        Impulsar la colaboración entre sectores clave (gobierno, academia, empresas y sociedad civil organizada) para territorializar soluciones climáticas, hídricas y oceánicas mediante ciencia abierta, sensores remotos, herramientas digitales y gobernanza regional.
-                                    </p>
-                                </div>
-                            </div>
-
-                            <!-- Pregunta 3 -->
-                            <div class="faq-item border-b border-coloquio-light last:border-b-0">
-                                <button class="faq-question w-full px-6 py-5 text-left flex items-center justify-between hover:bg-coloquio-light transition-colors group">
-                                    <span class="text-base sm:text-lg font-semibold text-coloquio-navy group-hover:text-coloquio-ocean pr-4">
-                                        ¿El evento tiene algún costo?
-                                    </span>
-                                    <svg class="faq-icon w-5 h-5 text-coloquio-ocean transition-transform duration-300 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
-                                        <path d="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z"/>
-                                    </svg>
-                                </button>
-                                <div class="faq-answer hidden px-6 pb-5">
-                                    <p class="text-coloquio-gray leading-relaxed">
-                                        No. El evento es gratuito y abierto al público.
-                                    </p>
-                                </div>
-                            </div>
-
-                            <!-- Pregunta 4 -->
-                            <div class="faq-item border-b border-coloquio-light last:border-b-0">
-                                <button class="faq-question w-full px-6 py-5 text-left flex items-center justify-between hover:bg-coloquio-light transition-colors group">
-                                    <span class="text-base sm:text-lg font-semibold text-coloquio-navy group-hover:text-coloquio-ocean pr-4">
-                                        ¿Cuál es el programa del evento?
-                                    </span>
-                                    <svg class="faq-icon w-5 h-5 text-coloquio-ocean transition-transform duration-300 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
-                                        <path d="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z"/>
-                                    </svg>
-                                </button>
-                                <div class="faq-answer hidden px-6 pb-5">
-                                    <div class="text-coloquio-gray leading-relaxed space-y-2">
-                                        <p><strong>• 08:00 – 09:00</strong> Registro y networking previo (café y conexiones)</p>
-                                        <p><strong>• 09:00 – 09:20</strong> Ceremonia de apertura</p>
-                                        <p><strong>• 09:20 – 11:00</strong> Charlas magistrales (Investigadores del agua, tomadores de decisiones)</p>
-                                        <p><strong>• 11:00 – 11:10</strong> Pausa breve</p>
-                                        <p><strong>• 11:10 – 12:00</strong> Mesas de trabajo (ejercicio de creación de valor)</p>
-                                        <p><strong>• 12:00 – 12:40</strong> Networking, carteles y stands</p>
-                                        <p><strong>• 12:40 – 13:00</strong> Mensaje de cierre y enlace con el Space Apps Challenge</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Pregunta 5 -->
-                            <div class="faq-item border-b border-coloquio-light last:border-b-0">
-                                <button class="faq-question w-full px-6 py-5 text-left flex items-center justify-between hover:bg-coloquio-light transition-colors group">
-                                    <span class="text-base sm:text-lg font-semibold text-coloquio-navy group-hover:text-coloquio-ocean pr-4">
-                                        ¿Qué temas se abordarán?
-                                    </span>
-                                    <svg class="faq-icon w-5 h-5 text-coloquio-ocean transition-transform duration-300 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
-                                        <path d="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z"/>
-                                    </svg>
-                                </button>
-                                <div class="faq-answer hidden px-6 pb-5">
-                                    <div class="text-coloquio-gray leading-relaxed space-y-2">
-                                        <p><strong>• Monitoreo y pronóstico de sequías</strong></p>
-                                        <p><strong>• Estimaciones de escurrimientos e inundaciones</strong></p>
-                                        <p><strong>• Evaluación de la calidad del agua</strong></p>
-                                        <p><strong>• Estimación de necesidades de riego y evapotranspiración</strong></p>
-                                        <p><strong>• Análisis de interacciones entre clima y disponibilidad hídrica</strong></p>
-                                        <p><strong>• Observación y sostenibilidad de los océanos</strong></p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Pregunta 6 -->
-                            <div class="faq-item border-b border-coloquio-light last:border-b-0">
-                                <button class="faq-question w-full px-6 py-5 text-left flex items-center justify-between hover:bg-coloquio-light transition-colors group">
-                                    <span class="text-base sm:text-lg font-semibold text-coloquio-navy group-hover:text-coloquio-ocean pr-4">
-                                        ¿Qué relación tiene el Coloquio con el Space Apps Challenge?
-                                    </span>
-                                    <svg class="faq-icon w-5 h-5 text-coloquio-ocean transition-transform duration-300 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
-                                        <path d="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z"/>
-                                    </svg>
-                                </button>
-                                <div class="faq-answer hidden px-6 pb-5">
-                                    <p class="text-coloquio-gray leading-relaxed">
-                                        El Coloquio cerrará con el banderazo oficial al Space Apps Challenge en Hermosillo 2025, de modo que los aprendizajes del Coloquio serán inspiración para los retos del hackatón.
-                                    </p>
-                                </div>
-                            </div>
-
-                            <!-- Pregunta 7 -->
-                            <div class="faq-item border-b border-coloquio-light last:border-b-0">
-                                <button class="faq-question w-full px-6 py-5 text-left flex items-center justify-between hover:bg-coloquio-light transition-colors group">
-                                    <span class="text-base sm:text-lg font-semibold text-coloquio-navy group-hover:text-coloquio-ocean pr-4">
-                                        ¿Qué antecedentes tiene este evento?
-                                    </span>
-                                    <svg class="faq-icon w-5 h-5 text-coloquio-ocean transition-transform duration-300 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
-                                        <path d="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z"/>
-                                    </svg>
-                                </button>
-                                <div class="faq-answer hidden px-6 pb-5">
-                                    <div class="text-coloquio-gray leading-relaxed space-y-2">
-                                        <p><strong>• 2023, Guadalajara, Jalisco:</strong> Primera edición enfocada en observaciones satelitales y ciencia ciudadana.</p>
-                                        <p><strong>• 2024, Morelia, Michoacán:</strong> Segunda edición, "Espacio y Justicia Ambiental", con énfasis en comunidades vulnerables y proyectos de monitoreo como Guardián Forestal.</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Pregunta 8 -->
-                            <div class="faq-item border-b border-coloquio-light last:border-b-0">
-                                <button class="faq-question w-full px-6 py-5 text-left flex items-center justify-between hover:bg-coloquio-light transition-colors group">
-                                    <span class="text-base sm:text-lg font-semibold text-coloquio-navy group-hover:text-coloquio-ocean pr-4">
-                                        ¿Habrá invitados internacionales?
-                                    </span>
-                                    <svg class="faq-icon w-5 h-5 text-coloquio-ocean transition-transform duration-300 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
-                                        <path d="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z"/>
-                                    </svg>
-                                </button>
-                                <div class="faq-answer hidden px-6 pb-5">
-                                    <p class="text-coloquio-gray leading-relaxed">
-                                        Sí, habrá investigadores internacionales del agua, además de tomadores de decisiones nacionales y representantes de sociedad civil.
-                                    </p>
-                                </div>
-                            </div>
-
-                            <!-- Pregunta 9 -->
-                            <div class="faq-item border-b border-coloquio-light last:border-b-0">
-                                <button class="faq-question w-full px-6 py-5 text-left flex items-center justify-between hover:bg-coloquio-light transition-colors group">
-                                    <span class="text-base sm:text-lg font-semibold text-coloquio-navy group-hover:text-coloquio-ocean pr-4">
-                                        ¿Qué relación tiene con el Congreso Nacional de Oceanografía?
-                                    </span>
-                                    <svg class="faq-icon w-5 h-5 text-coloquio-ocean transition-transform duration-300 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
-                                        <path d="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z"/>
-                                    </svg>
-                                </button>
-                                <div class="faq-answer hidden px-6 pb-5">
-                                    <p class="text-coloquio-gray leading-relaxed">
-                                        Durante las charlas magistrales se presentará la invitación oficial al XXIII Congreso Nacional de Oceanografía, que se celebrará del 3 al 7 de marzo de 2026 en el mismo campus.
-                                    </p>
-                                </div>
-                            </div>
-
-                            <!-- Pregunta 10 -->
-                            <div class="faq-item border-b border-coloquio-light last:border-b-0">
-                                <button class="faq-question w-full px-6 py-5 text-left flex items-center justify-between hover:bg-coloquio-light transition-colors group">
-                                    <span class="text-base sm:text-lg font-semibold text-coloquio-navy group-hover:text-coloquio-ocean pr-4">
-                                        ¿Dónde puedo registrarme y seguir las actualizaciones?
-                                    </span>
-                                    <svg class="faq-icon w-5 h-5 text-coloquio-ocean transition-transform duration-300 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
-                                        <path d="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z"/>
-                                    </svg>
-                                </button>
-                                <div class="faq-answer hidden px-6 pb-5">
-                                    <div class="text-coloquio-gray leading-relaxed space-y-2">
-                                        <p><strong>👉 Registro:</strong> <a href="https://luma.com/qhkq8lji" target="_blank" class="text-coloquio-ocean hover:text-coloquio-bright underline">https://luma.com/qhkq8lji</a></p>
-                                        <p><strong>📲 Instagram:</strong> <a href="https://www.instagram.com/espacioysostenibilidad/" target="_blank" class="text-coloquio-ocean hover:text-coloquio-bright underline">@espacioysostenibilidad</a></p>
-                                        <p><strong>🔗 Más información:</strong> <a href="https://spaceappssonora.org/" target="_blank" class="text-coloquio-ocean hover:text-coloquio-bright underline">spaceappssonora.org</a></p>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <!-- Sección de Contacto FAQ -->
-                    <div class="bg-white rounded-xl shadow-lg border border-coloquio-light p-8 text-center">
-                        <h3 class="text-xl font-heading font-bold text-coloquio-navy mb-4">
-                            ¿No encontraste la respuesta que buscabas?
-                        </h3>
-                        <p class="text-coloquio-gray mb-6">
-                            Nuestro equipo organizador está disponible para resolver todas tus dudas sobre el coloquio
-                        </p>
-                        <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                            <a href="mailto:badouin@tec.mx" class="inline-flex items-center justify-center px-6 py-3 bg-coloquio-ocean text-white rounded-lg font-medium hover:bg-coloquio-bright transition-colors">
-                                <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
-                                    <path d="M20,8L12,13L4,8V6L12,11L20,6M20,4H4C2.89,4 2,4.89 2,6V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V6C22,4.89 21.11,4 20,4Z"/>
-                                </svg>
-                                Enviar Email
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-        </div>
-    </section>
-
-    <!-- Sección Ediciones Preview -->
-    <section id="ediciones-preview" class="py-12 sm:py-16 bg-gradient-to-br from-coloquio-navy to-coloquio-blue">
-        <div class="container mx-auto px-4 sm:px-6">
-            <div class="text-center mb-12">
-                <h2 class="text-3xl sm:text-4xl md:text-5xl font-heading font-black mb-6 text-white">
-                    Ediciones Anteriores
-                </h2>
-                <p class="text-lg md:text-xl text-coloquio-light mb-8 leading-relaxed max-w-4xl mx-auto">
-                    Conoce la evolución del Coloquio Internacional de Espacio y Sostenibilidad a través de sus ediciones anteriores
-                </p>
-            </div>
-            
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
-                <!-- I Coloquio 2023 -->
-                <div class="bg-white bg-opacity-10 backdrop-blur-sm rounded-2xl p-8 border border-white border-opacity-20 hover:bg-opacity-20 transition-all">
-                    <div class="flex items-center mb-6">
-                        <div class="w-16 h-16 bg-coloquio-ocean bg-opacity-20 rounded-full flex items-center justify-center mr-4">
-                            <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M12 2L13.09 8.26L20 9L13.09 9.74L12 16L10.91 9.74L4 9L10.91 8.26L12 2M12 4.89L11.42 7.58L8.58 8L11.42 8.42L12 11.11L12.58 8.42L15.42 8L12.58 7.58L12 4.89M21 10C21 10 21.5 8.5 21.5 7.5C21.5 6.5 21 5 21 5C21 5 20.5 6.5 20.5 7.5C20.5 8.5 21 10 21 10M16 6C16 6 16.5 4.5 16.5 3.5C16.5 2.5 16 1 16 1C16 1 15.5 2.5 15.5 3.5C15.5 4.5 16 6 16 6Z"/>
-                            </svg>
-                        </div>
-                        <div>
-                            <h3 class="text-xl font-heading font-bold text-white mb-1">
-                                I Coloquio Internacional de Espacio y Sostenibilidad 2023
-                            </h3>
-                            <p class="text-coloquio-light text-sm">PLAI de Ciudad Creativa Digital, Guadalajara, Jalisco</p>
-                        </div>
-                    </div>
-                    <p class="text-coloquio-light mb-4 leading-relaxed">
-                        Primera edición enfocada en el uso de observaciones satelitales para la toma de decisiones públicas.
-                    </p>
-                    <div class="flex items-center text-coloquio-light text-sm">
-                        <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 24 24">
-                            <path d="M16,4C18.22,4 20,5.78 20,8C20,10.22 18.22,12 16,12C13.78,12 12,10.22 12,8C12,5.78 13.78,4 16,4M16,6A2,2 0 0,0 14,8A2,2 0 0,0 16,10A2,2 0 0,0 18,8A2,2 0 0,0 16,6M16,13C18.67,13 22,14.33 22,17V20H10V17C10,14.33 13.33,13 16,13M8,12C10.22,12 12,10.22 12,8C12,5.78 10.22,4 8,4C5.78,4 4,5.78 4,8C4,10.22 5.78,12 8,12M8,6A2,2 0 0,1 10,8A2,2 0 0,1 8,10A2,2 0 0,1 6,8A2,2 0 0,1 8,6M8,13C10.67,13 14,14.33 14,17V20H2V17C2,14.33 5.33,13 8,13Z"/>
-                        </svg>
-                        ~100 participantes multisectoriales
-                    </div>
-                </div>
-
-                <!-- II Coloquio 2024 -->
-                <div class="bg-white bg-opacity-10 backdrop-blur-sm rounded-2xl p-8 border border-white border-opacity-20 hover:bg-opacity-20 transition-all">
-                    <div class="flex items-center mb-6">
-                        <div class="w-16 h-16 bg-coloquio-ocean bg-opacity-20 rounded-full flex items-center justify-center mr-4">
-                            <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M12,3.25C12,3.25 6,10 6,14C6,17.32 8.69,20 12,20A6,6 0 0,0 18,14C18,10 12,3.25 12,3.25M14.47,9.97L15.53,11.03L9.53,17.03L8.47,15.97M9.75,10A1.25,1.25 0 0,1 11,11.25A1.25,1.25 0 0,1 9.75,12.5A1.25,1.25 0 0,1 8.5,11.25A1.25,1.25 0 0,1 9.75,10M14.25,14.5A1.25,1.25 0 0,1 15.5,15.75A1.25,1.25 0 0,1 14.25,17A1.25,1.25 0 0,1 13,15.75A1.25,1.25 0 0,1 14.25,14.5Z"/>
-                            </svg>
-                        </div>
-                        <div>
-                            <h3 class="text-xl font-heading font-bold text-white mb-1">
-                                II Coloquio Internacional de Espacio y Sostenibilidad 2024
-                            </h3>
-                            <p class="text-coloquio-light text-sm">Casa Michoacán, Morelia, Michoacán • "Espacio y Justicia Ambiental"</p>
-                        </div>
-                    </div>
-                    <p class="text-coloquio-light mb-4 leading-relaxed">
-                        Segunda edición enfocada en justicia ambiental y el impacto de la tecnología espacial en comunidades vulnerables.
-                    </p>
-                    <div class="flex items-center text-coloquio-light text-sm">
-                        <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 24 24">
-                            <path d="M12,3L2,12H5V20H19V12H22L12,3M12,5.7L17,10.7V18H15V13H9V18H7V10.7L12,5.7Z"/>
-                        </svg>
-                        Universidad Michoacana de San Nicolás de Hidalgo
-                    </div>
-                </div>
-            </div>
-
-            <div class="text-center">
-                <a href="ediciones.html" class="inline-flex items-center px-8 py-4 bg-white text-coloquio-navy rounded-lg font-bold text-lg hover:bg-coloquio-light transition-colors shadow-lg hover:shadow-xl">
-                    <svg class="w-6 h-6 mr-3" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M19,3H18V1H16V3H8V1H6V3H5A2,2 0 0,0 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5A2,2 0 0,0 19,3M19,19H5V8H19V19Z"/>
-                    </svg>
-                    Ver Todas las Ediciones
-                    <svg class="w-5 h-5 ml-2" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z"/>
-                    </svg>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Sección Registro -->
-    <section id="registro" class="py-12 sm:py-16 md:py-20 bg-gradient-to-br from-coloquio-navy to-coloquio-blue">
-        <div class="container mx-auto px-4 sm:px-6">
-            <div class="text-center mb-12">
-                <h2 class="text-3xl sm:text-4xl md:text-5xl font-heading font-black text-white mb-6">
-                    Registro
-                </h2>
-                <p class="text-lg md:text-xl text-coloquio-light mb-8 leading-relaxed max-w-3xl mx-auto">
-                    Únete al III Coloquio Internacional de Espacio y Sostenibilidad 2025
-                </p>
-            </div>
-
-            <div class="max-w-2xl mx-auto text-center">
-                <div class="bg-white rounded-2xl p-8 mb-8">
-                    <h3 class="text-2xl font-heading font-bold text-coloquio-navy mb-6">
-                        Evento Gratuito
-                    </h3>
-                    <div class="space-y-4 mb-8">
-                        <div class="flex items-center justify-center space-x-3">
-                            <svg class="w-6 h-6 text-coloquio-ocean" fill="currentColor" viewBox="0 0 20 20">
-                                <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
-                            </svg>
-                            <span class="text-lg text-coloquio-gray">Acceso completo al coloquio</span>
-                        </div>
-                        <div class="flex items-center justify-center space-x-3">
-                            <svg class="w-6 h-6 text-coloquio-ocean" fill="currentColor" viewBox="0 0 20 20">
-                                <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
-                            </svg>
-                            <span class="text-lg text-coloquio-gray">Certificado de participación</span>
-                        </div>
-                        <div class="flex items-center justify-center space-x-3">
-                            <svg class="w-6 h-6 text-coloquio-ocean" fill="currentColor" viewBox="0 0 20 20">
-                                <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
-                            </svg>
-                            <span class="text-lg text-coloquio-gray">Materiales y coffee breaks</span>
-                        </div>
-                    </div>
-
-                    <a href="https://luma.com/qhkq8lji" target="_blank" rel="noopener noreferrer"
-                       class="inline-flex items-center justify-center bg-coloquio-ocean hover:bg-coloquio-bright text-white px-8 py-4 rounded-xl font-bold text-xl transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl">
-                        <svg class="w-6 h-6 mr-3" fill="currentColor" viewBox="0 0 20 20">
-                            <path d="M10 2L13.09 8.26L20 9L13.09 9.74L10 16L6.91 9.74L0 9L6.91 8.26L10 2Z"/>
-                        </svg>
-                        Regístrate Ahora
-                        <svg class="w-5 h-5 ml-3" fill="currentColor" viewBox="0 0 20 20">
-                            <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/>
-                        </svg>
-                    </a>
-
-                    <p class="text-sm text-coloquio-gray mt-6">
-                        ⚡ Cupos limitados
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- Footer -->
-    <footer class="bg-gradient-to-br from-coloquio-navy via-coloquio-blue to-coloquio-navy text-white relative overflow-hidden">
-        <!-- Background Pattern -->
-        <div class="absolute inset-0 opacity-5">
-            <div class="absolute top-0 left-0 w-full h-full" style="background-image: radial-gradient(circle at 20% 50%, rgba(255,255,255,0.1) 0%, transparent 50%), radial-gradient(circle at 80% 50%, rgba(255,255,255,0.1) 0%, transparent 50%);"></div>
-        </div>
-        
-        <div class="container mx-auto px-4 sm:px-6 relative">
-            <!-- Main Footer Content -->
-            <div class="py-16">
-                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
-                    
-                    <!-- Logo and Event Info -->
-                    <div class="lg:col-span-5 space-y-6">
-                        <div class="flex items-center space-x-4">
-                            <img src="logoblanco.png?v=1758187774" alt="Logo Coloquio" class="h-14 w-auto object-contain">
-                            <div>
-                                <h3 class="text-2xl font-heading font-bold text-white">III Coloquio Internacional</h3>
-                                <p class="text-coloquio-light text-base">Espacio y Sostenibilidad 2025</p>
-                            </div>
-                        </div>
-                        
-                        <p class="text-coloquio-light text-lg leading-relaxed max-w-md">
-                            Ciencia y cooperación internacional para la gestión sostenible del agua mediante tecnología espacial.
-                        </p>
-                        
-                        <!-- Event Highlights -->
-                        <div class="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10">
-                            <div class="grid grid-cols-1 gap-4">
-                                <div class="text-center">
-                                    <div class="text-2xl font-bold text-coloquio-ocean">2025</div>
-                                    <div class="text-xs text-coloquio-light">3ra Edición</div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <!-- Social Links -->
-                        <div class="flex items-center space-x-4">
-                            <span class="text-coloquio-light text-sm font-medium">Síguenos:</span>
-                            <a href="https://www.instagram.com/espacioysostenibilidad/" target="_blank" 
-                               class="bg-white/10 hover:bg-coloquio-ocean p-3 rounded-xl transition-all duration-300 hover:scale-110 hover:shadow-lg group">
-                                <svg class="w-5 h-5 group-hover:text-white" fill="currentColor" viewBox="0 0 24 24">
-                                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
-                                </svg>
-                            </a>
-                            <a href="https://spaceappssonora.org/" target="_blank" 
-                               class="bg-white/10 hover:bg-coloquio-ocean p-3 rounded-xl transition-all duration-300 hover:scale-110 hover:shadow-lg group">
-                                <svg class="w-5 h-5 group-hover:text-white" fill="currentColor" viewBox="0 0 24 24">
-                                    <path d="M16.36,14C16.44,13.34 16.5,12.68 16.5,12C16.5,11.32 16.44,10.66 16.36,10H19.74C19.9,10.64 20,11.31 20,12C20,12.69 19.9,13.36 19.74,14M14.59,19.56C15.19,18.45 15.65,17.25 15.97,16H18.92C17.96,17.65 16.43,18.93 14.59,19.56M14.34,14H9.66C9.56,13.34 9.5,12.68 9.5,12C9.5,11.32 9.56,10.65 9.66,10H14.34C14.43,10.65 14.5,11.32 14.5,12C14.5,12.68 14.43,13.34 14.34,14M12,19.96C11.17,18.76 10.5,17.43 10.09,16H13.91C13.5,17.43 12.83,18.76 12,19.96M8,8H5.08C6.03,6.34 7.57,5.06 9.4,4.44C8.8,5.55 8.35,6.75 8,8M5.08,16H8C8.35,17.25 8.8,18.45 9.4,19.56C7.57,18.93 6.03,17.65 5.08,16M4.26,14C4.1,13.36 4,12.69 4,12C4,11.31 4.1,10.64 4.26,10H7.64C7.56,10.66 7.5,11.32 7.5,12C7.5,12.68 7.56,13.34 7.64,14M12,4.03C12.83,5.23 13.5,6.57 13.91,8H10.09C10.5,6.57 11.17,5.23 12,4.03M18.92,8H15.97C15.65,6.75 15.19,5.55 14.59,4.44C16.43,5.07 17.96,6.34 18.92,8M12,2C6.47,2 2,6.5 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z"/>
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                    
-                    <!-- Event Details -->
-                    <div class="lg:col-span-4 space-y-6">
-                        <h4 class="font-bold text-xl text-white mb-6 flex items-center">
-                            <div class="w-1 h-6 bg-coloquio-ocean mr-3 rounded-full"></div>
-                            Información del Evento
-                        </h4>
-                        
-                        <div class="space-y-6">
-                            <div class="group">
-                                <div class="flex items-start space-x-4">
-                                    <div class="bg-coloquio-ocean/20 p-3 rounded-xl mt-1 group-hover:bg-coloquio-ocean/30 transition-colors">
-                                        <svg class="w-5 h-5 text-coloquio-ocean" fill="currentColor" viewBox="0 0 24 24">
-                                            <path d="M19,3H18V1H16V3H8V1H6V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5A2,2 0 0,0 19,3M19,19H5V8H19V19Z"/>
-                                        </svg>
-                                    </div>
-                                    <div>
-                                        <p class="font-semibold text-white text-lg">Viernes 3 de octubre, 2025</p>
-                                        <p class="text-coloquio-light">08:00 - 13:00 hrs</p>
-                                        <p class="text-coloquio-light text-sm">Horario de México (UTC-7)</p>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <div class="group">
-                                <div class="flex items-start space-x-4">
-                                    <div class="bg-coloquio-ocean/20 p-3 rounded-xl mt-1 group-hover:bg-coloquio-ocean/30 transition-colors">
-                                        <svg class="w-5 h-5 text-coloquio-ocean" fill="currentColor" viewBox="0 0 24 24">
-                                            <path d="M12,11.5A2.5,2.5 0 0,1 9.5,9A2.5,2.5 0 0,1 12,6.5A2.5,2.5 0 0,1 14.5,9A2.5,2.5 0 0,1 12,11.5M12,2A7,7 0 0,0 5,9C5,14.25 12,22 12,22C12,22 19,14.25 19,9A7,7 0 0,0 12,2Z"/>
-                                        </svg>
-                                    </div>
-                                    <div>
-                                        <p class="font-semibold text-white text-lg">Tecnológico de Monterrey</p>
-                                        <p class="text-coloquio-light">Campus Sonora Norte</p>
-                                        <p class="text-coloquio-light text-sm">Hermosillo, Sonora, México</p>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <div class="group">
-                                <div class="flex items-start space-x-4">
-                                    <div class="bg-coloquio-ocean/20 p-3 rounded-xl mt-1 group-hover:bg-coloquio-ocean/30 transition-colors">
-                                        <svg class="w-5 h-5 text-coloquio-ocean" fill="currentColor" viewBox="0 0 24 24">
-                                            <path d="M12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2M12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20A8,8 0 0,0 20,12A8,8 0 0,0 12,4M11,16.5L6.5,12L7.91,10.59L11,13.67L16.59,8.09L18,9.5"/>
-                                        </svg>
-                                    </div>
-                                    <div>
-                                        <p class="font-semibold text-white text-lg">Evento Gratuito</p>
-                                        <p class="text-coloquio-light">Registro requerido</p>
-                                        <p class="text-coloquio-light text-sm">Cupos limitados</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- Navigation & CTA -->
-                    <div class="lg:col-span-3 space-y-6">
-                        <!-- CTA Button -->
-                        <div class="bg-gradient-to-r from-coloquio-ocean to-coloquio-bright p-6 rounded-2xl shadow-2xl">
-                            <h5 class="font-bold text-white text-lg mb-3">¡Únete al Coloquio!</h5>
-                            <a href="https://luma.com/qhkq8lji" target="_blank" 
-                               class="w-full bg-white text-coloquio-navy px-6 py-3 rounded-xl font-bold text-center block hover:bg-gray-100 transition-all duration-300 hover:scale-105 shadow-lg">
-                                Registrarse Ahora
-                            </a>
-                            <p class="text-white/80 text-xs mt-2 text-center">Registro oficial en Luma</p>
-                        </div>
-                        
-                        <!-- Quick Links -->
-                        <div>
-                            <h5 class="font-semibold text-white text-lg mb-4">Enlaces Rápidos</h5>
-                            <div class="space-y-2">
-                                <a href="#programa" class="flex items-center text-coloquio-light hover:text-white transition-colors duration-300 group">
-                                    <span class="w-2 h-2 bg-coloquio-ocean rounded-full mr-3 group-hover:scale-125 transition-transform"></span>
-                                    Programa del Evento
-                                </a>
-                                <a href="#temas" class="flex items-center text-coloquio-light hover:text-white transition-colors duration-300 group">
-                                    <span class="w-2 h-2 bg-coloquio-ocean rounded-full mr-3 group-hover:scale-125 transition-transform"></span>
-                                    Temas a Tratar
-                                </a>
-                                <a href="#faq" class="flex items-center text-coloquio-light hover:text-white transition-colors duration-300 group">
-                                    <span class="w-2 h-2 bg-coloquio-ocean rounded-full mr-3 group-hover:scale-125 transition-transform"></span>
-                                    Preguntas Frecuentes
-                                </a>
-                                <a href="https://spaceappssonora.org/" target="_blank" class="flex items-center text-coloquio-light hover:text-white transition-colors duration-300 group">
-                                    <span class="w-2 h-2 bg-coloquio-ocean rounded-full mr-3 group-hover:scale-125 transition-transform"></span>
-                                    Space Apps Sonora
-                                </a>
-                            </div>
-                        </div>
-                    </div>
+    <footer class="site-footer text-white">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="site-footer__grid">
+                <div class="site-footer__brand">
+                    <img src="assets/img/logo-blanco.png" alt="Espacio y Sostenibilidad" class="h-12 w-auto object-contain">
+                    <p>Espacio y Sostenibilidad es la organización no gubernamental que organiza el Coloquio Internacional de Espacio y Sostenibilidad. Democratizamos la complejidad planetaria para un planeta más sano.</p>
+                </div>
+                <div>
+                    <h4>Edición 2027</h4>
+                    <ul>
+                        <li><a href="#salud-ambiental-territorio">Salud ambiental y territorio</a></li>
+                        <li><a href="#aplicaciones">Aplicaciones</a></li>
+                        <li><a href="#primera-circular">Primera Circular</a></li>
+                        <li><a href="#carteles">Convocatoria de Carteles</a></li>
+                        <li><a href="#faq">Preguntas frecuentes</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>El Coloquio</h4>
+                    <ul>
+                        <li><a href="#nosotros">Quiénes somos</a></li>
+                        <li><a href="ediciones.html">Ediciones anteriores</a></li>
+                        <li><a href="ediciones.html#edicion-2025">Archivo Hermosillo 2025</a></li>
+                        <li><a href="referencias.html">Referencias y fuentes</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Contacto</h4>
+                    <ul>
+                        <li><a href="mailto:badouin@tec.mx">badouin@tec.mx</a></li>
+                        <li><a href="https://www.instagram.com/espacioysostenibilidad/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+                    </ul>
+                    <p class="site-footer__meta">Ciudad de México<br>10, 11 y 12 de febrero de 2027<br>Sede, programa y registro: próximamente.</p>
                 </div>
             </div>
-            
-            <!-- Footer Bottom -->
-            <div class="border-t border-white/20 py-8">
-                <div class="flex flex-col lg:flex-row items-center justify-between space-y-6 lg:space-y-0">
-                    <!-- Copyright -->
-                    <div class="text-center lg:text-left">
-                        <p class="text-coloquio-light text-sm mb-1">
-                            © 2025 III Coloquio Internacional de Espacio y Sostenibilidad
-                        </p>
-                        <p class="text-coloquio-light text-xs">
-                            Hermosillo, Sonora • México
-                        </p>
-                    </div>
-                    
-                    <!-- International Cooperation -->
-                    <div class="flex items-center space-x-8">
-                        <div class="text-center">
-                            <div class="flex items-center space-x-2 mb-1">
-                                <span class="text-white font-bold text-lg">🇲🇽</span>
-                                <span class="text-white font-semibold">México</span>
-                            </div>
-                            <p class="text-coloquio-light text-xs">Cooperación</p>
-                        </div>
-                        
-                        <div class="h-8 w-px bg-white/30"></div>
-                        
-                        <div class="text-center">
-                            <div class="flex items-center space-x-2 mb-1">
-                                <span class="text-white font-bold text-lg">🇺🇸</span>
-                                <span class="text-white font-semibold">Estados Unidos</span>
-                            </div>
-                            <p class="text-coloquio-light text-xs">Internacional</p>
-                        </div>
-                    </div>
-                </div>
+            <div class="site-footer__bottom">
+                <p>© 2023–2027 Espacio y Sostenibilidad · Coloquio Internacional de Espacio y Sostenibilidad.</p>
+                <p>Las imágenes y fuentes externas citadas pertenecen a sus autores e instituciones. NASA y el U.S. Greenhouse Gas Center se citan como referentes; no participan, organizan ni patrocinan la edición 2027.</p>
             </div>
         </div>
     </footer>
 
-    <script src="js/index.js?v=2025091801" defer></script>
-    <style>
-        /* Animaciones de contador */
-        #days, #hours, #minutes, #seconds {
-            transition: transform 0.3s ease;
-        }
-        #days:hover, #hours:hover, #minutes:hover, #seconds:hover {
-            transform: scale(1.1);
-        }
-    </style>
-
-    <!-- Cloudflare Cache Busting Script -->
-    <script>
-        // Aggressive cache busting for Cloudflare Pages
-        (function() {
-            const buildTime = '20250919223000';
-            const lastBuildTime = localStorage.getItem('lastBuildTime');
-            
-            if (lastBuildTime !== buildTime) {
-                localStorage.setItem('lastBuildTime', buildTime);
-                // Force reload if this is a new build
-                if (lastBuildTime && lastBuildTime !== buildTime) {
-                    window.location.reload(true);
-                }
-            }
-            
-            // Add build timestamp to console for debugging
-            console.log('🚀 Espacio 2025 - Build:', buildTime);
-            console.log('🔄 Cache Status: Fresh');
-        })();
-    </script>
-
+    <script src="js/references.data.js?v=2027.1" defer></script>
+    <script src="js/index.js?v=2027.1" defer></script>
 </body>
 </html>

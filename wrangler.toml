@@ -1,4 +1,5 @@
-# Cloudflare Pages configuration for automatic cache busting
+# Cloudflare Pages — sitio estático (sin build). Los thumbnails se generan localmente con
+# `node scripts/build-references.mjs` y se commitean en assets/thumbs + js/references.data.js.
 
 version = 1
 
@@ -8,38 +9,3 @@ version = 1
 
 [build.environment]
   NODE_VERSION = "18"
-
-[[headers]]
-  for = "/*.html"
-  [headers.values]
-    Cache-Control = "no-cache, no-store, must-revalidate, max-age=0"
-    Pragma = "no-cache"
-    Expires = "0"
-
-[[headers]]
-  for = "/index.html"
-  [headers.values]
-    Cache-Control = "no-cache, no-store, must-revalidate, max-age=0"
-    Pragma = "no-cache"
-    Expires = "0"
-    X-Build-Version = "v2025.09.19.2230"
-
-[[headers]]
-  for = "/*.css"
-  [headers.values]
-    Cache-Control = "public, max-age=3600"
-
-[[headers]]
-  for = "/*.js"
-  [headers.values]
-    Cache-Control = "public, max-age=3600"
-
-[[headers]]
-  for = "/*.png"
-  [headers.values]
-    Cache-Control = "public, max-age=86400"
-
-[[headers]]
-  for = "/*.jpg"
-  [headers.values]
-    Cache-Control = "public, max-age=86400"
